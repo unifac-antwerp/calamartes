@@ -32,11 +32,23 @@
     "lint:fix": "yarn lint --fix",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "tslint --project ."
+    ]
+  },
   "devDependencies": {
     "@types/node": "^10.12.18",
     "@types/react": "^16.7.18",
     "@types/react-dom": "^16.0.11",
     "@types/react-helmet": "^5.0.7",
+    "husky": "^1.2.1",
+    "lint-staged": "^8.1.0",
     "prettier": "^1.15.2",
     "tslint": "^5.12.0",
     "tslint-config-prettier": "^1.17.0",

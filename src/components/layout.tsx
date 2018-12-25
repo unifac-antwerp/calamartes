@@ -2,7 +2,6 @@ import { graphql, StaticQuery } from 'gatsby'
 import * as React from 'react'
 
 import Header from './header'
-import './layout.css'
 
 type TProps = {
   children: React.ReactNode
@@ -20,7 +19,7 @@ const Layout = ({ children }: TProps) => (
       }
     `}
     render={data => (
-      <>
+      <React.Fragment>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
@@ -32,7 +31,7 @@ const Layout = ({ children }: TProps) => (
         >
           {children}
         </div>
-      </>
+      </React.Fragment>
     )}
   />
 )

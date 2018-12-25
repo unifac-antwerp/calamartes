@@ -8,7 +8,7 @@ type TProps = {
 const Header = ({ siteTitle = '' }: TProps) => (
   <div
     style={{
-      background: `rebeccapurple`,
+      background: `blue`,
       marginBottom: `1.45rem`,
     }}
   >

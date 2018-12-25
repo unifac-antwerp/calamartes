@@ -1,6 +1,6 @@
-import React from 'react'
+import { graphql, StaticQuery } from 'gatsby'
+import * as React from 'react'
 import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
 
 type TProps = {
   description?: string
@@ -30,6 +30,7 @@ function SEO({
             }}
             title={title}
             titleTemplate={`%s | ${data.site.siteMetadata.title}`}
+            /* tslint:disable:object-literal-sort-keys */
             meta={[
               {
                 name: `description`,
@@ -73,6 +74,7 @@ function SEO({
                   : []
               )
               .concat(meta)}
+            /* tslint:enable:object-literal-sort-keys */
           />
         )
       }}

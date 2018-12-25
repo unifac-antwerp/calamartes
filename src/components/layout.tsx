@@ -1,12 +1,11 @@
-import React, { ReactNode } from 'react'
-import PropTypes from 'prop-types'
-import { StaticQuery, graphql } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
+import * as React from 'react'
 
 import Header from './header'
 import './layout.css'
 
 type TProps = {
-  children: ReactNode
+  children: React.ReactNode
 }
 
 const Layout = ({ children }: TProps) => (

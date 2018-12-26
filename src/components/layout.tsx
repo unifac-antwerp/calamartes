@@ -1,23 +1,12 @@
 import { graphql, StaticQuery } from 'gatsby'
 import * as React from 'react'
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
-import { normalize } from 'styled-normalize'
+import { ThemeProvider } from 'styled-components'
+import { GlobalStyle, theme } from '../config/styles'
 import Header from './header'
 
 type TProps = {
   children: React.ReactNode
 }
-
-const theme = {
-  color: 'red',
-}
-const GlobalStyle = createGlobalStyle`
-  ${normalize}
-  
-  body {
-    background-color: yellow;
-  }
-`
 
 const Layout = ({ children }: TProps) => (
   <StaticQuery

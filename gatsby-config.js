@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 /* tslint:disable:object-literal-sort-keys */
 const {
   NODE_ENV,
@@ -16,6 +18,14 @@ module.exports = {
     author: `@wouterlanduydt`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-source-prismic',
+      options: {
+        repositoryName: process.env.GATSBY_REPOSITORY_NAME,
+        accessToken: process.env.GATSBY_ACCESS_TOKEN,
+        lang: '*',
+      },
+    },
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,

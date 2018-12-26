@@ -1,10 +1,9 @@
+import { Layout } from '@components'
 import * as React from 'react'
-import Image from '../components/image'
-import Layout from '../components/layout'
 
 const IndexPage = () => (
   <Layout>
-    <Image />
+    <span>homepage</span>
   </Layout>
 )
 

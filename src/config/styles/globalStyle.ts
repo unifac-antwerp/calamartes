@@ -1,9 +1,6 @@
-import { createGlobalStyle } from 'styled-components'
-import { normalize } from 'styled-normalize'
+import { css } from 'styled-components'
 
-export default createGlobalStyle`
-  ${normalize}
-  
+export default css`
   body {
     background-color: yellow;
   }

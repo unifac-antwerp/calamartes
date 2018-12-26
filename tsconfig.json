@@ -18,7 +18,12 @@
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
-    "paths": {}
+    "paths": {
+      "@config/*": ["./src/config/*"],
+      "@components": ["./src/components"],
+      "@connectors": ["./src/connectors"],
+      "@assets/*": ["./src/assets/*"]
+    }
   },
   "exclude": [
     "node_modules",

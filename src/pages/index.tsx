@@ -1,5 +1,6 @@
 import { Layout } from '@components'
 import { graphql, StaticQuery } from 'gatsby'
+import Img from 'gatsby-image'
 import * as React from 'react'
 
 const IndexPage = () => (
@@ -15,11 +16,31 @@ const IndexPage = () => (
             }
           }
         }
+        allInstaNode {
+          edges {
+            node {
+              id
+              localFile {
+                childImageSharp {
+                  fixed(width: 180, height: 180) {
+                    ...GatsbyImageSharpFixed
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     `}
     render={data => (
       <Layout>
-        <span>{data.allPrismicHomepage.edges[0].node.data.test}</span>
+        <p>{data.allPrismicHomepage.edges[0].node.data.test}</p>
+        {data.allInstaNode.edges.map((post: any) => (
+          <Img
+            key={post.node.id}
+            fixed={post.node.localFile.childImageSharp.fixed}
+          />
+        ))}
       </Layout>
     )}
   />

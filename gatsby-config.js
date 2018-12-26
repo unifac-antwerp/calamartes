@@ -21,9 +21,17 @@ module.exports = {
     {
       resolve: 'gatsby-source-prismic',
       options: {
-        repositoryName: process.env.GATSBY_REPOSITORY_NAME,
-        accessToken: process.env.GATSBY_ACCESS_TOKEN,
+        repositoryName: process.env.GATSBY_PRISMIC_REPOSITORY_NAME,
+        accessToken: process.env.GATSBY_PRISMIC_ACCESS_TOKEN,
         lang: '*',
+      },
+    },
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: process.env.GATSBY_INSTAGRAM_USERNAME,
+        access_token: process.env.GATSBY_INSTAGRAM_ACCESS_TOKEN,
+        instagram_id: process.env.GATSBY_INSTAGRAM_ID,
       },
     },
     `gatsby-plugin-typescript`,

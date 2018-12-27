@@ -34,7 +34,7 @@ const Navigation = ({ siteTitle = '' }: TProps) => (
       <nav>
         <ol>
           {navigationItems.map(item => (
-            <li>
+            <li key={item.name}>
               <Link to={item.link}>{item.name}</Link>
             </li>
           ))}

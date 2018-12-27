@@ -1,4 +1,4 @@
-import { Header } from '@components'
+import { Footer, Header } from '@components'
 import withConnectors from '@connectors'
 import { graphql, StaticQuery } from 'gatsby'
 import * as React from 'react'
@@ -23,6 +23,7 @@ const Layout = ({ children }: TProps) => (
       <React.Fragment>
         <Header siteTitle={data.site.siteMetadata.title} />
         <SiteWrap>{children}</SiteWrap>
+        <Footer />
       </React.Fragment>
     )}
   />

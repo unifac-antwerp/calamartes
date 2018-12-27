@@ -18,7 +18,8 @@
     "format": "prettier 'src/**/*.{ts,tsx}' --write",
     "lint": "tslint --project .",
     "lint:fix": "yarn lint --fix",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "gql:types": "gql-gen"
   },
   "husky": {
     "hooks": {
@@ -60,6 +61,9 @@
     "@types/recompose": "^0.30.2",
     "@types/styled-components": "^4.1.4",
     "babel-plugin-styled-components": "^1.10.0",
+    "graphql-code-generator": "^0.15.2",
+    "graphql-codegen-typescript-common": "^0.15.2",
+    "graphql-codegen-typescript-server": "^0.15.2",
     "husky": "^1.2.1",
     "lint-staged": "^8.1.0",
     "prettier": "^1.15.2",

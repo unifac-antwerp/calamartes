@@ -1,4 +1,5 @@
 import { Layout } from '@components'
+import cleanUrl from '@utils/cleanUrl'
 import { graphql, StaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import * as React from 'react'
@@ -24,6 +25,7 @@ const Partners = () => (
                 link {
                   url
                 }
+                description
                 type
               }
             }
@@ -40,6 +42,10 @@ const Partners = () => (
               <a href={item.node.data.link.url} target="_blank">
                 <p>
                   {item.node.data.name} ({item.node.data.type})
+                </p>
+                <p>{cleanUrl(item.node.data.link.url)}</p>
+                <p>
+                  {!!item.node.data.description && item.node.data.description}
                 </p>
                 <Img
                   fixed={item.node.data.image.localFile.childImageSharp.fixed}

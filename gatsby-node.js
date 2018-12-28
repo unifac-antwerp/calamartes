@@ -16,6 +16,7 @@ exports.onCreateWebpackConfig = function({ actions }) {
         '@components': path.resolve(__dirname, 'src/components'),
         '@config': path.resolve(__dirname, 'src/config'),
         '@connectors': path.resolve(__dirname, 'src/connectors'),
+        '@utils': path.resolve(__dirname, 'src/utils'),
       },
     },
   })

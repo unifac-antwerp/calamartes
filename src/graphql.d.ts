@@ -5706,6 +5706,8 @@ export interface PrismicPartnerConnectionDataInputObject_2 {
   type?: Maybe<PrismicPartnerConnectionDataTypeQueryString_2>
 
   link?: Maybe<PrismicPartnerConnectionDataLinkInputObject_2>
+
+  description?: Maybe<PrismicPartnerConnectionDataDescriptionQueryString_2>
 }
 
 export interface PrismicPartnerConnectionDataNameQueryString_2 {
@@ -6681,6 +6683,20 @@ export interface PrismicPartnerConnectionDataLinkRawUrlQueryString_2 {
 }
 
 export interface PrismicPartnerConnectionDataLinkRawTargetQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnerConnectionDataDescriptionQueryString_2 {
   eq?: Maybe<string>
 
   ne?: Maybe<string>
@@ -12224,6 +12240,8 @@ export interface PrismicPartnerDataInputObject_2 {
   type?: Maybe<PrismicPartnerDataTypeQueryString_2>
 
   link?: Maybe<PrismicPartnerDataLinkInputObject_2>
+
+  description?: Maybe<PrismicPartnerDataDescriptionQueryString_2>
 }
 
 export interface PrismicPartnerDataNameQueryString_2 {
@@ -13186,6 +13204,20 @@ export interface PrismicPartnerDataLinkRawTargetQueryString_2 {
   nin?: Maybe<(Maybe<string>)[]>
 }
 
+export interface PrismicPartnerDataDescriptionQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
 export interface PrismicPartnerPrismicIdQueryString_2 {
   eq?: Maybe<string>
 
@@ -13976,6 +14008,7 @@ export enum PrismicPartnerConnectionSortByFieldsEnum {
   DataLinkUrl = 'data___link___url',
   DataLinkTarget = 'data___link___target',
   DataLinkRaw = 'data___link___raw',
+  DataDescription = 'data___description',
   PrismicId = 'prismicId',
   Id = 'id',
   Parent = 'parent',
@@ -14008,6 +14041,7 @@ export enum PrismicPartnerDistinctEnum {
   DataLinkUrl = 'data___link___url',
   DataLinkTarget = 'data___link___target',
   DataLinkRaw = 'data___link___raw',
+  DataDescription = 'data___description',
   PrismicId = 'prismicId',
   Id = 'id',
   Parent = 'parent',
@@ -14035,6 +14069,7 @@ export enum PrismicPartnerGroupEnum {
   DataLinkUrl = 'data___link___url',
   DataLinkTarget = 'data___link___target',
   DataLinkRaw = 'data___link___raw',
+  DataDescription = 'data___description',
   PrismicId = 'prismicId',
   Id = 'id',
   Parent = 'parent',
@@ -15120,6 +15155,8 @@ export interface Data_4 {
   type?: Maybe<string>
 
   link?: Maybe<Link_2>
+
+  description?: Maybe<string>
 }
 
 export interface Image_2 {

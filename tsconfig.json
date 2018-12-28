@@ -22,7 +22,8 @@
       "@config/*": ["./src/config/*"],
       "@components": ["./src/components"],
       "@connectors": ["./src/connectors"],
-      "@assets/*": ["./src/assets/*"]
+      "@assets/*": ["./src/assets/*"],
+      "@utils/*": ["./src/utils/*"]
     }
   },
   "exclude": [

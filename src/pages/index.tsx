@@ -36,10 +36,7 @@ const IndexPage = () => (
       <Layout>
         <p>{data.allPrismicHomepage.edges[0].node.data.test}</p>
         {data.allInstaNode.edges.map((post: any) => (
-          <Img
-            key={post.node.id}
-            fixed={post.node.localFile.childImageSharp.fixed}
-          />
+          <Img key={post.node.id} fixed={post.node.localFile.childImageSharp.fixed} />
         ))}
       </Layout>
     )}

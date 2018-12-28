@@ -8,4 +8,8 @@ export default css`
   body {
     font-size: 1.6rem;
   }
+
+  .hide {
+    display: none;
+  }
 `

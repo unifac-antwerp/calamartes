@@ -1,6 +1,5 @@
-import { Link } from 'gatsby'
 import * as React from 'react'
-import { InnerWrap, StyledLink, Wrap } from './Navigation.styled'
+import { InnerWrap, LogoWrap, NavLink, NavList, Wrap } from './Navigation.styled'
 
 type TProps = {
   siteTitle?: string
@@ -28,17 +27,16 @@ const navigationItems = [
 const Navigation = ({ siteTitle = '' }: TProps) => (
   <Wrap>
     <InnerWrap>
-      <h1>
-        <StyledLink to="/">{siteTitle}</StyledLink>
-      </h1>
+      <h1 className="hide">{siteTitle}</h1>
+      <LogoWrap to="/">{siteTitle}</LogoWrap>
       <nav>
-        <ol>
+        <NavList>
           {navigationItems.map(item => (
             <li key={item.name}>
-              <Link to={item.link}>{item.name}</Link>
+              <NavLink to={item.link}>{item.name}</NavLink>
             </li>
           ))}
-        </ol>
+        </NavList>
       </nav>
     </InnerWrap>
   </Wrap>

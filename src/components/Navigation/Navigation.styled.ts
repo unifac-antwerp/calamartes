@@ -1,18 +1,21 @@
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-export const Wrap = styled.div`
-  background: ${props => props.theme.colors.neutral01};
-  margin-bottom: 1.45rem;
-`
+export const Wrap = styled.div``
 
 export const InnerWrap = styled.div`
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   max-width: 960px;
-  padding: 0.1rem 1.0875rem;
 `
 
-export const StyledLink = styled(Link)`
-  color: white;
+export const LogoWrap = styled(Link)`
   text-decoration: none;
 `
+
+export const NavList = styled.ol`
+  display: flex;
+`
+
+export const NavLink = styled(Link)``

@@ -1,10 +1,10 @@
 import { globalStyle, theme } from '@config/styles'
 import * as React from 'react'
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
-import { normalize } from 'styled-normalize'
+import { reset } from 'styled-reset'
 
 const GlobalStyle = createGlobalStyle`
-  ${normalize}
+  ${reset}
   ${globalStyle}
 `
 

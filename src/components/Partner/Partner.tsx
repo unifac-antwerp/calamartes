@@ -1,7 +1,6 @@
 import cleanUrl from '@utils/cleanUrl'
-import Img from 'gatsby-image'
 import * as React from 'react'
-import { Wrap } from './Partner.styled'
+import { Description, ExtraContent, Link, StyledImg, Title, Wrap } from './Partner.styled'
 
 export enum PartnerStyle {
   detailMain = 'detailMain',
@@ -21,22 +20,20 @@ const Partner = (props: TProps) => {
   const { link, image, description = null, name, styleName = PartnerStyle.default } = props
 
   return (
-    <Wrap>
-      <a href={styleName === PartnerStyle.detailMain ? undefined : link} target="_blank">
-        <Img fixed={image} alt={name} />
+    <Wrap href={styleName === PartnerStyle.detailMain ? undefined : link} target="_blank">
+      <StyledImg fixed={image} alt={name} />
 
-        {styleName === PartnerStyle.detailMain && (
-          <React.Fragment>
-            <h3>{name}</h3>
-            <p>{description}</p>
-            {link && (
-              <a href={link} target="_blank">
-                {cleanUrl(link)}
-              </a>
-            )}
-          </React.Fragment>
-        )}
-      </a>
+      {styleName === PartnerStyle.detailMain && (
+        <ExtraContent>
+          <Title>{name}</Title>
+          <Description>{description}</Description>
+          {link && (
+            <Link href={link} target="_blank">
+              {cleanUrl(link)}
+            </Link>
+          )}
+        </ExtraContent>
+      )}
     </Wrap>
   )
 }

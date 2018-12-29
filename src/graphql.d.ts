@@ -4859,12 +4859,76 @@ export interface PrismicHomepageConnectionDataInputObject_2 {
 export interface PrismicHomepageConnectionDataHeaderMovieInputObject_2 {
   link_type?: Maybe<PrismicHomepageConnectionDataHeaderMovieLinkTypeQueryString_2>
 
+  name?: Maybe<PrismicHomepageConnectionDataHeaderMovieNameQueryString_2>
+
+  kind?: Maybe<PrismicHomepageConnectionDataHeaderMovieKindQueryString_2>
+
+  url?: Maybe<PrismicHomepageConnectionDataHeaderMovieUrlQueryString_2>
+
+  size?: Maybe<PrismicHomepageConnectionDataHeaderMovieSizeQueryString_2>
+
   target?: Maybe<PrismicHomepageConnectionDataHeaderMovieTargetQueryString_2>
 
   raw?: Maybe<PrismicHomepageConnectionDataHeaderMovieRawInputObject_2>
 }
 
 export interface PrismicHomepageConnectionDataHeaderMovieLinkTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicHomepageConnectionDataHeaderMovieNameQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicHomepageConnectionDataHeaderMovieKindQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicHomepageConnectionDataHeaderMovieUrlQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicHomepageConnectionDataHeaderMovieSizeQueryString_2 {
   eq?: Maybe<string>
 
   ne?: Maybe<string>
@@ -4894,9 +4958,73 @@ export interface PrismicHomepageConnectionDataHeaderMovieTargetQueryString_2 {
 
 export interface PrismicHomepageConnectionDataHeaderMovieRawInputObject_2 {
   link_type?: Maybe<PrismicHomepageConnectionDataHeaderMovieRawLinkTypeQueryString_2>
+
+  name?: Maybe<PrismicHomepageConnectionDataHeaderMovieRawNameQueryString_2>
+
+  kind?: Maybe<PrismicHomepageConnectionDataHeaderMovieRawKindQueryString_2>
+
+  url?: Maybe<PrismicHomepageConnectionDataHeaderMovieRawUrlQueryString_2>
+
+  size?: Maybe<PrismicHomepageConnectionDataHeaderMovieRawSizeQueryString_2>
 }
 
 export interface PrismicHomepageConnectionDataHeaderMovieRawLinkTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicHomepageConnectionDataHeaderMovieRawNameQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicHomepageConnectionDataHeaderMovieRawKindQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicHomepageConnectionDataHeaderMovieRawUrlQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicHomepageConnectionDataHeaderMovieRawSizeQueryString_2 {
   eq?: Maybe<string>
 
   ne?: Maybe<string>
@@ -12299,12 +12427,76 @@ export interface PrismicHomepageDataInputObject_2 {
 export interface PrismicHomepageDataHeaderMovieInputObject_2 {
   link_type?: Maybe<PrismicHomepageDataHeaderMovieLinkTypeQueryString_2>
 
+  name?: Maybe<PrismicHomepageDataHeaderMovieNameQueryString_2>
+
+  kind?: Maybe<PrismicHomepageDataHeaderMovieKindQueryString_2>
+
+  url?: Maybe<PrismicHomepageDataHeaderMovieUrlQueryString_2>
+
+  size?: Maybe<PrismicHomepageDataHeaderMovieSizeQueryString_2>
+
   target?: Maybe<PrismicHomepageDataHeaderMovieTargetQueryString_2>
 
   raw?: Maybe<PrismicHomepageDataHeaderMovieRawInputObject_2>
 }
 
 export interface PrismicHomepageDataHeaderMovieLinkTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicHomepageDataHeaderMovieNameQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicHomepageDataHeaderMovieKindQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicHomepageDataHeaderMovieUrlQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicHomepageDataHeaderMovieSizeQueryString_2 {
   eq?: Maybe<string>
 
   ne?: Maybe<string>
@@ -12334,9 +12526,73 @@ export interface PrismicHomepageDataHeaderMovieTargetQueryString_2 {
 
 export interface PrismicHomepageDataHeaderMovieRawInputObject_2 {
   link_type?: Maybe<PrismicHomepageDataHeaderMovieRawLinkTypeQueryString_2>
+
+  name?: Maybe<PrismicHomepageDataHeaderMovieRawNameQueryString_2>
+
+  kind?: Maybe<PrismicHomepageDataHeaderMovieRawKindQueryString_2>
+
+  url?: Maybe<PrismicHomepageDataHeaderMovieRawUrlQueryString_2>
+
+  size?: Maybe<PrismicHomepageDataHeaderMovieRawSizeQueryString_2>
 }
 
 export interface PrismicHomepageDataHeaderMovieRawLinkTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicHomepageDataHeaderMovieRawNameQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicHomepageDataHeaderMovieRawKindQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicHomepageDataHeaderMovieRawUrlQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicHomepageDataHeaderMovieRawSizeQueryString_2 {
   eq?: Maybe<string>
 
   ne?: Maybe<string>
@@ -15381,6 +15637,10 @@ export enum PrismicHomepageConnectionSortByFieldsEnum {
   Slugs = 'slugs',
   Lang = 'lang',
   DataHeaderMovieLinkType = 'data___header_movie___link_type',
+  DataHeaderMovieName = 'data___header_movie___name',
+  DataHeaderMovieKind = 'data___header_movie___kind',
+  DataHeaderMovieUrl = 'data___header_movie___url',
+  DataHeaderMovieSize = 'data___header_movie___size',
   DataHeaderMovieTarget = 'data___header_movie___target',
   DataHeaderMovieRaw = 'data___header_movie___raw',
   DataCarouselImages = 'data___carousel_images',
@@ -15408,6 +15668,10 @@ export enum PrismicHomepageDistinctEnum {
   Slugs = 'slugs',
   Lang = 'lang',
   DataHeaderMovieLinkType = 'data___header_movie___link_type',
+  DataHeaderMovieName = 'data___header_movie___name',
+  DataHeaderMovieKind = 'data___header_movie___kind',
+  DataHeaderMovieUrl = 'data___header_movie___url',
+  DataHeaderMovieSize = 'data___header_movie___size',
   DataHeaderMovieTarget = 'data___header_movie___target',
   DataHeaderMovieRaw = 'data___header_movie___raw',
   DataCarouselImages = 'data___carousel_images',
@@ -15430,6 +15694,10 @@ export enum PrismicHomepageGroupEnum {
   Slugs = 'slugs',
   Lang = 'lang',
   DataHeaderMovieLinkType = 'data___header_movie___link_type',
+  DataHeaderMovieName = 'data___header_movie___name',
+  DataHeaderMovieKind = 'data___header_movie___kind',
+  DataHeaderMovieUrl = 'data___header_movie___url',
+  DataHeaderMovieSize = 'data___header_movie___size',
   DataHeaderMovieTarget = 'data___header_movie___target',
   DataHeaderMovieRaw = 'data___header_movie___raw',
   DataCarouselImages = 'data___carousel_images',
@@ -16521,6 +16789,14 @@ export interface Data_4 {
 export interface HeaderMovie_2 {
   link_type?: Maybe<string>
 
+  name?: Maybe<string>
+
+  kind?: Maybe<string>
+
+  url?: Maybe<string>
+
+  size?: Maybe<string>
+
   target?: Maybe<string>
 
   raw?: Maybe<Raw_4>
@@ -16528,6 +16804,14 @@ export interface HeaderMovie_2 {
 
 export interface Raw_4 {
   link_type?: Maybe<string>
+
+  name?: Maybe<string>
+
+  kind?: Maybe<string>
+
+  url?: Maybe<string>
+
+  size?: Maybe<string>
 }
 
 export interface CarouselImages_2 {

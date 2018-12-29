@@ -10,6 +10,13 @@ const IndexPage = () => (
     query={pageQuery}
     render={({ allInstaNode, allPrismicHomepage }: Query) => (
       <Layout>
+        <video
+          src={get(allPrismicHomepage, 'edges[0].node.data.header_movie.url')}
+          autoPlay={true}
+          muted={true}
+          style={{ width: '100%' }}
+          loop={true}
+        />
         <Carousel images={get(allPrismicHomepage, 'edges[0].node.data.carousel_images')} />
         {allInstaNode &&
           allInstaNode.edges &&
@@ -32,6 +39,9 @@ const pageQuery = graphql`
       edges {
         node {
           data {
+            header_movie {
+              url
+            }
             carousel_images {
               image {
                 localFile {

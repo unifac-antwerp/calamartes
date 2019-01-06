@@ -1,6 +1,8 @@
+import Facebook from '@assets/svg/Facebook'
+import Instagram from '@assets/svg/Instagram'
 import * as React from 'react'
 import Headroom from 'react-headroom'
-import { LogoWrap, NavLink, NavList, Wrap } from './Navigation.styled'
+import { LogoWrap, MainNav, NavLink, NavWrap, SecondaryNav, Wrap } from './Navigation.styled'
 
 type TProps = {
   siteTitle?: string
@@ -30,15 +32,29 @@ const Navigation = ({ siteTitle = '' }: TProps) => (
     <Wrap>
       <h1 className="hide">{siteTitle}</h1>
       <LogoWrap to="/">{siteTitle}</LogoWrap>
-      <nav>
-        <NavList>
-          {navigationItems.map(item => (
-            <li key={item.name}>
-              <NavLink to={item.link}>{item.name}</NavLink>
-            </li>
-          ))}
-        </NavList>
-      </nav>
+      <NavWrap>
+        <SecondaryNav>
+          <li>
+            <a href="#">
+              <Instagram />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <Facebook />
+            </a>
+          </li>
+        </SecondaryNav>
+        <nav>
+          <MainNav>
+            {navigationItems.map(item => (
+              <li key={item.name}>
+                <NavLink to={item.link}>{item.name}</NavLink>
+              </li>
+            ))}
+          </MainNav>
+        </nav>
+      </NavWrap>
     </Wrap>
   </Headroom>
 )

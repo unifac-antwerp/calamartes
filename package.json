@@ -67,6 +67,7 @@
     "@types/recompose": "^0.30.2",
     "@types/styled-components": "^4.1.4",
     "babel-plugin-styled-components": "^1.10.0",
+    "gatsby-plugin-google-fonts": "^0.0.4",
     "graphql-code-generator": "^0.15.2",
     "graphql-codegen-typescript-common": "^0.15.2",
     "graphql-codegen-typescript-server": "^0.15.2",

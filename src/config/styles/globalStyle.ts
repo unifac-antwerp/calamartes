@@ -13,6 +13,7 @@ export default css`
   body {
     font-size: 1.6rem;
     background-color: white;
+    font-family: 'poppins';
   }
 
   .hide {

@@ -34,6 +34,12 @@ module.exports = {
         instagram_id: process.env.GATSBY_INSTAGRAM_ID,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`poppins`],
+      },
+    },
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,

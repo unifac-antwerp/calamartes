@@ -2,7 +2,7 @@ import * as React from 'react'
 import { ContentContainer, Date, InfoWrapper, Location, Logo, Video, VideoOverlay, Wrap } from './Header.styled'
 
 type TProps = {
-  video: any
+  video: string
 }
 
 const Header = (props: TProps) => {

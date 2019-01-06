@@ -1,8 +1,8 @@
 /* tslint:disable:object-literal-sort-keys */
 
 const colors = {
-  primary01: 'blue',
-  neutral01: 'black',
+  neutral01: '#ffffff',
+  neutral02: '#000000',
 }
 
 export default {

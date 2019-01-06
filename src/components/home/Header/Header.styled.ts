@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Wrap = styled.header`
   height: 100vh;
-  background-color: black;
+  background-color: ${({ theme }) => theme.colors.neutral02};
   position: relative;
   top: 0;
   right: 0;
@@ -10,6 +10,7 @@ export const Wrap = styled.header`
   left: 0;
   overflow: hidden;
   z-index: -10;
+  color: ${({ theme }) => theme.colors.neutral01};
 `
 
 export const ContentContainer = styled.div`

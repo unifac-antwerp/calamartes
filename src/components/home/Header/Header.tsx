@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Overlay, Video, Wrap } from './Header.styled'
+import { ContentContainer, Date, InfoWrapper, Location, Logo, Video, VideoOverlay, Wrap } from './Header.styled'
 
 type TProps = {
   video: any
@@ -10,9 +10,16 @@ const Header = (props: TProps) => {
 
   return (
     <Wrap>
+      <ContentContainer>
+        <Logo src={require('@assets/images/calamartes_logo.png')} alt="calamartes logo" />
+        <InfoWrapper>
+          <Date>11-12 april</Date>
+          <Location>Universiteit Antwerpen</Location>
+        </InfoWrapper>
+      </ContentContainer>
       {!!video && (
         <React.Fragment>
-          <Overlay />
+          <VideoOverlay />
           <Video autoPlay={true} muted={true} loop={true}>
             <source src={video} type="video/mp4" />
           </Video>

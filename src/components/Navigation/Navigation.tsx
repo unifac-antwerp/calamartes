@@ -1,5 +1,6 @@
 import * as React from 'react'
-import { InnerWrap, LogoWrap, NavLink, NavList, Wrap } from './Navigation.styled'
+import Headroom from 'react-headroom'
+import { LogoWrap, NavLink, NavList, Wrap } from './Navigation.styled'
 
 type TProps = {
   siteTitle?: string
@@ -25,8 +26,8 @@ const navigationItems = [
 ]
 
 const Navigation = ({ siteTitle = '' }: TProps) => (
-  <Wrap>
-    <InnerWrap>
+  <Headroom>
+    <Wrap>
       <h1 className="hide">{siteTitle}</h1>
       <LogoWrap to="/">{siteTitle}</LogoWrap>
       <nav>
@@ -38,8 +39,8 @@ const Navigation = ({ siteTitle = '' }: TProps) => (
           ))}
         </NavList>
       </nav>
-    </InnerWrap>
-  </Wrap>
+    </Wrap>
+  </Headroom>
 )
 
 export default Navigation

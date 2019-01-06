@@ -1,4 +1,4 @@
-import { Carousel, Layout } from '@components'
+import { Carousel, Header, Layout } from '@components'
 import { graphql, StaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import { get } from 'lodash'
@@ -10,13 +10,8 @@ const IndexPage = () => (
     query={pageQuery}
     render={({ allInstaNode, allPrismicHomepage }: Query) => (
       <Layout>
-        <video
-          src={get(allPrismicHomepage, 'edges[0].node.data.header_movie.url')}
-          autoPlay={true}
-          muted={true}
-          style={{ width: '100%' }}
-          loop={true}
-        />
+        <Header video={get(allPrismicHomepage, 'edges[0].node.data.header_movie.url')} />
+
         <Carousel images={get(allPrismicHomepage, 'edges[0].node.data.carousel_images')} />
         {allInstaNode &&
           allInstaNode.edges &&

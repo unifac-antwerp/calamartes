@@ -37,7 +37,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`poppins`],
+        fonts: [`poppins:500,600,700`, `roboto:400,700`],
       },
     },
     `gatsby-plugin-typescript`,

@@ -1,22 +1,36 @@
 import { headroomStyle } from '@components/Navigation/Navigation.styled'
 import slickStyle from '@config/styles/slickStyle'
 import { css } from 'styled-components'
+import { theme } from './theme'
 
 export default css`
   ${slickStyle}
   ${headroomStyle}
 
+  * {
+    box-sizing: border-box;
+  }
+
   html {
+    -webkit-text-size-adjust: 100%;
     font-size: 62.5%;
   }
 
   body {
-    font-size: 1.6rem;
-    background-color: white;
-    font-family: 'poppins';
+    background-color: ${theme.colors.neutral01};
+    ${theme.typo.textstyle.paragraph};
   }
 
   .hide {
     display: none;
+  }
+
+  h1 {
+    ${theme.typo.textstyle.heading01}
+  }
+
+  ::selection {
+    color: ${theme.colors.neutral01};
+    background: ${theme.colors.global01};
   }
 `

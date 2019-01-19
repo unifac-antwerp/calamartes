@@ -63,8 +63,8 @@ const pageQuery = graphql`
           id
           localFile {
             childImageSharp {
-              fixed(width: 180, height: 180) {
-                ...GatsbyImageSharpFixed
+              fluid(maxWidth: 400, maxHeight: 400) {
+                ...GatsbyImageSharpFluid
               }
             }
           }

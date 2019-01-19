@@ -1,8 +1,7 @@
-import Img from 'gatsby-image'
-import { get } from 'lodash'
+import idx from 'idx'
 import * as React from 'react'
 import { InstaNodeEdge, Maybe } from 'src/graphql'
-import {} from './Instagram.styled'
+import { Description, Images, ImageWrap, InnerWrap, StyledImg, Title, Wrap } from './Instagram.styled'
 
 type TProps = {
   posts: Array<Maybe<InstaNodeEdge>> | null | undefined
@@ -11,22 +10,31 @@ type TProps = {
 const Instagram = (props: TProps) => {
   const { posts } = props
 
+  const maxPosts = 8
+
   return (
-    <section className="innerContainer">
-      Instagram
-      <div>
-        {posts &&
-          posts.length > 0 &&
-          posts.map(
-            post =>
-              post &&
-              post.node &&
-              get(post, 'node.localFile.childImageSharp.fixed') && (
-                <Img key={post.node.id} fixed={get(post, 'node.localFile.childImageSharp.fixed')} />
+    <Wrap>
+      <InnerWrap className="innerContainer">
+        <Title>#Calamartes2019</Title>
+        <Description>Desc</Description>
+        <Images>
+          {posts &&
+            posts.length > 0 &&
+            posts.slice(0, maxPosts).map(post => {
+              const image = idx(post, _ => _.node.localFile.childImageSharp.fluid)
+              const id = idx(post, _ => _.node.id)
+              return (
+                id &&
+                image && (
+                  <ImageWrap key={id}>
+                    <StyledImg fluid={image} />
+                  </ImageWrap>
+                )
               )
-          )}
-      </div>
-    </section>
+            })}
+        </Images>
+      </InnerWrap>
+    </Wrap>
   )
 }
 

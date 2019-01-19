@@ -1,10 +1,24 @@
 import * as React from 'react'
-import {} from './Pictures.styled'
+import { MainPictureWrap, SecondaryPictureWrap, StyledImg, Wrap } from './Pictures.styled'
 
-type TProps = {}
+type TProps = {
+  mainPicture: string
+  secondaryPicture: string
+}
 
 const Pictures = (props: TProps) => {
-  return <div className="innerContainer">Pictures</div>
+  const { mainPicture, secondaryPicture } = props
+
+  return (
+    <Wrap className="innerContainer">
+      <SecondaryPictureWrap>
+        <StyledImg src={secondaryPicture} alt="" />
+      </SecondaryPictureWrap>
+      <MainPictureWrap>
+        <StyledImg src={mainPicture} alt="" />
+      </MainPictureWrap>
+    </Wrap>
+  )
 }
 
 export default Pictures

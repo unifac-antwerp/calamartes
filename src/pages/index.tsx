@@ -23,7 +23,10 @@ const IndexPage = () => (
 
           <Carousel images={homepagedata && homepagedata.carousel_images} />
 
-          <Pictures />
+          <Pictures
+            mainPicture="https://ichef.bbci.co.uk/news/660/cpsprodpb/169F6/production/_91026629_gettyimages-519508400.jpg"
+            secondaryPicture="https://ichef.bbci.co.uk/news/660/cpsprodpb/169F6/production/_91026629_gettyimages-519508400.jpg"
+          />
           <Instagram posts={allInstaNode && allInstaNode.edges} />
         </Layout>
       )

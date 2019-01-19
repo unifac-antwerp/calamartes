@@ -1785,6 +1785,11 @@ babel-plugin-dynamic-import-node@^1.2.0:
   dependencies:
     babel-plugin-syntax-dynamic-import "^6.18.0"
 
+babel-plugin-idx@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-idx/-/babel-plugin-idx-2.4.0.tgz#5d144eb337fb22c4bf1ff75cb2e1c051a76a0323"
+  integrity sha512-+rEYZgSCLh0suJDlgZ64isSLhDW7Qxu6AnUMGhl/mW1kyYvfwqLqsDmgj3e5QXH0oX7A4Hq2x0BgqdU8tiuo5A==
+
 babel-plugin-macros@^2.4.2:
   version "2.4.3"
   resolved "https://registry.yarnpkg.com/babel-plugin-macros/-/babel-plugin-macros-2.4.3.tgz#870345aa538d85f04b4614fea5922b55c45dd551"
@@ -6502,6 +6507,11 @@ idb-keyval@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/idb-keyval/-/idb-keyval-3.1.0.tgz#cce9ed320734446784d52ed398c4b075a4273f51"
   integrity sha512-iFwFN5n00KNNnVxlOOK280SJJfXWY7pbMUOQXdIXehvvc/mGCV/6T2Ae+Pk2KwAkkATDTwfMavOiDH5lrJKWXQ==
+
+idx@^2.5.2:
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/idx/-/idx-2.5.2.tgz#4b405c2e6d68d04136e0a368a7ab35b9caa0595f"
+  integrity sha512-MLoGF4lQU5q/RqJJjRsuid52emu7tPVtSSZaYXsqRvSjvXdBEmIwk2urvbNvPBRU9Ox9I4WYnxiz2GjhU34Lrw==
 
 ieee754@^1.1.4:
   version "1.1.12"

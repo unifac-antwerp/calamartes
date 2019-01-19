@@ -1,29 +1,33 @@
 import { Carousel, Header, Instagram, Intro, Layout, Pictures } from '@components'
 import { graphql, StaticQuery } from 'gatsby'
-import { get } from 'lodash'
+import idx from 'idx'
 import * as React from 'react'
 import { Query } from '../graphql'
 
 const IndexPage = () => (
   <StaticQuery
     query={pageQuery}
-    render={({ allInstaNode, allPrismicHomepage }: Query) => (
-      <Layout>
-        <Header video={get(allPrismicHomepage, 'edges[0].node.data.header_movie.url')} />
+    render={({ allInstaNode, allPrismicHomepage }: Query) => {
+      const homepagedata = idx(allPrismicHomepage, _ => _.edges[0].node.data)
 
-        <Intro
-          image="https://ichef.bbci.co.uk/news/660/cpsprodpb/169F6/production/_91026629_gettyimages-519508400.jpg"
-          text="Woordje uitleg"
-        />
+      return (
+        <Layout>
+          <Header video={homepagedata && homepagedata.header_movie.url} />
 
-        {/* next events */}
+          <Intro
+            image="https://ichef.bbci.co.uk/news/660/cpsprodpb/169F6/production/_91026629_gettyimages-519508400.jpg"
+            text="Woordje uitleg"
+          />
 
-        <Carousel images={get(allPrismicHomepage, 'edges[0].node.data.carousel_images')} />
+          {/* next events */}
 
-        <Pictures />
-        <Instagram posts={allInstaNode && allInstaNode.edges} />
-      </Layout>
-    )}
+          <Carousel images={homepagedata && homepagedata.carousel_images} />
+
+          <Pictures />
+          <Instagram posts={allInstaNode && allInstaNode.edges} />
+        </Layout>
+      )
+    }}
   />
 )
 

@@ -35,6 +35,10 @@ export default css`
     ${theme.typo.textstyle.heading01}
   }
 
+  h2 {
+    ${theme.typo.textstyle.heading02}
+  }
+
   ::selection {
     color: ${theme.colors.neutral01};
     background: ${theme.colors.global01};

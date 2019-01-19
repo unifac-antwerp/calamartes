@@ -4,6 +4,7 @@ export type TTheme = {
   colors: TColors
   typo: TTypo
   grid: TGrid
+  overlays: TOverlays
   breakpoints: TBreakpoints
   shadows: TShadows
 }
@@ -33,6 +34,7 @@ type TFontweights = {
 
 type TTextstyle = {
   heading01: CSSObject
+  heading02: CSSObject
   paragraph: CSSObject
 }
 
@@ -55,4 +57,8 @@ type TBreakpoints = {
 
 type TShadows = {
   shadow01: CSSObject
+}
+
+type TOverlays = {
+  plusPattern: CSSObject
 }

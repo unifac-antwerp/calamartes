@@ -7,10 +7,14 @@ export const Wrap = styled.div`
 
 export const MainPictureWrap = styled.div`
   flex: 5;
-  border: 40px solid ${({ theme }: { theme: TTheme }) => theme.colors.global01};
+  background-color: ${({ theme }: { theme: TTheme }) => theme.colors.global01};
+  padding: 40px;
   margin-left: -40px;
   margin-top: 4vw;
   box-sizing: unset;
+  position: relative;
+
+  ${({ theme }: { theme: TTheme }) => theme.overlays.plusPattern};
 `
 
 export const SecondaryPictureWrap = styled.div`
@@ -20,4 +24,6 @@ export const SecondaryPictureWrap = styled.div`
 
 export const StyledImg = styled.img`
   width: 100%;
+  z-index: 10;
+  position: relative;
 `

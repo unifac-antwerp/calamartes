@@ -14,6 +14,23 @@ const shadows = {
   `,
 }
 
+const overlays = {
+  plusPattern: css`
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.2;
+      background-image: url(${require('@assets/images/plus_pattern.png')});
+      background-size: 140px;
+    }
+  `,
+}
+
 const grid = {
   maxWidth: '1200px',
 }
@@ -49,6 +66,12 @@ const textstyle = {
     font-weight: ${fontweights.bold};
     color: ${colors.neutral01};
   `,
+  heading02: css`
+    font-family: ${fonts.heading};
+    font-size: 36px;
+    font-weight: ${fontweights.bold};
+    color: ${colors.neutral01};
+  `,
   paragraph: css`
     font-family: ${fonts.default};
     font-size: 16px;
@@ -64,6 +87,7 @@ export const theme = {
     fontweights,
     textstyle,
   },
+  overlays,
   grid,
   breakpoints,
   shadows,

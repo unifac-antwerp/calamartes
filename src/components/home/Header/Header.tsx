@@ -10,7 +10,7 @@ const Header = (props: TProps) => {
 
   return (
     <Wrap>
-      <ContentContainer>
+      <ContentContainer className="innerContainer">
         <Logo src={require('@assets/images/calamartes_logo.png')} alt="calamartes logo" />
         <InfoWrapper>
           <Date>11-12 april</Date>

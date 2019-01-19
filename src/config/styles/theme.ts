@@ -10,8 +10,12 @@ const colors = {
 
 const shadows = {
   shadow01: css`
-    box-shadow: 0 6px 18px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   `,
+}
+
+const grid = {
+  maxWidth: '1200px',
 }
 
 const breakpoints = {
@@ -60,6 +64,7 @@ export const theme = {
     fontweights,
     textstyle,
   },
+  grid,
   breakpoints,
   shadows,
 }

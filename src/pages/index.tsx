@@ -1,6 +1,5 @@
-import { Carousel, Header, Layout } from '@components'
+import { Carousel, Header, Instagram, Intro, Layout, Pictures } from '@components'
 import { graphql, StaticQuery } from 'gatsby'
-import Img from 'gatsby-image'
 import { get } from 'lodash'
 import * as React from 'react'
 import { Query } from '../graphql'
@@ -12,17 +11,17 @@ const IndexPage = () => (
       <Layout>
         <Header video={get(allPrismicHomepage, 'edges[0].node.data.header_movie.url')} />
 
+        <Intro
+          image="https://ichef.bbci.co.uk/news/660/cpsprodpb/169F6/production/_91026629_gettyimages-519508400.jpg"
+          text="Woordje uitleg"
+        />
+
+        {/* next events */}
+
         <Carousel images={get(allPrismicHomepage, 'edges[0].node.data.carousel_images')} />
-        {allInstaNode &&
-          allInstaNode.edges &&
-          allInstaNode.edges.map(
-            post =>
-              post &&
-              post.node &&
-              get(post, 'node.localFile.childImageSharp.fixed') && (
-                <Img key={post.node.id} fixed={get(post, 'node.localFile.childImageSharp.fixed')} />
-              )
-          )}
+
+        <Pictures />
+        <Instagram posts={allInstaNode && allInstaNode.edges} />
       </Layout>
     )}
   />

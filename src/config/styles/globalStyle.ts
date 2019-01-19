@@ -21,6 +21,12 @@ export default css`
     ${theme.typo.textstyle.paragraph};
   }
 
+  .innerContainer {
+    width: 90%;
+    max-width: ${theme.grid.maxWidth};
+    margin: 0 auto;
+  }
+
   .hide {
     display: none;
   }

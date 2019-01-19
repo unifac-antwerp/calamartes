@@ -1,5 +1,4 @@
-export * from './home/Carousel'
-export * from './home/Header'
+export * from './home'
 export * from './Footer'
 export * from './Navigation'
 export * from './Layout'

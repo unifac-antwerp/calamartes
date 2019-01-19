@@ -11,13 +11,15 @@ const CarouselComponent = (props: TProps) => {
   const { images } = props
 
   return images && images.length > 0 ? (
-    <Slider>
-      {images.map(({ image }, index) => {
-        const imageFixed = get(image, 'localFile.childImageSharp.fixed')
+    <div className="innerContainer">
+      <Slider>
+        {images.map(({ image }, index) => {
+          const imageFixed = get(image, 'localFile.childImageSharp.fixed')
 
-        return imageFixed && <Img key={index} fixed={imageFixed} alt="" />
-      })}
-    </Slider>
+          return imageFixed && <Img key={index} fixed={imageFixed} alt="" />
+        })}
+      </Slider>
+    </div>
   ) : null
 }
 

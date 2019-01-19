@@ -29,7 +29,7 @@ const navigationItems = [
 
 const Navigation = ({ siteTitle = '' }: TProps) => (
   <Headroom>
-    <Wrap>
+    <Wrap className="innerContainer">
       <h1 className="hide">{siteTitle}</h1>
       <LogoWrap to="/">{siteTitle}</LogoWrap>
       <NavWrap>

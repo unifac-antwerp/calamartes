@@ -1,4 +1,4 @@
-import cleanUrl from '@utils/cleanUrl'
+import { cleanUrl } from '@utils'
 import * as React from 'react'
 import { Description, ExtraContent, Link, StyledImg, Title, Wrap } from './Partner.styled'
 

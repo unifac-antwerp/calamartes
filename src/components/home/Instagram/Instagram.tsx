@@ -1,3 +1,4 @@
+import { getInstagramPostUrl } from '@utils'
 import idx from 'idx'
 import * as React from 'react'
 import { InstaNodeEdge, Maybe } from 'src/graphql'
@@ -27,7 +28,9 @@ const Instagram = (props: TProps) => {
                 id &&
                 image && (
                   <ImageWrap key={id}>
-                    <StyledImg fluid={image} />
+                    <a href={getInstagramPostUrl(id)} target="_blank">
+                      <StyledImg fluid={image} />
+                    </a>
                   </ImageWrap>
                 )
               )

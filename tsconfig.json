@@ -24,7 +24,8 @@
       "@components/*": ["./src/components/*"],
       "@connectors": ["./src/connectors"],
       "@assets/*": ["./src/assets/*"],
-      "@utils/*": ["./src/utils/*"]
+      "@utils/*": ["./src/utils/*"],
+      "@utils": ["./src/utils"]
     }
   },
   "exclude": ["node_modules", "build", "scripts", "acceptance-tests", "webpack", "jest", "src/graphql.d.ts"]

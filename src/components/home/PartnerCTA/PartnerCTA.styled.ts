@@ -22,10 +22,10 @@ export const Wrap = styled.section`
     width: 100%;
     height: 100%;
     opacity: 0.7;
-    background-color: ${({ theme }: TWrapProps) => theme.colors.global01};
+    background-color: ${({ theme }: TWrapProps) => theme.colors.global02};
   }
 
-  ${({ theme }: TWrapProps) => theme.overlays.plusPattern};
+  ${({ theme }: TWrapProps) => theme.overlays.plusPatternFill};
 `
 
 export const InnerWrap = styled.div`

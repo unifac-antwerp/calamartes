@@ -6,6 +6,7 @@ const colors = {
   neutral01: '#ffffff',
   neutral02: '#000000',
   global01: '#3D5174',
+  global02: '#232F45',
 }
 
 const shadows = {
@@ -15,7 +16,7 @@ const shadows = {
 }
 
 const overlays = {
-  plusPattern: css`
+  plusPatternFill: css`
     &:after {
       content: '';
       display: block;
@@ -28,6 +29,13 @@ const overlays = {
       background-image: url(${require('@assets/images/plus_pattern.png')});
       background-size: 140px;
     }
+  `,
+  plusPattern: css`
+    content: '';
+    opacity: 0.1;
+    display: block;
+    background-image: url(${require('@assets/images/plus_pattern.png')});
+    background-size: 140px;
   `,
 }
 

@@ -13,6 +13,7 @@ type TColors = {
   neutral01: string
   neutral02: string
   global01: string
+  global02: string
 }
 
 type TFonts = {
@@ -61,4 +62,5 @@ type TShadows = {
 
 type TOverlays = {
   plusPattern: CSSObject
+  plusPatternFill: CSSObject
 }

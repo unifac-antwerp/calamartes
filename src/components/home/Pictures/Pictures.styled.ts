@@ -3,19 +3,19 @@ import styled from 'styled-components'
 
 export const Wrap = styled.div`
   display: flex;
-  margin-bottom: 64px;
+  margin-bottom: 64px !important;
 `
 
 export const MainPictureWrap = styled.div`
   flex: 5;
-  background-color: ${({ theme }: { theme: TTheme }) => theme.colors.global01};
+  background-color: ${({ theme }: { theme: TTheme }) => theme.colors.global02};
   padding: 40px;
   margin-left: -40px;
   margin-top: 4vw;
   box-sizing: unset;
   position: relative;
 
-  ${({ theme }: { theme: TTheme }) => theme.overlays.plusPattern};
+  ${({ theme }: { theme: TTheme }) => theme.overlays.plusPatternFill};
 `
 
 export const SecondaryPictureWrap = styled.div`

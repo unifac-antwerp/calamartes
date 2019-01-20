@@ -1,4 +1,5 @@
 import { TTheme } from '@config/styles/theme.type'
+import Img from 'gatsby-image'
 import styled from 'styled-components'
 
 export const Wrap = styled.div`
@@ -23,7 +24,7 @@ export const SecondaryPictureWrap = styled.div`
   flex: 4;
 `
 
-export const StyledImg = styled.img`
+export const StyledImg = styled(Img)`
   width: 100%;
   z-index: 10;
   position: relative;

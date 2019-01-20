@@ -6,18 +6,20 @@ import { Description, Images, ImageWrap, InnerWrap, StyledImg, Title, Wrap } fro
 
 type TProps = {
   posts: Array<Maybe<InstaNodeEdge>> | null | undefined
+  title: string
+  description: string
 }
 
 const Instagram = (props: TProps) => {
-  const { posts } = props
+  const { posts, description, title } = props
 
   const maxPosts = 8
 
   return (
     <Wrap>
       <InnerWrap className="innerContainer">
-        <Title>#Calamartes2019</Title>
-        <Description>Desc</Description>
+        <Title>{title}</Title>
+        <Description dangerouslySetInnerHTML={{ __html: description }} />
         <Images>
           {posts &&
             posts.length > 0 &&

@@ -9,24 +9,47 @@ const IndexPage = () => (
     query={pageQuery}
     render={({ allInstaNode, allPrismicHomepage }: Query) => {
       const homepagedata = idx(allPrismicHomepage, _ => _.edges[0].node.data)
-
-      const dummyImg =
-        'https://ichef.bbci.co.uk/news/660/cpsprodpb/169F6/production/_91026629_gettyimages-519508400.jpg'
+      const introImage = idx(homepagedata, _ => _.intro_image.localFile.childImageSharp.fluid)
+      const carouselImages = idx(homepagedata, _ =>
+        _.carousel_images.map(image => image.image.localFile.childImageSharp.fixed)
+      )
+      const pictures = [
+        idx(homepagedata, _ => _.pictures_main_picture.localFile.childImageSharp.fluid),
+        idx(homepagedata, _ => _.pictures_secondary_picture.localFile.childImageSharp.fluid),
+      ]
 
       return (
         <Layout>
           <Header video={homepagedata && homepagedata.header_movie.url} />
 
-          <Intro image={dummyImg} text="Woordje uitleg" />
+          {homepagedata && homepagedata.intro_text && (
+            <Intro
+              image={introImage}
+              text={homepagedata.intro_text.html}
+              buttonText={(homepagedata && homepagedata.intro_button_text) || ''}
+            />
+          )}
 
           {/* next events */}
 
-          <Carousel images={homepagedata && homepagedata.carousel_images} />
+          {!!carouselImages && <Carousel images={carouselImages} />}
 
-          <Pictures mainPicture={dummyImg} secondaryPicture={dummyImg} />
-          <Instagram posts={allInstaNode && allInstaNode.edges} />
+          {!!pictures && <Pictures mainPicture={pictures[0]} secondaryPicture={pictures[1]} />}
 
-          <PartnerCTA bgImage={dummyImg} CTAText="More info" description="description" title="Title" />
+          <Instagram
+            posts={allInstaNode && allInstaNode.edges}
+            title={(homepagedata && homepagedata.social_title) || ''}
+            description={(homepagedata && homepagedata.social_description.html) || ''}
+          />
+
+          {homepagedata && homepagedata.partnercta_title && homepagedata.partnercta_description && (
+            <PartnerCTA
+              bgImage={(homepagedata && homepagedata.partnercta_bgimage.url) || ''}
+              buttonText={(homepagedata && homepagedata.partnercta_button_text) || ''}
+              description={homepagedata.partnercta_description.html}
+              title={homepagedata.partnercta_title}
+            />
+          )}
         </Layout>
       )
     }}
@@ -42,6 +65,19 @@ const pageQuery = graphql`
             header_movie {
               url
             }
+            intro_text {
+              html
+            }
+            intro_button_text
+            intro_image {
+              localFile {
+                childImageSharp {
+                  fluid(maxWidth: 500) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
             carousel_images {
               image {
                 localFile {
@@ -52,6 +88,36 @@ const pageQuery = graphql`
                   }
                 }
               }
+            }
+            pictures_main_picture {
+              localFile {
+                childImageSharp {
+                  fluid(maxWidth: 500) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
+            pictures_secondary_picture {
+              localFile {
+                childImageSharp {
+                  fluid(maxWidth: 500) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
+            partnercta_bgimage {
+              url
+            }
+            partnercta_button_text
+            partnercta_title
+            partnercta_description {
+              html
+            }
+            social_title
+            social_description {
+              html
             }
           }
         }

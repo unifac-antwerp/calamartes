@@ -43,7 +43,8 @@ export const Title = styled.h2`
   ${({ theme }: { theme: TTheme }) => theme.overlays.plusPatternFill}
 `
 
-export const Description = styled.p`
+export const Description = styled.div`
+  text-align: center;
   margin: 0 auto 40px;
 `
 

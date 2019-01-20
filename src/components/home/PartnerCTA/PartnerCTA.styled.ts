@@ -10,7 +10,7 @@ export const Wrap = styled.section`
   position: relative;
   background-image: ${({ bgImage }: TWrapProps) => `url(${bgImage})`};
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: center;
   background-size: cover;
 
   &:before {
@@ -21,7 +21,7 @@ export const Wrap = styled.section`
     top: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.7;
+    opacity: 0.75;
     background-color: ${({ theme }: TWrapProps) => theme.colors.global02};
   }
 
@@ -37,6 +37,7 @@ export const InnerWrap = styled.div`
   padding: 56px 0;
 `
 
-export const Text = styled.p`
+export const Text = styled.div`
   margin: 24px 0;
+  text-align: center;
 `

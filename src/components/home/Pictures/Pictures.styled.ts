@@ -9,7 +9,7 @@ export const Wrap = styled.div`
 
 export const MainPictureWrap = styled.div`
   flex: 5;
-  background-color: ${({ theme }: { theme: TTheme }) => theme.colors.global02};
+  background-color: ${({ theme }: { theme: TTheme }) => theme.colors.global01};
   padding: 40px;
   margin-left: -40px;
   margin-top: 4vw;

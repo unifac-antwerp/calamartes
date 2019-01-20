@@ -13,8 +13,10 @@ type TColors = {
   neutral01: string
   neutral02: string
   neutral03: string
+  neutral04: string
   global01: string
   global02: string
+  global03: string
 }
 
 type TFonts = {

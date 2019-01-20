@@ -1,4 +1,4 @@
-import { Link } from 'gatsby'
+import { Button } from '@components/Button'
 import { FluidObject } from 'gatsby-image'
 import * as React from 'react'
 import { Image, ImageWrap, Text, TextWrap, Wrap } from './Intro.styled'
@@ -16,11 +16,7 @@ const Intro = (props: TProps) => {
     <Wrap className="innerContainer">
       <TextWrap>
         <Text dangerouslySetInnerHTML={{ __html: text }} />
-        {buttonText && (
-          <Link to="/info">
-            <button>{buttonText}</button>
-          </Link>
-        )}
+        {buttonText && <Button link="/info" text={buttonText} />}
       </TextWrap>
       {image && (
         <ImageWrap>

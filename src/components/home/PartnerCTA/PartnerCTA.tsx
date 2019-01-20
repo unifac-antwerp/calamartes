@@ -1,4 +1,4 @@
-import { Link } from 'gatsby'
+import { Button } from '@components/Button'
 import * as React from 'react'
 import { InnerWrap, Text, Title, Wrap } from './PartnerCTA.styled'
 
@@ -17,7 +17,7 @@ const PartnerCTA = (props: TProps) => {
       <InnerWrap className="innerContainer">
         <Title>{title}</Title>
         <Text dangerouslySetInnerHTML={{ __html: description }} />
-        {buttonText && <Link to="/contact">{buttonText}</Link>}
+        {buttonText && <Button link="/contact" text={buttonText} light={true} />}
       </InnerWrap>
     </Wrap>
   )

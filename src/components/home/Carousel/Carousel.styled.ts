@@ -31,7 +31,7 @@ export const Wrap = styled.section`
 
   &:before {
     ${topOrnamentCSS}
-    background-color: ${({ theme }: { theme: TTheme }) => theme.colors.global02};
+    background-color: ${({ theme }: { theme: TTheme }) => theme.colors.global01};
   }
 
   &:after {
@@ -45,7 +45,7 @@ export const InnerWrap = styled.section`
 
   &:before {
     ${bottomOrnamentCSS}
-    background-color: ${({ theme }: { theme: TTheme }) => theme.colors.global02};
+    background-color: ${({ theme }: { theme: TTheme }) => theme.colors.global01};
   }
 
   &:after {

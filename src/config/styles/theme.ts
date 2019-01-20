@@ -1,3 +1,4 @@
+import { darken, lighten } from 'polished'
 import { css } from 'styled-components'
 
 /* tslint:disable:object-literal-sort-keys */
@@ -6,8 +7,10 @@ const colors = {
   neutral01: '#ffffff',
   neutral02: '#000000',
   neutral03: '#2F2F2F',
-  global01: '#3D5174',
-  global02: '#232F45',
+  neutral04: darken(0.05, '#ffffff'),
+  global01: '#232F45',
+  global02: lighten(0.1, '#232F45'),
+  global03: lighten(0.15, '#232F45'),
 }
 
 const shadows = {

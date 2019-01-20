@@ -19,7 +19,7 @@ export const Wrap = styled.section`
 
   &:before {
     ${ornamentCSS}
-    background-color: ${({ theme }: { theme: TTheme }) => theme.colors.global02};
+    background-color: ${({ theme }: { theme: TTheme }) => theme.colors.global01};
   }
 
   &:after {
@@ -34,7 +34,7 @@ export const InnerWrap = styled.div`
 `
 
 export const Title = styled.h2`
-  background-color: ${({ theme }: { theme: TTheme }) => theme.colors.global02};
+  background-color: ${({ theme }: { theme: TTheme }) => theme.colors.global01};
   display: inline-block;
   position: relative;
   padding: 16px 32px;

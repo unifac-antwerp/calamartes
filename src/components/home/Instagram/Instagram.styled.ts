@@ -14,7 +14,7 @@ const ornamentCSS = css`
 `
 
 export const Wrap = styled.section`
-  margin-bottom: 112px;
+  margin-bottom: 180px;
   position: relative;
 
   &:before {

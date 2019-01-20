@@ -7,6 +7,7 @@ type TButtonProps = {
 }
 
 export const Button = styled.button`
+  user-select: none;
   border: none;
   background-color: ${({ theme, light }: TButtonProps) => (light ? theme.colors.neutral01 : theme.colors.global02)};
   padding: 8px 24px;

@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 export const Wrap = styled.div`
   display: flex;
-  margin-bottom: 96px !important;
+  margin-bottom: 112px !important;
 `
 
 export const MainPictureWrap = styled.div`

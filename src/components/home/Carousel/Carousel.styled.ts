@@ -27,7 +27,7 @@ const bottomOrnamentCSS = css`
 
 export const Wrap = styled.section`
   position: relative;
-  margin-bottom: 160px;
+  margin-bottom: 168px;
 
   &:before {
     ${topOrnamentCSS}

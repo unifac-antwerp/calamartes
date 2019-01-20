@@ -57,6 +57,6 @@ export default css`
 
   ::selection {
     color: ${theme.colors.neutral01};
-    background: ${theme.colors.global01};
+    background: ${theme.colors.global02};
   }
 `

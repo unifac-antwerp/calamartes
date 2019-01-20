@@ -42,7 +42,7 @@ export const Title = styled.h2`
 `
 
 export const Text = styled.div`
-  margin: 24px 0;
+  margin: 24px 0 40px;
   text-align: center;
   width: 88%;
   max-width: 896px;

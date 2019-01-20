@@ -11,13 +11,17 @@ export const Wrap = styled.section`
 
 export const TextWrap = styled.div`
   ${({ theme }: { theme: TTheme }) => theme.shadows.shadow01};
+  background-color: ${({ theme }: { theme: TTheme }) => theme.colors.neutral01};
   padding: 24px;
   flex: 5;
   position: relative;
   top: -164px;
+  height: 100%;
 `
 
-export const Text = styled.div``
+export const Text = styled.div`
+  margin-bottom: 24px;
+`
 
 export const ImageWrap = styled.div`
   flex: 4;

@@ -1,7 +1,9 @@
+import { TTheme } from '@config/styles/theme.type'
+import { transparentize } from 'polished'
 import styled from 'styled-components'
 
 export const Wrap = styled.header`
-  height: 100vh;
+  height: 80vh;
   background-color: ${({ theme }) => theme.colors.neutral02};
   position: relative;
   top: 0;
@@ -11,6 +13,7 @@ export const Wrap = styled.header`
   overflow: hidden;
   z-index: -10;
   color: ${({ theme }) => theme.colors.neutral01};
+  ${({ theme }: { theme: TTheme }) => theme.overlays.plusPatternFill};
 `
 
 export const ContentContainer = styled.div`
@@ -23,18 +26,29 @@ export const ContentContainer = styled.div`
   flex-direction: column;
 `
 
-export const Logo = styled.img``
+export const Logo = styled.img`
+  margin-top: -72px;
+  user-select: none;
+`
 
 export const InfoWrapper = styled.div`
-  align-self: flex-end;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  position: absolute;
+  right: 0;
+  bottom: 112px;
 `
 
-export const Date = styled.span``
+export const Date = styled.span`
+  ${({ theme }: { theme: TTheme }) => theme.typo.textstyle.heading02};
+  font-size: 46px;
+`
 
-export const Location = styled.span``
+export const Location = styled.span`
+  ${({ theme }: { theme: TTheme }) => theme.typo.textstyle.heading02};
+  font-weight: ${({ theme }: { theme: TTheme }) => theme.typo.fontweights.medium};
+`
 
 export const VideoOverlay = styled.div`
   height: 100%;
@@ -43,29 +57,25 @@ export const VideoOverlay = styled.div`
   top: 0px;
   left: 0px;
   z-index: 2;
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.8) 0%,
-    rgba(0, 0, 0, 0.5) 40%,
-    rgba(0, 0, 0, 0.5) 50%,
-    rgba(0, 0, 0, 0.9) 100%
-  );
+  background: ${({ theme }: { theme: TTheme }) => `
+    linear-gradient(
+      0deg,
+      ${transparentize(0.1, theme.colors.global01)} 0%,
+      ${transparentize(0.3, theme.colors.global01)} 40%,
+      ${transparentize(0.2, theme.colors.global01)} 50%,
+      ${transparentize(0.1, theme.colors.neutral02)} 100%
+    )`};
 `
 
 export const Video = styled.video`
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  opacity: 0.6;
 
-  @media (min-aspect-ratio: 16/9) {
-    height: 300%;
-    top: -100%;
-  }
-
-  @media (max-aspect-ratio: 16/9) {
-    width: 300%;
-    left: -100%;
-  }
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `

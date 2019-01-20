@@ -3,7 +3,8 @@ import { transparentize } from 'polished'
 import styled from 'styled-components'
 
 export const Wrap = styled.header`
-  height: 80vh;
+  height: 84vh;
+  min-height: 760px;
   background-color: ${({ theme }) => theme.colors.neutral02};
   position: relative;
   top: 0;
@@ -37,7 +38,7 @@ export const InfoWrapper = styled.div`
   align-items: flex-end;
   position: absolute;
   right: 0;
-  bottom: 112px;
+  bottom: 80px;
 `
 
 export const Date = styled.span`

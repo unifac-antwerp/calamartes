@@ -12,6 +12,7 @@ export type TTheme = {
 type TColors = {
   neutral01: string
   neutral02: string
+  neutral03: string
   global01: string
   global02: string
 }
@@ -37,6 +38,7 @@ type TTextstyle = {
   heading01: CSSObject
   heading02: CSSObject
   paragraph: CSSObject
+  inlinelink: CSSObject
 }
 
 type TTypo = {

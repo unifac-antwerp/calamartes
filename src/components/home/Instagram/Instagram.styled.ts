@@ -37,15 +37,18 @@ export const Title = styled.h2`
   background-color: ${({ theme }: { theme: TTheme }) => theme.colors.global02};
   display: inline-block;
   position: relative;
-  padding: 24px 32px;
-  margin: 0 auto 24px;
+  padding: 16px 32px;
+  margin: 0 auto 32px;
+  font-size: 40px;
 
   ${({ theme }: { theme: TTheme }) => theme.overlays.plusPatternFill}
 `
 
 export const Description = styled.div`
   text-align: center;
-  margin: 0 auto 40px;
+  margin: 0 auto 56px;
+  width: 80%;
+  max-width: 784px;
 `
 
 export const Images = styled.ol`

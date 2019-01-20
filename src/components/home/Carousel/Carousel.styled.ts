@@ -1,6 +1,58 @@
 import { TTheme } from '@config/styles/theme.type'
 import Slider from 'react-slick'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+
+const coreOrnamentCSS = css`
+  position: absolute;
+  content: '';
+  display: block;
+  z-index: -10;
+`
+
+const topOrnamentCSS = css`
+  ${coreOrnamentCSS}
+  top: -64px;
+  right: 0;
+  height: 180px;
+  width: 56vw;
+`
+
+const bottomOrnamentCSS = css`
+  ${coreOrnamentCSS}
+  bottom: -64px;
+  left: 0;
+  height: 180px;
+  width: 64vw;
+`
+
+export const Wrap = styled.section`
+  position: relative;
+  margin-bottom: 160px;
+
+  &:before {
+    ${topOrnamentCSS}
+    background-color: ${({ theme }: { theme: TTheme }) => theme.colors.global02};
+  }
+
+  &:after {
+    ${topOrnamentCSS}
+    ${({ theme }: { theme: TTheme }) => theme.overlays.plusPattern}
+  }
+`
+
+export const InnerWrap = styled.section`
+  position: relative;
+
+  &:before {
+    ${bottomOrnamentCSS}
+    background-color: ${({ theme }: { theme: TTheme }) => theme.colors.global02};
+  }
+
+  &:after {
+    ${bottomOrnamentCSS}
+    ${({ theme }: { theme: TTheme }) => theme.overlays.plusPattern}
+  }
+`
 
 export const StyledSlider = styled(Slider)`
   position: relative;

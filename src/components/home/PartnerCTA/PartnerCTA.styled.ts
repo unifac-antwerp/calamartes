@@ -37,7 +37,19 @@ export const InnerWrap = styled.div`
   padding: 56px 0;
 `
 
+export const Title = styled.h2`
+  text-align: center;
+`
+
 export const Text = styled.div`
   margin: 24px 0;
   text-align: center;
+  width: 88%;
+  max-width: 896px;
+
+  p,
+  a {
+    color: ${({ theme }: { theme: TTheme }) => theme.colors.neutral01};
+    font-size: 19px;
+  }
 `

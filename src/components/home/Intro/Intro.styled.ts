@@ -6,7 +6,7 @@ export const Wrap = styled.section`
   display: flex;
   position: relative;
   z-index: 15;
-  margin: 96px auto 64px !important;
+  margin: 96px auto 144px !important;
 `
 
 export const TextWrap = styled.div`

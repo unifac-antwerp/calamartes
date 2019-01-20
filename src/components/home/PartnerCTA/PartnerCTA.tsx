@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
 import * as React from 'react'
-import { InnerWrap, Text, Wrap } from './PartnerCTA.styled'
+import { InnerWrap, Text, Title, Wrap } from './PartnerCTA.styled'
 
 type TProps = {
   bgImage: string
@@ -15,7 +15,7 @@ const PartnerCTA = (props: TProps) => {
   return (
     <Wrap bgImage={bgImage}>
       <InnerWrap className="innerContainer">
-        <h2>{title}</h2>
+        <Title>{title}</Title>
         <Text dangerouslySetInnerHTML={{ __html: description }} />
         {buttonText && <Link to="/contact">{buttonText}</Link>}
       </InnerWrap>

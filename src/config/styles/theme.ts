@@ -5,6 +5,7 @@ import { css } from 'styled-components'
 const colors = {
   neutral01: '#ffffff',
   neutral02: '#000000',
+  neutral03: '#2F2F2F',
   global01: '#3D5174',
   global02: '#232F45',
 }
@@ -82,9 +83,18 @@ const textstyle = {
   `,
   paragraph: css`
     font-family: ${fonts.default};
-    font-size: 16px;
+    font-size: 17px;
     font-weight: ${fontweights.normal};
-    color: ${colors.neutral02};
+    line-height: 1.24;
+    color: ${colors.neutral03};
+  `,
+  inlinelink: css`
+    font-family: ${fonts.default};
+    font-size: 17px;
+    font-weight: ${fontweights.normal};
+    line-height: 1.24;
+    color: ${colors.neutral03};
+    text-decoration: underline;
   `,
 }
 

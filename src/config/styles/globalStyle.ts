@@ -21,6 +21,10 @@ export default css`
     ${theme.typo.textstyle.paragraph};
   }
 
+  strong {
+    font-weight: ${theme.typo.fontweights.bold};
+  }
+
   .innerContainer {
     width: 90%;
     max-width: ${theme.grid.maxWidth};
@@ -37,6 +41,18 @@ export default css`
 
   h2 {
     ${theme.typo.textstyle.heading02}
+  }
+
+  p {
+    ${theme.typo.textstyle.paragraph};
+
+    :not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  a {
+    ${theme.typo.textstyle.inlinelink};
   }
 
   ::selection {

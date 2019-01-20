@@ -2,7 +2,7 @@ import Arrow from '@assets/svg/Arrow'
 import Img, { FixedObject } from 'gatsby-image'
 import * as React from 'react'
 import { Settings } from 'react-slick'
-import { ArrowWrap, StyledSlider } from './Carousel.styled'
+import { ArrowWrap, InnerWrap, StyledSlider, Wrap } from './Carousel.styled'
 
 type TProps = {
   images: Array<FixedObject | null | undefined>
@@ -17,11 +17,16 @@ const CarouselComponent = (props: TProps) => {
   }
 
   return images ? (
-    <section className="innerContainer">
-      <StyledSlider {...sliderSettings}>
-        {images.map((image, index) => image && <Img key={index} fixed={image} alt="" />)}
-      </StyledSlider>
-    </section>
+    <Wrap>
+      {/* second wrapper to add another ornament */}
+      <InnerWrap>
+        <div className="innerContainer">
+          <StyledSlider {...sliderSettings}>
+            {images.map((image, index) => image && <Img key={index} fixed={image} alt="" />)}
+          </StyledSlider>
+        </div>
+      </InnerWrap>
+    </Wrap>
   ) : null
 }
 

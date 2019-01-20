@@ -26,6 +26,7 @@ const Instagram = (props: TProps) => {
             posts.slice(0, maxPosts).map(post => {
               const image = idx(post, _ => _.node.localFile.childImageSharp.fluid)
               const id = idx(post, _ => _.node.id)
+
               return (
                 id &&
                 image && (

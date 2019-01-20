@@ -58,7 +58,7 @@ export const Images = styled.ol`
 `
 
 export const ImageWrap = styled.li`
-  width: 24%;
+  width: 19%;
   margin-bottom: 1vw;
 `
 

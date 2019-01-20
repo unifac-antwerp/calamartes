@@ -13,7 +13,7 @@ type TProps = {
 const Instagram = (props: TProps) => {
   const { posts, description, title } = props
 
-  const maxPosts = 8
+  const maxPosts = 10
 
   return (
     <Wrap>

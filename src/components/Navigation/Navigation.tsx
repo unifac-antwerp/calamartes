@@ -22,6 +22,7 @@ const navigationItems = [
     name: 'info',
   },
   {
+    hidden: true,
     link: 'programma',
     name: 'programma',
   },
@@ -58,11 +59,13 @@ const Navigation = ({ siteTitle = '' }: TProps) => (
         <NavWrap>
           <nav>
             <MainNav>
-              {navigationItems.map(item => (
-                <li key={item.name}>
-                  <NavLink to={item.link}>{item.name}</NavLink>
-                </li>
-              ))}
+              {navigationItems
+                .filter(item => !item.hidden)
+                .map(item => (
+                  <li key={item.name}>
+                    <NavLink to={item.link}>{item.name}</NavLink>
+                  </li>
+                ))}
             </MainNav>
           </nav>
         </NavWrap>

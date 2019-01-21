@@ -1,39 +1,26 @@
+import { TTheme } from '@config/styles/theme.type'
 import { Link } from 'gatsby'
 import styled, { css } from 'styled-components'
-
-export const headroomStyle = css`
-  .headroom,
-  .headroom-wrapper {
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99999;
-    position: fixed;
-  }
-  .headroom--scrolled {
-    background-color: ${({ theme }) => theme.colors.neutral02};
-    transition: transform 200ms ease-in-out;
-  }
-  .headroom--unpinned {
-    position: fixed;
-    transform: translateY(-100%);
-  }
-  .headroom--pinned {
-    position: fixed;
-    transform: translateY(0%);
-  }
-`
+import { Facebook } from 'styled-icons/fa-brands/Facebook'
+import { Instagram } from 'styled-icons/fa-brands/Instagram'
 
 export const Wrap = styled.div`
+  position: absolute;
+  width: 100%;
+`
+
+export const InnerWrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 
-  padding: 16px 0;
+  padding-bottom: 8px;
 `
 
 export const LogoWrap = styled(Link)`
   text-decoration: none;
+  color: white;
 `
 
 export const NavWrap = styled.div`
@@ -42,15 +29,31 @@ export const NavWrap = styled.div`
   align-items: flex-end;
 `
 
+export const SecondaryNavWrap = styled.div`
+  padding: 8px 0;
+`
+
 export const SecondaryNav = styled.ol`
   display: flex;
-  margin-bottom: 8px;
+  justify-content: flex-end;
 
   > * {
     &:not(:last-child) {
       margin-right: 8px;
     }
   }
+`
+
+const icoStyle = css`
+  color: ${({ theme }: { theme: TTheme }) => theme.colors.neutral01};
+`
+
+export const FacebookIcon = styled(Facebook)`
+  ${icoStyle}
+`
+
+export const InstagramIcon = styled(Instagram)`
+  ${icoStyle}
 `
 
 export const MainNav = styled.ol`
@@ -64,7 +67,9 @@ export const MainNav = styled.ol`
 `
 
 export const NavLink = styled(Link)`
-  color: ${({ theme }) => theme.colors.neutral01};
+  color: ${({ theme }: { theme: TTheme }) => theme.colors.neutral01};
+  font-family: ${({ theme }: { theme: TTheme }) => theme.typo.fonts.heading};
+  font-weight: ${({ theme }: { theme: TTheme }) => theme.typo.fontweights.light};
   text-decoration: none;
   text-transform: capitalize;
 `

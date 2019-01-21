@@ -1,8 +1,16 @@
-import Facebook from '@assets/svg/Facebook'
-import Instagram from '@assets/svg/Instagram'
 import * as React from 'react'
-import Headroom from 'react-headroom'
-import { LogoWrap, MainNav, NavLink, NavWrap, SecondaryNav, Wrap } from './Navigation.styled'
+import {
+  FacebookIcon,
+  InnerWrap,
+  InstagramIcon,
+  LogoWrap,
+  MainNav,
+  NavLink,
+  NavWrap,
+  SecondaryNav,
+  SecondaryNavWrap,
+  Wrap,
+} from './Navigation.styled'
 
 type TProps = {
   siteTitle?: string
@@ -28,35 +36,39 @@ const navigationItems = [
 ]
 
 const Navigation = ({ siteTitle = '' }: TProps) => (
-  <Headroom>
-    <Wrap className="innerContainer">
-      <h1 className="hide">{siteTitle}</h1>
-      <LogoWrap to="/">{siteTitle}</LogoWrap>
-      <NavWrap>
-        <SecondaryNav>
-          <li>
-            <a href="#">
-              <Instagram />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <Facebook />
-            </a>
-          </li>
-        </SecondaryNav>
-        <nav>
-          <MainNav>
-            {navigationItems.map(item => (
-              <li key={item.name}>
-                <NavLink to={item.link}>{item.name}</NavLink>
-              </li>
-            ))}
-          </MainNav>
-        </nav>
-      </NavWrap>
-    </Wrap>
-  </Headroom>
+  <Wrap>
+    <SecondaryNavWrap>
+      <SecondaryNav className="innerContainer">
+        <li>
+          <a href="#">
+            <InstagramIcon size="16" title="Instagram" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <FacebookIcon size="16" title="Facebook" />
+          </a>
+        </li>
+      </SecondaryNav>
+    </SecondaryNavWrap>
+    <React.Fragment>
+      <InnerWrap className="innerContainer">
+        <h1 className="hide">{siteTitle}</h1>
+        <LogoWrap to="/">LOGO</LogoWrap>
+        <NavWrap>
+          <nav>
+            <MainNav>
+              {navigationItems.map(item => (
+                <li key={item.name}>
+                  <NavLink to={item.link}>{item.name}</NavLink>
+                </li>
+              ))}
+            </MainNav>
+          </nav>
+        </NavWrap>
+      </InnerWrap>
+    </React.Fragment>
+  </Wrap>
 )
 
 export default Navigation

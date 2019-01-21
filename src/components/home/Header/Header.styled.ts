@@ -3,7 +3,7 @@ import { transparentize } from 'polished'
 import styled from 'styled-components'
 
 export const Wrap = styled.header`
-  height: 84vh;
+  height: 88vh;
   min-height: 760px;
   background-color: ${({ theme }) => theme.colors.neutral02};
   position: relative;
@@ -43,12 +43,13 @@ export const InfoWrapper = styled.div`
 
 export const Date = styled.span`
   ${({ theme }: { theme: TTheme }) => theme.typo.textstyle.heading02};
-  font-size: 46px;
+  font-size: 44px;
 `
 
 export const Location = styled.span`
   ${({ theme }: { theme: TTheme }) => theme.typo.textstyle.heading02};
   font-weight: ${({ theme }: { theme: TTheme }) => theme.typo.fontweights.medium};
+  font-size: 32px;
 `
 
 export const VideoOverlay = styled.div`
@@ -70,7 +71,7 @@ export const VideoOverlay = styled.div`
 
 export const Video = styled.video`
   position: absolute;
-  opacity: 0.6;
+  opacity: 0.85;
 
   min-width: 100%;
   min-height: 100%;

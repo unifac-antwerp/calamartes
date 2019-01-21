@@ -1,11 +1,9 @@
-import { headroomStyle } from '@components/Navigation/Navigation.styled'
 import slickStyle from '@config/styles/slickStyle'
 import { css } from 'styled-components'
 import { theme } from './theme'
 
 export default css`
   ${slickStyle}
-  ${headroomStyle}
 
   * {
     box-sizing: border-box;

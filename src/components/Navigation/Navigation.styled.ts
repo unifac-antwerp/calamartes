@@ -7,6 +7,7 @@ import { Instagram } from 'styled-icons/fa-brands/Instagram'
 export const Wrap = styled.div`
   position: absolute;
   width: 100%;
+  z-index: 9999;
 `
 
 export const InnerWrap = styled.div`

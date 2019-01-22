@@ -17,7 +17,7 @@ export const Wrap = styled.header`
   ${({ theme }: { theme: TTheme }) => theme.overlays.plusPatternFill};
 `
 
-export const ContentContainer = styled.div`
+export const ContentContainer = styled.header`
   position: relative;
   z-index: 10;
   height: 100%;

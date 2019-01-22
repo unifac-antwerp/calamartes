@@ -28,4 +28,8 @@ export const StyledImg = styled(Img)`
   width: 100%;
   z-index: 10;
   position: relative;
+
+  &.secondary {
+    ${({ theme }: { theme: TTheme }) => theme.shadows.shadow01};
+  }
 `

@@ -60,6 +60,7 @@ export const Images = styled.ol`
 export const ImageWrap = styled.li`
   width: 19%;
   margin-bottom: 1vw;
+  ${({ theme }: { theme: TTheme }) => theme.shadows.shadow01};
 `
 
 export const StyledImg = styled(Img)`

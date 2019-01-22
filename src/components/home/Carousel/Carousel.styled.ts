@@ -79,6 +79,10 @@ export const StyledSlider = styled(Slider)`
     transform: translate(50%, -50%);
     right: 0;
   }
+
+  .gatsby-image-wrapper {
+    ${({ theme }: { theme: TTheme }) => theme.shadows.shadow01};
+  }
 `
 
 export const ArrowWrap = styled.div`

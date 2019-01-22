@@ -2,6 +2,8 @@ import slickStyle from '@config/styles/slickStyle'
 import { css } from 'styled-components'
 import { theme } from './theme'
 
+/* tslint:disable:no-var-requires */
+
 export default css`
   ${slickStyle}
 
@@ -17,6 +19,19 @@ export default css`
   body {
     background-color: ${theme.colors.neutral01};
     ${theme.typo.textstyle.paragraph};
+    position: relative;
+
+    &::after {
+      content: '';
+      background-image: url(${require('@assets/images/bg_pattern.png')});
+      opacity: 0.4;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -999;
+    }
   }
 
   strong {

@@ -15,7 +15,7 @@ export const InnerWrap = styled.div`
   align-items: center;
   position: relative;
 
-  padding-bottom: 8px;
+  padding: 24px 0;
 `
 
 export const LogoWrap = styled(Link)`
@@ -27,21 +27,6 @@ export const NavWrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-`
-
-export const SecondaryNavWrap = styled.div`
-  padding: 8px 0;
-`
-
-export const SecondaryNav = styled.ol`
-  display: flex;
-  justify-content: flex-end;
-
-  > * {
-    &:not(:last-child) {
-      margin-right: 8px;
-    }
-  }
 `
 
 const icoStyle = css`
@@ -62,6 +47,10 @@ export const MainNav = styled.ol`
   > * {
     &:not(:last-child) {
       margin-right: 16px;
+    }
+
+    &.social:not(:last-child) {
+      margin-right: 8px;
     }
   }
 `

@@ -17,6 +17,7 @@ export const TextWrap = styled.div`
   position: relative;
   top: -164px;
   height: 100%;
+  /* border-bottom: 4px solid ${({ theme }: { theme: TTheme }) => theme.colors.global01}; */
 `
 
 export const Text = styled.div`
@@ -26,7 +27,6 @@ export const Text = styled.div`
 export const ImageWrap = styled.div`
   flex: 4;
   max-height: 400px;
-  ${({ theme }: { theme: TTheme }) => theme.shadows.shadow01};
 `
 
 export const Image = styled(Img)`

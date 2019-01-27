@@ -1,7 +1,7 @@
 import { cleanUrl } from '@utils'
-import { FluidObject } from 'gatsby-image'
+import { FixedObject } from 'gatsby-image'
 import * as React from 'react'
-import { Description, ImageWrap, Link, StyledImg, Title, Wrap } from './Partner.styled'
+import { Description, Link, StyledImg, Title, Wrap } from './Partner.styled'
 
 export enum PartnerStyle {
   detailMain = 'detailMain',
@@ -11,7 +11,7 @@ export enum PartnerStyle {
 
 type TProps = {
   link?: string
-  image?: FluidObject | undefined | null
+  image?: FixedObject | undefined | null
   description?: string
   name: string
   styleName?: PartnerStyle
@@ -21,12 +21,8 @@ const Partner = (props: TProps) => {
   const { link, image, description = null, name, styleName = PartnerStyle.default } = props
 
   return (
-    <Wrap onClick={styleName === PartnerStyle.detailFriend ? () => window.open(link) : undefined}>
-      {!!image && (
-        <ImageWrap>
-          <StyledImg fluid={image} alt={name} />
-        </ImageWrap>
-      )}
+    <Wrap onClick={styleName === PartnerStyle.detailFriend ? () => window.open(link) : undefined} styleName={styleName}>
+      {!!image && <StyledImg fixed={image} alt={name} styleName={styleName} />}
 
       {styleName === PartnerStyle.detailMain && (
         <React.Fragment>

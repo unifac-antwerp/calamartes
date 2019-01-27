@@ -1,8 +1,9 @@
 import { TTheme } from '@config/styles/theme.type'
 import Img from 'gatsby-image'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+import { PartnerStyle } from './Partner'
 
-export const Wrap = styled.article`
+const mainPartnerStyle = css`
   background-color: ${({ theme }: { theme: TTheme }) => theme.colors.neutral01};
   padding: 16px;
   z-index: 10;
@@ -10,6 +11,14 @@ export const Wrap = styled.article`
   display: flex;
   flex-direction: column;
   height: 100%;
+`
+const friendStyle = css`
+  transform: scale(0.8);
+`
+
+export const Wrap = styled.article`
+  ${({ styleName }: { styleName: PartnerStyle }) =>
+    styleName === PartnerStyle.detailFriend ? friendStyle : mainPartnerStyle}
 
   &:hover {
     ${({ onClick }) => !!onClick && 'cursor: pointer;'};
@@ -17,14 +26,8 @@ export const Wrap = styled.article`
 `
 
 export const StyledImg = styled(Img)`
-  /* height: 100%;
-  position: relative; */
-`
-
-export const ImageWrap = styled.div`
-  width: 180px;
-  height: 180px;
-  margin: 0 auto;
+  ${({ styleName }: { styleName: PartnerStyle }) =>
+    styleName === PartnerStyle.detailFriend ? 'margin: 8px;' : 'margin: 24px auto;'}
 `
 
 export const Title = styled.h3`

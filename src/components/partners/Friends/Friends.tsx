@@ -10,7 +10,7 @@ type TProps = {
 
 const Friends = ({ friends }: TProps) => {
   return (
-    <Wrap className="innerContainer">
+    <Wrap className="inner-container">
       <Title>Friends</Title>
       <List>
         {friends.map(partner => {
@@ -22,7 +22,7 @@ const Friends = ({ friends }: TProps) => {
               <ListItem key={partner.id}>
                 <Partner
                   link={partnerData.link.url}
-                  image={idx(partnerData, _ => _.image.localFile.childImageSharp.fluid)}
+                  image={idx(partnerData, _ => _.image.localFile.childImageSharp.fixed)}
                   description={partnerData.description}
                   name={partnerData.name}
                   styleName={PartnerStyle.detailFriend}

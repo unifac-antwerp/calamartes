@@ -11,7 +11,7 @@ type TProps = {
 const MainPartners = ({ mainPartners }: TProps) => {
   return (
     <Wrap>
-      <div className="innerContainer">
+      <div className="inner-container">
         <Title>Main Partners</Title>
         <List>
           {mainPartners.map(partner => {
@@ -21,15 +21,13 @@ const MainPartners = ({ mainPartners }: TProps) => {
               !!partner &&
               partnerData && (
                 <ListItem key={partner.id}>
-                  <article>
-                    <Partner
-                      link={partnerData.link.url}
-                      image={idx(partnerData, _ => _.image.localFile.childImageSharp.fluid)}
-                      description={partnerData.description}
-                      name={partnerData.name}
-                      styleName={PartnerStyle.detailMain}
-                    />
-                  </article>
+                  <Partner
+                    link={partnerData.link.url}
+                    image={idx(partnerData, _ => _.image.localFile.childImageSharp.fixed)}
+                    description={partnerData.description}
+                    name={partnerData.name}
+                    styleName={PartnerStyle.detailMain}
+                  />
                 </ListItem>
               )
             )

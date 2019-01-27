@@ -38,7 +38,7 @@ export default css`
     font-weight: ${theme.typo.fontweights.bold};
   }
 
-  .innerContainer {
+  .inner-container {
     width: 90%;
     max-width: ${theme.grid.maxWidth};
     margin: 0 auto;

@@ -14,7 +14,7 @@ const PartnerCTA = (props: TProps) => {
 
   return (
     <Wrap bgImage={bgImage}>
-      <InnerWrap className="innerContainer">
+      <InnerWrap className="inner-container">
         <Title>{title}</Title>
         <Text dangerouslySetInnerHTML={{ __html: description }} />
         {buttonText && <Button link="/contact" text={buttonText} light={true} />}

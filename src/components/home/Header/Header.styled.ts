@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 export const Wrap = styled.header`
   height: 88vh;
+  max-height: 960px;
   min-height: 760px;
   background-color: ${({ theme }) => theme.colors.neutral02};
   position: relative;

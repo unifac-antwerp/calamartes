@@ -13,7 +13,7 @@ const Intro = (props: TProps) => {
   const { image, text, buttonText } = props
 
   return (
-    <Wrap className="innerContainer">
+    <Wrap className="inner-container">
       <TextWrap>
         <Text dangerouslySetInnerHTML={{ __html: text }} />
         {buttonText && <Button link="/info" text={buttonText} />}

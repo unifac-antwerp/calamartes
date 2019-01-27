@@ -20,7 +20,7 @@ const CarouselComponent = (props: TProps) => {
     <Wrap>
       {/* second wrapper to add another ornament */}
       <InnerWrap>
-        <div className="innerContainer">
+        <div className="inner-container">
           <StyledSlider {...sliderSettings}>
             {images.map((image, index) => image && <Img key={index} fixed={image} alt="" />)}
           </StyledSlider>

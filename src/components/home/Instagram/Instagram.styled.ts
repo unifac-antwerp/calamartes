@@ -18,17 +18,21 @@ const ornamentCSS = css`
 `
 
 export const Wrap = styled.section`
-  margin-bottom: 180px;
+  margin-bottom: 16vw;
   position: relative;
-
+  
   &:before {
     ${ornamentCSS}
     background-color: ${({ theme }: { theme: TTheme }) => theme.colors.global01};
   }
-
+  
   &:after {
     ${ornamentCSS}
     ${({ theme }: { theme: TTheme }) => theme.overlays.plusPattern}
+  }
+  
+  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.m}) {
+    margin-bottom: 180px;
   }
 `
 

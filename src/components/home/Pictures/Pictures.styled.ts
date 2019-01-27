@@ -5,9 +5,10 @@ import styled from 'styled-components'
 export const Wrap = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 112px !important;
+  margin-bottom: 16vw !important;
 
   @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.m}) {
+    margin-bottom: 112px !important;
     flex-direction: row;
   }
 `

@@ -16,21 +16,33 @@ const coreOrnamentCSS = css`
 
 const topOrnamentCSS = css`
   ${coreOrnamentCSS}
-  top: -64px;
+  top: -24px;
   right: 0;
   width: 56vw;
+
+  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.s}) {
+    top: -64px;
+  }
 `
 
 const bottomOrnamentCSS = css`
   ${coreOrnamentCSS}
-  bottom: -64px;
+  bottom: -24px;
   left: 0;
   width: 64vw;
+
+  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.s}) {
+    bottom: -64px;
+  }
 `
 
 export const Wrap = styled.section`
   position: relative;
-  margin-bottom: 168px;
+  margin-bottom: 20vw;
+  
+  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.m}) {
+    margin-bottom: 168px;
+  }
 
   &:before {
     ${topOrnamentCSS}

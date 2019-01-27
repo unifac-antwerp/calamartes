@@ -21,7 +21,7 @@ export const Wrap = styled.div`
     top: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.75;
+    opacity: 0.85;
     background-color: ${({ theme }: { theme: TTheme }) => theme.colors.global01};
   }
 

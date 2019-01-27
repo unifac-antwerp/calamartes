@@ -1,3 +1,4 @@
+import idx from 'idx'
 import { get } from 'lodash'
 import { PrismicPartner, PrismicPartnerConnection } from '../graphql'
 
@@ -9,14 +10,12 @@ export enum PartnerType {
 export const getPartnersByType = (
   partnerArray: PrismicPartnerConnection | null | undefined,
   type: PartnerType
-): Array<PrismicPartner | null | undefined> => {
-  if (partnerArray && partnerArray.edges) {
-    return partnerArray.edges
-      .filter(item => item && item.node && item.node.data && item.node.data.type === type)
-      .map(i => i && i.node)
-  }
-  return []
-}
+): Array<PrismicPartner | null | undefined> =>
+  !!idx(partnerArray, _ => _.edges)
+    ? idx(partnerArray, _ => _.edges)!
+        .filter(item => idx(item, _ => _.node.data.type) === type)
+        .map(item => item.node)
+    : []
 
 export const sortPartners = (
   partners: Array<PrismicPartner | null | undefined>

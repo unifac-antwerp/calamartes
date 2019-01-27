@@ -56,6 +56,10 @@ export default css`
     ${theme.typo.textstyle.heading02}
   }
 
+  h3 {
+    ${theme.typo.textstyle.heading03}
+  }
+
   p {
     ${theme.typo.textstyle.paragraph};
 

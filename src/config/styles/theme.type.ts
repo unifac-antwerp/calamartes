@@ -39,6 +39,7 @@ type TFontweights = {
 type TTextstyle = {
   heading01: CSSObject
   heading02: CSSObject
+  heading03: CSSObject
   paragraph: CSSObject
   inlinelink: CSSObject
 }

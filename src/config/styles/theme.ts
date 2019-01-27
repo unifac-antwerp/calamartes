@@ -84,6 +84,12 @@ const textstyle = {
     font-weight: ${fontweights.bold};
     color: ${colors.neutral01};
   `,
+  heading03: css`
+    font-family: ${fonts.heading};
+    font-size: 20px;
+    font-weight: ${fontweights.bold};
+    color: ${colors.neutral02};
+  `,
   paragraph: css`
     font-family: ${fonts.default};
     font-size: 17px;

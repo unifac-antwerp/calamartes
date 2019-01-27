@@ -7,6 +7,7 @@ type TProps = {
 
 const navigationItems = [
   {
+    hidden: true,
     link: 'info',
     name: 'info',
   },
@@ -20,6 +21,7 @@ const navigationItems = [
     name: 'partners',
   },
   {
+    hidden: true,
     link: 'contact',
     name: 'contact',
   },

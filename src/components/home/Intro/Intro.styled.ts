@@ -5,8 +5,14 @@ import styled from 'styled-components'
 export const Wrap = styled.section`
   display: flex;
   position: relative;
+  flex-direction: column;
   z-index: 15;
-  margin: 96px auto 144px !important;
+  margin: -23px auto 144px !important;
+
+  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.m}) {
+    flex-direction: row;
+    margin: 96px auto 144px !important;
+  }
 `
 
 export const TextWrap = styled.div`
@@ -15,9 +21,18 @@ export const TextWrap = styled.div`
   padding: 24px;
   flex: 5;
   position: relative;
-  top: -164px;
+  top: 0;
   height: 100%;
-  /* border-bottom: 4px solid ${({ theme }: { theme: TTheme }) => theme.colors.global01}; */
+  width: auto;
+
+  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.s}) {
+    width: 72vw;
+  }
+
+  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.m}) {
+    width: auto;
+    top: -132px;
+  }
 `
 
 export const Text = styled.div`
@@ -27,6 +42,11 @@ export const Text = styled.div`
 export const ImageWrap = styled.div`
   flex: 4;
   max-height: 400px;
+
+  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.s}) {
+    width: 72vw;
+    align-self: flex-end;
+  }
 `
 
 export const Image = styled(Img)`

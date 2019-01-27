@@ -5,7 +5,7 @@ import styled from 'styled-components'
 export const Wrap = styled.header`
   height: 88vh;
   max-height: 960px;
-  min-height: 760px;
+  min-height: 620px;
   background-color: ${({ theme }) => theme.colors.neutral02};
   position: relative;
   top: 0;
@@ -31,26 +31,44 @@ export const ContentContainer = styled.header`
 export const Logo = styled.img`
   margin-top: -72px;
   user-select: none;
+  width: 200px;
+
+  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.m}) {
+    width: 280px;
+  }
 `
 
 export const InfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   position: absolute;
   right: 0;
   bottom: 80px;
+  width: 100%;
+
+  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.s}) {
+    align-items: flex-end;
+  }
 `
 
 export const Date = styled.span`
   ${({ theme }: { theme: TTheme }) => theme.typo.textstyle.heading02};
-  font-size: 44px;
+  font-size: 36px;
+
+  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.s}) {
+    font-size: 44px;
+  }
 `
 
 export const Location = styled.span`
   ${({ theme }: { theme: TTheme }) => theme.typo.textstyle.heading02};
   font-weight: ${({ theme }: { theme: TTheme }) => theme.typo.fontweights.medium};
-  font-size: 32px;
+  font-size: 24px;
+
+  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.s}) {
+    font-size: 32px;
+  }
 `
 
 export const VideoOverlay = styled.div`

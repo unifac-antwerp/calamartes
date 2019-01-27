@@ -54,6 +54,7 @@ type TGrid = {
 }
 
 type TBreakpoints = {
+  xs: string
   s: string
   m: string
   l: string

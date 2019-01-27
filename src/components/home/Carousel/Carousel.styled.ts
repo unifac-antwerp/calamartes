@@ -7,13 +7,17 @@ const coreOrnamentCSS = css`
   content: '';
   display: block;
   z-index: -10;
+  height: 100px;
+
+  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.m}) {
+    height: 180px;
+  }
 `
 
 const topOrnamentCSS = css`
   ${coreOrnamentCSS}
   top: -64px;
   right: 0;
-  height: 180px;
   width: 56vw;
 `
 
@@ -21,7 +25,6 @@ const bottomOrnamentCSS = css`
   ${coreOrnamentCSS}
   bottom: -64px;
   left: 0;
-  height: 180px;
   width: 64vw;
 `
 
@@ -65,10 +68,14 @@ export const StyledSlider = styled(Slider)`
     background-color: ${({ theme }: { theme: TTheme }) => theme.colors.neutral01};
     z-index: 10;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(25%, -50%);
     width: 40px;
     height: 40px;
     ${({ theme }: { theme: TTheme }) => theme.shadows.shadow01};
+
+    @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.m}) {
+      transform: translate(-50%, -50%);
+    }
 
     &:hover {
       cursor: pointer;
@@ -76,8 +83,12 @@ export const StyledSlider = styled(Slider)`
   }
 
   .slick-next {
-    transform: translate(50%, -50%);
+    transform: translate(-25%, -50%);
     right: 0;
+
+    @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.m}) {
+      transform: translate(50%, -50%);
+    }
   }
 
   .gatsby-image-wrapper {

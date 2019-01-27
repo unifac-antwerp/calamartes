@@ -39,9 +39,17 @@ export default css`
   }
 
   .inner-container {
-    width: 90%;
+    width: 96%;
     max-width: ${theme.grid.maxWidth};
     margin: 0 auto;
+
+    @media (min-width: ${theme.breakpoints.s}) {
+      width: 94%;
+    }
+
+    @media (min-width: ${theme.breakpoints.m}) {
+      width: 90%;
+    }
   }
 
   .hide {

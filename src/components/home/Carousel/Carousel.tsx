@@ -1,11 +1,11 @@
 import Arrow from '@assets/svg/Arrow'
-import Img, { FixedObject } from 'gatsby-image'
+import Img, { FluidObject } from 'gatsby-image'
 import * as React from 'react'
 import { Settings } from 'react-slick'
 import { ArrowWrap, InnerWrap, StyledSlider, Wrap } from './Carousel.styled'
 
 type TProps = {
-  images: Array<FixedObject | null | undefined>
+  images: Array<FluidObject | null | undefined>
 }
 
 const CarouselComponent = (props: TProps) => {
@@ -16,13 +16,13 @@ const CarouselComponent = (props: TProps) => {
     prevArrow: <CustomArrow />,
   }
 
-  return images ? (
+  return !!images ? (
     <Wrap>
       {/* second wrapper to add another ornament */}
       <InnerWrap>
         <div className="inner-container">
           <StyledSlider {...sliderSettings}>
-            {images.map((image, index) => image && <Img key={index} fixed={image} alt="" />)}
+            {images.map((image, index) => image && <Img key={index} fluid={image} alt="" />)}
           </StyledSlider>
         </div>
       </InnerWrap>

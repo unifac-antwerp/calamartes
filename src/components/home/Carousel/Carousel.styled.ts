@@ -7,27 +7,42 @@ const coreOrnamentCSS = css`
   content: '';
   display: block;
   z-index: -10;
+  height: 100px;
+
+  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.m}) {
+    height: 180px;
+  }
 `
 
 const topOrnamentCSS = css`
   ${coreOrnamentCSS}
-  top: -64px;
+  top: -24px;
   right: 0;
-  height: 180px;
   width: 56vw;
+
+  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.s}) {
+    top: -64px;
+  }
 `
 
 const bottomOrnamentCSS = css`
   ${coreOrnamentCSS}
-  bottom: -64px;
+  bottom: -24px;
   left: 0;
-  height: 180px;
   width: 64vw;
+
+  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.s}) {
+    bottom: -64px;
+  }
 `
 
 export const Wrap = styled.section`
   position: relative;
-  margin-bottom: 168px;
+  margin-bottom: 20vw;
+  
+  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.m}) {
+    margin-bottom: 168px;
+  }
 
   &:before {
     ${topOrnamentCSS}
@@ -65,10 +80,14 @@ export const StyledSlider = styled(Slider)`
     background-color: ${({ theme }: { theme: TTheme }) => theme.colors.neutral01};
     z-index: 10;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(25%, -50%);
     width: 40px;
     height: 40px;
     ${({ theme }: { theme: TTheme }) => theme.shadows.shadow01};
+
+    @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.m}) {
+      transform: translate(-50%, -50%);
+    }
 
     &:hover {
       cursor: pointer;
@@ -76,8 +95,12 @@ export const StyledSlider = styled(Slider)`
   }
 
   .slick-next {
-    transform: translate(50%, -50%);
+    transform: translate(-25%, -50%);
     right: 0;
+
+    @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.m}) {
+      transform: translate(50%, -50%);
+    }
   }
 
   .gatsby-image-wrapper {

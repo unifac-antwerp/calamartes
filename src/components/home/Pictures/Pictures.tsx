@@ -11,7 +11,7 @@ const Pictures = (props: TProps) => {
   const { mainPicture, secondaryPicture } = props
 
   return (
-    <Wrap className="innerContainer">
+    <Wrap className="inner-container">
       {secondaryPicture && (
         <SecondaryPictureWrap>
           <StyledImg fluid={secondaryPicture} className="secondary" />

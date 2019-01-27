@@ -11,7 +11,7 @@ const IndexPage = () => (
       const homepagedata = idx(allPrismicHomepage, _ => _.edges[0].node.data)
       const introImage = idx(homepagedata, _ => _.intro_image.localFile.childImageSharp.fluid)
       const carouselImages = idx(homepagedata, _ =>
-        _.carousel_images.map(image => image.image.localFile.childImageSharp.fixed)
+        _.carousel_images.map(image => image.image.localFile.childImageSharp.fluid)
       )
       const pictures = [
         idx(homepagedata, _ => _.pictures_main_picture.localFile.childImageSharp.fluid),
@@ -82,8 +82,8 @@ const pageQuery = graphql`
               image {
                 localFile {
                   childImageSharp {
-                    fixed(height: 500) {
-                      ...GatsbyImageSharpFixed
+                    fluid(maxHeight: 500) {
+                      ...GatsbyImageSharpFluid
                     }
                   }
                 }

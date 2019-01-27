@@ -17,7 +17,7 @@ const Instagram = (props: TProps) => {
 
   return (
     <Wrap>
-      <InnerWrap className="innerContainer">
+      <InnerWrap className="inner-container">
         <Title>{title}</Title>
         <Description dangerouslySetInnerHTML={{ __html: description }} />
         <Images>

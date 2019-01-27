@@ -38,10 +38,18 @@ export default css`
     font-weight: ${theme.typo.fontweights.bold};
   }
 
-  .innerContainer {
-    width: 90%;
+  .inner-container {
+    width: 96%;
     max-width: ${theme.grid.maxWidth};
     margin: 0 auto;
+
+    @media (min-width: ${theme.breakpoints.s}) {
+      width: 94%;
+    }
+
+    @media (min-width: ${theme.breakpoints.m}) {
+      width: 90%;
+    }
   }
 
   .hide {

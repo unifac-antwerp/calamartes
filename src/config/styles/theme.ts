@@ -48,6 +48,7 @@ const grid = {
 }
 
 const breakpoints = {
+  xs: '400px',
   s: '600px',
   m: '900px',
   l: '1200px',
@@ -80,9 +81,13 @@ const textstyle = {
   `,
   heading02: css`
     font-family: ${fonts.heading};
-    font-size: 36px;
+    font-size: 26px;
     font-weight: ${fontweights.bold};
     color: ${colors.neutral01};
+
+    @media (min-width: ${breakpoints.m}) {
+      font-size: 36px;
+    }
   `,
   heading03: css`
     font-family: ${fonts.heading};
@@ -92,18 +97,26 @@ const textstyle = {
   `,
   paragraph: css`
     font-family: ${fonts.default};
-    font-size: 17px;
+    font-size: 16px;
     font-weight: ${fontweights.normal};
     line-height: 1.24;
     color: ${colors.neutral03};
+
+    @media (min-width: ${breakpoints.m}) {
+      font-size: 17px;
+    }
   `,
   inlinelink: css`
     font-family: ${fonts.default};
-    font-size: 17px;
+    font-size: 16px;
     font-weight: ${fontweights.normal};
     line-height: 1.24;
     color: ${colors.neutral03};
     text-decoration: underline;
+
+    @media (min-width: ${breakpoints.m}) {
+      font-size: 17px;
+    }
   `,
 }
 

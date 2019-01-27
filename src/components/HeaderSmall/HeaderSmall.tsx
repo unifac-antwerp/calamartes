@@ -10,7 +10,7 @@ type TProps = {
 const HeaderSmall = ({ title, subtitle, picture }: TProps) => (
   <React.Fragment>
     <Wrap bgImage={picture}>
-      <InnerWrap className="innerContainer">
+      <InnerWrap className="inner-container">
         <h2>{title}</h2>
         <Subtitle>{subtitle}</Subtitle>
       </InnerWrap>

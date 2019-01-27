@@ -44,12 +44,20 @@ export const Title = styled.h2`
 export const Text = styled.div`
   margin: 24px 0 40px;
   text-align: center;
-  width: 88%;
+  width: 98%;
   max-width: 896px;
+
+  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.m}) {
+    width: 88%;
+  }
 
   p,
   a {
     color: ${({ theme }: { theme: TTheme }) => theme.colors.neutral01};
-    font-size: 19px;
+    font-size: 17px;
+
+    @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.m}) {
+      font-size: 19px;
+    }
   }
 `

@@ -1,3 +1,4 @@
+import richTextStyle from '@config/styles/richTextStyle'
 import slickStyle from '@config/styles/slickStyle'
 import { css } from 'styled-components'
 import { theme } from './theme'
@@ -32,6 +33,10 @@ export default css`
       position: absolute;
       z-index: -999;
     }
+  }
+
+  .richtext {
+    ${richTextStyle}
   }
 
   strong {

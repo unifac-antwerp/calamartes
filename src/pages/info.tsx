@@ -17,11 +17,12 @@ const Info = () => (
             subtitle={(allPrismicInfoPageData && allPrismicInfoPageData.subtitle) || ''}
             picture={(allPrismicInfoPageData && allPrismicInfoPageData.header_image.url) || ''}
           />
-
-          <div
-            className="inner-container"
-            dangerouslySetInnerHTML={{ __html: (allPrismicInfoPageData && allPrismicInfoPageData.info.html) || '' }}
-          />
+          <div className="inner-container">
+            <main
+              className="richtext"
+              dangerouslySetInnerHTML={{ __html: (allPrismicInfoPageData && allPrismicInfoPageData.info.html) || '' }}
+            />
+          </div>
         </Layout>
       )
     }}

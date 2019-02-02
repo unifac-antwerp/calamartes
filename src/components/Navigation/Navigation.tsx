@@ -33,7 +33,6 @@ const navigationItems = [
     name: 'partners',
   },
   {
-    hidden: true,
     link: 'contact',
     name: 'contact',
   },

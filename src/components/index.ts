@@ -1,5 +1,6 @@
 export * from './home'
 export * from './Button'
+export * from './contact'
 export * from './Footer'
 export * from './Navigation'
 export * from './Layout'

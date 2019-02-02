@@ -6,12 +6,25 @@ type TProps = {
   link: string
   text: string
   light?: boolean
+  external?: boolean
 }
 
-const ButtonComponent = ({ text, link, light = false }: TProps) => (
-  <Link to={link}>
-    <Button light={light}>{text}</Button>
-  </Link>
-)
+const ButtonComponent = ({ text, link, light = false, external = false }: TProps) => {
+  const btn = <Button light={light}>{text}</Button>
+
+  const wrapperStyle = {
+    display: 'inline-block',
+  }
+
+  return external ? (
+    <a href={link} target={link.startsWith('mailto') ? '' : '_blank'} style={wrapperStyle}>
+      {btn}
+    </a>
+  ) : (
+    <Link to={link} style={wrapperStyle}>
+      {btn}
+    </Link>
+  )
+}
 
 export default ButtonComponent

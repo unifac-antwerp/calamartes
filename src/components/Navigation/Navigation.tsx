@@ -1,4 +1,5 @@
 import Logo from '@assets/svg/Logo'
+import { Location } from '@reach/router'
 import * as React from 'react'
 import {
   FacebookIcon,
@@ -43,10 +44,14 @@ const Navigation = ({ siteTitle = '' }: TProps) => (
     <InnerWrap className="inner-container">
       <LogoWrap to="/">
         <Logo />
-        <TitleWrap>
-          <Title>{siteTitle}</Title>
-          <SubTitle>Cultuurfestival</SubTitle>
-        </TitleWrap>
+        <Location>
+          {({ location }) => (
+            <TitleWrap className={location.pathname !== '/' ? 'hide' : ''}>
+              <Title>{siteTitle}</Title>
+              <SubTitle>Cultuurfestival</SubTitle>
+            </TitleWrap>
+          )}
+        </Location>
       </LogoWrap>
       <NavWrap>
         <nav>

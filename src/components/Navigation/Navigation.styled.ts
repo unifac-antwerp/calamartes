@@ -16,7 +16,7 @@ export const InnerWrap = styled.div`
   align-items: center;
   position: relative;
 
-  padding: 24px 0;
+  padding: 24px 0 !important;
 `
 
 export const LogoWrap = styled(Link)`
@@ -27,17 +27,22 @@ export const LogoWrap = styled(Link)`
 `
 
 export const TitleWrap = styled.div`
-  margin-left: 16px;
+  display: none;
+
+  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.s}) {
+    display: block;
+    margin-left: 16px;
+  }
 `
 
 export const Title = styled.h1`
-  font-size: 17px;
+  font-size: 15px;
   font-weight: ${({ theme }: { theme: TTheme }) => theme.typo.fontweights.medium};
 `
 
 export const SubTitle = styled.span`
   display: block;
-  font-size: 13px;
+  font-size: 12px;
   font-family: ${({ theme }: { theme: TTheme }) => theme.typo.fonts.heading};
 `
 

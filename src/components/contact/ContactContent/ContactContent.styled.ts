@@ -20,6 +20,10 @@ export const ContentWrap = styled.div`
     width: auto;
   }
 
+  p {
+    max-width: 600px;
+  }
+
   .btns {
     margin-top: 40px;
 

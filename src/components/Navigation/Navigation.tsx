@@ -1,5 +1,18 @@
+import Logo from '@assets/svg/Logo'
 import * as React from 'react'
-import { FacebookIcon, InnerWrap, InstagramIcon, LogoWrap, MainNav, NavLink, NavWrap, Wrap } from './Navigation.styled'
+import {
+  FacebookIcon,
+  InnerWrap,
+  InstagramIcon,
+  LogoWrap,
+  MainNav,
+  NavLink,
+  NavWrap,
+  SubTitle,
+  Title,
+  TitleWrap,
+  Wrap,
+} from './Navigation.styled'
 
 type TProps = {
   siteTitle?: string
@@ -30,8 +43,13 @@ const navigationItems = [
 const Navigation = ({ siteTitle = '' }: TProps) => (
   <Wrap>
     <InnerWrap className="inner-container">
-      <h1 className="hide">{siteTitle}</h1>
-      <LogoWrap to="/">LOGO</LogoWrap>
+      <LogoWrap to="/">
+        <Logo />
+        <TitleWrap>
+          <Title>{siteTitle}</Title>
+          <SubTitle>Cultuurfestival</SubTitle>
+        </TitleWrap>
+      </LogoWrap>
       <NavWrap>
         <nav>
           <MainNav>

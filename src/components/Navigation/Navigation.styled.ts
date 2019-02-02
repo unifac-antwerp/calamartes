@@ -21,7 +21,24 @@ export const InnerWrap = styled.div`
 
 export const LogoWrap = styled(Link)`
   text-decoration: none;
-  color: white;
+  color: ${({ theme }: { theme: TTheme }) => theme.colors.neutral01};
+  display: flex;
+  align-items: center;
+`
+
+export const TitleWrap = styled.div`
+  margin-left: 16px;
+`
+
+export const Title = styled.h1`
+  font-size: 17px;
+  font-weight: ${({ theme }: { theme: TTheme }) => theme.typo.fontweights.medium};
+`
+
+export const SubTitle = styled.span`
+  display: block;
+  font-size: 13px;
+  font-family: ${({ theme }: { theme: TTheme }) => theme.typo.fonts.heading};
 `
 
 export const NavWrap = styled.div`

@@ -15,11 +15,6 @@ export default css`
   html {
     -webkit-text-size-adjust: 100%;
     font-size: 62.5%;
-  }
-
-  body {
-    background-color: ${theme.colors.neutral01};
-    ${theme.typo.textstyle.paragraph};
     position: relative;
 
     &::after {
@@ -33,6 +28,11 @@ export default css`
       position: absolute;
       z-index: -999;
     }
+  }
+
+  body {
+    background-color: ${theme.colors.neutral01};
+    ${theme.typo.textstyle.paragraph};
   }
 
   .richtext {

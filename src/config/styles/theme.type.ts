@@ -17,6 +17,7 @@ type TColors = {
   global01: string
   global02: string
   global03: string
+  global04: string
 }
 
 type TFonts = {

@@ -11,6 +11,7 @@ const colors = {
   global01: '#232F45',
   global02: lighten(0.1, '#232F45'),
   global03: lighten(0.15, '#232F45'),
+  global04: darken(0.1, '#232F45'),
 }
 
 const shadows = {

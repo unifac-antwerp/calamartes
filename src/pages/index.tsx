@@ -20,7 +20,10 @@ const IndexPage = () => (
 
       return (
         <Layout>
-          <Header video={homepagedata && homepagedata.header_movie.url} />
+          <Header
+            video={homepagedata && homepagedata.header_movie.url}
+            image={(homepagedata && homepagedata.fallback_image.url) || ''}
+          />
 
           {homepagedata && homepagedata.intro_text && (
             <Intro
@@ -63,6 +66,9 @@ const pageQuery = graphql`
         node {
           data {
             header_movie {
+              url
+            }
+            fallback_image {
               url
             }
             intro_text {

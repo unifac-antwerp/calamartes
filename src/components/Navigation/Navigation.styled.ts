@@ -78,10 +78,39 @@ export const MainNav = styled.ol`
   }
 `
 
+const underlineCSS = css`
+  content: '';
+  display: block;
+  position: absolute;
+  height: 2px;
+  bottom: -2px;
+  background-color: ${({ theme }: { theme: TTheme }) => theme.colors.neutral01};
+  width: 100%;
+`
+
 export const NavLink = styled(Link)`
   color: ${({ theme }: { theme: TTheme }) => theme.colors.neutral01};
   font-family: ${({ theme }: { theme: TTheme }) => theme.typo.fonts.heading};
   font-weight: ${({ theme }: { theme: TTheme }) => theme.typo.fontweights.light};
   text-decoration: none;
   text-transform: capitalize;
+  position: relative;
+
+  &:after {
+    ${underlineCSS}
+    transform: scale(0);
+    transition: transform 250ms ease-in-out;
+  }
+
+  &:hover {
+    &:after {
+      transform: scale(0.6);
+    }
+  }
+
+  &.active {
+    &:after {
+      transform: scale(1);
+    }
+  }
 `

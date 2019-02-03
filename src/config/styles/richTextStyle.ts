@@ -8,6 +8,15 @@ export default css`
   padding: 40px 0;
   max-width: 960px;
 
+  li {
+    list-style: square;
+    margin-left: 32px;
+
+    &:last-child {
+      margin-bottom: 16px;
+    }
+  }
+
   div[data-oembed-provider='Vimeo'] {
     padding: 56.5% 0 0 0 !important;
     position: relative !important;

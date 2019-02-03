@@ -57,7 +57,12 @@ const Layout = ({ children }: TProps) => (
 
       return (
         <React.Fragment>
-          <Navigation title={site_title} subtitle={site_subtitle} />
+          <Navigation
+            title={site_title}
+            subtitle={site_subtitle}
+            facebookLink={(!!generalData && generalData.instagram_link.url) || '#'}
+            instagramLink={(!!generalData && generalData.facebook_link.url) || '#'}
+          />
           <SiteWrap>{children}</SiteWrap>
           <Footer address={address} phone={phone} email={email} socials={socials!} />
         </React.Fragment>

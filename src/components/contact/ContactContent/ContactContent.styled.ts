@@ -13,10 +13,9 @@ export const Wrap = styled.section`
 
 export const ContentWrap = styled.div`
   flex: 4;
-  padding: 0;
 
   @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.m}) {
-    padding: 16px 32px 0 0;
+    padding-right: 32px;
     width: auto;
   }
 

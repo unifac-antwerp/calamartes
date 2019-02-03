@@ -1,7 +1,9 @@
 import { css } from 'styled-components'
+import { theme } from './theme'
 
 const mediaCSS = css`
   margin: 32px 0;
+  background-color: ${theme.colors.global02};
 `
 
 export default css`

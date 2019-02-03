@@ -2,5 +2,5 @@ import styled from 'styled-components'
 
 export const SiteWrap = styled.main`
   margin: 0 auto;
-  min-height: 95vh;
+  min-height: 90vh;
 `

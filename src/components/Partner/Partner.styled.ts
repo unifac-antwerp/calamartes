@@ -4,6 +4,7 @@ import { PartnerStyle } from './Partner'
 
 const mainPartnerStyle = css`
   background-color: ${({ theme }: { theme: TTheme }) => theme.colors.neutral01};
+
   padding: 16px;
   z-index: 10;
   position: relative;
@@ -11,13 +12,9 @@ const mainPartnerStyle = css`
   flex-direction: column;
   height: 100%;
 `
-const friendStyle = css`
-  transform: scale(0.8);
-`
 
 export const Wrap = styled.article`
-  ${({ styleName }: { styleName: PartnerStyle }) =>
-    styleName === PartnerStyle.detailFriend ? friendStyle : mainPartnerStyle}
+  ${({ styleName }: { styleName: PartnerStyle }) => styleName === PartnerStyle.detailMain && mainPartnerStyle}
 
   &:hover {
     ${({ onClick }) => !!onClick && 'cursor: pointer;'};
@@ -26,12 +23,17 @@ export const Wrap = styled.article`
 
 export const ImageWrap = styled.div`
   ${({ styleName }: { styleName: PartnerStyle }) =>
-    styleName === PartnerStyle.detailMain ? 'height: 180px;' : 'height: 120px;'}
+    styleName === PartnerStyle.detailMain ? 'height: 180px;' : 'height: 100px;'}
 
   width: auto;
   margin: 0 auto;
   ${({ styleName }: { styleName: PartnerStyle }) =>
-    styleName === PartnerStyle.detailMain ? 'margin: 24px auto;' : 'margin: 8px;'}
+    styleName === PartnerStyle.detailMain ? 'margin: 24px auto;' : 'margin: 12px'}
+`
+
+const grayscaleImgCSS = css`
+  filter: grayscale(1);
+  opacity: 0.3;
 `
 
 export const StyledImg = styled.img`
@@ -44,9 +46,11 @@ export const StyledImg = styled.img`
       min-width: 180px;
       min-height: 180px;`
       : `
-      min-width: 120px;
-      min-height: 120px;
+      min-width: 100px;
+      min-height: 100px;
     `}
+
+  ${({ styleName }: { styleName: PartnerStyle }) => styleName === PartnerStyle.default && grayscaleImgCSS}
 `
 
 export const Title = styled.h3`

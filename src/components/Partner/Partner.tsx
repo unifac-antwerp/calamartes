@@ -20,10 +20,10 @@ const Partner = (props: TProps) => {
   const { link, image, description = null, name, styleName = PartnerStyle.default } = props
 
   return (
-    <Wrap onClick={styleName === PartnerStyle.detailFriend ? () => window.open(link) : undefined} styleName={styleName}>
+    <Wrap onClick={styleName !== PartnerStyle.detailMain ? () => window.open(link) : undefined} styleName={styleName}>
       {!!image && (
         <ImageWrap styleName={styleName}>
-          <StyledImg src={image} alt={name} styleName={styleName} />
+          <StyledImg src={image} alt={name} styleName={styleName} title={name} />
         </ImageWrap>
       )}
 

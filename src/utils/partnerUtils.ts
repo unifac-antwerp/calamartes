@@ -1,5 +1,6 @@
 import idx from 'idx'
 import { get } from 'lodash'
+import { TPartnerHomepage } from 'src/pages'
 import { PrismicPartner, PrismicPartnerConnection } from '../graphql'
 
 export enum PartnerType {
@@ -27,4 +28,14 @@ export const sortPartners = (
       (get(b, 'data.importance') - get(a, 'data.importance') || get(a, 'data.name').localeCompare(get(b, 'data.name')))
   )
 
-// TODO: sortHomepagePartners
+export const sortHomepagePartners = (partnerArray: PrismicPartnerConnection | null | undefined): TPartnerHomepage[] =>
+  (!!idx(partnerArray, _ => _.edges) &&
+    idx(partnerArray, _ => _.edges)!
+      .map(item => ({
+        image: item.node.data.image.url,
+        importance: item.node.data.importance,
+        name: item.node.data.name,
+        url: item.node.data.link.url,
+      }))
+      .sort((a, b) => b.importance - a.importance)) ||
+  []

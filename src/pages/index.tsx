@@ -1,13 +1,21 @@
-import { Carousel, Header, Instagram, Intro, Layout, PartnerCTA, Pictures } from '@components'
+import { Carousel, Header, Instagram, Intro, Layout, PartnerCTA, Partners, Pictures } from '@components'
+import { sortHomepagePartners } from '@utils/partnerUtils'
 import { graphql, StaticQuery } from 'gatsby'
 import idx from 'idx'
 import * as React from 'react'
 import { Query } from '../graphql'
 
+export type TPartnerHomepage = {
+  image: string
+  importance: number | null
+  url: string
+  name: string
+}
+
 const IndexPage = () => (
   <StaticQuery
     query={pageQuery}
-    render={({ allInstaNode, allPrismicGeneral, allPrismicHomepage }: Query) => {
+    render={({ allInstaNode, allPrismicGeneral, allPrismicHomepage, allPrismicPartner }: Query) => {
       const homepagedata = idx(allPrismicHomepage, _ => _.edges[0].node.data)
       const introImage = idx(homepagedata, _ => _.intro_image.localFile.childImageSharp.fluid)
       const carouselImages = idx(homepagedata, _ =>
@@ -17,6 +25,7 @@ const IndexPage = () => (
         idx(homepagedata, _ => _.pictures_main_picture.localFile.childImageSharp.fluid),
         idx(homepagedata, _ => _.pictures_secondary_picture.localFile.childImageSharp.fluid),
       ]
+      const homepagePartners = sortHomepagePartners(allPrismicPartner)
 
       const { location = '', start_date = '', end_date = '' } = { ...idx(allPrismicGeneral, _ => _.edges[0].node.data) }
 
@@ -58,6 +67,7 @@ const IndexPage = () => (
               title={homepagedata.partnercta_title}
             />
           )}
+          <Partners partners={homepagePartners} />
         </Layout>
       )
     }}
@@ -73,6 +83,22 @@ const pageQuery = graphql`
             location
             start_date
             end_date
+          }
+        }
+      }
+    }
+    allPrismicPartner {
+      edges {
+        node {
+          id
+          data {
+            image {
+              url
+            }
+            link {
+              url
+            }
+            importance
           }
         }
       }

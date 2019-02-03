@@ -1,28 +1,54 @@
+import { TSocialItem } from '@components/Layout/Layout'
 import * as React from 'react'
-import { InnerWrap, MadeBy, Wrap } from './Footer.styled'
+// @ts-ignore
+import Twemoji from 'react-twemoji'
+import { InnerWrap, List, MadeBy, Wrap } from './Footer.styled'
 
-const Footer = () => (
+type TProps = {
+  address: string
+  phone: string
+  email: string
+  socials: TSocialItem[]
+}
+
+const Footer = ({ address, phone, email, socials }: TProps) => (
   <Wrap>
-    <InnerWrap className="inner-container">
-      <ol>
-        <li>
-          <address>
-            address 30 <br /> belgium
-          </address>
-        </li>
-        <li>0349823483</li>
-        <li>email@mail.com</li>
-      </ol>
+    <div className="inner-container">
+      <InnerWrap>
+        <List>
+          <ListItemLink link={`https://www.google.com/maps/search/${address.replace(/\s/g, ' ')}`}>
+            <address>{address}</address>
+          </ListItemLink>
+          <ListItemLink link={`tel:${phone}`}>{phone}</ListItemLink>
+          <ListItemLink link={`mailto:${email}`}>{email}</ListItemLink>
+        </List>
+        <List>
+          {socials.map(social => (
+            <ListItemLink link={social.link} key={social.name}>
+              <React.Fragment>
+                {React.cloneElement(social.icon, { width: 16, height: 16, style: { marginRight: 6 } })}
+                {social.name}
+              </React.Fragment>
+            </ListItemLink>
+          ))}
+        </List>
+      </InnerWrap>
       <MadeBy>
-        Made with love by <a href="https://www.wouterlanduydt.be">Wouter Landuydt </a>
+        Made with <Twemoji options={{ className: 'emoji' }}>💙</Twemoji> by{' '}
+        <a href="https://www.wouterlanduydt.be" target="_blank">
+          Wouter Landuydt
+        </a>
       </MadeBy>
-      <ol>
-        <li>linkedin</li>
-        <li>ig</li>
-        <li>facebook</li>
-      </ol>
-    </InnerWrap>
+    </div>
   </Wrap>
+)
+
+const ListItemLink = ({ link, children }: { link: string; children: JSX.Element | string }) => (
+  <li>
+    <a href={link} target="_blank">
+      {children}
+    </a>
+  </li>
 )
 
 export default Footer

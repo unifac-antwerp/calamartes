@@ -43,6 +43,11 @@ export default css`
     font-weight: ${theme.typo.fontweights.bold};
   }
 
+  address {
+    white-space: pre;
+    display: block;
+  }
+
   .inner-container {
     width: 94%;
     max-width: ${theme.grid.maxWidth};

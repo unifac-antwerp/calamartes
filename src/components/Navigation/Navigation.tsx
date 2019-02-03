@@ -16,7 +16,8 @@ import {
 } from './Navigation.styled'
 
 type TProps = {
-  siteTitle?: string
+  title: string
+  subtitle: string
 }
 
 const navigationItems = [
@@ -39,7 +40,7 @@ const navigationItems = [
   },
 ]
 
-const Navigation = ({ siteTitle = '' }: TProps) => (
+const Navigation = ({ title, subtitle }: TProps) => (
   <Wrap>
     <InnerWrap className="inner-container">
       <LogoWrap to="/">
@@ -47,8 +48,8 @@ const Navigation = ({ siteTitle = '' }: TProps) => (
         <Location>
           {({ location }) => (
             <TitleWrap className={location.pathname !== '/' ? 'hide' : ''}>
-              <Title>{siteTitle}</Title>
-              <SubTitle>Cultuurfestival</SubTitle>
+              <Title>{title}</Title>
+              <SubTitle>{subtitle}</SubTitle>
             </TitleWrap>
           )}
         </Location>

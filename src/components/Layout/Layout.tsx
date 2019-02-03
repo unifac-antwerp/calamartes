@@ -1,32 +1,99 @@
 import { Footer, Navigation } from '@components'
 import withConnectors from '@connectors'
 import { graphql, StaticQuery } from 'gatsby'
+import idx from 'idx'
 import * as React from 'react'
+import { Query } from 'src/graphql'
+import { Link } from 'styled-icons/boxicons-regular/Link'
+import { Facebook } from 'styled-icons/fa-brands/Facebook'
+import { Instagram } from 'styled-icons/fa-brands/Instagram'
+import { Linkedin } from 'styled-icons/fa-brands/Linkedin'
 import { SiteWrap } from './Layout.styled'
 
 type TProps = {
   children: React.ReactNode
 }
 
+export type TSocialItem = {
+  link: string
+  name: string
+  icon: JSX.Element
+}
+
 const Layout = ({ children }: TProps) => (
   <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
+    query={layoutQuery}
+    render={({ allPrismicGeneral }: Query) => {
+      const generalData = idx(allPrismicGeneral, _ => _.edges[0].node.data)
+
+      const { site_title = 'Calamartes', site_subtitle = 'Cultuurfestival', address = '', phone = '', email = '' } = {
+        ...generalData,
+      }
+
+      const socials =
+        generalData &&
+        ([
+          {
+            icon: <Instagram />,
+            link: generalData.instagram_link.url,
+            name: 'Instagram',
+          },
+          {
+            icon: <Facebook />,
+            link: generalData.facebook_link.url,
+            name: 'Facebook',
+          },
+          {
+            icon: <Linkedin />,
+            link: generalData.linkedin.url,
+            name: 'Linkedin',
+          },
+          {
+            icon: <Link />,
+            link: generalData.unifac_website.url,
+            name: 'Unifac Website',
+          },
+        ] as TSocialItem[])
+
+      return (
+        <React.Fragment>
+          <Navigation title={site_title} subtitle={site_subtitle} />
+          <SiteWrap>{children}</SiteWrap>
+          <Footer address={address} phone={phone} email={email} socials={socials!} />
+        </React.Fragment>
+      )
+    }}
+  />
+)
+
+const layoutQuery = graphql`
+  {
+    allPrismicGeneral {
+      edges {
+        node {
+          data {
+            instagram_link {
+              url
+            }
+            facebook_link {
+              url
+            }
+            linkedin {
+              url
+            }
+            site_title
+            site_subtitle
+            address
+            phone
+            email
+            unifac_website {
+              url
+            }
           }
         }
       }
-    `}
-    render={data => (
-      <React.Fragment>
-        <Navigation siteTitle={data.site.siteMetadata.title} />
-        <SiteWrap>{children}</SiteWrap>
-        <Footer />
-      </React.Fragment>
-    )}
-  />
-)
+    }
+  }
+`
 
 export default withConnectors(Layout)

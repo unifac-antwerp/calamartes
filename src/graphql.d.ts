@@ -3209,6 +3209,10 @@ export interface PrismicGeneralConnectionLangQueryString_2 {
 }
 
 export interface PrismicGeneralConnectionDataInputObject_2 {
+  site_title?: Maybe<PrismicGeneralConnectionDataSiteTitleQueryString_2>
+
+  site_subtitle?: Maybe<PrismicGeneralConnectionDataSiteSubtitleQueryString_2>
+
   main_color?: Maybe<PrismicGeneralConnectionDataMainColorQueryString_2>
 
   start_date?: Maybe<PrismicGeneralConnectionDataStartDateQueryString_2>
@@ -3221,9 +3225,43 @@ export interface PrismicGeneralConnectionDataInputObject_2 {
 
   instagram_link?: Maybe<PrismicGeneralConnectionDataInstagramLinkInputObject_2>
 
+  linkedin?: Maybe<PrismicGeneralConnectionDataLinkedinInputObject_2>
+
   email?: Maybe<PrismicGeneralConnectionDataEmailQueryString_2>
 
+  phone?: Maybe<PrismicGeneralConnectionDataPhoneQueryString_2>
+
   unifac_website?: Maybe<PrismicGeneralConnectionDataUnifacWebsiteInputObject_2>
+
+  address?: Maybe<PrismicGeneralConnectionDataAddressQueryString_2>
+}
+
+export interface PrismicGeneralConnectionDataSiteTitleQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicGeneralConnectionDataSiteSubtitleQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
 }
 
 export interface PrismicGeneralConnectionDataMainColorQueryString_2 {
@@ -3454,7 +3492,123 @@ export interface PrismicGeneralConnectionDataInstagramLinkRawUrlQueryString_2 {
   nin?: Maybe<(Maybe<string>)[]>
 }
 
+export interface PrismicGeneralConnectionDataLinkedinInputObject_2 {
+  link_type?: Maybe<PrismicGeneralConnectionDataLinkedinLinkTypeQueryString_2>
+
+  url?: Maybe<PrismicGeneralConnectionDataLinkedinUrlQueryString_2>
+
+  target?: Maybe<PrismicGeneralConnectionDataLinkedinTargetQueryString_2>
+
+  raw?: Maybe<PrismicGeneralConnectionDataLinkedinRawInputObject_2>
+}
+
+export interface PrismicGeneralConnectionDataLinkedinLinkTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicGeneralConnectionDataLinkedinUrlQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicGeneralConnectionDataLinkedinTargetQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicGeneralConnectionDataLinkedinRawInputObject_2 {
+  link_type?: Maybe<PrismicGeneralConnectionDataLinkedinRawLinkTypeQueryString_2>
+
+  url?: Maybe<PrismicGeneralConnectionDataLinkedinRawUrlQueryString_2>
+
+  target?: Maybe<PrismicGeneralConnectionDataLinkedinRawTargetQueryString_2>
+}
+
+export interface PrismicGeneralConnectionDataLinkedinRawLinkTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicGeneralConnectionDataLinkedinRawUrlQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicGeneralConnectionDataLinkedinRawTargetQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
 export interface PrismicGeneralConnectionDataEmailQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicGeneralConnectionDataPhoneQueryString_2 {
   eq?: Maybe<string>
 
   ne?: Maybe<string>
@@ -3541,6 +3695,20 @@ export interface PrismicGeneralConnectionDataUnifacWebsiteRawLinkTypeQueryString
 }
 
 export interface PrismicGeneralConnectionDataUnifacWebsiteRawUrlQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicGeneralConnectionDataAddressQueryString_2 {
   eq?: Maybe<string>
 
   ne?: Maybe<string>
@@ -20789,6 +20957,10 @@ export interface PrismicGeneralLangQueryString_2 {
 }
 
 export interface PrismicGeneralDataInputObject_2 {
+  site_title?: Maybe<PrismicGeneralDataSiteTitleQueryString_2>
+
+  site_subtitle?: Maybe<PrismicGeneralDataSiteSubtitleQueryString_2>
+
   main_color?: Maybe<PrismicGeneralDataMainColorQueryString_2>
 
   start_date?: Maybe<PrismicGeneralDataStartDateQueryString_2>
@@ -20801,9 +20973,43 @@ export interface PrismicGeneralDataInputObject_2 {
 
   instagram_link?: Maybe<PrismicGeneralDataInstagramLinkInputObject_2>
 
+  linkedin?: Maybe<PrismicGeneralDataLinkedinInputObject_2>
+
   email?: Maybe<PrismicGeneralDataEmailQueryString_2>
 
+  phone?: Maybe<PrismicGeneralDataPhoneQueryString_2>
+
   unifac_website?: Maybe<PrismicGeneralDataUnifacWebsiteInputObject_2>
+
+  address?: Maybe<PrismicGeneralDataAddressQueryString_2>
+}
+
+export interface PrismicGeneralDataSiteTitleQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicGeneralDataSiteSubtitleQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
 }
 
 export interface PrismicGeneralDataMainColorQueryString_2 {
@@ -21034,7 +21240,123 @@ export interface PrismicGeneralDataInstagramLinkRawUrlQueryString_2 {
   nin?: Maybe<(Maybe<string>)[]>
 }
 
+export interface PrismicGeneralDataLinkedinInputObject_2 {
+  link_type?: Maybe<PrismicGeneralDataLinkedinLinkTypeQueryString_2>
+
+  url?: Maybe<PrismicGeneralDataLinkedinUrlQueryString_2>
+
+  target?: Maybe<PrismicGeneralDataLinkedinTargetQueryString_2>
+
+  raw?: Maybe<PrismicGeneralDataLinkedinRawInputObject_2>
+}
+
+export interface PrismicGeneralDataLinkedinLinkTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicGeneralDataLinkedinUrlQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicGeneralDataLinkedinTargetQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicGeneralDataLinkedinRawInputObject_2 {
+  link_type?: Maybe<PrismicGeneralDataLinkedinRawLinkTypeQueryString_2>
+
+  url?: Maybe<PrismicGeneralDataLinkedinRawUrlQueryString_2>
+
+  target?: Maybe<PrismicGeneralDataLinkedinRawTargetQueryString_2>
+}
+
+export interface PrismicGeneralDataLinkedinRawLinkTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicGeneralDataLinkedinRawUrlQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicGeneralDataLinkedinRawTargetQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
 export interface PrismicGeneralDataEmailQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicGeneralDataPhoneQueryString_2 {
   eq?: Maybe<string>
 
   ne?: Maybe<string>
@@ -21121,6 +21443,20 @@ export interface PrismicGeneralDataUnifacWebsiteRawLinkTypeQueryString_2 {
 }
 
 export interface PrismicGeneralDataUnifacWebsiteRawUrlQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicGeneralDataAddressQueryString_2 {
   eq?: Maybe<string>
 
   ne?: Maybe<string>
@@ -35103,6 +35439,8 @@ export enum PrismicGeneralConnectionSortByFieldsEnum {
   LastPublicationDate = 'last_publication_date',
   Slugs = 'slugs',
   Lang = 'lang',
+  DataSiteTitle = 'data___site_title',
+  DataSiteSubtitle = 'data___site_subtitle',
   DataMainColor = 'data___main_color',
   DataStartDate = 'data___start_date',
   DataEndDate = 'data___end_date',
@@ -35115,11 +35453,17 @@ export enum PrismicGeneralConnectionSortByFieldsEnum {
   DataInstagramLinkUrl = 'data___instagram_link___url',
   DataInstagramLinkTarget = 'data___instagram_link___target',
   DataInstagramLinkRaw = 'data___instagram_link___raw',
+  DataLinkedinLinkType = 'data___linkedin___link_type',
+  DataLinkedinUrl = 'data___linkedin___url',
+  DataLinkedinTarget = 'data___linkedin___target',
+  DataLinkedinRaw = 'data___linkedin___raw',
   DataEmail = 'data___email',
+  DataPhone = 'data___phone',
   DataUnifacWebsiteLinkType = 'data___unifac_website___link_type',
   DataUnifacWebsiteUrl = 'data___unifac_website___url',
   DataUnifacWebsiteTarget = 'data___unifac_website___target',
   DataUnifacWebsiteRaw = 'data___unifac_website___raw',
+  DataAddress = 'data___address',
   PrismicId = 'prismicId',
   Id = 'id',
   Parent = 'parent',
@@ -35141,6 +35485,8 @@ export enum PrismicGeneralDistinctEnum {
   LastPublicationDate = 'last_publication_date',
   Slugs = 'slugs',
   Lang = 'lang',
+  DataSiteTitle = 'data___site_title',
+  DataSiteSubtitle = 'data___site_subtitle',
   DataMainColor = 'data___main_color',
   DataStartDate = 'data___start_date',
   DataEndDate = 'data___end_date',
@@ -35153,11 +35499,17 @@ export enum PrismicGeneralDistinctEnum {
   DataInstagramLinkUrl = 'data___instagram_link___url',
   DataInstagramLinkTarget = 'data___instagram_link___target',
   DataInstagramLinkRaw = 'data___instagram_link___raw',
+  DataLinkedinLinkType = 'data___linkedin___link_type',
+  DataLinkedinUrl = 'data___linkedin___url',
+  DataLinkedinTarget = 'data___linkedin___target',
+  DataLinkedinRaw = 'data___linkedin___raw',
   DataEmail = 'data___email',
+  DataPhone = 'data___phone',
   DataUnifacWebsiteLinkType = 'data___unifac_website___link_type',
   DataUnifacWebsiteUrl = 'data___unifac_website___url',
   DataUnifacWebsiteTarget = 'data___unifac_website___target',
   DataUnifacWebsiteRaw = 'data___unifac_website___raw',
+  DataAddress = 'data___address',
   PrismicId = 'prismicId',
   Id = 'id',
   Parent = 'parent',
@@ -35174,6 +35526,8 @@ export enum PrismicGeneralGroupEnum {
   LastPublicationDate = 'last_publication_date',
   Slugs = 'slugs',
   Lang = 'lang',
+  DataSiteTitle = 'data___site_title',
+  DataSiteSubtitle = 'data___site_subtitle',
   DataMainColor = 'data___main_color',
   DataStartDate = 'data___start_date',
   DataEndDate = 'data___end_date',
@@ -35186,11 +35540,17 @@ export enum PrismicGeneralGroupEnum {
   DataInstagramLinkUrl = 'data___instagram_link___url',
   DataInstagramLinkTarget = 'data___instagram_link___target',
   DataInstagramLinkRaw = 'data___instagram_link___raw',
+  DataLinkedinLinkType = 'data___linkedin___link_type',
+  DataLinkedinUrl = 'data___linkedin___url',
+  DataLinkedinTarget = 'data___linkedin___target',
+  DataLinkedinRaw = 'data___linkedin___raw',
   DataEmail = 'data___email',
+  DataPhone = 'data___phone',
   DataUnifacWebsiteLinkType = 'data___unifac_website___link_type',
   DataUnifacWebsiteUrl = 'data___unifac_website___url',
   DataUnifacWebsiteTarget = 'data___unifac_website___target',
   DataUnifacWebsiteRaw = 'data___unifac_website___raw',
+  DataAddress = 'data___address',
   PrismicId = 'prismicId',
   Id = 'id',
   Parent = 'parent',
@@ -36769,10 +37129,10 @@ export interface PartnersCtaLink_2 {
 
   text?: Maybe<string>
 
-  raw?: Maybe<(Maybe<Raw_11>)[]>
+  raw?: Maybe<(Maybe<Raw_12>)[]>
 }
 
-export interface Raw_11 {
+export interface Raw_12 {
   type?: Maybe<string>
 
   text?: Maybe<string>
@@ -36883,6 +37243,10 @@ export interface PrismicGeneral extends Node {
 }
 
 export interface Data_12 {
+  site_title?: Maybe<string>
+
+  site_subtitle?: Maybe<string>
+
   main_color?: Maybe<string>
 
   start_date?: Maybe<Date>
@@ -36895,28 +37259,18 @@ export interface Data_12 {
 
   instagram_link?: Maybe<InstagramLink_2>
 
+  linkedin?: Maybe<Linkedin_2>
+
   email?: Maybe<string>
 
+  phone?: Maybe<string>
+
   unifac_website?: Maybe<UnifacWebsite_2>
+
+  address?: Maybe<string>
 }
 
 export interface FacebookLink_2 {
-  link_type?: Maybe<string>
-
-  url?: Maybe<string>
-
-  target?: Maybe<string>
-
-  raw?: Maybe<Raw_12>
-}
-
-export interface Raw_12 {
-  link_type?: Maybe<string>
-
-  url?: Maybe<string>
-}
-
-export interface InstagramLink_2 {
   link_type?: Maybe<string>
 
   url?: Maybe<string>
@@ -36932,7 +37286,7 @@ export interface Raw_13 {
   url?: Maybe<string>
 }
 
-export interface UnifacWebsite_2 {
+export interface InstagramLink_2 {
   link_type?: Maybe<string>
 
   url?: Maybe<string>
@@ -36943,6 +37297,40 @@ export interface UnifacWebsite_2 {
 }
 
 export interface Raw_14 {
+  link_type?: Maybe<string>
+
+  url?: Maybe<string>
+}
+
+export interface Linkedin_2 {
+  link_type?: Maybe<string>
+
+  url?: Maybe<string>
+
+  target?: Maybe<string>
+
+  raw?: Maybe<Raw_15>
+}
+
+export interface Raw_15 {
+  link_type?: Maybe<string>
+
+  url?: Maybe<string>
+
+  target?: Maybe<string>
+}
+
+export interface UnifacWebsite_2 {
+  link_type?: Maybe<string>
+
+  url?: Maybe<string>
+
+  target?: Maybe<string>
+
+  raw?: Maybe<Raw_16>
+}
+
+export interface Raw_16 {
   link_type?: Maybe<string>
 
   url?: Maybe<string>
@@ -37169,10 +37557,10 @@ export interface Link_2 {
 
   target?: Maybe<string>
 
-  raw?: Maybe<Raw_15>
+  raw?: Maybe<Raw_17>
 }
 
-export interface Raw_15 {
+export interface Raw_17 {
   link_type?: Maybe<string>
 
   url?: Maybe<string>
@@ -37309,10 +37697,10 @@ export interface HeaderMovie_2 {
 
   target?: Maybe<string>
 
-  raw?: Maybe<Raw_16>
+  raw?: Maybe<Raw_18>
 }
 
-export interface Raw_16 {
+export interface Raw_18 {
   link_type?: Maybe<string>
 
   name?: Maybe<string>
@@ -37347,10 +37735,10 @@ export interface IntroText_2 {
 
   text?: Maybe<string>
 
-  raw?: Maybe<(Maybe<Raw_17>)[]>
+  raw?: Maybe<(Maybe<Raw_19>)[]>
 }
 
-export interface Raw_17 {
+export interface Raw_19 {
   type?: Maybe<string>
 
   text?: Maybe<string>
@@ -37447,10 +37835,10 @@ export interface SocialDescription_2 {
 
   text?: Maybe<string>
 
-  raw?: Maybe<(Maybe<Raw_18>)[]>
+  raw?: Maybe<(Maybe<Raw_20>)[]>
 }
 
-export interface Raw_18 {
+export interface Raw_20 {
   type?: Maybe<string>
 
   text?: Maybe<string>
@@ -37461,10 +37849,10 @@ export interface PartnerctaDescription_2 {
 
   text?: Maybe<string>
 
-  raw?: Maybe<(Maybe<Raw_19>)[]>
+  raw?: Maybe<(Maybe<Raw_21>)[]>
 }
 
-export interface Raw_19 {
+export interface Raw_21 {
   type?: Maybe<string>
 
   text?: Maybe<string>
@@ -37859,10 +38247,10 @@ export interface Info_2 {
 
   text?: Maybe<string>
 
-  raw?: Maybe<(Maybe<Raw_20>)[]>
+  raw?: Maybe<(Maybe<Raw_22>)[]>
 }
 
-export interface Raw_20 {
+export interface Raw_22 {
   type?: Maybe<string>
 
   text?: Maybe<string>

@@ -7,7 +7,7 @@ import { Query } from '../graphql'
 const IndexPage = () => (
   <StaticQuery
     query={pageQuery}
-    render={({ allInstaNode, allPrismicHomepage }: Query) => {
+    render={({ allInstaNode, allPrismicGeneral, allPrismicHomepage }: Query) => {
       const homepagedata = idx(allPrismicHomepage, _ => _.edges[0].node.data)
       const introImage = idx(homepagedata, _ => _.intro_image.localFile.childImageSharp.fluid)
       const carouselImages = idx(homepagedata, _ =>
@@ -18,11 +18,16 @@ const IndexPage = () => (
         idx(homepagedata, _ => _.pictures_secondary_picture.localFile.childImageSharp.fluid),
       ]
 
+      const { location = '', start_date = '', end_date = '' } = { ...idx(allPrismicGeneral, _ => _.edges[0].node.data) }
+
       return (
         <Layout>
           <Header
             video={homepagedata && homepagedata.header_movie.url}
             image={(homepagedata && homepagedata.fallback_image.url) || ''}
+            location={location}
+            startDate={start_date}
+            endDate={end_date}
           />
 
           {homepagedata && homepagedata.intro_text && (
@@ -61,6 +66,17 @@ const IndexPage = () => (
 
 const pageQuery = graphql`
   query allPrismicHomepageQuery {
+    allPrismicGeneral {
+      edges {
+        node {
+          data {
+            location
+            start_date
+            end_date
+          }
+        }
+      }
+    }
     allPrismicHomepage {
       edges {
         node {

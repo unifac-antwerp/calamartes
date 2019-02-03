@@ -1,6 +1,6 @@
 import { Button } from '@components/Button'
 import * as React from 'react'
-import { InnerWrap, Text, Title, Wrap } from './PartnerCTA.styled'
+import { InnerWrap, SmallWrap, Text, Title, Wrap } from './PartnerCTA.styled'
 
 type TProps = {
   bgImage: string
@@ -22,5 +22,14 @@ const PartnerCTA = (props: TProps) => {
     </Wrap>
   )
 }
+
+export const PartnerCTASmall = ({ title, buttonText, email }: { title: string; buttonText: string; email: string }) => (
+  <div className="inner-container">
+    <SmallWrap>
+      <span>{title}</span>
+      <Button link={`mailto:${email}`} text={buttonText} external={true} />
+    </SmallWrap>
+  </div>
+)
 
 export default PartnerCTA

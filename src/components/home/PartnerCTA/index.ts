@@ -1,1 +1,1 @@
-export { default as PartnerCTA } from './PartnerCTA'
+export { default as PartnerCTA, PartnerCTASmall } from './PartnerCTA'

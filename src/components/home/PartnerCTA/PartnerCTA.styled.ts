@@ -61,3 +61,16 @@ export const Text = styled.div`
     }
   }
 `
+
+export const SmallWrap = styled.div`
+  text-align: center;
+  margin: 80px auto;
+
+  span {
+    display: block;
+    margin-bottom: 16px;
+    font-family: ${({ theme }: { theme: TTheme }) => theme.typo.fonts.heading};
+    font-weight: ${({ theme }: { theme: TTheme }) => theme.typo.fontweights.medium};
+    font-size: 22px;
+  }
+`

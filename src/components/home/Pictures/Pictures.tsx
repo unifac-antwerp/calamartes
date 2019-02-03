@@ -11,18 +11,20 @@ const Pictures = (props: TProps) => {
   const { mainPicture, secondaryPicture } = props
 
   return (
-    <Wrap className="inner-container">
-      {secondaryPicture && (
-        <SecondaryPictureWrap>
-          <StyledImg fluid={secondaryPicture} className="secondary" />
-        </SecondaryPictureWrap>
-      )}
-      {mainPicture && (
-        <MainPictureWrap>
-          <StyledImg fluid={mainPicture} />
-        </MainPictureWrap>
-      )}
-    </Wrap>
+    <div className="inner-container">
+      <Wrap>
+        {secondaryPicture && (
+          <SecondaryPictureWrap>
+            <StyledImg fluid={secondaryPicture} className="secondary" />
+          </SecondaryPictureWrap>
+        )}
+        {mainPicture && (
+          <MainPictureWrap>
+            <StyledImg fluid={mainPicture} />
+          </MainPictureWrap>
+        )}
+      </Wrap>
+    </div>
   )
 }
 

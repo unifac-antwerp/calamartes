@@ -7,11 +7,11 @@ export const Wrap = styled.section`
   position: relative;
   flex-direction: column;
   z-index: 15;
-  margin: -23px auto 16vw !important;
+  margin: -23px auto 16vw;
 
   @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.m}) {
     flex-direction: row;
-    margin: 96px auto 144px !important;
+    margin: 96px auto 144px;
   }
 `
 

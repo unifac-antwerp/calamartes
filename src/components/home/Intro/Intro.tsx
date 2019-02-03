@@ -13,17 +13,19 @@ const Intro = (props: TProps) => {
   const { image, text, buttonText } = props
 
   return (
-    <Wrap className="inner-container">
-      <TextWrap>
-        <Text dangerouslySetInnerHTML={{ __html: text }} />
-        {buttonText && <Button link="/info" text={buttonText} />}
-      </TextWrap>
-      {image && (
-        <ImageWrap>
-          <Image fluid={image} />
-        </ImageWrap>
-      )}
-    </Wrap>
+    <div className="inner-container">
+      <Wrap>
+        <TextWrap>
+          <Text dangerouslySetInnerHTML={{ __html: text }} />
+          {buttonText && <Button link="/info" text={buttonText} />}
+        </TextWrap>
+        {image && (
+          <ImageWrap>
+            <Image fluid={image} />
+          </ImageWrap>
+        )}
+      </Wrap>
+    </div>
   )
 }
 

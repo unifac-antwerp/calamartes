@@ -6,13 +6,14 @@ import { List, ListItem, Title, Wrap } from './MainPartners.styled'
 
 type TProps = {
   mainPartners: Array<PrismicPartner | null | undefined>
+  title: string
 }
 
-const MainPartners = ({ mainPartners }: TProps) => {
+const MainPartners = ({ mainPartners, title }: TProps) => {
   return (
     <Wrap>
       <div className="inner-container">
-        <Title>Main Partners</Title>
+        <Title>{title}</Title>
         <List>
           {mainPartners.map(partner => {
             const partnerData = idx(partner, _ => _.data)

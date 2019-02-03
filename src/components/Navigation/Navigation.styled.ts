@@ -16,7 +16,7 @@ export const InnerWrap = styled.div`
   align-items: center;
   position: relative;
 
-  padding: 24px 0 !important;
+  padding: 24px 0;
 `
 
 export const LogoWrap = styled(Link)`

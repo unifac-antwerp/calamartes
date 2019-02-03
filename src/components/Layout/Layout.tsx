@@ -3,6 +3,7 @@ import withConnectors from '@connectors'
 import { graphql, StaticQuery } from 'gatsby'
 import idx from 'idx'
 import * as React from 'react'
+import Helmet from 'react-helmet'
 import { Query } from 'src/graphql'
 import { Link } from 'styled-icons/boxicons-regular/Link'
 import { Facebook } from 'styled-icons/fa-brands/Facebook'
@@ -57,6 +58,7 @@ const Layout = ({ children }: TProps) => (
 
       return (
         <React.Fragment>
+          <Helmet titleTemplate={`%s - ${site_title}`} defaultTitle={site_title} />
           <Navigation
             title={site_title}
             subtitle={site_subtitle}

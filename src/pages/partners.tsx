@@ -3,6 +3,7 @@ import { getPartnersByType, PartnerType, sortPartners } from '@utils/partnerUtil
 import { graphql, StaticQuery } from 'gatsby'
 import idx from 'idx'
 import * as React from 'react'
+import Helmet from 'react-helmet'
 import { Query } from '../graphql'
 
 const Partners = () => (
@@ -26,6 +27,7 @@ const Partners = () => (
 
       return (
         <Layout>
+          <Helmet title="Partners" />
           <HeaderSmall
             title={partners_title}
             subtitle={partners_subtitle}

@@ -2,6 +2,7 @@ import { HeaderSmall, Layout } from '@components'
 import { graphql, StaticQuery } from 'gatsby'
 import idx from 'idx'
 import * as React from 'react'
+import Helmet from 'react-helmet'
 import { Query } from 'src/graphql'
 
 const Info = () => (
@@ -12,6 +13,7 @@ const Info = () => (
 
       return (
         <Layout>
+          <Helmet title="Info" />
           <HeaderSmall
             title={(allPrismicInfoPageData && allPrismicInfoPageData.title) || ''}
             subtitle={(allPrismicInfoPageData && allPrismicInfoPageData.subtitle) || ''}

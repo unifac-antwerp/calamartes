@@ -1,8 +1,10 @@
 import { HeaderSmall, Layout } from '@components'
 import * as React from 'react'
+import Helmet from 'react-helmet'
 
 const Programma = () => (
   <Layout>
+    <Helmet title="Programma" />
     <HeaderSmall
       title="Title"
       subtitle="Subtitle"

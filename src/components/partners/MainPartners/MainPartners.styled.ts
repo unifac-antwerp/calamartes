@@ -19,6 +19,10 @@ export const List = styled.ol`
 `
 
 export const ListItem = styled.li`
-  width: 49%;
+  width: 100%;
   margin-bottom: 2vw;
+
+  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.s}) {
+    width: 49%;
+  }
 `

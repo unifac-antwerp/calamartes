@@ -1,5 +1,4 @@
 import { TTheme } from '@config/styles/theme.type'
-import Img from 'gatsby-image'
 import styled, { css } from 'styled-components'
 import { PartnerStyle } from './Partner'
 
@@ -25,9 +24,29 @@ export const Wrap = styled.article`
   }
 `
 
-export const StyledImg = styled(Img)`
+export const ImageWrap = styled.div`
   ${({ styleName }: { styleName: PartnerStyle }) =>
-    styleName === PartnerStyle.detailFriend ? 'margin: 8px;' : 'margin: 24px auto;'}
+    styleName === PartnerStyle.detailMain ? 'height: 180px;' : 'height: 120px;'}
+
+  width: auto;
+  margin: 0 auto;
+  ${({ styleName }: { styleName: PartnerStyle }) =>
+    styleName === PartnerStyle.detailMain ? 'margin: 24px auto;' : 'margin: 8px;'}
+`
+
+export const StyledImg = styled.img`
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  ${({ styleName }: { styleName: PartnerStyle }) =>
+    styleName === PartnerStyle.detailMain
+      ? `
+      min-width: 180px;
+      min-height: 180px;`
+      : `
+      min-width: 120px;
+      min-height: 120px;
+    `}
 `
 
 export const Title = styled.h3`

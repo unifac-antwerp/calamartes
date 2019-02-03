@@ -75,13 +75,7 @@ const pageQuery = graphql`
           data {
             name
             image {
-              localFile {
-                childImageSharp {
-                  fixed(height: 180) {
-                    ...GatsbyImageSharpFixed
-                  }
-                }
-              }
+              url
             }
             link {
               url

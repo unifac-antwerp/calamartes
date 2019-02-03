@@ -24,7 +24,7 @@ const MainPartners = ({ mainPartners, title }: TProps) => {
                 <ListItem key={partner.id}>
                   <Partner
                     link={partnerData.link.url}
-                    image={idx(partnerData, _ => _.image.localFile.childImageSharp.fixed)}
+                    image={partnerData.image.url}
                     description={partnerData.description}
                     name={partnerData.name}
                     styleName={PartnerStyle.detailMain}

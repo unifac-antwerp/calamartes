@@ -1,7 +1,6 @@
 import { css } from 'styled-components'
 
 const mediaCSS = css`
-  width: 100% !important;
   margin: 32px 0;
 `
 
@@ -9,10 +8,18 @@ export default css`
   padding: 40px 0;
   max-width: 960px;
 
-  iframe {
+  div[data-oembed-provider='Vimeo'] {
+    padding: 56.5% 0 0 0 !important;
+    position: relative !important;
     ${mediaCSS}
-    /* height: 32vw !important; */
-    /* max-height: 540px !important; */
+  }
+
+  iframe {
+    position: absolute;
+    top: 0 !important;
+    left: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
 
     .vp-center {
       display: block !important;
@@ -20,6 +27,7 @@ export default css`
   }
 
   img {
+    width: 100% !important;
     ${mediaCSS}
   }
 `

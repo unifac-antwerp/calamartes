@@ -15,7 +15,6 @@ export const InnerWrap = styled.div`
   justify-content: space-between;
   align-items: center;
   position: relative;
-
   padding: 24px 0;
 `
 
@@ -37,12 +36,14 @@ export const TitleWrap = styled.div`
 
 export const Title = styled.h1`
   font-size: 15px;
+  line-height: 16px;
   font-weight: ${({ theme }: { theme: TTheme }) => theme.typo.fontweights.medium};
 `
 
 export const SubTitle = styled.span`
   display: block;
   font-size: 12px;
+  line-height: 16px;
   font-family: ${({ theme }: { theme: TTheme }) => theme.typo.fonts.heading};
 `
 

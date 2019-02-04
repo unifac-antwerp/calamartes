@@ -109,5 +109,6 @@ export const StyledSlider = styled(Slider)`
 `
 
 export const ArrowWrap = styled.div`
+  display: inherit;
   ${({ prev }: { prev?: boolean }) => prev && `transform: scaleX(-1)`}
 `

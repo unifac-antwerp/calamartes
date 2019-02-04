@@ -55,8 +55,10 @@ export const InfoWrapper = styled.div`
 export const Date = styled.span`
   ${({ theme }: { theme: TTheme }) => theme.typo.textstyle.heading02};
   font-size: 36px;
+  line-height: 38px;
 
   @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.s}) {
+    line-height: 52px;
     font-size: 44px;
   }
 `

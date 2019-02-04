@@ -100,7 +100,7 @@ const textstyle = {
     font-family: ${fonts.default};
     font-size: 16px;
     font-weight: ${fontweights.normal};
-    line-height: 1.24;
+    line-height: 150%;
     color: ${colors.neutral03};
 
     @media (min-width: ${breakpoints.m}) {
@@ -111,7 +111,7 @@ const textstyle = {
     font-family: ${fonts.default};
     font-size: 16px;
     font-weight: ${fontweights.normal};
-    line-height: 1.24;
+    line-height: 150%;
     color: ${colors.neutral03};
     text-decoration: underline;
 

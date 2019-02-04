@@ -12,8 +12,11 @@ const CarouselComponent = (props: TProps) => {
   const { images } = props
 
   const sliderSettings: Settings = {
+    autoplay: true,
+    easing: 'ease-in-out',
     nextArrow: <CustomArrow />,
     prevArrow: <CustomArrow />,
+    speed: 800,
   }
 
   return !!images ? (

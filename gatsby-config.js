@@ -70,10 +70,9 @@ module.exports = {
         resolveEnv: () => NETLIFY_ENV,
         env: {
           production: {
-            // TODO: allow robots when site is ready
-            policy: [{ userAgent: '*', disallow: ['/'] }],
+            policy: [{ userAgent: '*', allow: '/' }],
             sitemap: null,
-            host: null,
+            host: 'https://www.calamartes.be',
           },
           'branch-deploy': {
             policy: [{ userAgent: '*', disallow: ['/'] }],

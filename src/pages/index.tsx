@@ -95,6 +95,7 @@ const pageQuery = graphql`
             image {
               url
             }
+            name
             link {
               url
             }

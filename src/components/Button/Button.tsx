@@ -17,7 +17,7 @@ const ButtonComponent = ({ text, link, light = false, external = false }: TProps
   }
 
   return external ? (
-    <a href={link} target={link.startsWith('mailto') ? '' : '_blank'} style={wrapperStyle}>
+    <a href={link} target={link.startsWith('mailto') ? '' : '_blank'} rel="noopener" style={wrapperStyle}>
       {btn}
     </a>
   ) : (

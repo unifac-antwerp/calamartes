@@ -35,7 +35,7 @@ const Footer = ({ address, phone, email, socials }: TProps) => (
       </InnerWrap>
       <MadeBy>
         Made with <Twemoji options={{ className: 'emoji' }}>💙</Twemoji> by{' '}
-        <a href="https://www.wouterlanduydt.be" target="_blank">
+        <a href="https://www.wouterlanduydt.be" target="_blank" rel="noopener">
           Wouter Landuydt
         </a>
       </MadeBy>
@@ -45,7 +45,7 @@ const Footer = ({ address, phone, email, socials }: TProps) => (
 
 const ListItemLink = ({ link, children }: { link: string; children: JSX.Element | string }) => (
   <li>
-    <a href={link} target="_blank">
+    <a href={link} target="_blank" rel="noopener">
       {children}
     </a>
   </li>

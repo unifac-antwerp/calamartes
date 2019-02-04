@@ -31,7 +31,7 @@ const Instagram = (props: TProps) => {
                 id &&
                 image && (
                   <ImageWrap key={id}>
-                    <a href={getInstagramPostUrl(id)} target="_blank">
+                    <a href={getInstagramPostUrl(id)} target="_blank" rel="noopener">
                       <StyledImg fluid={image} />
                     </a>
                   </ImageWrap>

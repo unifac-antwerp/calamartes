@@ -33,6 +33,7 @@ export default css`
   body {
     background-color: ${theme.colors.neutral01};
     ${theme.typo.textstyle.paragraph};
+    font-display: auto;
   }
 
   .richtext {

@@ -68,12 +68,12 @@ const Navigation = ({ title, subtitle, facebookLink, instagramLink }: TProps) =>
                       </li>
                     ))}
                   <li className="social">
-                    <a href={instagramLink} target="_blank">
+                    <a href={instagramLink} target="_blank" rel="noopener">
                       <InstagramIcon size="16" title="Instagram" />
                     </a>
                   </li>
                   <li className="social">
-                    <a href={facebookLink} target="_blank">
+                    <a href={facebookLink} target="_blank" rel="noopener">
                       <FacebookIcon size="16" title="Facebook" />
                     </a>
                   </li>

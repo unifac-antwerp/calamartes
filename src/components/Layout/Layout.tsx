@@ -68,6 +68,7 @@ const Layout = ({ children }: TProps) => (
       return (
         <React.Fragment>
           <Helmet titleTemplate={`%s - ${site_title}`} defaultTitle={site_title}>
+            <html lang="en" />
             <meta name="title" content={site_title} />
             <meta name="description" content={description} />
             <meta name="keywords" content={tags} />

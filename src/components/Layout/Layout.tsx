@@ -27,7 +27,16 @@ const Layout = ({ children }: TProps) => (
     render={({ allPrismicGeneral }: Query) => {
       const generalData = idx(allPrismicGeneral, _ => _.edges[0].node.data)
 
-      const { site_title = 'Calamartes', site_subtitle = 'Cultuurfestival', address = '', phone = '', email = '' } = {
+      const {
+        site_title = 'Calamartes',
+        site_subtitle = 'Cultuurfestival',
+        address = '',
+        phone = '',
+        email = '',
+        tags = '',
+        description = '',
+        website_url = '',
+      } = {
         ...generalData,
       }
 
@@ -58,7 +67,23 @@ const Layout = ({ children }: TProps) => (
 
       return (
         <React.Fragment>
-          <Helmet titleTemplate={`%s - ${site_title}`} defaultTitle={site_title} />
+          <Helmet titleTemplate={`%s - ${site_title}`} defaultTitle={site_title}>
+            <meta name="title" content={site_title} />
+            <meta name="description" content={description} />
+            <meta name="keywords" content={tags} />
+
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content={website_url} />
+            <meta property="og:title" content="Calamartes" />
+            <meta property="og:description" content={description} />
+            <meta property="og:image" content={(!!generalData && generalData.share_image.url) || ''} />
+
+            <meta property="twitter:card" content="summary_large_image" />
+            <meta property="twitter:url" content={website_url} />
+            <meta property="twitter:title" content="Calamartes" />
+            <meta property="twitter:description" content={description} />
+            <meta property="twitter:image" content={(!!generalData && generalData.share_image.url) || ''} />
+          </Helmet>
           <Navigation
             title={site_title}
             subtitle={site_subtitle}
@@ -93,6 +118,12 @@ const layoutQuery = graphql`
             address
             phone
             email
+            website_url
+            share_image {
+              url
+            }
+            tags
+            description
             unifac_website {
               url
             }

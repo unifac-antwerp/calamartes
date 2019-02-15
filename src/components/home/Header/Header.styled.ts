@@ -66,8 +66,11 @@ export const Location = styled.span`
   ${({ theme }) => theme.typo.textstyle.heading02};
   font-weight: ${({ theme }) => theme.typo.fontweights.medium};
   font-size: 24px;
+  text-align: center;
+  line-height: 100%;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.s}) {
+    text-align: right;
     font-size: 32px;
   }
 `

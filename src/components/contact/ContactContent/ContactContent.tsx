@@ -17,12 +17,7 @@ const ContactContent = ({ text, image, emailBtnText, messengerBtnText, email, fa
     <div className="inner-container">
       <Wrap>
         <ContentWrap>
-          <p>
-            {text}
-            <br />
-            <br />
-            <strong>{email}</strong>
-          </p>
+          <p>{text}</p>
           <div className="btns">
             <Button text={emailBtnText} link={`mailto:${email}`} external={true} />
             <Button text={messengerBtnText} link={facebookLink} external={true} />

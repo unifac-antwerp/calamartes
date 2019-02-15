@@ -77,6 +77,7 @@ export default css`
 
   p {
     ${theme.typo.textstyle.paragraph};
+    white-space: pre-line;
 
     :not(:last-child) {
       margin-bottom: 16px;

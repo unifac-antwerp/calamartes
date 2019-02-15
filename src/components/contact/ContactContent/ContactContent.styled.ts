@@ -48,4 +48,5 @@ export const ImgWrap = styled.div`
 export const StyledImg = styled(Img)`
   width: 100%;
   height: 100%;
+  max-height: 320px;
 `

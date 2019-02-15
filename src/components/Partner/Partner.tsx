@@ -23,7 +23,6 @@ const Partner = (props: TProps) => {
     <Wrap onClick={styleName !== PartnerStyle.detailMain ? () => window.open(link) : undefined} styleName={styleName}>
       {!!image && (
         <ImageWrap styleName={styleName}>
-          {console.log(name)}
           <StyledImg src={image} alt={name} styleName={styleName} title={name} />
         </ImageWrap>
       )}

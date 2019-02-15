@@ -1,8 +1,6 @@
-import { TTheme } from '@config/styles/theme.type'
-import styled from 'styled-components'
+import styled from '@config/styles/styled-components'
 
 type TButtonProps = {
-  theme: TTheme
   light: boolean
 }
 

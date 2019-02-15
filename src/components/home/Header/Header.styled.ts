@@ -1,6 +1,5 @@
-import { TTheme } from '@config/styles/theme.type'
+import styled from '@config/styles/styled-components'
 import { transparentize } from 'polished'
-import styled from 'styled-components'
 
 export const Wrap = styled.header`
   height: 88vh;
@@ -15,7 +14,7 @@ export const Wrap = styled.header`
   overflow: hidden;
   z-index: -10;
   color: ${({ theme }) => theme.colors.neutral01};
-  ${({ theme }: { theme: TTheme }) => theme.overlays.plusPatternFill};
+  ${({ theme }) => theme.overlays.plusPatternFill};
 `
 
 export const ContentContainer = styled.header`
@@ -33,7 +32,7 @@ export const Logo = styled.img`
   user-select: none;
   width: 200px;
 
-  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.m}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.m}) {
     width: 280px;
   }
 `
@@ -47,28 +46,28 @@ export const InfoWrapper = styled.div`
   bottom: 80px;
   width: 100%;
 
-  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.s}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.s}) {
     align-items: flex-end;
   }
 `
 
 export const Date = styled.span`
-  ${({ theme }: { theme: TTheme }) => theme.typo.textstyle.heading02};
+  ${({ theme }) => theme.typo.textstyle.heading02};
   font-size: 36px;
   line-height: 38px;
 
-  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.s}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.s}) {
     line-height: 52px;
     font-size: 44px;
   }
 `
 
 export const Location = styled.span`
-  ${({ theme }: { theme: TTheme }) => theme.typo.textstyle.heading02};
-  font-weight: ${({ theme }: { theme: TTheme }) => theme.typo.fontweights.medium};
+  ${({ theme }) => theme.typo.textstyle.heading02};
+  font-weight: ${({ theme }) => theme.typo.fontweights.medium};
   font-size: 24px;
 
-  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.s}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.s}) {
     font-size: 32px;
   }
 `
@@ -80,7 +79,7 @@ export const VideoOverlay = styled.div`
   top: 0px;
   left: 0px;
   z-index: 2;
-  background: ${({ theme }: { theme: TTheme }) => `
+  background: ${({ theme }) => `
     linear-gradient(
       0deg,
       ${transparentize(0.1, theme.colors.global01)} 0%,

@@ -1,20 +1,19 @@
-import { TTheme } from '@config/styles/theme.type'
-import styled from 'styled-components'
+import styled from '@config/styles/styled-components'
 
 export const Wrap = styled.footer`
   margin-top: 40px;
-  background-color: ${({ theme }: { theme: TTheme }) => theme.colors.global04};
-  color: ${({ theme }: { theme: TTheme }) => theme.colors.neutral01};
+  background-color: ${({ theme }) => theme.colors.global04};
+  color: ${({ theme }) => theme.colors.neutral01};
   padding: 24px 0;
   font-size: 14px;
 
   a {
     font-size: 14px;
-    color: ${({ theme }: { theme: TTheme }) => theme.colors.neutral01};
+    color: ${({ theme }) => theme.colors.neutral01};
     text-decoration: none;
 
     &:hover {
-      color: ${({ theme }: { theme: TTheme }) => theme.colors.neutral04};
+      color: ${({ theme }) => theme.colors.neutral04};
       text-decoration: underline;
     }
   }

@@ -1,8 +1,7 @@
-import { TTheme } from '@config/styles/theme.type'
-import styled from 'styled-components'
+import styled from '@config/styles/styled-components'
 
 export const Wrap = styled.section`
-  background-color: ${({ theme }: { theme: TTheme }) => theme.colors.neutral04};
+  background-color: ${({ theme }) => theme.colors.neutral04};
   margin-bottom: -40px;
   padding: 40px 0;
 `

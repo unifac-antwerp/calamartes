@@ -1,11 +1,10 @@
-import { TTheme } from '@config/styles/theme.type'
+import styled from '@config/styles/styled-components'
 import Img from 'gatsby-image'
-import styled from 'styled-components'
 
 export const Wrap = styled.section`
   margin-top: 40px;
 
-  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.m}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.m}) {
     display: flex;
     justify-content: space-between;
   }
@@ -14,7 +13,7 @@ export const Wrap = styled.section`
 export const ContentWrap = styled.div`
   flex: 4;
 
-  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.m}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.m}) {
     padding-right: 32px;
     width: auto;
   }
@@ -40,7 +39,7 @@ export const ImgWrap = styled.div`
   flex: 3;
   margin-top: 32px;
 
-  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.m}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.m}) {
     margin-top: 0px;
     width: auto;
   }

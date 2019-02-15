@@ -1,10 +1,9 @@
-import { TTheme } from '@config/styles/theme.type'
-import styled from 'styled-components'
+import styled from '@config/styles/styled-components'
 
 export const Wrap = styled.section`
-  background-color: ${({ theme }: { theme: TTheme }) => theme.colors.global01};
+  background-color: ${({ theme }) => theme.colors.global01};
   position: relative;
-  ${({ theme }: { theme: TTheme }) => theme.overlays.plusPatternFill};
+  ${({ theme }) => theme.overlays.plusPatternFill};
   padding-bottom: 64px;
 `
 
@@ -22,7 +21,7 @@ export const ListItem = styled.li`
   width: 100%;
   margin-bottom: 2vw;
 
-  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.s}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.s}) {
     width: 49%;
   }
 `

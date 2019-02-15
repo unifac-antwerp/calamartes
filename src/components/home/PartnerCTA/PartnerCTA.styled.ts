@@ -1,9 +1,7 @@
-import { TTheme } from '@config/styles/theme.type'
-import styled from 'styled-components'
+import styled from '@config/styles/styled-components'
 
 type TWrapProps = {
   bgImage: string
-  theme: TTheme
 }
 
 export const Wrap = styled.section`
@@ -47,16 +45,16 @@ export const Text = styled.div`
   width: 98%;
   max-width: 896px;
 
-  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.m}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.m}) {
     width: 88%;
   }
 
   p,
   a {
-    color: ${({ theme }: { theme: TTheme }) => theme.colors.neutral01};
+    color: ${({ theme }) => theme.colors.neutral01};
     font-size: 17px;
 
-    @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.m}) {
+    @media (min-width: ${({ theme }) => theme.breakpoints.m}) {
       font-size: 19px;
     }
   }
@@ -69,8 +67,8 @@ export const SmallWrap = styled.div`
   span {
     display: block;
     margin-bottom: 16px;
-    font-family: ${({ theme }: { theme: TTheme }) => theme.typo.fonts.heading};
-    font-weight: ${({ theme }: { theme: TTheme }) => theme.typo.fontweights.medium};
+    font-family: ${({ theme }) => theme.typo.fonts.heading};
+    font-weight: ${({ theme }) => theme.typo.fontweights.medium};
     font-size: 22px;
   }
 `

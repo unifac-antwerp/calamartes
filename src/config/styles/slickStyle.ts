@@ -1,4 +1,4 @@
-import { css } from 'styled-components'
+import { css } from '@config/styles/styled-components'
 
 export default css`
   .slick-list,

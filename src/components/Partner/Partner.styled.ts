@@ -1,9 +1,8 @@
-import { TTheme } from '@config/styles/theme.type'
-import styled, { css } from 'styled-components'
+import styled, { css } from '@config/styles/styled-components'
 import { PartnerStyle } from './Partner'
 
 const mainPartnerStyle = css`
-  background-color: ${({ theme }: { theme: TTheme }) => theme.colors.neutral01};
+  background-color: ${({ theme }) => theme.colors.neutral01};
 
   padding: 16px;
   z-index: 10;
@@ -63,8 +62,8 @@ export const Description = styled.p`
 
 export const Link = styled.a`
   margin-top: 16px;
-  font-family: ${({ theme }: { theme: TTheme }) => theme.typo.fonts.heading};
-  font-weight: ${({ theme }: { theme: TTheme }) => theme.typo.fontweights.semiBold};
+  font-family: ${({ theme }) => theme.typo.fonts.heading};
+  font-weight: ${({ theme }) => theme.typo.fontweights.semiBold};
   text-decoration: none;
 
   &:hover {

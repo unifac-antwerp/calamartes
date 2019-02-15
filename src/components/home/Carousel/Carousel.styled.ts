@@ -1,6 +1,5 @@
-import { TTheme } from '@config/styles/theme.type'
+import styled, { css } from '@config/styles/styled-components'
 import Slider from 'react-slick'
-import styled, { css } from 'styled-components'
 
 const coreOrnamentCSS = css`
   position: absolute;
@@ -9,7 +8,7 @@ const coreOrnamentCSS = css`
   z-index: -10;
   height: 100px;
 
-  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.m}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.m}) {
     height: 180px;
   }
 `
@@ -20,7 +19,7 @@ const topOrnamentCSS = css`
   right: 0;
   width: 56vw;
 
-  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.s}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.s}) {
     top: -64px;
   }
 `
@@ -31,7 +30,7 @@ const bottomOrnamentCSS = css`
   left: 0;
   width: 64vw;
 
-  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.s}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.s}) {
     bottom: -64px;
   }
 `
@@ -40,18 +39,18 @@ export const Wrap = styled.section`
   position: relative;
   margin-bottom: 20vw;
   
-  @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.m}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.m}) {
     margin-bottom: 168px;
   }
 
   &:before {
     ${topOrnamentCSS}
-    background-color: ${({ theme }: { theme: TTheme }) => theme.colors.global01};
+    background-color: ${({ theme }) => theme.colors.global01};
   }
 
   &:after {
     ${topOrnamentCSS}
-    ${({ theme }: { theme: TTheme }) => theme.overlays.plusPattern}
+    ${({ theme }) => theme.overlays.plusPattern}
   }
 `
 
@@ -60,12 +59,12 @@ export const InnerWrap = styled.section`
 
   &:before {
     ${bottomOrnamentCSS}
-    background-color: ${({ theme }: { theme: TTheme }) => theme.colors.global01};
+    background-color: ${({ theme }) => theme.colors.global01};
   }
 
   &:after {
     ${bottomOrnamentCSS}
-    ${({ theme }: { theme: TTheme }) => theme.overlays.plusPattern}
+    ${({ theme }) => theme.overlays.plusPattern}
   }
 `
 
@@ -77,15 +76,15 @@ export const StyledSlider = styled(Slider)`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: ${({ theme }: { theme: TTheme }) => theme.colors.neutral01};
+    background-color: ${({ theme }) => theme.colors.neutral01};
     z-index: 10;
     top: 50%;
     transform: translate(25%, -50%);
     width: 40px;
     height: 40px;
-    ${({ theme }: { theme: TTheme }) => theme.shadows.shadow01};
+    ${({ theme }) => theme.shadows.shadow01};
 
-    @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.m}) {
+    @media (min-width: ${({ theme }) => theme.breakpoints.m}) {
       transform: translate(-50%, -50%);
     }
 
@@ -98,13 +97,13 @@ export const StyledSlider = styled(Slider)`
     transform: translate(-25%, -50%);
     right: 0;
 
-    @media (min-width: ${({ theme }: { theme: TTheme }) => theme.breakpoints.m}) {
+    @media (min-width: ${({ theme }) => theme.breakpoints.m}) {
       transform: translate(50%, -50%);
     }
   }
 
   .gatsby-image-wrapper {
-    ${({ theme }: { theme: TTheme }) => theme.shadows.shadow01};
+    ${({ theme }) => theme.shadows.shadow01};
   }
 `
 

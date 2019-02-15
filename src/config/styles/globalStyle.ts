@@ -1,6 +1,6 @@
 import richTextStyle from '@config/styles/richTextStyle'
 import slickStyle from '@config/styles/slickStyle'
-import { css } from 'styled-components'
+import { css } from '@config/styles/styled-components'
 import { theme } from './theme'
 
 /* tslint:disable:no-var-requires */

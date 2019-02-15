@@ -1,6 +1,6 @@
 import { globalStyle, theme } from '@config/styles'
+import { createGlobalStyle, ThemeProvider } from '@config/styles/styled-components'
 import * as React from 'react'
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import { reset } from 'styled-reset'
 
 const GlobalStyle = createGlobalStyle`

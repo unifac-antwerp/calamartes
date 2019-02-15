@@ -1,4 +1,4 @@
-import { css } from 'styled-components'
+import { css } from '@config/styles/styled-components'
 import { theme } from './theme'
 
 const mediaCSS = css`

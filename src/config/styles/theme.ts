@@ -1,5 +1,5 @@
+import { css } from '@config/styles/styled-components'
 import { darken, lighten } from 'polished'
-import { css } from 'styled-components'
 
 /* tslint:disable:object-literal-sort-keys */
 

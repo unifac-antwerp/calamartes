@@ -1,6 +1,5 @@
 /* tslint:disable:no-var-requires */
-import { TTheme } from '@config/styles/theme.type'
-import styled from 'styled-components'
+import styled from '@config/styles/styled-components'
 
 type TWrapProps = {
   bgImage: string
@@ -22,7 +21,7 @@ export const Wrap = styled.div`
     width: 100%;
     height: 100%;
     opacity: 0.85;
-    background-color: ${({ theme }: { theme: TTheme }) => theme.colors.global01};
+    background-color: ${({ theme }) => theme.colors.global01};
   }
 
   &:after {
@@ -41,9 +40,9 @@ export const Wrap = styled.div`
 
 export const BorderBottom = styled.div`
   height: 8px;
-  background-color: ${({ theme }: { theme: TTheme }) => theme.colors.global01};
+  background-color: ${({ theme }) => theme.colors.global01};
   position: relative;
-  ${({ theme }: { theme: TTheme }) => theme.overlays.plusPatternFill};
+  ${({ theme }) => theme.overlays.plusPatternFill};
 `
 
 export const InnerWrap = styled.div`
@@ -53,7 +52,7 @@ export const InnerWrap = styled.div`
 `
 
 export const Subtitle = styled.span`
-  color: ${({ theme }: { theme: TTheme }) => theme.colors.neutral01};
+  color: ${({ theme }) => theme.colors.neutral01};
   font-size: 20px;
   margin-top: 4px;
   display: block;

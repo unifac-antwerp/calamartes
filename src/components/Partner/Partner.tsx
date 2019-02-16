@@ -19,15 +19,21 @@ type TProps = {
 const Partner = (props: TProps) => {
   const { link, image, description = null, name, styleName = PartnerStyle.default } = props
 
+  const isMainPartner = styleName === PartnerStyle.detailMain
+
   return (
-    <Wrap onClick={styleName !== PartnerStyle.detailMain ? () => window.open(link) : undefined} styleName={styleName}>
+    <Wrap
+      onClick={!isMainPartner ? () => window.open(link) : undefined}
+      styleName={styleName}
+      as={isMainPartner ? 'article' : 'div'}
+    >
       {!!image && (
         <ImageWrap styleName={styleName}>
           <StyledImg src={image} alt={name} styleName={styleName} title={name} />
         </ImageWrap>
       )}
 
-      {styleName === PartnerStyle.detailMain && (
+      {isMainPartner && (
         <React.Fragment>
           <Title>{name}</Title>
           <Description>{description}</Description>

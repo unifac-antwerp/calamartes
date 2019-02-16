@@ -12,22 +12,21 @@ const mainPartnerStyle = css`
   height: 100%;
 `
 
-export const Wrap = styled.article`
-  ${({ styleName }: { styleName: PartnerStyle }) => styleName === PartnerStyle.detailMain && mainPartnerStyle}
+export const Wrap = styled.article<{ styleName: PartnerStyle }>`
+  ${({ styleName }) => styleName === PartnerStyle.detailMain && mainPartnerStyle}
 
   &:hover {
     ${({ onClick }) => !!onClick && 'cursor: pointer;'};
   }
 `
 
-export const ImageWrap = styled.div`
-  ${({ styleName }: { styleName: PartnerStyle }) =>
-    styleName === PartnerStyle.detailMain ? 'height: 180px;' : 'height: 100px;'}
+export const ImageWrap = styled.div<{ styleName: PartnerStyle }>`
+  ${({ styleName }) => (styleName === PartnerStyle.detailMain ? 'height: 180px;' : 'height: 100px;')}
 
   width: auto;
+  max-width: 280px;
   margin: 0 auto;
-  ${({ styleName }: { styleName: PartnerStyle }) =>
-    styleName === PartnerStyle.detailMain ? 'margin: 24px auto;' : 'margin: 12px'}
+  ${({ styleName }) => (styleName === PartnerStyle.detailMain ? 'margin: 24px auto;' : 'margin: 16px')}
 `
 
 const grayscaleImgCSS = css`
@@ -35,11 +34,11 @@ const grayscaleImgCSS = css`
   opacity: 0.3;
 `
 
-export const StyledImg = styled.img`
+export const StyledImg = styled.img<{ styleName: PartnerStyle }>`
   object-fit: contain;
   max-width: 100%;
   max-height: 100%;
-  ${({ styleName }: { styleName: PartnerStyle }) =>
+  ${({ styleName }) =>
     styleName === PartnerStyle.detailMain
       ? `
       min-width: 180px;
@@ -49,7 +48,7 @@ export const StyledImg = styled.img`
       min-height: 100px;
     `}
 
-  ${({ styleName }: { styleName: PartnerStyle }) => styleName === PartnerStyle.default && grayscaleImgCSS}
+  ${({ styleName }) => styleName === PartnerStyle.default && grayscaleImgCSS}
 `
 
 export const Title = styled.h3`

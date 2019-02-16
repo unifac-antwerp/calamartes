@@ -66,14 +66,20 @@ export const InstagramIcon = styled(Instagram)`
 
 export const MainNav = styled.ol`
   display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 
   > * {
-    &:not(:last-child) {
-      margin-right: 16px;
-    }
+    margin-left: 16px;
+    padding-bottom: 4px;
+  }
 
-    &.social:not(:last-child) {
-      margin-right: 8px;
+  .social-wrap {
+    display: flex;
+    margin-left: 8px;
+
+    .social {
+      margin-left: 8px;
     }
   }
 `

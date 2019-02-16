@@ -24,19 +24,22 @@ type TProps = {
 
 const navigationItems = [
   {
+    enabled: true,
     link: 'info',
     name: 'info',
   },
   {
-    hidden: true,
+    enabled: true,
     link: 'programma',
     name: 'programma',
   },
   {
+    enabled: true,
     link: 'partners',
     name: 'partners',
   },
   {
+    enabled: true,
     link: 'contact',
     name: 'contact',
   },
@@ -59,7 +62,7 @@ const Navigation = ({ title, subtitle, facebookLink, instagramLink }: TProps) =>
               <nav>
                 <MainNav>
                   {navigationItems
-                    .filter(item => !item.hidden)
+                    .filter(item => item.enabled)
                     .map(item => (
                       <li key={item.name}>
                         <NavLink to={item.link} className={location.pathname === `/${item.link}` ? 'active' : ''}>
@@ -67,16 +70,18 @@ const Navigation = ({ title, subtitle, facebookLink, instagramLink }: TProps) =>
                         </NavLink>
                       </li>
                     ))}
-                  <li className="social">
-                    <a href={instagramLink} target="_blank" rel="noopener">
-                      <InstagramIcon size="16" title="Instagram" />
-                    </a>
-                  </li>
-                  <li className="social">
-                    <a href={facebookLink} target="_blank" rel="noopener">
-                      <FacebookIcon size="16" title="Facebook" />
-                    </a>
-                  </li>
+                  <ol className="social-wrap">
+                    <li className="social">
+                      <a href={instagramLink} target="_blank" rel="noopener">
+                        <InstagramIcon size="16" title="Instagram" />
+                      </a>
+                    </li>
+                    <li className="social">
+                      <a href={facebookLink} target="_blank" rel="noopener">
+                        <FacebookIcon size="16" title="Facebook" />
+                      </a>
+                    </li>
+                  </ol>
                 </MainNav>
               </nav>
             </NavWrap>

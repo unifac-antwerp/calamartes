@@ -54,6 +54,6 @@ export const InnerWrap = styled.div`
 export const Subtitle = styled.span`
   color: ${({ theme }) => theme.colors.neutral01};
   font-size: 20px;
-  margin-top: 4px;
+  margin-top: 6px;
   display: block;
 `

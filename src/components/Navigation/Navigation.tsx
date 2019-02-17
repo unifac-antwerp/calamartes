@@ -25,22 +25,22 @@ type TProps = {
 const navigationItems = [
   {
     enabled: true,
-    link: 'info',
+    link: '/info',
     name: 'info',
   },
   {
     enabled: true,
-    link: 'programma',
+    link: '/programma',
     name: 'programma',
   },
   {
     enabled: true,
-    link: 'partners',
+    link: '/partners',
     name: 'partners',
   },
   {
     enabled: true,
-    link: 'contact',
+    link: '/contact',
     name: 'contact',
   },
 ]

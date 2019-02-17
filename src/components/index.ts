@@ -1,5 +1,7 @@
 export * from './home'
 export * from './Button'
+export * from './EventCard'
+export * from './TagFilter'
 export * from './contact'
 export * from './Footer'
 export * from './Navigation'

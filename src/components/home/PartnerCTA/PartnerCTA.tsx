@@ -17,7 +17,7 @@ const PartnerCTA = (props: TProps) => {
       <InnerWrap className="inner-container">
         <Title>{title}</Title>
         <Text dangerouslySetInnerHTML={{ __html: description }} />
-        {buttonText && <Button link="/contact" text={buttonText} light={true} />}
+        {buttonText && <Button link="/contact" text={buttonText} light />}
       </InnerWrap>
     </Wrap>
   )
@@ -27,7 +27,7 @@ export const PartnerCTASmall = ({ title, buttonText, email }: { title: string; b
   <div className="inner-container">
     <SmallWrap>
       <span>{title}</span>
-      <Button link={`mailto:${email}`} text={buttonText} external={true} />
+      <Button link={`mailto:${email}`} text={buttonText} external />
     </SmallWrap>
   </div>
 )

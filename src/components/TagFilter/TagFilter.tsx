@@ -5,7 +5,7 @@ type TProps = {
 }
 
 const TagFilter = ({ tags }: TProps) => {
-  return tags ? (
+  return !!tags ? (
     <ol>
       {tags.map(tag => (
         <li key={tag}>

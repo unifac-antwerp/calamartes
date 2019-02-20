@@ -22,7 +22,7 @@ const Header = ({ video, image, location, startDate, endDate }: TProps) => (
     {!!video && (
       <React.Fragment>
         <VideoOverlay />
-        <Video autoPlay={true} muted={true} loop={true}>
+        <Video autoPlay muted loop>
           <source src={video} type="video/mp4" />
         </Video>
       </React.Fragment>

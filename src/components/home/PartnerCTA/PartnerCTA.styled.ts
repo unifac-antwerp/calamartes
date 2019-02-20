@@ -4,9 +4,9 @@ type TWrapProps = {
   bgImage: string
 }
 
-export const Wrap = styled.section`
+export const Wrap = styled.section<TWrapProps>`
   position: relative;
-  background-image: ${({ bgImage }: TWrapProps) => `url(${bgImage})`};
+  background-image: ${({ bgImage }) => `url(${bgImage})`};
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -20,10 +20,10 @@ export const Wrap = styled.section`
     width: 100%;
     height: 100%;
     opacity: 0.75;
-    background-color: ${({ theme }: TWrapProps) => theme.colors.global01};
+    background-color: ${({ theme }) => theme.colors.global01};
   }
 
-  ${({ theme }: TWrapProps) => theme.overlays.plusPatternFill};
+  ${({ theme }) => theme.overlays.plusPatternFill};
 `
 
 export const InnerWrap = styled.div`

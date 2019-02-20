@@ -1,3 +1,4 @@
+import { TEvent } from '@components/EventCard/EventCard'
 import { format, isSameMonth } from 'date-fns'
 // @ts-ignore
 import nl from 'date-fns/locale/nl'
@@ -14,3 +15,14 @@ export const getHeaderDate = (startDate: Date, endDate: Date): string => {
   return `${format(startDate, `${!sameMonth ? FORMAT : 'D'}`, formatOptions)}
     - ${format(endDate, FORMAT, formatOptions)}`
 }
+
+export const getAllTags = (events: TEvent[]) =>
+  events &&
+  Array.from(
+    new Set(
+      [].concat(
+        // @ts-ignore
+        ...events.map(event => event.tags.split(',').length > 0 && event.tags.split(',').map(tag => tag.trim()))
+      )
+    )
+  ).sort()

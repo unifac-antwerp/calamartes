@@ -19,8 +19,8 @@ const ContactContent = ({ text, image, emailBtnText, messengerBtnText, email, fa
         <ContentWrap>
           <p>{text}</p>
           <div className="btns">
-            <Button text={emailBtnText} link={`mailto:${email}`} external={true} />
-            <Button text={messengerBtnText} link={facebookLink} external={true} />
+            <Button text={emailBtnText} link={`mailto:${email}`} external />
+            <Button text={messengerBtnText} link={facebookLink} external />
           </div>
         </ContentWrap>
         {!!image && (

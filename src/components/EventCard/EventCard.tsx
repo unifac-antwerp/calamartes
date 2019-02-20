@@ -1,14 +1,16 @@
+import { Button } from '@components'
 import { format } from 'date-fns'
 // @ts-ignore
 import nl from 'date-fns/locale/nl'
-import Img, { FluidObject } from 'gatsby-image'
+import { FluidObject } from 'gatsby-image'
 import * as React from 'react'
+import { Description, Info, InfoWrap, LinkWrap, StyledImage, Tag, TagWrap, Title, Wrap } from './EventCard.styled'
 
-type TEvent = {
-  title: string
-  date: Date
-  tags: string
-  facebook_link: {
+export type TEvent = {
+  title?: string
+  date?: Date
+  tags?: string
+  facebook_link?: {
     url: string
   }
   image: {
@@ -18,42 +20,52 @@ type TEvent = {
       }
     }
   }
-  sign_up_link: {
+  sign_up_link?: {
     url: string
   }
-  short_description: string
-  organizer: string
+  short_description?: string
+  organizer?: string
 }
 
 type TProps = {
   event: TEvent
+  index: number
 }
 
-const EventCard = ({ event }: TProps) => {
-  const tags = event.tags.split(',').map(tag => tag.trim())
+const EventCard = ({ event, index }: TProps) => {
+  const tags = event.tags ? event.tags.split(',').map(tag => tag.trim()) : []
 
   return (
-    <article>
-      <h3>{event.title}</h3>
-      <span>{event.organizer}</span>
-      <br />
-      <span>{format(event.date, 'D MMMM - HH:mm', { locale: nl })}</span>
-      <br />
-      <span>{event.short_description}</span>
-      <ul>
-        {tags.map(tag => (
-          <li key={tag}>{tag}</li>
-        ))}
-      </ul>
-      <a href={event.sign_up_link.url} target="_blank" rel="noopener">
-        Inschrijven
-      </a>
-      <br />
-      <a href={event.facebook_link.url} target="_blank" rel="noopener">
-        FB event
-      </a>
-      {/* <Img fluid={event.image.localFile.childImageSharp.fluid} /> */}
-    </article>
+    <Wrap index={index}>
+      <StyledImage fluid={event.image.localFile.childImageSharp.fluid} />
+      <LinkWrap>
+        {event.facebook_link && (
+          <li className="link">
+            <Button external link={event.facebook_link.url} text="FB" />
+          </li>
+        )}
+        {event.sign_up_link && (
+          <li className="link">
+            <Button external link={event.sign_up_link.url} text="Signup" />
+          </li>
+        )}
+      </LinkWrap>
+
+      <InfoWrap>
+        <Title>{event.title}</Title>
+        <Info>
+          {event.organizer}
+          {event.date &&
+            ` - ${format(event.date, 'D MMMM', { locale: nl })} om ${format(event.date, 'HH:mm', { locale: nl })}`}
+        </Info>
+        <TagWrap>
+          {tags.map(tag => (
+            <Tag key={tag}>{tag}</Tag>
+          ))}
+        </TagWrap>
+        {event.short_description && <Description>{event.short_description}</Description>}
+      </InfoWrap>
+    </Wrap>
   )
 }
 

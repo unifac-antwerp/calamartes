@@ -69,6 +69,14 @@ export default css`
 
   h2 {
     ${theme.typo.textstyle.heading02}
+
+    &.event-section-title {
+      color: ${theme.colors.global01};
+      margin: 52px 0 36px;
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
   }
 
   h3 {

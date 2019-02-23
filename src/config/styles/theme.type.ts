@@ -65,6 +65,7 @@ type TBreakpoints = {
 
 type TShadows = {
   shadow01: CSSObject
+  shadow02: CSSObject
 }
 
 type TOverlays = {

@@ -41,12 +41,12 @@ const EventCard = ({ event, index }: TProps) => {
       <LinkWrap>
         {event.facebook_link && (
           <li className="link">
-            <Button external link={event.facebook_link.url} text="FB" />
+            <Button external link={event.facebook_link.url} text="Facebook" />
           </li>
         )}
         {event.sign_up_link && (
           <li className="link">
-            <Button external link={event.sign_up_link.url} text="Signup" />
+            <Button external link={event.sign_up_link.url} text="Inschrijven" />
           </li>
         )}
       </LinkWrap>
@@ -55,8 +55,7 @@ const EventCard = ({ event, index }: TProps) => {
         <Title>{event.title}</Title>
         <Info>
           {event.organizer}
-          {event.date &&
-            ` - ${format(event.date, 'D MMMM', { locale: nl })} om ${format(event.date, 'HH:mm', { locale: nl })}`}
+          {event.date && ` - ${format(event.date, 'HH:mm', { locale: nl })}`}
         </Info>
         <TagWrap>
           {tags.map(tag => (

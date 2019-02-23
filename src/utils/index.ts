@@ -16,13 +16,18 @@ export const getHeaderDate = (startDate: Date, endDate: Date): string => {
     - ${format(endDate, FORMAT, formatOptions)}`
 }
 
-export const getAllTags = (events: TEvent[]) =>
+export const getAllTags = (events: Array<{ data: TEvent }>) =>
   events &&
   Array.from(
     new Set(
       [].concat(
         // @ts-ignore
-        ...events.map(event => event.tags.split(',').length > 0 && event.tags.split(',').map(tag => tag.trim()))
+        ...events.map(
+          event =>
+            event.data.tags &&
+            event.data.tags.split(',').length > 0 &&
+            event.data.tags.split(',').map(tag => tag.trim())
+        )
       )
     )
   ).sort()

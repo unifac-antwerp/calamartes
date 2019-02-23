@@ -2,8 +2,7 @@ import styled from '@config/styles/styled-components'
 import Img from 'gatsby-image'
 import { keyframes } from 'styled-components'
 
-export const DetailPageWrap = styled.ol`
-  margin-top: 32px;
+export const EventSectionWrap = styled.ol`
   display: grid;
   grid-template-columns: 1fr;
   grid-column-gap: 16px;
@@ -12,7 +11,7 @@ export const DetailPageWrap = styled.ol`
   align-items: stretch;
   grid-auto-columns: 1fr;
 
-  @media (min-width: ${({ theme }) => theme.breakpoints.s}) {
+  @media (min-width: 750px) {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -37,7 +36,7 @@ export const Wrap = styled.article<{ index: number }>`
   display: flex;
   flex-direction: column;
   overflow-y: hidden;
-  ${({ theme }) => theme.shadows.shadow01};
+  ${({ theme }) => theme.shadows.shadow02};
   height: 100%;
   opacity: 0;
   animation: ${slideIn} 400ms ease-in-out;
@@ -46,7 +45,11 @@ export const Wrap = styled.article<{ index: number }>`
 
   .link {
     transition: transform 200ms ease-in-out;
-    transform: translateY(-64px);
+    transform: translateY(0);
+
+    @media (min-width: 750px) {
+      transform: translateY(-64px);
+    }
   }
 
   &:hover {

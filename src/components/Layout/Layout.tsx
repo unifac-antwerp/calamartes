@@ -24,8 +24,8 @@ export type TSocialItem = {
 const Layout = ({ children }: TProps) => (
   <StaticQuery
     query={layoutQuery}
-    render={({ allPrismicGeneral }: Query) => {
-      const generalData = idx(allPrismicGeneral, _ => _.edges[0].node.data)
+    render={({ prismicGeneral }: Query) => {
+      const generalData = idx(prismicGeneral, _ => _.data)
 
       const {
         site_title = 'Calamartes',
@@ -101,34 +101,30 @@ const Layout = ({ children }: TProps) => (
 
 const layoutQuery = graphql`
   {
-    allPrismicGeneral {
-      edges {
-        node {
-          data {
-            instagram_link {
-              url
-            }
-            facebook_link {
-              url
-            }
-            linkedin {
-              url
-            }
-            site_title
-            site_subtitle
-            address
-            phone
-            email
-            website_url
-            share_image {
-              url
-            }
-            tags
-            description
-            unifac_website {
-              url
-            }
-          }
+    prismicGeneral {
+      data {
+        instagram_link {
+          url
+        }
+        facebook_link {
+          url
+        }
+        linkedin {
+          url
+        }
+        site_title
+        site_subtitle
+        address
+        phone
+        email
+        website_url
+        share_image {
+          url
+        }
+        tags
+        description
+        unifac_website {
+          url
         }
       }
     }

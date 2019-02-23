@@ -15,8 +15,8 @@ export type TPartnerHomepage = {
 const IndexPage = () => (
   <StaticQuery
     query={pageQuery}
-    render={({ allInstaNode, allPrismicGeneral, allPrismicHomepage, allPrismicPartner }: Query) => {
-      const homepagedata = idx(allPrismicHomepage, _ => _.edges[0].node.data)
+    render={({ allInstaNode, prismicGeneral, prismicHomepage, allPrismicPartner }: Query) => {
+      const homepagedata = idx(prismicHomepage, _ => _.data)
       const introImage = idx(homepagedata, _ => _.intro_image.localFile.childImageSharp.fluid)
       const carouselImages = idx(homepagedata, _ =>
         _.carousel_images.map(image => image.image.localFile.childImageSharp.fluid)
@@ -27,7 +27,7 @@ const IndexPage = () => (
       ]
       const homepagePartners = sortHomepagePartners(allPrismicPartner)
 
-      const { location = '', start_date = '', end_date = '' } = { ...idx(allPrismicGeneral, _ => _.edges[0].node.data) }
+      const { location = '', start_date = '', end_date = '' } = { ...idx(prismicGeneral, _ => _.data) }
 
       return (
         <Layout>
@@ -75,18 +75,15 @@ const IndexPage = () => (
 )
 
 const pageQuery = graphql`
-  query allPrismicHomepageQuery {
-    allPrismicGeneral {
-      edges {
-        node {
-          data {
-            location
-            start_date
-            end_date
-          }
-        }
+  query prismicHomepageQuery {
+    prismicGeneral {
+      data {
+        location
+        start_date
+        end_date
       }
     }
+
     allPrismicPartner {
       edges {
         node {
@@ -104,71 +101,67 @@ const pageQuery = graphql`
         }
       }
     }
-    allPrismicHomepage {
-      edges {
-        node {
-          data {
-            header_movie {
-              url
-            }
-            fallback_image {
-              url
-            }
-            intro_text {
-              html
-            }
-            intro_button_text
-            intro_image {
-              localFile {
-                childImageSharp {
-                  fluid(maxWidth: 500) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
+    prismicHomepage {
+      data {
+        header_movie {
+          url
+        }
+        fallback_image {
+          url
+        }
+        intro_text {
+          html
+        }
+        intro_button_text
+        intro_image {
+          localFile {
+            childImageSharp {
+              fluid(maxWidth: 500) {
+                ...GatsbyImageSharpFluid
               }
-            }
-            carousel_images {
-              image {
-                localFile {
-                  childImageSharp {
-                    fluid(maxHeight: 500) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
-              }
-            }
-            pictures_main_picture {
-              localFile {
-                childImageSharp {
-                  fluid(maxWidth: 500) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-            }
-            pictures_secondary_picture {
-              localFile {
-                childImageSharp {
-                  fluid(maxWidth: 500) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-            }
-            partnercta_bgimage {
-              url
-            }
-            partnercta_button_text
-            partnercta_title
-            partnercta_description {
-              html
-            }
-            social_title
-            social_description {
-              html
             }
           }
+        }
+        carousel_images {
+          image {
+            localFile {
+              childImageSharp {
+                fluid(maxHeight: 500) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+        pictures_main_picture {
+          localFile {
+            childImageSharp {
+              fluid(maxWidth: 500) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        pictures_secondary_picture {
+          localFile {
+            childImageSharp {
+              fluid(maxWidth: 500) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        partnercta_bgimage {
+          url
+        }
+        partnercta_button_text
+        partnercta_title
+        partnercta_description {
+          html
+        }
+        social_title
+        social_description {
+          html
         }
       }
     }

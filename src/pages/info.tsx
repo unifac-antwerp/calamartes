@@ -8,21 +8,21 @@ import { Query } from 'src/graphql'
 const Info = () => (
   <StaticQuery
     query={pageQuery}
-    render={({ allPrismicInfoPage }: Query) => {
-      const allPrismicInfoPageData = idx(allPrismicInfoPage, _ => _.edges[0].node.data)
+    render={({ prismicInfoPage }: Query) => {
+      const prismicInfoPageData = idx(prismicInfoPage, _ => _.data)
 
       return (
         <Layout>
           <Helmet title="Info" />
           <HeaderSmall
-            title={(allPrismicInfoPageData && allPrismicInfoPageData.title) || ''}
-            subtitle={(allPrismicInfoPageData && allPrismicInfoPageData.subtitle) || ''}
-            picture={(allPrismicInfoPageData && allPrismicInfoPageData.header_image.url) || ''}
+            title={(prismicInfoPageData && prismicInfoPageData.title) || ''}
+            subtitle={(prismicInfoPageData && prismicInfoPageData.subtitle) || ''}
+            picture={(prismicInfoPageData && prismicInfoPageData.header_image.url) || ''}
           />
           <div className="inner-container">
             <main
               className="richtext"
-              dangerouslySetInnerHTML={{ __html: (allPrismicInfoPageData && allPrismicInfoPageData.info.html) || '' }}
+              dangerouslySetInnerHTML={{ __html: (prismicInfoPageData && prismicInfoPageData.info.html) || '' }}
             />
           </div>
         </Layout>
@@ -35,19 +35,15 @@ export default Info
 
 const pageQuery = graphql`
   query {
-    allPrismicInfoPage {
-      edges {
-        node {
-          data {
-            title
-            subtitle
-            header_image {
-              url
-            }
-            info {
-              html
-            }
-          }
+    prismicInfoPage {
+      data {
+        title
+        subtitle
+        header_image {
+          url
+        }
+        info {
+          html
         }
       }
     }

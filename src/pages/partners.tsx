@@ -9,9 +9,9 @@ import { Query } from '../graphql'
 const Partners = () => (
   <StaticQuery
     query={pageQuery}
-    render={({ allPrismicPartner, allPrismicPartnersPage, allPrismicGeneral }: Query) => {
-      const partnerPageData = idx(allPrismicPartnersPage, _ => _.edges[0].node.data)
-      const generalData = idx(allPrismicGeneral, _ => _.edges[0].node.data)
+    render={({ allPrismicPartner, prismicPartnersPage, prismicGeneral }: Query) => {
+      const partnerPageData = idx(prismicPartnersPage, _ => _.data)
+      const generalData = idx(prismicGeneral, _ => _.data)
       const mainPartners = sortPartners(getPartnersByType(allPrismicPartner, PartnerType.main))
       const friends = sortPartners(getPartnersByType(allPrismicPartner, PartnerType.friend))
 
@@ -44,32 +44,25 @@ const Partners = () => (
 
 const pageQuery = graphql`
   query allPrismicPartnersQuery {
-    allPrismicGeneral {
-      edges {
-        node {
-          data {
-            email
-          }
-        }
+    prismicGeneral {
+      data {
+        email
       }
     }
-    allPrismicPartnersPage {
-      edges {
-        node {
-          data {
-            partners_header_image {
-              url
-            }
-            partners_title
-            partners_subtitle
-            partners_cta_title
-            cta_button_text
-            main_partners_title
-            friends_title
-          }
+    prismicPartnersPage {
+      data {
+        partners_header_image {
+          url
         }
+        partners_title
+        partners_subtitle
+        partners_cta_title
+        cta_button_text
+        main_partners_title
+        friends_title
       }
     }
+
     allPrismicPartner {
       edges {
         node {

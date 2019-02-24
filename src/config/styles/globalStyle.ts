@@ -63,6 +63,12 @@ export default css`
     display: none;
   }
 
+  .truncate {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
   h1 {
     ${theme.typo.textstyle.heading01}
   }

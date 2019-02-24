@@ -87,6 +87,7 @@ const textstyle = {
     font-family: ${fonts.heading};
     font-size: 26px;
     font-weight: ${fontweights.bold};
+    line-height: 1.2;
     color: ${colors.neutral01};
 
     @media (min-width: ${breakpoints.m}) {

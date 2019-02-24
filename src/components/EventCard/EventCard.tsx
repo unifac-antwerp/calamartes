@@ -1,7 +1,7 @@
 import { Button } from '@components'
 import { format } from 'date-fns'
 // @ts-ignore
-import nl from 'date-fns/locale/nl'
+import locale from 'date-fns/locale/nl'
 import { FluidObject } from 'gatsby-image'
 import * as React from 'react'
 import { Description, Info, InfoWrap, LinkWrap, StyledImage, Tag, TagWrap, Title, Wrap } from './EventCard.styled'
@@ -29,10 +29,11 @@ export type TEvent = {
 
 type TProps = {
   event: TEvent
-  index: number
+  index?: number
+  isTeaser?: boolean
 }
 
-const EventCard = ({ event, index }: TProps) => {
+const EventCard = ({ event, index, isTeaser }: TProps) => {
   const tags = event.tags ? event.tags.split(',').map(tag => tag.trim()) : []
 
   return (
@@ -52,17 +53,24 @@ const EventCard = ({ event, index }: TProps) => {
       </LinkWrap>
 
       <InfoWrap>
-        <Title>{event.title}</Title>
-        <Info>
+        <Title className={isTeaser ? 'truncate' : ''}>{event.title}</Title>
+        <Info className={isTeaser ? 'truncate' : ''}>
           {event.organizer}
-          {event.date && ` - ${format(event.date, 'HH:mm', { locale: nl })}`}
+          {event.date &&
+            (!isTeaser
+              ? ` - ${format(event.date, 'HH:mm', { locale })}`
+              : ` - ${format(event.date, 'dddd D MMM.', { locale })} om ${format(event.date, 'HH:mm', {
+                  locale,
+                })}`)}
         </Info>
-        <TagWrap>
-          {tags.map(tag => (
-            <Tag key={tag}>{tag}</Tag>
-          ))}
-        </TagWrap>
-        {event.short_description && <Description>{event.short_description}</Description>}
+        {!isTeaser && (
+          <TagWrap>
+            {tags.map(tag => (
+              <Tag key={tag}>{tag}</Tag>
+            ))}
+          </TagWrap>
+        )}
+        {event.short_description && !isTeaser && <Description>{event.short_description}</Description>}
       </InfoWrap>
     </Wrap>
   )

@@ -1,4 +1,4 @@
-import styled from '@config/styles/styled-components'
+import styled, { css } from '@config/styles/styled-components'
 import Img from 'gatsby-image'
 import { keyframes } from 'styled-components'
 
@@ -31,23 +31,27 @@ const slideIn = keyframes`
   }
 `
 
-export const Wrap = styled.article<{ index: number }>`
+export const Wrap = styled.article<{ index?: number }>`
   position: relative;
   display: flex;
   flex-direction: column;
   overflow-y: hidden;
   ${({ theme }) => theme.shadows.shadow02};
   height: 100%;
-  opacity: 0;
-  animation: ${slideIn} 400ms ease-in-out;
-  animation-fill-mode: forwards;
-  animation-delay: ${({ index }) => index * 50}ms;
+  ${({ index }) =>
+    index !== undefined &&
+    css`
+      opacity: 0;
+      animation: ${slideIn} 400ms ease-in-out;
+      animation-fill-mode: forwards;
+      animation-delay: ${index * 50}ms;
+    `}
 
   .link {
     transition: transform 200ms ease-in-out;
     transform: translateY(0);
 
-    @media (min-width: 750px) {
+    @media (min-width: ${({ theme }) => theme.breakpoints.m}) {
       transform: translateY(-64px);
     }
   }
@@ -144,10 +148,11 @@ export const Title = styled.h2`
 export const Info = styled.span`
   font-family: ${({ theme }) => theme.typo.fonts.heading};
   font-weight: ${({ theme }) => theme.typo.fontweights.medium};
+  font-size: 15px;
   margin-bottom: 8px;
 `
 
 export const Description = styled.span`
-  font-size: 16px;
+  font-size: 15px;
   line-height: 140%;
 `

@@ -1,4 +1,4 @@
-import { Carousel, Header, Instagram, Intro, Layout, PartnerCTA, Partners, Pictures } from '@components'
+import { Carousel, EventsTeaser, Header, Instagram, Intro, Layout, PartnerCTA, Partners, Pictures } from '@components'
 import { sortHomepagePartners } from '@utils/partnerUtils'
 import { graphql, StaticQuery } from 'gatsby'
 import idx from 'idx'
@@ -15,8 +15,9 @@ export type TPartnerHomepage = {
 const IndexPage = () => (
   <StaticQuery
     query={pageQuery}
-    render={({ allInstaNode, prismicGeneral, prismicHomepage, allPrismicPartner }: Query) => {
+    render={({ allInstaNode, prismicGeneral, prismicHomepage, allPrismicPartner, allPrismicEvent }: Query) => {
       const homepagedata = idx(prismicHomepage, _ => _.data)
+      const events = idx(allPrismicEvent, _ => _.edges.map(event => event.node.data)) || []
       const introImage = idx(homepagedata, _ => _.intro_image.localFile.childImageSharp.fluid)
       const carouselImages = idx(homepagedata, _ =>
         _.carousel_images.map(image => image.image.localFile.childImageSharp.fluid)
@@ -28,6 +29,8 @@ const IndexPage = () => (
       const homepagePartners = sortHomepagePartners(allPrismicPartner)
 
       const { location = '', start_date = '', end_date = '' } = { ...idx(prismicGeneral, _ => _.data) }
+
+      const maxEvents = 10
 
       return (
         <Layout>
@@ -47,7 +50,10 @@ const IndexPage = () => (
             />
           )}
 
-          {/* next events */}
+          {events && (
+            // @ts-ignore
+            <EventsTeaser events={events.sort((a, b) => new Date(a.date) - new Date(b.date)).slice(0, maxEvents)} />
+          )}
 
           {!!carouselImages && <Carousel images={carouselImages} />}
 
@@ -83,7 +89,34 @@ const pageQuery = graphql`
         end_date
       }
     }
-
+    allPrismicEvent {
+      edges {
+        node {
+          data {
+            title
+            organizer
+            image {
+              localFile {
+                childImageSharp {
+                  fluid(maxWidth: 240) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
+            date
+            short_description
+            tags
+            facebook_link {
+              url
+            }
+            sign_up_link {
+              url
+            }
+          }
+        }
+      }
+    }
     allPrismicPartner {
       edges {
         node {

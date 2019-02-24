@@ -39,14 +39,16 @@ const Programma = ({ data: { prismicProgramPage, allPrismicEvent } }: { data: Qu
   const eventsData = idx(events, _ =>
     _.map(e => ({
       ...e.data,
-      section: parse(format(e.data.date, 'YYYY-MM-DD', { locale })),
+      section: new Date(e.data.date) > new Date() ? parse(format(e.data.date, 'YYYY-MM-DD', { locale })) : 'afgelopen',
     }))
   )
 
   const eventsSorted = eventsData && groupBy(eventsData, 'section')
 
-  // @ts-ignore
-  const datesSorted = Object.keys(eventsSorted || {}).sort((a, b) => a - b)
+  const datesSorted = Object.keys(eventsSorted || {})
+    // @ts-ignore
+    .sort((a, b) => a - b)
+    .filter(e => e !== 'afgelopen')
 
   return (
     <Layout>
@@ -56,7 +58,7 @@ const Programma = ({ data: { prismicProgramPage, allPrismicEvent } }: { data: Qu
         subtitle={subtitle}
         picture={(programPageData && programPageData.header_image.url) || ''}
       />
-      <div className="inner-container" style={{ marginTop: '32px' }}>
+      <div className="inner-container" style={{ margin: '32px auto' }}>
         {/* <TagFilter tags={tags} setTags={updatedTags => setTags(updatedTags)} /> */}
         <ol>
           {datesSorted.map((date, i) => (
@@ -72,6 +74,19 @@ const Programma = ({ data: { prismicProgramPage, allPrismicEvent } }: { data: Qu
               </EventSectionWrap>
             </li>
           ))}
+
+          {eventsSorted && !!eventsSorted.afgelopen && (
+            <li>
+              <h2 className="event-section-title">Afgelopen</h2>
+              <EventSectionWrap>
+                {eventsSorted.afgelopen.map((e, i) => (
+                  <li>
+                    <EventCard event={e} index={i} isTeaser isOver />
+                  </li>
+                ))}
+              </EventSectionWrap>
+            </li>
+          )}
         </ol>
       </div>
     </Layout>

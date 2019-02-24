@@ -31,9 +31,10 @@ type TProps = {
   event: TEvent
   index?: number
   isTeaser?: boolean
+  isOver?: boolean
 }
 
-const EventCard = ({ event, index, isTeaser }: TProps) => {
+const EventCard = ({ event, index, isTeaser, isOver }: TProps) => {
   const tags = event.tags ? event.tags.split(',').map(tag => tag.trim()) : []
 
   return (
@@ -45,7 +46,7 @@ const EventCard = ({ event, index, isTeaser }: TProps) => {
             <Button external link={event.facebook_link.url} text="Facebook" />
           </li>
         )}
-        {event.sign_up_link && (
+        {event.sign_up_link && !isOver && (
           <li className="link">
             <Button external link={event.sign_up_link.url} text="Inschrijven" />
           </li>

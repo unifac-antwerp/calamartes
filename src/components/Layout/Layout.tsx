@@ -13,6 +13,7 @@ import { SiteWrap } from './Layout.styled'
 
 type TProps = {
   children: React.ReactNode
+  noFooterMargin?: boolean
 }
 
 export type TSocialItem = {
@@ -21,7 +22,7 @@ export type TSocialItem = {
   icon: JSX.Element
 }
 
-const Layout = ({ children }: TProps) => (
+const Layout = ({ children, noFooterMargin }: TProps) => (
   <StaticQuery
     query={layoutQuery}
     render={({ prismicGeneral }: Query) => {
@@ -92,7 +93,7 @@ const Layout = ({ children }: TProps) => (
             instagramLink={(!!generalData && generalData.facebook_link.url) || '#'}
           />
           <SiteWrap>{children}</SiteWrap>
-          <Footer address={address} phone={phone} email={email} socials={socials!} />
+          <Footer address={address} phone={phone} email={email} socials={socials!} noMargin={noFooterMargin || false} />
         </React.Fragment>
       )
     }}

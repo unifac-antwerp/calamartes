@@ -1,6 +1,5 @@
 import { Carousel, EventsTeaser, Header, Instagram, Intro, Layout, PartnerCTA, Partners, Pictures } from '@components'
 import { sortHomepagePartners } from '@utils/partnerUtils'
-import { addDays } from 'date-fns'
 import { graphql, StaticQuery } from 'gatsby'
 import idx from 'idx'
 import * as React from 'react'
@@ -40,7 +39,7 @@ const IndexPage = () => (
         .slice(0, maxEvents)
 
       return (
-        <Layout>
+        <Layout noFooterMargin>
           <Header
             video={homepagedata && homepagedata.header_movie.url}
             image={(homepagedata && homepagedata.fallback_image.url) || ''}

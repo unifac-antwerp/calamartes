@@ -9,10 +9,11 @@ type TProps = {
   phone: string
   email: string
   socials: TSocialItem[]
+  noMargin: boolean
 }
 
-const Footer = ({ address, phone, email, socials }: TProps) => (
-  <Wrap>
+const Footer = ({ address, phone, email, socials, noMargin }: TProps) => (
+  <Wrap noMargin={noMargin}>
     <div className="inner-container">
       <InnerWrap>
         <List>

@@ -1,7 +1,7 @@
 import styled from '@config/styles/styled-components'
 
-export const Wrap = styled.footer`
-  margin-top: 40px;
+export const Wrap = styled.footer<{ noMargin: boolean }>`
+  ${({ noMargin }) => !noMargin && ' margin-top: 40px;'}
   background-color: ${({ theme }) => theme.colors.global04};
   color: ${({ theme }) => theme.colors.neutral01};
   padding: 24px 0;

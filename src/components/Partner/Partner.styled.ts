@@ -24,7 +24,13 @@ export const ImageWrap = styled.div<{ styleName: PartnerStyle }>`
   ${({ styleName }) => (styleName === PartnerStyle.detailMain ? 'height: 180px;' : 'height: 100px;')}
 
   width: auto;
-  max-width: 280px;
+
+  ${({ styleName }) =>
+    styleName === PartnerStyle.default
+      ? 'max-width: 180px;'
+      : styleName === PartnerStyle.detailFriend
+      ? 'max-width: 220px;'
+      : 'max-width: 280px;'}
   margin: 0 auto;
   ${({ styleName }) => (styleName === PartnerStyle.detailMain ? 'margin: 24px auto;' : 'margin: 16px')}
 `

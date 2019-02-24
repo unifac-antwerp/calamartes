@@ -1,5 +1,6 @@
 import { Carousel, EventsTeaser, Header, Instagram, Intro, Layout, PartnerCTA, Partners, Pictures } from '@components'
 import { sortHomepagePartners } from '@utils/partnerUtils'
+import { addDays } from 'date-fns'
 import { graphql, StaticQuery } from 'gatsby'
 import idx from 'idx'
 import * as React from 'react'
@@ -32,6 +33,12 @@ const IndexPage = () => (
 
       const maxEvents = 10
 
+      const homepageEvents = events
+        // @ts-ignore
+        .sort((a, b) => new Date(a.date) - new Date(b.date))
+        .filter(e => new Date(e.date) > new Date())
+        .slice(0, maxEvents)
+
       return (
         <Layout>
           <Header
@@ -50,10 +57,7 @@ const IndexPage = () => (
             />
           )}
 
-          {events && (
-            // @ts-ignore
-            <EventsTeaser events={events.sort((a, b) => new Date(a.date) - new Date(b.date)).slice(0, maxEvents)} />
-          )}
+          {homepageEvents.length > 0 && <EventsTeaser events={homepageEvents} />}
 
           {!!carouselImages && <Carousel images={carouselImages} />}
 

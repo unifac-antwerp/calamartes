@@ -127,9 +127,9 @@ export const query = graphql`
             facebook_link {
               url
             }
-            sign_up_link {
-              url
-            }
+            # sign_up_link {
+            #   url
+            # }
           }
         }
       }

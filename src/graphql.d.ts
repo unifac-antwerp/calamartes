@@ -4780,1214 +4780,6 @@ export interface PrismicPartnerConnectionDataStringQueryString_2 {
   nin?: Maybe<(Maybe<string>)[]>
 }
 
-export interface PrismicEventConnectionSort {
-  fields: (Maybe<PrismicEventConnectionSortByFieldsEnum>)[]
-
-  order?: (Maybe<PrismicEventConnectionSortOrderValues>)[]
-}
-/** Filter connection on its fields */
-export interface FilterPrismicEvent {
-  type?: Maybe<PrismicEventConnectionTypeQueryString_2>
-
-  href?: Maybe<PrismicEventConnectionHrefQueryString_2>
-
-  first_publication_date?: Maybe<PrismicEventConnectionFirstPublicationDateQueryString_2>
-
-  last_publication_date?: Maybe<PrismicEventConnectionLastPublicationDateQueryString_2>
-
-  slugs?: Maybe<PrismicEventConnectionSlugsQueryList_2>
-
-  lang?: Maybe<PrismicEventConnectionLangQueryString_2>
-
-  data?: Maybe<PrismicEventConnectionDataInputObject_2>
-
-  prismicId?: Maybe<PrismicEventConnectionPrismicIdQueryString_2>
-
-  id?: Maybe<PrismicEventConnectionIdQueryString_2>
-
-  internal?: Maybe<PrismicEventConnectionInternalInputObject_2>
-
-  dataString?: Maybe<PrismicEventConnectionDataStringQueryString_2>
-}
-
-export interface PrismicEventConnectionTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionHrefQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionFirstPublicationDateQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionLastPublicationDateQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionSlugsQueryList_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionLangQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataInputObject_2 {
-  title?: Maybe<PrismicEventConnectionDataTitleQueryString_2>
-
-  organizer?: Maybe<PrismicEventConnectionDataOrganizerQueryString_2>
-
-  image?: Maybe<PrismicEventConnectionDataImageInputObject_2>
-
-  date?: Maybe<PrismicEventConnectionDataDateQueryString_2>
-
-  short_description?: Maybe<PrismicEventConnectionDataShortDescriptionQueryString_2>
-
-  tags?: Maybe<PrismicEventConnectionDataTagsQueryString_2>
-
-  facebook_link?: Maybe<PrismicEventConnectionDataFacebookLinkInputObject_2>
-}
-
-export interface PrismicEventConnectionDataTitleQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataOrganizerQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageInputObject_2 {
-  dimensions?: Maybe<PrismicEventConnectionDataImageDimensionsInputObject_2>
-
-  alt?: Maybe<PrismicEventConnectionDataImageAltQueryString_2>
-
-  copyright?: Maybe<PrismicEventConnectionDataImageCopyrightQueryString_2>
-
-  url?: Maybe<PrismicEventConnectionDataImageUrlQueryString_2>
-
-  localFile?: Maybe<PrismicEventConnectionDataImageLocalFileInputObject_2>
-}
-
-export interface PrismicEventConnectionDataImageDimensionsInputObject_2 {
-  width?: Maybe<PrismicEventConnectionDataImageDimensionsWidthQueryInteger_2>
-
-  height?: Maybe<PrismicEventConnectionDataImageDimensionsHeightQueryInteger_2>
-}
-
-export interface PrismicEventConnectionDataImageDimensionsWidthQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventConnectionDataImageDimensionsHeightQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventConnectionDataImageAltQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageCopyrightQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageUrlQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileInputObject_2 {
-  id?: Maybe<PrismicEventConnectionDataImageLocalFileIdQueryString_2>
-
-  children?: Maybe<PrismicEventConnectionDataImageLocalFileChildrenQueryList_2>
-
-  parent?: Maybe<PrismicEventConnectionDataImageLocalFileParentQueryString_2>
-
-  internal?: Maybe<PrismicEventConnectionDataImageLocalFileInternalInputObject_2>
-
-  sourceInstanceName?: Maybe<PrismicEventConnectionDataImageLocalFileSourceInstanceNameQueryString_2>
-
-  absolutePath?: Maybe<PrismicEventConnectionDataImageLocalFileAbsolutePathQueryString_2>
-
-  relativePath?: Maybe<PrismicEventConnectionDataImageLocalFileRelativePathQueryString_2>
-
-  extension?: Maybe<PrismicEventConnectionDataImageLocalFileExtensionQueryString_2>
-
-  size?: Maybe<PrismicEventConnectionDataImageLocalFileSizeQueryInteger_2>
-
-  prettySize?: Maybe<PrismicEventConnectionDataImageLocalFilePrettySizeQueryString_2>
-
-  modifiedTime?: Maybe<PrismicEventConnectionDataImageLocalFileModifiedTimeQueryString_2>
-
-  accessTime?: Maybe<PrismicEventConnectionDataImageLocalFileAccessTimeQueryString_2>
-
-  changeTime?: Maybe<PrismicEventConnectionDataImageLocalFileChangeTimeQueryString_2>
-
-  birthTime?: Maybe<PrismicEventConnectionDataImageLocalFileBirthTimeQueryString_2>
-
-  root?: Maybe<PrismicEventConnectionDataImageLocalFileRootQueryString_2>
-
-  dir?: Maybe<PrismicEventConnectionDataImageLocalFileDirQueryString_2>
-
-  base?: Maybe<PrismicEventConnectionDataImageLocalFileBaseQueryString_2>
-
-  ext?: Maybe<PrismicEventConnectionDataImageLocalFileExtQueryString_2>
-
-  name?: Maybe<PrismicEventConnectionDataImageLocalFileNameQueryString_2>
-
-  relativeDirectory?: Maybe<PrismicEventConnectionDataImageLocalFileRelativeDirectoryQueryString_2>
-
-  dev?: Maybe<PrismicEventConnectionDataImageLocalFileDevQueryInteger_2>
-
-  mode?: Maybe<PrismicEventConnectionDataImageLocalFileModeQueryInteger_2>
-
-  nlink?: Maybe<PrismicEventConnectionDataImageLocalFileNlinkQueryInteger_2>
-
-  uid?: Maybe<PrismicEventConnectionDataImageLocalFileUidQueryInteger_2>
-
-  gid?: Maybe<PrismicEventConnectionDataImageLocalFileGidQueryInteger_2>
-
-  rdev?: Maybe<PrismicEventConnectionDataImageLocalFileRdevQueryInteger_2>
-
-  blksize?: Maybe<PrismicEventConnectionDataImageLocalFileBlksizeQueryInteger_2>
-
-  ino?: Maybe<PrismicEventConnectionDataImageLocalFileInoQueryInteger_2>
-
-  blocks?: Maybe<PrismicEventConnectionDataImageLocalFileBlocksQueryInteger_2>
-
-  atimeMs?: Maybe<PrismicEventConnectionDataImageLocalFileAtimeMsQueryFloat_2>
-
-  mtimeMs?: Maybe<PrismicEventConnectionDataImageLocalFileMtimeMsQueryFloat_2>
-
-  ctimeMs?: Maybe<PrismicEventConnectionDataImageLocalFileCtimeMsQueryFloat_2>
-
-  birthtimeMs?: Maybe<PrismicEventConnectionDataImageLocalFileBirthtimeMsQueryFloat_2>
-
-  atime?: Maybe<PrismicEventConnectionDataImageLocalFileAtimeQueryString_2>
-
-  mtime?: Maybe<PrismicEventConnectionDataImageLocalFileMtimeQueryString_2>
-
-  ctime?: Maybe<PrismicEventConnectionDataImageLocalFileCtimeQueryString_2>
-
-  birthtime?: Maybe<PrismicEventConnectionDataImageLocalFileBirthtimeQueryString_2>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileIdQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileChildrenQueryList_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileParentQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileInternalInputObject_2 {
-  contentDigest?: Maybe<PrismicEventConnectionDataImageLocalFileInternalContentDigestQueryString_2>
-
-  type?: Maybe<PrismicEventConnectionDataImageLocalFileInternalTypeQueryString_2>
-
-  mediaType?: Maybe<PrismicEventConnectionDataImageLocalFileInternalMediaTypeQueryString_2>
-
-  description?: Maybe<PrismicEventConnectionDataImageLocalFileInternalDescriptionQueryString_2>
-
-  owner?: Maybe<PrismicEventConnectionDataImageLocalFileInternalOwnerQueryString_2>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileInternalContentDigestQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileInternalTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileInternalMediaTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileInternalDescriptionQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileInternalOwnerQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileSourceInstanceNameQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileAbsolutePathQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileRelativePathQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileExtensionQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileSizeQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFilePrettySizeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileModifiedTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileAccessTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileChangeTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileBirthTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileRootQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileDirQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileBaseQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileExtQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileNameQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileRelativeDirectoryQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileDevQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileModeQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileNlinkQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileUidQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileGidQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileRdevQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileBlksizeQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileInoQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileBlocksQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileAtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileMtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileCtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileBirthtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileAtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileMtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileCtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataImageLocalFileBirthtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataDateQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataShortDescriptionQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataTagsQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataFacebookLinkInputObject_2 {
-  link_type?: Maybe<PrismicEventConnectionDataFacebookLinkLinkTypeQueryString_2>
-
-  url?: Maybe<PrismicEventConnectionDataFacebookLinkUrlQueryString_2>
-
-  target?: Maybe<PrismicEventConnectionDataFacebookLinkTargetQueryString_2>
-
-  raw?: Maybe<PrismicEventConnectionDataFacebookLinkRawInputObject_2>
-}
-
-export interface PrismicEventConnectionDataFacebookLinkLinkTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataFacebookLinkUrlQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataFacebookLinkTargetQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataFacebookLinkRawInputObject_2 {
-  link_type?: Maybe<PrismicEventConnectionDataFacebookLinkRawLinkTypeQueryString_2>
-
-  url?: Maybe<PrismicEventConnectionDataFacebookLinkRawUrlQueryString_2>
-
-  target?: Maybe<PrismicEventConnectionDataFacebookLinkRawTargetQueryString_2>
-}
-
-export interface PrismicEventConnectionDataFacebookLinkRawLinkTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataFacebookLinkRawUrlQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataFacebookLinkRawTargetQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionPrismicIdQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionIdQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionInternalInputObject_2 {
-  type?: Maybe<PrismicEventConnectionInternalTypeQueryString_2>
-
-  contentDigest?: Maybe<PrismicEventConnectionInternalContentDigestQueryString_2>
-
-  owner?: Maybe<PrismicEventConnectionInternalOwnerQueryString_2>
-}
-
-export interface PrismicEventConnectionInternalTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionInternalContentDigestQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionInternalOwnerQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventConnectionDataStringQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
 export interface PrismicProgramPageConnectionSort {
   fields: (Maybe<PrismicProgramPageConnectionSortByFieldsEnum>)[]
 
@@ -8628,6 +7420,2336 @@ export interface PrismicGeneralConnectionDataStringQueryString_2 {
   nin?: Maybe<(Maybe<string>)[]>
 }
 
+export interface PrismicPartnersPageConnectionSort {
+  fields: (Maybe<PrismicPartnersPageConnectionSortByFieldsEnum>)[]
+
+  order?: (Maybe<PrismicPartnersPageConnectionSortOrderValues>)[]
+}
+/** Filter connection on its fields */
+export interface FilterPrismicPartnersPage {
+  type?: Maybe<PrismicPartnersPageConnectionTypeQueryString_2>
+
+  href?: Maybe<PrismicPartnersPageConnectionHrefQueryString_2>
+
+  first_publication_date?: Maybe<PrismicPartnersPageConnectionFirstPublicationDateQueryString_2>
+
+  last_publication_date?: Maybe<PrismicPartnersPageConnectionLastPublicationDateQueryString_2>
+
+  slugs?: Maybe<PrismicPartnersPageConnectionSlugsQueryList_2>
+
+  lang?: Maybe<PrismicPartnersPageConnectionLangQueryString_2>
+
+  data?: Maybe<PrismicPartnersPageConnectionDataInputObject_2>
+
+  prismicId?: Maybe<PrismicPartnersPageConnectionPrismicIdQueryString_2>
+
+  id?: Maybe<PrismicPartnersPageConnectionIdQueryString_2>
+
+  internal?: Maybe<PrismicPartnersPageConnectionInternalInputObject_2>
+
+  dataString?: Maybe<PrismicPartnersPageConnectionDataStringQueryString_2>
+}
+
+export interface PrismicPartnersPageConnectionTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionHrefQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionFirstPublicationDateQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionLastPublicationDateQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionSlugsQueryList_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionLangQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataInputObject_2 {
+  partners_header_image?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageInputObject_2>
+
+  partners_title?: Maybe<PrismicPartnersPageConnectionDataPartnersTitleQueryString_2>
+
+  partners_subtitle?: Maybe<PrismicPartnersPageConnectionDataPartnersSubtitleQueryString_2>
+
+  main_partners_title?: Maybe<PrismicPartnersPageConnectionDataMainPartnersTitleQueryString_2>
+
+  friends_title?: Maybe<PrismicPartnersPageConnectionDataFriendsTitleQueryString_2>
+
+  partners_cta_title?: Maybe<PrismicPartnersPageConnectionDataPartnersCtaTitleQueryString_2>
+
+  cta_button_text?: Maybe<PrismicPartnersPageConnectionDataCtaButtonTextQueryString_2>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageInputObject_2 {
+  dimensions?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageDimensionsInputObject_2>
+
+  alt?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageAltQueryString_2>
+
+  copyright?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageCopyrightQueryString_2>
+
+  url?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageUrlQueryString_2>
+
+  localFile?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInputObject_2>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageDimensionsInputObject_2 {
+  width?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageDimensionsWidthQueryInteger_2>
+
+  height?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageDimensionsHeightQueryInteger_2>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageDimensionsWidthQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageDimensionsHeightQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageAltQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageCopyrightQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageUrlQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInputObject_2 {
+  id?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileIdQueryString_2>
+
+  children?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileChildrenQueryList_2>
+
+  parent?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileParentQueryString_2>
+
+  internal?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInternalInputObject_2>
+
+  sourceInstanceName?: Maybe<
+    PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileSourceInstanceNameQueryString_2
+  >
+
+  absolutePath?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileAbsolutePathQueryString_2>
+
+  relativePath?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileRelativePathQueryString_2>
+
+  extension?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileExtensionQueryString_2>
+
+  size?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileSizeQueryInteger_2>
+
+  prettySize?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFilePrettySizeQueryString_2>
+
+  modifiedTime?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileModifiedTimeQueryString_2>
+
+  accessTime?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileAccessTimeQueryString_2>
+
+  changeTime?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileChangeTimeQueryString_2>
+
+  birthTime?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileBirthTimeQueryString_2>
+
+  root?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileRootQueryString_2>
+
+  dir?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileDirQueryString_2>
+
+  base?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileBaseQueryString_2>
+
+  ext?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileExtQueryString_2>
+
+  name?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileNameQueryString_2>
+
+  relativeDirectory?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileRelativeDirectoryQueryString_2>
+
+  dev?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileDevQueryInteger_2>
+
+  mode?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileModeQueryInteger_2>
+
+  nlink?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileNlinkQueryInteger_2>
+
+  uid?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileUidQueryInteger_2>
+
+  gid?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileGidQueryInteger_2>
+
+  rdev?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileRdevQueryInteger_2>
+
+  blksize?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileBlksizeQueryInteger_2>
+
+  ino?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInoQueryInteger_2>
+
+  blocks?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileBlocksQueryInteger_2>
+
+  atimeMs?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileAtimeMsQueryFloat_2>
+
+  mtimeMs?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileMtimeMsQueryFloat_2>
+
+  ctimeMs?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileCtimeMsQueryFloat_2>
+
+  birthtimeMs?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileBirthtimeMsQueryFloat_2>
+
+  atime?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileAtimeQueryString_2>
+
+  mtime?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileMtimeQueryString_2>
+
+  ctime?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileCtimeQueryString_2>
+
+  birthtime?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileBirthtimeQueryString_2>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileIdQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileChildrenQueryList_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileParentQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInternalInputObject_2 {
+  contentDigest?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInternalContentDigestQueryString_2>
+
+  type?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInternalTypeQueryString_2>
+
+  mediaType?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInternalMediaTypeQueryString_2>
+
+  description?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInternalDescriptionQueryString_2>
+
+  owner?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInternalOwnerQueryString_2>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInternalContentDigestQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInternalTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInternalMediaTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInternalDescriptionQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInternalOwnerQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileSourceInstanceNameQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileAbsolutePathQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileRelativePathQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileExtensionQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileSizeQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFilePrettySizeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileModifiedTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileAccessTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileChangeTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileBirthTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileRootQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileDirQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileBaseQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileExtQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileNameQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileRelativeDirectoryQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileDevQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileModeQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileNlinkQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileUidQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileGidQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileRdevQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileBlksizeQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInoQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileBlocksQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileAtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileMtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileCtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileBirthtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileAtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileMtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileCtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileBirthtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersTitleQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersSubtitleQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataMainPartnersTitleQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataFriendsTitleQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataPartnersCtaTitleQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataCtaButtonTextQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionPrismicIdQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionIdQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionInternalInputObject_2 {
+  type?: Maybe<PrismicPartnersPageConnectionInternalTypeQueryString_2>
+
+  contentDigest?: Maybe<PrismicPartnersPageConnectionInternalContentDigestQueryString_2>
+
+  owner?: Maybe<PrismicPartnersPageConnectionInternalOwnerQueryString_2>
+}
+
+export interface PrismicPartnersPageConnectionInternalTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionInternalContentDigestQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionInternalOwnerQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageConnectionDataStringQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionSort {
+  fields: (Maybe<PrismicEventConnectionSortByFieldsEnum>)[]
+
+  order?: (Maybe<PrismicEventConnectionSortOrderValues>)[]
+}
+/** Filter connection on its fields */
+export interface FilterPrismicEvent {
+  type?: Maybe<PrismicEventConnectionTypeQueryString_2>
+
+  href?: Maybe<PrismicEventConnectionHrefQueryString_2>
+
+  first_publication_date?: Maybe<PrismicEventConnectionFirstPublicationDateQueryString_2>
+
+  last_publication_date?: Maybe<PrismicEventConnectionLastPublicationDateQueryString_2>
+
+  slugs?: Maybe<PrismicEventConnectionSlugsQueryList_2>
+
+  lang?: Maybe<PrismicEventConnectionLangQueryString_2>
+
+  data?: Maybe<PrismicEventConnectionDataInputObject_2>
+
+  prismicId?: Maybe<PrismicEventConnectionPrismicIdQueryString_2>
+
+  id?: Maybe<PrismicEventConnectionIdQueryString_2>
+
+  internal?: Maybe<PrismicEventConnectionInternalInputObject_2>
+
+  dataString?: Maybe<PrismicEventConnectionDataStringQueryString_2>
+}
+
+export interface PrismicEventConnectionTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionHrefQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionFirstPublicationDateQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionLastPublicationDateQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionSlugsQueryList_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionLangQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataInputObject_2 {
+  title?: Maybe<PrismicEventConnectionDataTitleQueryString_2>
+
+  organizer?: Maybe<PrismicEventConnectionDataOrganizerQueryString_2>
+
+  image?: Maybe<PrismicEventConnectionDataImageInputObject_2>
+
+  date?: Maybe<PrismicEventConnectionDataDateQueryString_2>
+
+  short_description?: Maybe<PrismicEventConnectionDataShortDescriptionQueryString_2>
+
+  tags?: Maybe<PrismicEventConnectionDataTagsQueryString_2>
+
+  facebook_link?: Maybe<PrismicEventConnectionDataFacebookLinkInputObject_2>
+}
+
+export interface PrismicEventConnectionDataTitleQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataOrganizerQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageInputObject_2 {
+  dimensions?: Maybe<PrismicEventConnectionDataImageDimensionsInputObject_2>
+
+  alt?: Maybe<PrismicEventConnectionDataImageAltQueryString_2>
+
+  copyright?: Maybe<PrismicEventConnectionDataImageCopyrightQueryString_2>
+
+  url?: Maybe<PrismicEventConnectionDataImageUrlQueryString_2>
+
+  localFile?: Maybe<PrismicEventConnectionDataImageLocalFileInputObject_2>
+}
+
+export interface PrismicEventConnectionDataImageDimensionsInputObject_2 {
+  width?: Maybe<PrismicEventConnectionDataImageDimensionsWidthQueryInteger_2>
+
+  height?: Maybe<PrismicEventConnectionDataImageDimensionsHeightQueryInteger_2>
+}
+
+export interface PrismicEventConnectionDataImageDimensionsWidthQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventConnectionDataImageDimensionsHeightQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventConnectionDataImageAltQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageCopyrightQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageUrlQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileInputObject_2 {
+  id?: Maybe<PrismicEventConnectionDataImageLocalFileIdQueryString_2>
+
+  children?: Maybe<PrismicEventConnectionDataImageLocalFileChildrenQueryList_2>
+
+  parent?: Maybe<PrismicEventConnectionDataImageLocalFileParentQueryString_2>
+
+  internal?: Maybe<PrismicEventConnectionDataImageLocalFileInternalInputObject_2>
+
+  sourceInstanceName?: Maybe<PrismicEventConnectionDataImageLocalFileSourceInstanceNameQueryString_2>
+
+  absolutePath?: Maybe<PrismicEventConnectionDataImageLocalFileAbsolutePathQueryString_2>
+
+  relativePath?: Maybe<PrismicEventConnectionDataImageLocalFileRelativePathQueryString_2>
+
+  extension?: Maybe<PrismicEventConnectionDataImageLocalFileExtensionQueryString_2>
+
+  size?: Maybe<PrismicEventConnectionDataImageLocalFileSizeQueryInteger_2>
+
+  prettySize?: Maybe<PrismicEventConnectionDataImageLocalFilePrettySizeQueryString_2>
+
+  modifiedTime?: Maybe<PrismicEventConnectionDataImageLocalFileModifiedTimeQueryString_2>
+
+  accessTime?: Maybe<PrismicEventConnectionDataImageLocalFileAccessTimeQueryString_2>
+
+  changeTime?: Maybe<PrismicEventConnectionDataImageLocalFileChangeTimeQueryString_2>
+
+  birthTime?: Maybe<PrismicEventConnectionDataImageLocalFileBirthTimeQueryString_2>
+
+  root?: Maybe<PrismicEventConnectionDataImageLocalFileRootQueryString_2>
+
+  dir?: Maybe<PrismicEventConnectionDataImageLocalFileDirQueryString_2>
+
+  base?: Maybe<PrismicEventConnectionDataImageLocalFileBaseQueryString_2>
+
+  ext?: Maybe<PrismicEventConnectionDataImageLocalFileExtQueryString_2>
+
+  name?: Maybe<PrismicEventConnectionDataImageLocalFileNameQueryString_2>
+
+  relativeDirectory?: Maybe<PrismicEventConnectionDataImageLocalFileRelativeDirectoryQueryString_2>
+
+  dev?: Maybe<PrismicEventConnectionDataImageLocalFileDevQueryInteger_2>
+
+  mode?: Maybe<PrismicEventConnectionDataImageLocalFileModeQueryInteger_2>
+
+  nlink?: Maybe<PrismicEventConnectionDataImageLocalFileNlinkQueryInteger_2>
+
+  uid?: Maybe<PrismicEventConnectionDataImageLocalFileUidQueryInteger_2>
+
+  gid?: Maybe<PrismicEventConnectionDataImageLocalFileGidQueryInteger_2>
+
+  rdev?: Maybe<PrismicEventConnectionDataImageLocalFileRdevQueryInteger_2>
+
+  blksize?: Maybe<PrismicEventConnectionDataImageLocalFileBlksizeQueryInteger_2>
+
+  ino?: Maybe<PrismicEventConnectionDataImageLocalFileInoQueryInteger_2>
+
+  blocks?: Maybe<PrismicEventConnectionDataImageLocalFileBlocksQueryInteger_2>
+
+  atimeMs?: Maybe<PrismicEventConnectionDataImageLocalFileAtimeMsQueryFloat_2>
+
+  mtimeMs?: Maybe<PrismicEventConnectionDataImageLocalFileMtimeMsQueryFloat_2>
+
+  ctimeMs?: Maybe<PrismicEventConnectionDataImageLocalFileCtimeMsQueryFloat_2>
+
+  birthtimeMs?: Maybe<PrismicEventConnectionDataImageLocalFileBirthtimeMsQueryFloat_2>
+
+  atime?: Maybe<PrismicEventConnectionDataImageLocalFileAtimeQueryString_2>
+
+  mtime?: Maybe<PrismicEventConnectionDataImageLocalFileMtimeQueryString_2>
+
+  ctime?: Maybe<PrismicEventConnectionDataImageLocalFileCtimeQueryString_2>
+
+  birthtime?: Maybe<PrismicEventConnectionDataImageLocalFileBirthtimeQueryString_2>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileIdQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileChildrenQueryList_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileParentQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileInternalInputObject_2 {
+  contentDigest?: Maybe<PrismicEventConnectionDataImageLocalFileInternalContentDigestQueryString_2>
+
+  type?: Maybe<PrismicEventConnectionDataImageLocalFileInternalTypeQueryString_2>
+
+  mediaType?: Maybe<PrismicEventConnectionDataImageLocalFileInternalMediaTypeQueryString_2>
+
+  description?: Maybe<PrismicEventConnectionDataImageLocalFileInternalDescriptionQueryString_2>
+
+  owner?: Maybe<PrismicEventConnectionDataImageLocalFileInternalOwnerQueryString_2>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileInternalContentDigestQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileInternalTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileInternalMediaTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileInternalDescriptionQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileInternalOwnerQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileSourceInstanceNameQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileAbsolutePathQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileRelativePathQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileExtensionQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileSizeQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFilePrettySizeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileModifiedTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileAccessTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileChangeTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileBirthTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileRootQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileDirQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileBaseQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileExtQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileNameQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileRelativeDirectoryQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileDevQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileModeQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileNlinkQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileUidQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileGidQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileRdevQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileBlksizeQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileInoQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileBlocksQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileAtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileMtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileCtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileBirthtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileAtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileMtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileCtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataImageLocalFileBirthtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataDateQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataShortDescriptionQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataTagsQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataFacebookLinkInputObject_2 {
+  link_type?: Maybe<PrismicEventConnectionDataFacebookLinkLinkTypeQueryString_2>
+
+  url?: Maybe<PrismicEventConnectionDataFacebookLinkUrlQueryString_2>
+
+  target?: Maybe<PrismicEventConnectionDataFacebookLinkTargetQueryString_2>
+
+  raw?: Maybe<PrismicEventConnectionDataFacebookLinkRawInputObject_2>
+}
+
+export interface PrismicEventConnectionDataFacebookLinkLinkTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataFacebookLinkUrlQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataFacebookLinkTargetQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataFacebookLinkRawInputObject_2 {
+  link_type?: Maybe<PrismicEventConnectionDataFacebookLinkRawLinkTypeQueryString_2>
+
+  url?: Maybe<PrismicEventConnectionDataFacebookLinkRawUrlQueryString_2>
+
+  target?: Maybe<PrismicEventConnectionDataFacebookLinkRawTargetQueryString_2>
+}
+
+export interface PrismicEventConnectionDataFacebookLinkRawLinkTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataFacebookLinkRawUrlQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataFacebookLinkRawTargetQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionPrismicIdQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionIdQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionInternalInputObject_2 {
+  type?: Maybe<PrismicEventConnectionInternalTypeQueryString_2>
+
+  contentDigest?: Maybe<PrismicEventConnectionInternalContentDigestQueryString_2>
+
+  owner?: Maybe<PrismicEventConnectionInternalOwnerQueryString_2>
+}
+
+export interface PrismicEventConnectionInternalTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionInternalContentDigestQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionInternalOwnerQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventConnectionDataStringQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
 export interface PrismicInfoPageConnectionSort {
   fields: (Maybe<PrismicInfoPageConnectionSortByFieldsEnum>)[]
 
@@ -10193,3048 +11315,6 @@ export interface PrismicInfoPageConnectionInternalOwnerQueryString_2 {
 }
 
 export interface PrismicInfoPageConnectionDataStringQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionSort {
-  fields: (Maybe<PrismicPartnersPageConnectionSortByFieldsEnum>)[]
-
-  order?: (Maybe<PrismicPartnersPageConnectionSortOrderValues>)[]
-}
-/** Filter connection on its fields */
-export interface FilterPrismicPartnersPage {
-  type?: Maybe<PrismicPartnersPageConnectionTypeQueryString_2>
-
-  href?: Maybe<PrismicPartnersPageConnectionHrefQueryString_2>
-
-  first_publication_date?: Maybe<PrismicPartnersPageConnectionFirstPublicationDateQueryString_2>
-
-  last_publication_date?: Maybe<PrismicPartnersPageConnectionLastPublicationDateQueryString_2>
-
-  slugs?: Maybe<PrismicPartnersPageConnectionSlugsQueryList_2>
-
-  lang?: Maybe<PrismicPartnersPageConnectionLangQueryString_2>
-
-  data?: Maybe<PrismicPartnersPageConnectionDataInputObject_2>
-
-  prismicId?: Maybe<PrismicPartnersPageConnectionPrismicIdQueryString_2>
-
-  id?: Maybe<PrismicPartnersPageConnectionIdQueryString_2>
-
-  internal?: Maybe<PrismicPartnersPageConnectionInternalInputObject_2>
-
-  dataString?: Maybe<PrismicPartnersPageConnectionDataStringQueryString_2>
-}
-
-export interface PrismicPartnersPageConnectionTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionHrefQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionFirstPublicationDateQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionLastPublicationDateQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionSlugsQueryList_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionLangQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataInputObject_2 {
-  partners_header_image?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageInputObject_2>
-
-  partners_title?: Maybe<PrismicPartnersPageConnectionDataPartnersTitleQueryString_2>
-
-  partners_subtitle?: Maybe<PrismicPartnersPageConnectionDataPartnersSubtitleQueryString_2>
-
-  main_partners_title?: Maybe<PrismicPartnersPageConnectionDataMainPartnersTitleQueryString_2>
-
-  friends_title?: Maybe<PrismicPartnersPageConnectionDataFriendsTitleQueryString_2>
-
-  partners_cta_title?: Maybe<PrismicPartnersPageConnectionDataPartnersCtaTitleQueryString_2>
-
-  cta_button_text?: Maybe<PrismicPartnersPageConnectionDataCtaButtonTextQueryString_2>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageInputObject_2 {
-  dimensions?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageDimensionsInputObject_2>
-
-  alt?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageAltQueryString_2>
-
-  copyright?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageCopyrightQueryString_2>
-
-  url?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageUrlQueryString_2>
-
-  localFile?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInputObject_2>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageDimensionsInputObject_2 {
-  width?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageDimensionsWidthQueryInteger_2>
-
-  height?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageDimensionsHeightQueryInteger_2>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageDimensionsWidthQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageDimensionsHeightQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageAltQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageCopyrightQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageUrlQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInputObject_2 {
-  id?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileIdQueryString_2>
-
-  children?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileChildrenQueryList_2>
-
-  parent?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileParentQueryString_2>
-
-  internal?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInternalInputObject_2>
-
-  sourceInstanceName?: Maybe<
-    PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileSourceInstanceNameQueryString_2
-  >
-
-  absolutePath?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileAbsolutePathQueryString_2>
-
-  relativePath?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileRelativePathQueryString_2>
-
-  extension?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileExtensionQueryString_2>
-
-  size?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileSizeQueryInteger_2>
-
-  prettySize?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFilePrettySizeQueryString_2>
-
-  modifiedTime?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileModifiedTimeQueryString_2>
-
-  accessTime?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileAccessTimeQueryString_2>
-
-  changeTime?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileChangeTimeQueryString_2>
-
-  birthTime?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileBirthTimeQueryString_2>
-
-  root?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileRootQueryString_2>
-
-  dir?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileDirQueryString_2>
-
-  base?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileBaseQueryString_2>
-
-  ext?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileExtQueryString_2>
-
-  name?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileNameQueryString_2>
-
-  relativeDirectory?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileRelativeDirectoryQueryString_2>
-
-  dev?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileDevQueryInteger_2>
-
-  mode?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileModeQueryInteger_2>
-
-  nlink?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileNlinkQueryInteger_2>
-
-  uid?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileUidQueryInteger_2>
-
-  gid?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileGidQueryInteger_2>
-
-  rdev?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileRdevQueryInteger_2>
-
-  blksize?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileBlksizeQueryInteger_2>
-
-  ino?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInoQueryInteger_2>
-
-  blocks?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileBlocksQueryInteger_2>
-
-  atimeMs?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileAtimeMsQueryFloat_2>
-
-  mtimeMs?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileMtimeMsQueryFloat_2>
-
-  ctimeMs?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileCtimeMsQueryFloat_2>
-
-  birthtimeMs?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileBirthtimeMsQueryFloat_2>
-
-  atime?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileAtimeQueryString_2>
-
-  mtime?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileMtimeQueryString_2>
-
-  ctime?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileCtimeQueryString_2>
-
-  birthtime?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileBirthtimeQueryString_2>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileIdQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileChildrenQueryList_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileParentQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInternalInputObject_2 {
-  contentDigest?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInternalContentDigestQueryString_2>
-
-  type?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInternalTypeQueryString_2>
-
-  mediaType?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInternalMediaTypeQueryString_2>
-
-  description?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInternalDescriptionQueryString_2>
-
-  owner?: Maybe<PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInternalOwnerQueryString_2>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInternalContentDigestQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInternalTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInternalMediaTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInternalDescriptionQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInternalOwnerQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileSourceInstanceNameQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileAbsolutePathQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileRelativePathQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileExtensionQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileSizeQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFilePrettySizeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileModifiedTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileAccessTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileChangeTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileBirthTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileRootQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileDirQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileBaseQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileExtQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileNameQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileRelativeDirectoryQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileDevQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileModeQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileNlinkQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileUidQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileGidQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileRdevQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileBlksizeQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileInoQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileBlocksQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileAtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileMtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileCtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileBirthtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileAtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileMtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileCtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersHeaderImageLocalFileBirthtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersTitleQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersSubtitleQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataMainPartnersTitleQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataFriendsTitleQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataPartnersCtaTitleQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataCtaButtonTextQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionPrismicIdQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionIdQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionInternalInputObject_2 {
-  type?: Maybe<PrismicPartnersPageConnectionInternalTypeQueryString_2>
-
-  contentDigest?: Maybe<PrismicPartnersPageConnectionInternalContentDigestQueryString_2>
-
-  owner?: Maybe<PrismicPartnersPageConnectionInternalOwnerQueryString_2>
-}
-
-export interface PrismicPartnersPageConnectionInternalTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionInternalContentDigestQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionInternalOwnerQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageConnectionDataStringQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionSort {
-  fields: (Maybe<PrismicContactPageConnectionSortByFieldsEnum>)[]
-
-  order?: (Maybe<PrismicContactPageConnectionSortOrderValues>)[]
-}
-/** Filter connection on its fields */
-export interface FilterPrismicContactPage {
-  type?: Maybe<PrismicContactPageConnectionTypeQueryString_2>
-
-  href?: Maybe<PrismicContactPageConnectionHrefQueryString_2>
-
-  first_publication_date?: Maybe<PrismicContactPageConnectionFirstPublicationDateQueryString_2>
-
-  last_publication_date?: Maybe<PrismicContactPageConnectionLastPublicationDateQueryString_2>
-
-  slugs?: Maybe<PrismicContactPageConnectionSlugsQueryList_2>
-
-  lang?: Maybe<PrismicContactPageConnectionLangQueryString_2>
-
-  data?: Maybe<PrismicContactPageConnectionDataInputObject_2>
-
-  prismicId?: Maybe<PrismicContactPageConnectionPrismicIdQueryString_2>
-
-  id?: Maybe<PrismicContactPageConnectionIdQueryString_2>
-
-  internal?: Maybe<PrismicContactPageConnectionInternalInputObject_2>
-
-  dataString?: Maybe<PrismicContactPageConnectionDataStringQueryString_2>
-}
-
-export interface PrismicContactPageConnectionTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionHrefQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionFirstPublicationDateQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionLastPublicationDateQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionSlugsQueryList_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionLangQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataInputObject_2 {
-  title?: Maybe<PrismicContactPageConnectionDataTitleQueryString_2>
-
-  subtitle?: Maybe<PrismicContactPageConnectionDataSubtitleQueryString_2>
-
-  header_image?: Maybe<PrismicContactPageConnectionDataHeaderImageInputObject_2>
-
-  text?: Maybe<PrismicContactPageConnectionDataTextQueryString_2>
-
-  image?: Maybe<PrismicContactPageConnectionDataImageInputObject_2>
-
-  email_button_text?: Maybe<PrismicContactPageConnectionDataEmailButtonTextQueryString_2>
-
-  messenger_button_text?: Maybe<PrismicContactPageConnectionDataMessengerButtonTextQueryString_2>
-}
-
-export interface PrismicContactPageConnectionDataTitleQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataSubtitleQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageInputObject_2 {
-  dimensions?: Maybe<PrismicContactPageConnectionDataHeaderImageDimensionsInputObject_2>
-
-  alt?: Maybe<PrismicContactPageConnectionDataHeaderImageAltQueryString_2>
-
-  copyright?: Maybe<PrismicContactPageConnectionDataHeaderImageCopyrightQueryString_2>
-
-  url?: Maybe<PrismicContactPageConnectionDataHeaderImageUrlQueryString_2>
-
-  localFile?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileInputObject_2>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageDimensionsInputObject_2 {
-  width?: Maybe<PrismicContactPageConnectionDataHeaderImageDimensionsWidthQueryInteger_2>
-
-  height?: Maybe<PrismicContactPageConnectionDataHeaderImageDimensionsHeightQueryInteger_2>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageDimensionsWidthQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageDimensionsHeightQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageAltQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageCopyrightQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageUrlQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileInputObject_2 {
-  id?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileIdQueryString_2>
-
-  children?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileChildrenQueryList_2>
-
-  parent?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileParentQueryString_2>
-
-  internal?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileInternalInputObject_2>
-
-  sourceInstanceName?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileSourceInstanceNameQueryString_2>
-
-  absolutePath?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileAbsolutePathQueryString_2>
-
-  relativePath?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileRelativePathQueryString_2>
-
-  extension?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileExtensionQueryString_2>
-
-  size?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileSizeQueryInteger_2>
-
-  prettySize?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFilePrettySizeQueryString_2>
-
-  modifiedTime?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileModifiedTimeQueryString_2>
-
-  accessTime?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileAccessTimeQueryString_2>
-
-  changeTime?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileChangeTimeQueryString_2>
-
-  birthTime?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileBirthTimeQueryString_2>
-
-  root?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileRootQueryString_2>
-
-  dir?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileDirQueryString_2>
-
-  base?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileBaseQueryString_2>
-
-  ext?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileExtQueryString_2>
-
-  name?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileNameQueryString_2>
-
-  relativeDirectory?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileRelativeDirectoryQueryString_2>
-
-  dev?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileDevQueryInteger_2>
-
-  mode?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileModeQueryInteger_2>
-
-  nlink?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileNlinkQueryInteger_2>
-
-  uid?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileUidQueryInteger_2>
-
-  gid?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileGidQueryInteger_2>
-
-  rdev?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileRdevQueryInteger_2>
-
-  blksize?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileBlksizeQueryInteger_2>
-
-  ino?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileInoQueryInteger_2>
-
-  blocks?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileBlocksQueryInteger_2>
-
-  atimeMs?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileAtimeMsQueryFloat_2>
-
-  mtimeMs?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileMtimeMsQueryFloat_2>
-
-  ctimeMs?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileCtimeMsQueryFloat_2>
-
-  birthtimeMs?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileBirthtimeMsQueryFloat_2>
-
-  atime?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileAtimeQueryString_2>
-
-  mtime?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileMtimeQueryString_2>
-
-  ctime?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileCtimeQueryString_2>
-
-  birthtime?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileBirthtimeQueryString_2>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileIdQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileChildrenQueryList_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileParentQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileInternalInputObject_2 {
-  contentDigest?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileInternalContentDigestQueryString_2>
-
-  type?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileInternalTypeQueryString_2>
-
-  mediaType?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileInternalMediaTypeQueryString_2>
-
-  description?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileInternalDescriptionQueryString_2>
-
-  owner?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileInternalOwnerQueryString_2>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileInternalContentDigestQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileInternalTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileInternalMediaTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileInternalDescriptionQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileInternalOwnerQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileSourceInstanceNameQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileAbsolutePathQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileRelativePathQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileExtensionQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileSizeQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFilePrettySizeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileModifiedTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileAccessTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileChangeTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileBirthTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileRootQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileDirQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileBaseQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileExtQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileNameQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileRelativeDirectoryQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileDevQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileModeQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileNlinkQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileUidQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileGidQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileRdevQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileBlksizeQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileInoQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileBlocksQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileAtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileMtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileCtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileBirthtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileAtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileMtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileCtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataHeaderImageLocalFileBirthtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataTextQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageInputObject_2 {
-  dimensions?: Maybe<PrismicContactPageConnectionDataImageDimensionsInputObject_2>
-
-  alt?: Maybe<PrismicContactPageConnectionDataImageAltQueryString_2>
-
-  copyright?: Maybe<PrismicContactPageConnectionDataImageCopyrightQueryString_2>
-
-  url?: Maybe<PrismicContactPageConnectionDataImageUrlQueryString_2>
-
-  localFile?: Maybe<PrismicContactPageConnectionDataImageLocalFileInputObject_2>
-}
-
-export interface PrismicContactPageConnectionDataImageDimensionsInputObject_2 {
-  width?: Maybe<PrismicContactPageConnectionDataImageDimensionsWidthQueryInteger_2>
-
-  height?: Maybe<PrismicContactPageConnectionDataImageDimensionsHeightQueryInteger_2>
-}
-
-export interface PrismicContactPageConnectionDataImageDimensionsWidthQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageDimensionsHeightQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageAltQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageCopyrightQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageUrlQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileInputObject_2 {
-  id?: Maybe<PrismicContactPageConnectionDataImageLocalFileIdQueryString_2>
-
-  children?: Maybe<PrismicContactPageConnectionDataImageLocalFileChildrenQueryList_2>
-
-  parent?: Maybe<PrismicContactPageConnectionDataImageLocalFileParentQueryString_2>
-
-  internal?: Maybe<PrismicContactPageConnectionDataImageLocalFileInternalInputObject_2>
-
-  sourceInstanceName?: Maybe<PrismicContactPageConnectionDataImageLocalFileSourceInstanceNameQueryString_2>
-
-  absolutePath?: Maybe<PrismicContactPageConnectionDataImageLocalFileAbsolutePathQueryString_2>
-
-  relativePath?: Maybe<PrismicContactPageConnectionDataImageLocalFileRelativePathQueryString_2>
-
-  extension?: Maybe<PrismicContactPageConnectionDataImageLocalFileExtensionQueryString_2>
-
-  size?: Maybe<PrismicContactPageConnectionDataImageLocalFileSizeQueryInteger_2>
-
-  prettySize?: Maybe<PrismicContactPageConnectionDataImageLocalFilePrettySizeQueryString_2>
-
-  modifiedTime?: Maybe<PrismicContactPageConnectionDataImageLocalFileModifiedTimeQueryString_2>
-
-  accessTime?: Maybe<PrismicContactPageConnectionDataImageLocalFileAccessTimeQueryString_2>
-
-  changeTime?: Maybe<PrismicContactPageConnectionDataImageLocalFileChangeTimeQueryString_2>
-
-  birthTime?: Maybe<PrismicContactPageConnectionDataImageLocalFileBirthTimeQueryString_2>
-
-  root?: Maybe<PrismicContactPageConnectionDataImageLocalFileRootQueryString_2>
-
-  dir?: Maybe<PrismicContactPageConnectionDataImageLocalFileDirQueryString_2>
-
-  base?: Maybe<PrismicContactPageConnectionDataImageLocalFileBaseQueryString_2>
-
-  ext?: Maybe<PrismicContactPageConnectionDataImageLocalFileExtQueryString_2>
-
-  name?: Maybe<PrismicContactPageConnectionDataImageLocalFileNameQueryString_2>
-
-  relativeDirectory?: Maybe<PrismicContactPageConnectionDataImageLocalFileRelativeDirectoryQueryString_2>
-
-  dev?: Maybe<PrismicContactPageConnectionDataImageLocalFileDevQueryInteger_2>
-
-  mode?: Maybe<PrismicContactPageConnectionDataImageLocalFileModeQueryInteger_2>
-
-  nlink?: Maybe<PrismicContactPageConnectionDataImageLocalFileNlinkQueryInteger_2>
-
-  uid?: Maybe<PrismicContactPageConnectionDataImageLocalFileUidQueryInteger_2>
-
-  gid?: Maybe<PrismicContactPageConnectionDataImageLocalFileGidQueryInteger_2>
-
-  rdev?: Maybe<PrismicContactPageConnectionDataImageLocalFileRdevQueryInteger_2>
-
-  blksize?: Maybe<PrismicContactPageConnectionDataImageLocalFileBlksizeQueryInteger_2>
-
-  ino?: Maybe<PrismicContactPageConnectionDataImageLocalFileInoQueryInteger_2>
-
-  blocks?: Maybe<PrismicContactPageConnectionDataImageLocalFileBlocksQueryInteger_2>
-
-  atimeMs?: Maybe<PrismicContactPageConnectionDataImageLocalFileAtimeMsQueryFloat_2>
-
-  mtimeMs?: Maybe<PrismicContactPageConnectionDataImageLocalFileMtimeMsQueryFloat_2>
-
-  ctimeMs?: Maybe<PrismicContactPageConnectionDataImageLocalFileCtimeMsQueryFloat_2>
-
-  birthtimeMs?: Maybe<PrismicContactPageConnectionDataImageLocalFileBirthtimeMsQueryFloat_2>
-
-  atime?: Maybe<PrismicContactPageConnectionDataImageLocalFileAtimeQueryString_2>
-
-  mtime?: Maybe<PrismicContactPageConnectionDataImageLocalFileMtimeQueryString_2>
-
-  ctime?: Maybe<PrismicContactPageConnectionDataImageLocalFileCtimeQueryString_2>
-
-  birthtime?: Maybe<PrismicContactPageConnectionDataImageLocalFileBirthtimeQueryString_2>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileIdQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileChildrenQueryList_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileParentQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileInternalInputObject_2 {
-  contentDigest?: Maybe<PrismicContactPageConnectionDataImageLocalFileInternalContentDigestQueryString_2>
-
-  type?: Maybe<PrismicContactPageConnectionDataImageLocalFileInternalTypeQueryString_2>
-
-  mediaType?: Maybe<PrismicContactPageConnectionDataImageLocalFileInternalMediaTypeQueryString_2>
-
-  description?: Maybe<PrismicContactPageConnectionDataImageLocalFileInternalDescriptionQueryString_2>
-
-  owner?: Maybe<PrismicContactPageConnectionDataImageLocalFileInternalOwnerQueryString_2>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileInternalContentDigestQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileInternalTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileInternalMediaTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileInternalDescriptionQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileInternalOwnerQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileSourceInstanceNameQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileAbsolutePathQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileRelativePathQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileExtensionQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileSizeQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFilePrettySizeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileModifiedTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileAccessTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileChangeTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileBirthTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileRootQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileDirQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileBaseQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileExtQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileNameQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileRelativeDirectoryQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileDevQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileModeQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileNlinkQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileUidQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileGidQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileRdevQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileBlksizeQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileInoQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileBlocksQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileAtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileMtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileCtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileBirthtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileAtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileMtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileCtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataImageLocalFileBirthtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataEmailButtonTextQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataMessengerButtonTextQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionPrismicIdQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionIdQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionInternalInputObject_2 {
-  type?: Maybe<PrismicContactPageConnectionInternalTypeQueryString_2>
-
-  contentDigest?: Maybe<PrismicContactPageConnectionInternalContentDigestQueryString_2>
-
-  owner?: Maybe<PrismicContactPageConnectionInternalOwnerQueryString_2>
-}
-
-export interface PrismicContactPageConnectionInternalTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionInternalContentDigestQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionInternalOwnerQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageConnectionDataStringQueryString_2 {
   eq?: Maybe<string>
 
   ne?: Maybe<string>
@@ -18906,6 +16986,1926 @@ export interface PrismicHomepageConnectionDataStringQueryString_2 {
   nin?: Maybe<(Maybe<string>)[]>
 }
 
+export interface PrismicContactPageConnectionSort {
+  fields: (Maybe<PrismicContactPageConnectionSortByFieldsEnum>)[]
+
+  order?: (Maybe<PrismicContactPageConnectionSortOrderValues>)[]
+}
+/** Filter connection on its fields */
+export interface FilterPrismicContactPage {
+  type?: Maybe<PrismicContactPageConnectionTypeQueryString_2>
+
+  href?: Maybe<PrismicContactPageConnectionHrefQueryString_2>
+
+  first_publication_date?: Maybe<PrismicContactPageConnectionFirstPublicationDateQueryString_2>
+
+  last_publication_date?: Maybe<PrismicContactPageConnectionLastPublicationDateQueryString_2>
+
+  slugs?: Maybe<PrismicContactPageConnectionSlugsQueryList_2>
+
+  lang?: Maybe<PrismicContactPageConnectionLangQueryString_2>
+
+  data?: Maybe<PrismicContactPageConnectionDataInputObject_2>
+
+  prismicId?: Maybe<PrismicContactPageConnectionPrismicIdQueryString_2>
+
+  id?: Maybe<PrismicContactPageConnectionIdQueryString_2>
+
+  internal?: Maybe<PrismicContactPageConnectionInternalInputObject_2>
+
+  dataString?: Maybe<PrismicContactPageConnectionDataStringQueryString_2>
+}
+
+export interface PrismicContactPageConnectionTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionHrefQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionFirstPublicationDateQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionLastPublicationDateQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionSlugsQueryList_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionLangQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataInputObject_2 {
+  title?: Maybe<PrismicContactPageConnectionDataTitleQueryString_2>
+
+  subtitle?: Maybe<PrismicContactPageConnectionDataSubtitleQueryString_2>
+
+  header_image?: Maybe<PrismicContactPageConnectionDataHeaderImageInputObject_2>
+
+  text?: Maybe<PrismicContactPageConnectionDataTextQueryString_2>
+
+  image?: Maybe<PrismicContactPageConnectionDataImageInputObject_2>
+
+  email_button_text?: Maybe<PrismicContactPageConnectionDataEmailButtonTextQueryString_2>
+
+  messenger_button_text?: Maybe<PrismicContactPageConnectionDataMessengerButtonTextQueryString_2>
+}
+
+export interface PrismicContactPageConnectionDataTitleQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataSubtitleQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageInputObject_2 {
+  dimensions?: Maybe<PrismicContactPageConnectionDataHeaderImageDimensionsInputObject_2>
+
+  alt?: Maybe<PrismicContactPageConnectionDataHeaderImageAltQueryString_2>
+
+  copyright?: Maybe<PrismicContactPageConnectionDataHeaderImageCopyrightQueryString_2>
+
+  url?: Maybe<PrismicContactPageConnectionDataHeaderImageUrlQueryString_2>
+
+  localFile?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileInputObject_2>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageDimensionsInputObject_2 {
+  width?: Maybe<PrismicContactPageConnectionDataHeaderImageDimensionsWidthQueryInteger_2>
+
+  height?: Maybe<PrismicContactPageConnectionDataHeaderImageDimensionsHeightQueryInteger_2>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageDimensionsWidthQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageDimensionsHeightQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageAltQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageCopyrightQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageUrlQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileInputObject_2 {
+  id?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileIdQueryString_2>
+
+  children?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileChildrenQueryList_2>
+
+  parent?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileParentQueryString_2>
+
+  internal?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileInternalInputObject_2>
+
+  sourceInstanceName?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileSourceInstanceNameQueryString_2>
+
+  absolutePath?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileAbsolutePathQueryString_2>
+
+  relativePath?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileRelativePathQueryString_2>
+
+  extension?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileExtensionQueryString_2>
+
+  size?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileSizeQueryInteger_2>
+
+  prettySize?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFilePrettySizeQueryString_2>
+
+  modifiedTime?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileModifiedTimeQueryString_2>
+
+  accessTime?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileAccessTimeQueryString_2>
+
+  changeTime?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileChangeTimeQueryString_2>
+
+  birthTime?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileBirthTimeQueryString_2>
+
+  root?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileRootQueryString_2>
+
+  dir?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileDirQueryString_2>
+
+  base?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileBaseQueryString_2>
+
+  ext?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileExtQueryString_2>
+
+  name?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileNameQueryString_2>
+
+  relativeDirectory?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileRelativeDirectoryQueryString_2>
+
+  dev?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileDevQueryInteger_2>
+
+  mode?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileModeQueryInteger_2>
+
+  nlink?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileNlinkQueryInteger_2>
+
+  uid?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileUidQueryInteger_2>
+
+  gid?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileGidQueryInteger_2>
+
+  rdev?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileRdevQueryInteger_2>
+
+  blksize?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileBlksizeQueryInteger_2>
+
+  ino?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileInoQueryInteger_2>
+
+  blocks?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileBlocksQueryInteger_2>
+
+  atimeMs?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileAtimeMsQueryFloat_2>
+
+  mtimeMs?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileMtimeMsQueryFloat_2>
+
+  ctimeMs?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileCtimeMsQueryFloat_2>
+
+  birthtimeMs?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileBirthtimeMsQueryFloat_2>
+
+  atime?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileAtimeQueryString_2>
+
+  mtime?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileMtimeQueryString_2>
+
+  ctime?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileCtimeQueryString_2>
+
+  birthtime?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileBirthtimeQueryString_2>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileIdQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileChildrenQueryList_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileParentQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileInternalInputObject_2 {
+  contentDigest?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileInternalContentDigestQueryString_2>
+
+  type?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileInternalTypeQueryString_2>
+
+  mediaType?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileInternalMediaTypeQueryString_2>
+
+  description?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileInternalDescriptionQueryString_2>
+
+  owner?: Maybe<PrismicContactPageConnectionDataHeaderImageLocalFileInternalOwnerQueryString_2>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileInternalContentDigestQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileInternalTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileInternalMediaTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileInternalDescriptionQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileInternalOwnerQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileSourceInstanceNameQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileAbsolutePathQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileRelativePathQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileExtensionQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileSizeQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFilePrettySizeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileModifiedTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileAccessTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileChangeTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileBirthTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileRootQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileDirQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileBaseQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileExtQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileNameQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileRelativeDirectoryQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileDevQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileModeQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileNlinkQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileUidQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileGidQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileRdevQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileBlksizeQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileInoQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileBlocksQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileAtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileMtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileCtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileBirthtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileAtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileMtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileCtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataHeaderImageLocalFileBirthtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataTextQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageInputObject_2 {
+  dimensions?: Maybe<PrismicContactPageConnectionDataImageDimensionsInputObject_2>
+
+  alt?: Maybe<PrismicContactPageConnectionDataImageAltQueryString_2>
+
+  copyright?: Maybe<PrismicContactPageConnectionDataImageCopyrightQueryString_2>
+
+  url?: Maybe<PrismicContactPageConnectionDataImageUrlQueryString_2>
+
+  localFile?: Maybe<PrismicContactPageConnectionDataImageLocalFileInputObject_2>
+}
+
+export interface PrismicContactPageConnectionDataImageDimensionsInputObject_2 {
+  width?: Maybe<PrismicContactPageConnectionDataImageDimensionsWidthQueryInteger_2>
+
+  height?: Maybe<PrismicContactPageConnectionDataImageDimensionsHeightQueryInteger_2>
+}
+
+export interface PrismicContactPageConnectionDataImageDimensionsWidthQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageDimensionsHeightQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageAltQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageCopyrightQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageUrlQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileInputObject_2 {
+  id?: Maybe<PrismicContactPageConnectionDataImageLocalFileIdQueryString_2>
+
+  children?: Maybe<PrismicContactPageConnectionDataImageLocalFileChildrenQueryList_2>
+
+  parent?: Maybe<PrismicContactPageConnectionDataImageLocalFileParentQueryString_2>
+
+  internal?: Maybe<PrismicContactPageConnectionDataImageLocalFileInternalInputObject_2>
+
+  sourceInstanceName?: Maybe<PrismicContactPageConnectionDataImageLocalFileSourceInstanceNameQueryString_2>
+
+  absolutePath?: Maybe<PrismicContactPageConnectionDataImageLocalFileAbsolutePathQueryString_2>
+
+  relativePath?: Maybe<PrismicContactPageConnectionDataImageLocalFileRelativePathQueryString_2>
+
+  extension?: Maybe<PrismicContactPageConnectionDataImageLocalFileExtensionQueryString_2>
+
+  size?: Maybe<PrismicContactPageConnectionDataImageLocalFileSizeQueryInteger_2>
+
+  prettySize?: Maybe<PrismicContactPageConnectionDataImageLocalFilePrettySizeQueryString_2>
+
+  modifiedTime?: Maybe<PrismicContactPageConnectionDataImageLocalFileModifiedTimeQueryString_2>
+
+  accessTime?: Maybe<PrismicContactPageConnectionDataImageLocalFileAccessTimeQueryString_2>
+
+  changeTime?: Maybe<PrismicContactPageConnectionDataImageLocalFileChangeTimeQueryString_2>
+
+  birthTime?: Maybe<PrismicContactPageConnectionDataImageLocalFileBirthTimeQueryString_2>
+
+  root?: Maybe<PrismicContactPageConnectionDataImageLocalFileRootQueryString_2>
+
+  dir?: Maybe<PrismicContactPageConnectionDataImageLocalFileDirQueryString_2>
+
+  base?: Maybe<PrismicContactPageConnectionDataImageLocalFileBaseQueryString_2>
+
+  ext?: Maybe<PrismicContactPageConnectionDataImageLocalFileExtQueryString_2>
+
+  name?: Maybe<PrismicContactPageConnectionDataImageLocalFileNameQueryString_2>
+
+  relativeDirectory?: Maybe<PrismicContactPageConnectionDataImageLocalFileRelativeDirectoryQueryString_2>
+
+  dev?: Maybe<PrismicContactPageConnectionDataImageLocalFileDevQueryInteger_2>
+
+  mode?: Maybe<PrismicContactPageConnectionDataImageLocalFileModeQueryInteger_2>
+
+  nlink?: Maybe<PrismicContactPageConnectionDataImageLocalFileNlinkQueryInteger_2>
+
+  uid?: Maybe<PrismicContactPageConnectionDataImageLocalFileUidQueryInteger_2>
+
+  gid?: Maybe<PrismicContactPageConnectionDataImageLocalFileGidQueryInteger_2>
+
+  rdev?: Maybe<PrismicContactPageConnectionDataImageLocalFileRdevQueryInteger_2>
+
+  blksize?: Maybe<PrismicContactPageConnectionDataImageLocalFileBlksizeQueryInteger_2>
+
+  ino?: Maybe<PrismicContactPageConnectionDataImageLocalFileInoQueryInteger_2>
+
+  blocks?: Maybe<PrismicContactPageConnectionDataImageLocalFileBlocksQueryInteger_2>
+
+  atimeMs?: Maybe<PrismicContactPageConnectionDataImageLocalFileAtimeMsQueryFloat_2>
+
+  mtimeMs?: Maybe<PrismicContactPageConnectionDataImageLocalFileMtimeMsQueryFloat_2>
+
+  ctimeMs?: Maybe<PrismicContactPageConnectionDataImageLocalFileCtimeMsQueryFloat_2>
+
+  birthtimeMs?: Maybe<PrismicContactPageConnectionDataImageLocalFileBirthtimeMsQueryFloat_2>
+
+  atime?: Maybe<PrismicContactPageConnectionDataImageLocalFileAtimeQueryString_2>
+
+  mtime?: Maybe<PrismicContactPageConnectionDataImageLocalFileMtimeQueryString_2>
+
+  ctime?: Maybe<PrismicContactPageConnectionDataImageLocalFileCtimeQueryString_2>
+
+  birthtime?: Maybe<PrismicContactPageConnectionDataImageLocalFileBirthtimeQueryString_2>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileIdQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileChildrenQueryList_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileParentQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileInternalInputObject_2 {
+  contentDigest?: Maybe<PrismicContactPageConnectionDataImageLocalFileInternalContentDigestQueryString_2>
+
+  type?: Maybe<PrismicContactPageConnectionDataImageLocalFileInternalTypeQueryString_2>
+
+  mediaType?: Maybe<PrismicContactPageConnectionDataImageLocalFileInternalMediaTypeQueryString_2>
+
+  description?: Maybe<PrismicContactPageConnectionDataImageLocalFileInternalDescriptionQueryString_2>
+
+  owner?: Maybe<PrismicContactPageConnectionDataImageLocalFileInternalOwnerQueryString_2>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileInternalContentDigestQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileInternalTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileInternalMediaTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileInternalDescriptionQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileInternalOwnerQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileSourceInstanceNameQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileAbsolutePathQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileRelativePathQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileExtensionQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileSizeQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFilePrettySizeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileModifiedTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileAccessTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileChangeTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileBirthTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileRootQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileDirQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileBaseQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileExtQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileNameQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileRelativeDirectoryQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileDevQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileModeQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileNlinkQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileUidQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileGidQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileRdevQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileBlksizeQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileInoQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileBlocksQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileAtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileMtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileCtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileBirthtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileAtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileMtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileCtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataImageLocalFileBirthtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataEmailButtonTextQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataMessengerButtonTextQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionPrismicIdQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionIdQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionInternalInputObject_2 {
+  type?: Maybe<PrismicContactPageConnectionInternalTypeQueryString_2>
+
+  contentDigest?: Maybe<PrismicContactPageConnectionInternalContentDigestQueryString_2>
+
+  owner?: Maybe<PrismicContactPageConnectionInternalOwnerQueryString_2>
+}
+
+export interface PrismicContactPageConnectionInternalTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionInternalContentDigestQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionInternalOwnerQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageConnectionDataStringQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
 export interface InstaNodeConnectionSort {
   fields: (Maybe<InstaNodeConnectionSortByFieldsEnum>)[]
 
@@ -18913,6 +18913,8 @@ export interface InstaNodeConnectionSort {
 }
 /** Filter connection on its fields */
 export interface FilterInstaNode {
+  username?: Maybe<InstaNodeConnectionUsernameQueryString_2>
+
   id?: Maybe<InstaNodeConnectionIdQueryString_2>
 
   internal?: Maybe<InstaNodeConnectionInternalInputObject_2>
@@ -18936,6 +18938,20 @@ export interface FilterInstaNode {
   comments?: Maybe<InstaNodeConnectionCommentsQueryInteger_2>
 
   localFile?: Maybe<InstaNodeConnectionLocalFileInputObject_2>
+}
+
+export interface InstaNodeConnectionUsernameQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
 }
 
 export interface InstaNodeConnectionIdQueryString_2 {
@@ -25352,1184 +25368,6 @@ export interface PrismicPartnerDataStringQueryString_2 {
   nin?: Maybe<(Maybe<string>)[]>
 }
 
-export interface PrismicEventTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventHrefQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventFirstPublicationDateQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventLastPublicationDateQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventSlugsQueryList_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventLangQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataInputObject_2 {
-  title?: Maybe<PrismicEventDataTitleQueryString_2>
-
-  organizer?: Maybe<PrismicEventDataOrganizerQueryString_2>
-
-  image?: Maybe<PrismicEventDataImageInputObject_2>
-
-  date?: Maybe<PrismicEventDataDateQueryString_2>
-
-  short_description?: Maybe<PrismicEventDataShortDescriptionQueryString_2>
-
-  tags?: Maybe<PrismicEventDataTagsQueryString_2>
-
-  facebook_link?: Maybe<PrismicEventDataFacebookLinkInputObject_2>
-}
-
-export interface PrismicEventDataTitleQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataOrganizerQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageInputObject_2 {
-  dimensions?: Maybe<PrismicEventDataImageDimensionsInputObject_2>
-
-  alt?: Maybe<PrismicEventDataImageAltQueryString_2>
-
-  copyright?: Maybe<PrismicEventDataImageCopyrightQueryString_2>
-
-  url?: Maybe<PrismicEventDataImageUrlQueryString_2>
-
-  localFile?: Maybe<PrismicEventDataImageLocalFileInputObject_2>
-}
-
-export interface PrismicEventDataImageDimensionsInputObject_2 {
-  width?: Maybe<PrismicEventDataImageDimensionsWidthQueryInteger_2>
-
-  height?: Maybe<PrismicEventDataImageDimensionsHeightQueryInteger_2>
-}
-
-export interface PrismicEventDataImageDimensionsWidthQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventDataImageDimensionsHeightQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventDataImageAltQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageCopyrightQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageUrlQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileInputObject_2 {
-  id?: Maybe<PrismicEventDataImageLocalFileIdQueryString_2>
-
-  children?: Maybe<PrismicEventDataImageLocalFileChildrenQueryList_2>
-
-  parent?: Maybe<PrismicEventDataImageLocalFileParentQueryString_2>
-
-  internal?: Maybe<PrismicEventDataImageLocalFileInternalInputObject_2>
-
-  sourceInstanceName?: Maybe<PrismicEventDataImageLocalFileSourceInstanceNameQueryString_2>
-
-  absolutePath?: Maybe<PrismicEventDataImageLocalFileAbsolutePathQueryString_2>
-
-  relativePath?: Maybe<PrismicEventDataImageLocalFileRelativePathQueryString_2>
-
-  extension?: Maybe<PrismicEventDataImageLocalFileExtensionQueryString_2>
-
-  size?: Maybe<PrismicEventDataImageLocalFileSizeQueryInteger_2>
-
-  prettySize?: Maybe<PrismicEventDataImageLocalFilePrettySizeQueryString_2>
-
-  modifiedTime?: Maybe<PrismicEventDataImageLocalFileModifiedTimeQueryString_2>
-
-  accessTime?: Maybe<PrismicEventDataImageLocalFileAccessTimeQueryString_2>
-
-  changeTime?: Maybe<PrismicEventDataImageLocalFileChangeTimeQueryString_2>
-
-  birthTime?: Maybe<PrismicEventDataImageLocalFileBirthTimeQueryString_2>
-
-  root?: Maybe<PrismicEventDataImageLocalFileRootQueryString_2>
-
-  dir?: Maybe<PrismicEventDataImageLocalFileDirQueryString_2>
-
-  base?: Maybe<PrismicEventDataImageLocalFileBaseQueryString_2>
-
-  ext?: Maybe<PrismicEventDataImageLocalFileExtQueryString_2>
-
-  name?: Maybe<PrismicEventDataImageLocalFileNameQueryString_2>
-
-  relativeDirectory?: Maybe<PrismicEventDataImageLocalFileRelativeDirectoryQueryString_2>
-
-  dev?: Maybe<PrismicEventDataImageLocalFileDevQueryInteger_2>
-
-  mode?: Maybe<PrismicEventDataImageLocalFileModeQueryInteger_2>
-
-  nlink?: Maybe<PrismicEventDataImageLocalFileNlinkQueryInteger_2>
-
-  uid?: Maybe<PrismicEventDataImageLocalFileUidQueryInteger_2>
-
-  gid?: Maybe<PrismicEventDataImageLocalFileGidQueryInteger_2>
-
-  rdev?: Maybe<PrismicEventDataImageLocalFileRdevQueryInteger_2>
-
-  blksize?: Maybe<PrismicEventDataImageLocalFileBlksizeQueryInteger_2>
-
-  ino?: Maybe<PrismicEventDataImageLocalFileInoQueryInteger_2>
-
-  blocks?: Maybe<PrismicEventDataImageLocalFileBlocksQueryInteger_2>
-
-  atimeMs?: Maybe<PrismicEventDataImageLocalFileAtimeMsQueryFloat_2>
-
-  mtimeMs?: Maybe<PrismicEventDataImageLocalFileMtimeMsQueryFloat_2>
-
-  ctimeMs?: Maybe<PrismicEventDataImageLocalFileCtimeMsQueryFloat_2>
-
-  birthtimeMs?: Maybe<PrismicEventDataImageLocalFileBirthtimeMsQueryFloat_2>
-
-  atime?: Maybe<PrismicEventDataImageLocalFileAtimeQueryString_2>
-
-  mtime?: Maybe<PrismicEventDataImageLocalFileMtimeQueryString_2>
-
-  ctime?: Maybe<PrismicEventDataImageLocalFileCtimeQueryString_2>
-
-  birthtime?: Maybe<PrismicEventDataImageLocalFileBirthtimeQueryString_2>
-}
-
-export interface PrismicEventDataImageLocalFileIdQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileChildrenQueryList_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileParentQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileInternalInputObject_2 {
-  contentDigest?: Maybe<PrismicEventDataImageLocalFileInternalContentDigestQueryString_2>
-
-  type?: Maybe<PrismicEventDataImageLocalFileInternalTypeQueryString_2>
-
-  mediaType?: Maybe<PrismicEventDataImageLocalFileInternalMediaTypeQueryString_2>
-
-  description?: Maybe<PrismicEventDataImageLocalFileInternalDescriptionQueryString_2>
-
-  owner?: Maybe<PrismicEventDataImageLocalFileInternalOwnerQueryString_2>
-}
-
-export interface PrismicEventDataImageLocalFileInternalContentDigestQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileInternalTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileInternalMediaTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileInternalDescriptionQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileInternalOwnerQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileSourceInstanceNameQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileAbsolutePathQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileRelativePathQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileExtensionQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileSizeQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventDataImageLocalFilePrettySizeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileModifiedTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileAccessTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileChangeTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileBirthTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileRootQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileDirQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileBaseQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileExtQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileNameQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileRelativeDirectoryQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileDevQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileModeQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileNlinkQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileUidQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileGidQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileRdevQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileBlksizeQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileInoQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileBlocksQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileAtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileMtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileCtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileBirthtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileAtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileMtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileCtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataImageLocalFileBirthtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataDateQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataShortDescriptionQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataTagsQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataFacebookLinkInputObject_2 {
-  link_type?: Maybe<PrismicEventDataFacebookLinkLinkTypeQueryString_2>
-
-  url?: Maybe<PrismicEventDataFacebookLinkUrlQueryString_2>
-
-  target?: Maybe<PrismicEventDataFacebookLinkTargetQueryString_2>
-
-  raw?: Maybe<PrismicEventDataFacebookLinkRawInputObject_2>
-}
-
-export interface PrismicEventDataFacebookLinkLinkTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataFacebookLinkUrlQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataFacebookLinkTargetQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataFacebookLinkRawInputObject_2 {
-  link_type?: Maybe<PrismicEventDataFacebookLinkRawLinkTypeQueryString_2>
-
-  url?: Maybe<PrismicEventDataFacebookLinkRawUrlQueryString_2>
-
-  target?: Maybe<PrismicEventDataFacebookLinkRawTargetQueryString_2>
-}
-
-export interface PrismicEventDataFacebookLinkRawLinkTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataFacebookLinkRawUrlQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataFacebookLinkRawTargetQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventPrismicIdQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventIdQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventInternalInputObject_2 {
-  type?: Maybe<PrismicEventInternalTypeQueryString_2>
-
-  contentDigest?: Maybe<PrismicEventInternalContentDigestQueryString_2>
-
-  owner?: Maybe<PrismicEventInternalOwnerQueryString_2>
-}
-
-export interface PrismicEventInternalTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventInternalContentDigestQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventInternalOwnerQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicEventDataStringQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
 export interface PrismicProgramPageTypeQueryString_2 {
   eq?: Maybe<string>
 
@@ -29110,6 +27948,2274 @@ export interface PrismicGeneralDataStringQueryString_2 {
   nin?: Maybe<(Maybe<string>)[]>
 }
 
+export interface PrismicPartnersPageTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageHrefQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageFirstPublicationDateQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageLastPublicationDateQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageSlugsQueryList_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageLangQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataInputObject_2 {
+  partners_header_image?: Maybe<PrismicPartnersPageDataPartnersHeaderImageInputObject_2>
+
+  partners_title?: Maybe<PrismicPartnersPageDataPartnersTitleQueryString_2>
+
+  partners_subtitle?: Maybe<PrismicPartnersPageDataPartnersSubtitleQueryString_2>
+
+  main_partners_title?: Maybe<PrismicPartnersPageDataMainPartnersTitleQueryString_2>
+
+  friends_title?: Maybe<PrismicPartnersPageDataFriendsTitleQueryString_2>
+
+  partners_cta_title?: Maybe<PrismicPartnersPageDataPartnersCtaTitleQueryString_2>
+
+  cta_button_text?: Maybe<PrismicPartnersPageDataCtaButtonTextQueryString_2>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageInputObject_2 {
+  dimensions?: Maybe<PrismicPartnersPageDataPartnersHeaderImageDimensionsInputObject_2>
+
+  alt?: Maybe<PrismicPartnersPageDataPartnersHeaderImageAltQueryString_2>
+
+  copyright?: Maybe<PrismicPartnersPageDataPartnersHeaderImageCopyrightQueryString_2>
+
+  url?: Maybe<PrismicPartnersPageDataPartnersHeaderImageUrlQueryString_2>
+
+  localFile?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileInputObject_2>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageDimensionsInputObject_2 {
+  width?: Maybe<PrismicPartnersPageDataPartnersHeaderImageDimensionsWidthQueryInteger_2>
+
+  height?: Maybe<PrismicPartnersPageDataPartnersHeaderImageDimensionsHeightQueryInteger_2>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageDimensionsWidthQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageDimensionsHeightQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageAltQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageCopyrightQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageUrlQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileInputObject_2 {
+  id?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileIdQueryString_2>
+
+  children?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileChildrenQueryList_2>
+
+  parent?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileParentQueryString_2>
+
+  internal?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileInternalInputObject_2>
+
+  sourceInstanceName?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileSourceInstanceNameQueryString_2>
+
+  absolutePath?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileAbsolutePathQueryString_2>
+
+  relativePath?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileRelativePathQueryString_2>
+
+  extension?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileExtensionQueryString_2>
+
+  size?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileSizeQueryInteger_2>
+
+  prettySize?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFilePrettySizeQueryString_2>
+
+  modifiedTime?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileModifiedTimeQueryString_2>
+
+  accessTime?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileAccessTimeQueryString_2>
+
+  changeTime?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileChangeTimeQueryString_2>
+
+  birthTime?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileBirthTimeQueryString_2>
+
+  root?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileRootQueryString_2>
+
+  dir?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileDirQueryString_2>
+
+  base?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileBaseQueryString_2>
+
+  ext?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileExtQueryString_2>
+
+  name?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileNameQueryString_2>
+
+  relativeDirectory?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileRelativeDirectoryQueryString_2>
+
+  dev?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileDevQueryInteger_2>
+
+  mode?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileModeQueryInteger_2>
+
+  nlink?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileNlinkQueryInteger_2>
+
+  uid?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileUidQueryInteger_2>
+
+  gid?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileGidQueryInteger_2>
+
+  rdev?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileRdevQueryInteger_2>
+
+  blksize?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileBlksizeQueryInteger_2>
+
+  ino?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileInoQueryInteger_2>
+
+  blocks?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileBlocksQueryInteger_2>
+
+  atimeMs?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileAtimeMsQueryFloat_2>
+
+  mtimeMs?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileMtimeMsQueryFloat_2>
+
+  ctimeMs?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileCtimeMsQueryFloat_2>
+
+  birthtimeMs?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileBirthtimeMsQueryFloat_2>
+
+  atime?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileAtimeQueryString_2>
+
+  mtime?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileMtimeQueryString_2>
+
+  ctime?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileCtimeQueryString_2>
+
+  birthtime?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileBirthtimeQueryString_2>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileIdQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileChildrenQueryList_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileParentQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileInternalInputObject_2 {
+  contentDigest?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileInternalContentDigestQueryString_2>
+
+  type?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileInternalTypeQueryString_2>
+
+  mediaType?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileInternalMediaTypeQueryString_2>
+
+  description?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileInternalDescriptionQueryString_2>
+
+  owner?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileInternalOwnerQueryString_2>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileInternalContentDigestQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileInternalTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileInternalMediaTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileInternalDescriptionQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileInternalOwnerQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileSourceInstanceNameQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileAbsolutePathQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileRelativePathQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileExtensionQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileSizeQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFilePrettySizeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileModifiedTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileAccessTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileChangeTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileBirthTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileRootQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileDirQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileBaseQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileExtQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileNameQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileRelativeDirectoryQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileDevQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileModeQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileNlinkQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileUidQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileGidQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileRdevQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileBlksizeQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileInoQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileBlocksQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileAtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileMtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileCtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileBirthtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileAtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileMtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileCtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileBirthtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersTitleQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersSubtitleQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataMainPartnersTitleQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataFriendsTitleQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataPartnersCtaTitleQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataCtaButtonTextQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPagePrismicIdQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageIdQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageInternalInputObject_2 {
+  type?: Maybe<PrismicPartnersPageInternalTypeQueryString_2>
+
+  contentDigest?: Maybe<PrismicPartnersPageInternalContentDigestQueryString_2>
+
+  owner?: Maybe<PrismicPartnersPageInternalOwnerQueryString_2>
+}
+
+export interface PrismicPartnersPageInternalTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageInternalContentDigestQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageInternalOwnerQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicPartnersPageDataStringQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventHrefQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventFirstPublicationDateQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventLastPublicationDateQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventSlugsQueryList_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventLangQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataInputObject_2 {
+  title?: Maybe<PrismicEventDataTitleQueryString_2>
+
+  organizer?: Maybe<PrismicEventDataOrganizerQueryString_2>
+
+  image?: Maybe<PrismicEventDataImageInputObject_2>
+
+  date?: Maybe<PrismicEventDataDateQueryString_2>
+
+  short_description?: Maybe<PrismicEventDataShortDescriptionQueryString_2>
+
+  tags?: Maybe<PrismicEventDataTagsQueryString_2>
+
+  facebook_link?: Maybe<PrismicEventDataFacebookLinkInputObject_2>
+}
+
+export interface PrismicEventDataTitleQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataOrganizerQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageInputObject_2 {
+  dimensions?: Maybe<PrismicEventDataImageDimensionsInputObject_2>
+
+  alt?: Maybe<PrismicEventDataImageAltQueryString_2>
+
+  copyright?: Maybe<PrismicEventDataImageCopyrightQueryString_2>
+
+  url?: Maybe<PrismicEventDataImageUrlQueryString_2>
+
+  localFile?: Maybe<PrismicEventDataImageLocalFileInputObject_2>
+}
+
+export interface PrismicEventDataImageDimensionsInputObject_2 {
+  width?: Maybe<PrismicEventDataImageDimensionsWidthQueryInteger_2>
+
+  height?: Maybe<PrismicEventDataImageDimensionsHeightQueryInteger_2>
+}
+
+export interface PrismicEventDataImageDimensionsWidthQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventDataImageDimensionsHeightQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventDataImageAltQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageCopyrightQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageUrlQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileInputObject_2 {
+  id?: Maybe<PrismicEventDataImageLocalFileIdQueryString_2>
+
+  children?: Maybe<PrismicEventDataImageLocalFileChildrenQueryList_2>
+
+  parent?: Maybe<PrismicEventDataImageLocalFileParentQueryString_2>
+
+  internal?: Maybe<PrismicEventDataImageLocalFileInternalInputObject_2>
+
+  sourceInstanceName?: Maybe<PrismicEventDataImageLocalFileSourceInstanceNameQueryString_2>
+
+  absolutePath?: Maybe<PrismicEventDataImageLocalFileAbsolutePathQueryString_2>
+
+  relativePath?: Maybe<PrismicEventDataImageLocalFileRelativePathQueryString_2>
+
+  extension?: Maybe<PrismicEventDataImageLocalFileExtensionQueryString_2>
+
+  size?: Maybe<PrismicEventDataImageLocalFileSizeQueryInteger_2>
+
+  prettySize?: Maybe<PrismicEventDataImageLocalFilePrettySizeQueryString_2>
+
+  modifiedTime?: Maybe<PrismicEventDataImageLocalFileModifiedTimeQueryString_2>
+
+  accessTime?: Maybe<PrismicEventDataImageLocalFileAccessTimeQueryString_2>
+
+  changeTime?: Maybe<PrismicEventDataImageLocalFileChangeTimeQueryString_2>
+
+  birthTime?: Maybe<PrismicEventDataImageLocalFileBirthTimeQueryString_2>
+
+  root?: Maybe<PrismicEventDataImageLocalFileRootQueryString_2>
+
+  dir?: Maybe<PrismicEventDataImageLocalFileDirQueryString_2>
+
+  base?: Maybe<PrismicEventDataImageLocalFileBaseQueryString_2>
+
+  ext?: Maybe<PrismicEventDataImageLocalFileExtQueryString_2>
+
+  name?: Maybe<PrismicEventDataImageLocalFileNameQueryString_2>
+
+  relativeDirectory?: Maybe<PrismicEventDataImageLocalFileRelativeDirectoryQueryString_2>
+
+  dev?: Maybe<PrismicEventDataImageLocalFileDevQueryInteger_2>
+
+  mode?: Maybe<PrismicEventDataImageLocalFileModeQueryInteger_2>
+
+  nlink?: Maybe<PrismicEventDataImageLocalFileNlinkQueryInteger_2>
+
+  uid?: Maybe<PrismicEventDataImageLocalFileUidQueryInteger_2>
+
+  gid?: Maybe<PrismicEventDataImageLocalFileGidQueryInteger_2>
+
+  rdev?: Maybe<PrismicEventDataImageLocalFileRdevQueryInteger_2>
+
+  blksize?: Maybe<PrismicEventDataImageLocalFileBlksizeQueryInteger_2>
+
+  ino?: Maybe<PrismicEventDataImageLocalFileInoQueryInteger_2>
+
+  blocks?: Maybe<PrismicEventDataImageLocalFileBlocksQueryInteger_2>
+
+  atimeMs?: Maybe<PrismicEventDataImageLocalFileAtimeMsQueryFloat_2>
+
+  mtimeMs?: Maybe<PrismicEventDataImageLocalFileMtimeMsQueryFloat_2>
+
+  ctimeMs?: Maybe<PrismicEventDataImageLocalFileCtimeMsQueryFloat_2>
+
+  birthtimeMs?: Maybe<PrismicEventDataImageLocalFileBirthtimeMsQueryFloat_2>
+
+  atime?: Maybe<PrismicEventDataImageLocalFileAtimeQueryString_2>
+
+  mtime?: Maybe<PrismicEventDataImageLocalFileMtimeQueryString_2>
+
+  ctime?: Maybe<PrismicEventDataImageLocalFileCtimeQueryString_2>
+
+  birthtime?: Maybe<PrismicEventDataImageLocalFileBirthtimeQueryString_2>
+}
+
+export interface PrismicEventDataImageLocalFileIdQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileChildrenQueryList_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileParentQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileInternalInputObject_2 {
+  contentDigest?: Maybe<PrismicEventDataImageLocalFileInternalContentDigestQueryString_2>
+
+  type?: Maybe<PrismicEventDataImageLocalFileInternalTypeQueryString_2>
+
+  mediaType?: Maybe<PrismicEventDataImageLocalFileInternalMediaTypeQueryString_2>
+
+  description?: Maybe<PrismicEventDataImageLocalFileInternalDescriptionQueryString_2>
+
+  owner?: Maybe<PrismicEventDataImageLocalFileInternalOwnerQueryString_2>
+}
+
+export interface PrismicEventDataImageLocalFileInternalContentDigestQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileInternalTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileInternalMediaTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileInternalDescriptionQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileInternalOwnerQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileSourceInstanceNameQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileAbsolutePathQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileRelativePathQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileExtensionQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileSizeQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventDataImageLocalFilePrettySizeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileModifiedTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileAccessTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileChangeTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileBirthTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileRootQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileDirQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileBaseQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileExtQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileNameQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileRelativeDirectoryQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileDevQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileModeQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileNlinkQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileUidQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileGidQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileRdevQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileBlksizeQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileInoQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileBlocksQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileAtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileMtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileCtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileBirthtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileAtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileMtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileCtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataImageLocalFileBirthtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataDateQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataShortDescriptionQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataTagsQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataFacebookLinkInputObject_2 {
+  link_type?: Maybe<PrismicEventDataFacebookLinkLinkTypeQueryString_2>
+
+  url?: Maybe<PrismicEventDataFacebookLinkUrlQueryString_2>
+
+  target?: Maybe<PrismicEventDataFacebookLinkTargetQueryString_2>
+
+  raw?: Maybe<PrismicEventDataFacebookLinkRawInputObject_2>
+}
+
+export interface PrismicEventDataFacebookLinkLinkTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataFacebookLinkUrlQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataFacebookLinkTargetQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataFacebookLinkRawInputObject_2 {
+  link_type?: Maybe<PrismicEventDataFacebookLinkRawLinkTypeQueryString_2>
+
+  url?: Maybe<PrismicEventDataFacebookLinkRawUrlQueryString_2>
+
+  target?: Maybe<PrismicEventDataFacebookLinkRawTargetQueryString_2>
+}
+
+export interface PrismicEventDataFacebookLinkRawLinkTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataFacebookLinkRawUrlQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataFacebookLinkRawTargetQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventPrismicIdQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventIdQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventInternalInputObject_2 {
+  type?: Maybe<PrismicEventInternalTypeQueryString_2>
+
+  contentDigest?: Maybe<PrismicEventInternalContentDigestQueryString_2>
+
+  owner?: Maybe<PrismicEventInternalOwnerQueryString_2>
+}
+
+export interface PrismicEventInternalTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventInternalContentDigestQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventInternalOwnerQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicEventDataStringQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
 export interface PrismicInfoPageTypeQueryString_2 {
   eq?: Maybe<string>
 
@@ -30643,2986 +31749,6 @@ export interface PrismicInfoPageInternalOwnerQueryString_2 {
 }
 
 export interface PrismicInfoPageDataStringQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageHrefQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageFirstPublicationDateQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageLastPublicationDateQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageSlugsQueryList_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageLangQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataInputObject_2 {
-  partners_header_image?: Maybe<PrismicPartnersPageDataPartnersHeaderImageInputObject_2>
-
-  partners_title?: Maybe<PrismicPartnersPageDataPartnersTitleQueryString_2>
-
-  partners_subtitle?: Maybe<PrismicPartnersPageDataPartnersSubtitleQueryString_2>
-
-  main_partners_title?: Maybe<PrismicPartnersPageDataMainPartnersTitleQueryString_2>
-
-  friends_title?: Maybe<PrismicPartnersPageDataFriendsTitleQueryString_2>
-
-  partners_cta_title?: Maybe<PrismicPartnersPageDataPartnersCtaTitleQueryString_2>
-
-  cta_button_text?: Maybe<PrismicPartnersPageDataCtaButtonTextQueryString_2>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageInputObject_2 {
-  dimensions?: Maybe<PrismicPartnersPageDataPartnersHeaderImageDimensionsInputObject_2>
-
-  alt?: Maybe<PrismicPartnersPageDataPartnersHeaderImageAltQueryString_2>
-
-  copyright?: Maybe<PrismicPartnersPageDataPartnersHeaderImageCopyrightQueryString_2>
-
-  url?: Maybe<PrismicPartnersPageDataPartnersHeaderImageUrlQueryString_2>
-
-  localFile?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileInputObject_2>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageDimensionsInputObject_2 {
-  width?: Maybe<PrismicPartnersPageDataPartnersHeaderImageDimensionsWidthQueryInteger_2>
-
-  height?: Maybe<PrismicPartnersPageDataPartnersHeaderImageDimensionsHeightQueryInteger_2>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageDimensionsWidthQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageDimensionsHeightQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageAltQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageCopyrightQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageUrlQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileInputObject_2 {
-  id?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileIdQueryString_2>
-
-  children?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileChildrenQueryList_2>
-
-  parent?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileParentQueryString_2>
-
-  internal?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileInternalInputObject_2>
-
-  sourceInstanceName?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileSourceInstanceNameQueryString_2>
-
-  absolutePath?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileAbsolutePathQueryString_2>
-
-  relativePath?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileRelativePathQueryString_2>
-
-  extension?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileExtensionQueryString_2>
-
-  size?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileSizeQueryInteger_2>
-
-  prettySize?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFilePrettySizeQueryString_2>
-
-  modifiedTime?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileModifiedTimeQueryString_2>
-
-  accessTime?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileAccessTimeQueryString_2>
-
-  changeTime?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileChangeTimeQueryString_2>
-
-  birthTime?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileBirthTimeQueryString_2>
-
-  root?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileRootQueryString_2>
-
-  dir?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileDirQueryString_2>
-
-  base?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileBaseQueryString_2>
-
-  ext?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileExtQueryString_2>
-
-  name?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileNameQueryString_2>
-
-  relativeDirectory?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileRelativeDirectoryQueryString_2>
-
-  dev?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileDevQueryInteger_2>
-
-  mode?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileModeQueryInteger_2>
-
-  nlink?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileNlinkQueryInteger_2>
-
-  uid?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileUidQueryInteger_2>
-
-  gid?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileGidQueryInteger_2>
-
-  rdev?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileRdevQueryInteger_2>
-
-  blksize?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileBlksizeQueryInteger_2>
-
-  ino?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileInoQueryInteger_2>
-
-  blocks?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileBlocksQueryInteger_2>
-
-  atimeMs?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileAtimeMsQueryFloat_2>
-
-  mtimeMs?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileMtimeMsQueryFloat_2>
-
-  ctimeMs?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileCtimeMsQueryFloat_2>
-
-  birthtimeMs?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileBirthtimeMsQueryFloat_2>
-
-  atime?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileAtimeQueryString_2>
-
-  mtime?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileMtimeQueryString_2>
-
-  ctime?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileCtimeQueryString_2>
-
-  birthtime?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileBirthtimeQueryString_2>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileIdQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileChildrenQueryList_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileParentQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileInternalInputObject_2 {
-  contentDigest?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileInternalContentDigestQueryString_2>
-
-  type?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileInternalTypeQueryString_2>
-
-  mediaType?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileInternalMediaTypeQueryString_2>
-
-  description?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileInternalDescriptionQueryString_2>
-
-  owner?: Maybe<PrismicPartnersPageDataPartnersHeaderImageLocalFileInternalOwnerQueryString_2>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileInternalContentDigestQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileInternalTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileInternalMediaTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileInternalDescriptionQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileInternalOwnerQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileSourceInstanceNameQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileAbsolutePathQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileRelativePathQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileExtensionQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileSizeQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFilePrettySizeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileModifiedTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileAccessTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileChangeTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileBirthTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileRootQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileDirQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileBaseQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileExtQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileNameQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileRelativeDirectoryQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileDevQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileModeQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileNlinkQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileUidQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileGidQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileRdevQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileBlksizeQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileInoQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileBlocksQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileAtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileMtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileCtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileBirthtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileAtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileMtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileCtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersHeaderImageLocalFileBirthtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersTitleQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersSubtitleQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataMainPartnersTitleQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataFriendsTitleQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataPartnersCtaTitleQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataCtaButtonTextQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPagePrismicIdQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageIdQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageInternalInputObject_2 {
-  type?: Maybe<PrismicPartnersPageInternalTypeQueryString_2>
-
-  contentDigest?: Maybe<PrismicPartnersPageInternalContentDigestQueryString_2>
-
-  owner?: Maybe<PrismicPartnersPageInternalOwnerQueryString_2>
-}
-
-export interface PrismicPartnersPageInternalTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageInternalContentDigestQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageInternalOwnerQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicPartnersPageDataStringQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageHrefQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageFirstPublicationDateQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageLastPublicationDateQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageSlugsQueryList_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageLangQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataInputObject_2 {
-  title?: Maybe<PrismicContactPageDataTitleQueryString_2>
-
-  subtitle?: Maybe<PrismicContactPageDataSubtitleQueryString_2>
-
-  header_image?: Maybe<PrismicContactPageDataHeaderImageInputObject_2>
-
-  text?: Maybe<PrismicContactPageDataTextQueryString_2>
-
-  image?: Maybe<PrismicContactPageDataImageInputObject_2>
-
-  email_button_text?: Maybe<PrismicContactPageDataEmailButtonTextQueryString_2>
-
-  messenger_button_text?: Maybe<PrismicContactPageDataMessengerButtonTextQueryString_2>
-}
-
-export interface PrismicContactPageDataTitleQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataSubtitleQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageInputObject_2 {
-  dimensions?: Maybe<PrismicContactPageDataHeaderImageDimensionsInputObject_2>
-
-  alt?: Maybe<PrismicContactPageDataHeaderImageAltQueryString_2>
-
-  copyright?: Maybe<PrismicContactPageDataHeaderImageCopyrightQueryString_2>
-
-  url?: Maybe<PrismicContactPageDataHeaderImageUrlQueryString_2>
-
-  localFile?: Maybe<PrismicContactPageDataHeaderImageLocalFileInputObject_2>
-}
-
-export interface PrismicContactPageDataHeaderImageDimensionsInputObject_2 {
-  width?: Maybe<PrismicContactPageDataHeaderImageDimensionsWidthQueryInteger_2>
-
-  height?: Maybe<PrismicContactPageDataHeaderImageDimensionsHeightQueryInteger_2>
-}
-
-export interface PrismicContactPageDataHeaderImageDimensionsWidthQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageDimensionsHeightQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageAltQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageCopyrightQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageUrlQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileInputObject_2 {
-  id?: Maybe<PrismicContactPageDataHeaderImageLocalFileIdQueryString_2>
-
-  children?: Maybe<PrismicContactPageDataHeaderImageLocalFileChildrenQueryList_2>
-
-  parent?: Maybe<PrismicContactPageDataHeaderImageLocalFileParentQueryString_2>
-
-  internal?: Maybe<PrismicContactPageDataHeaderImageLocalFileInternalInputObject_2>
-
-  sourceInstanceName?: Maybe<PrismicContactPageDataHeaderImageLocalFileSourceInstanceNameQueryString_2>
-
-  absolutePath?: Maybe<PrismicContactPageDataHeaderImageLocalFileAbsolutePathQueryString_2>
-
-  relativePath?: Maybe<PrismicContactPageDataHeaderImageLocalFileRelativePathQueryString_2>
-
-  extension?: Maybe<PrismicContactPageDataHeaderImageLocalFileExtensionQueryString_2>
-
-  size?: Maybe<PrismicContactPageDataHeaderImageLocalFileSizeQueryInteger_2>
-
-  prettySize?: Maybe<PrismicContactPageDataHeaderImageLocalFilePrettySizeQueryString_2>
-
-  modifiedTime?: Maybe<PrismicContactPageDataHeaderImageLocalFileModifiedTimeQueryString_2>
-
-  accessTime?: Maybe<PrismicContactPageDataHeaderImageLocalFileAccessTimeQueryString_2>
-
-  changeTime?: Maybe<PrismicContactPageDataHeaderImageLocalFileChangeTimeQueryString_2>
-
-  birthTime?: Maybe<PrismicContactPageDataHeaderImageLocalFileBirthTimeQueryString_2>
-
-  root?: Maybe<PrismicContactPageDataHeaderImageLocalFileRootQueryString_2>
-
-  dir?: Maybe<PrismicContactPageDataHeaderImageLocalFileDirQueryString_2>
-
-  base?: Maybe<PrismicContactPageDataHeaderImageLocalFileBaseQueryString_2>
-
-  ext?: Maybe<PrismicContactPageDataHeaderImageLocalFileExtQueryString_2>
-
-  name?: Maybe<PrismicContactPageDataHeaderImageLocalFileNameQueryString_2>
-
-  relativeDirectory?: Maybe<PrismicContactPageDataHeaderImageLocalFileRelativeDirectoryQueryString_2>
-
-  dev?: Maybe<PrismicContactPageDataHeaderImageLocalFileDevQueryInteger_2>
-
-  mode?: Maybe<PrismicContactPageDataHeaderImageLocalFileModeQueryInteger_2>
-
-  nlink?: Maybe<PrismicContactPageDataHeaderImageLocalFileNlinkQueryInteger_2>
-
-  uid?: Maybe<PrismicContactPageDataHeaderImageLocalFileUidQueryInteger_2>
-
-  gid?: Maybe<PrismicContactPageDataHeaderImageLocalFileGidQueryInteger_2>
-
-  rdev?: Maybe<PrismicContactPageDataHeaderImageLocalFileRdevQueryInteger_2>
-
-  blksize?: Maybe<PrismicContactPageDataHeaderImageLocalFileBlksizeQueryInteger_2>
-
-  ino?: Maybe<PrismicContactPageDataHeaderImageLocalFileInoQueryInteger_2>
-
-  blocks?: Maybe<PrismicContactPageDataHeaderImageLocalFileBlocksQueryInteger_2>
-
-  atimeMs?: Maybe<PrismicContactPageDataHeaderImageLocalFileAtimeMsQueryFloat_2>
-
-  mtimeMs?: Maybe<PrismicContactPageDataHeaderImageLocalFileMtimeMsQueryFloat_2>
-
-  ctimeMs?: Maybe<PrismicContactPageDataHeaderImageLocalFileCtimeMsQueryFloat_2>
-
-  birthtimeMs?: Maybe<PrismicContactPageDataHeaderImageLocalFileBirthtimeMsQueryFloat_2>
-
-  atime?: Maybe<PrismicContactPageDataHeaderImageLocalFileAtimeQueryString_2>
-
-  mtime?: Maybe<PrismicContactPageDataHeaderImageLocalFileMtimeQueryString_2>
-
-  ctime?: Maybe<PrismicContactPageDataHeaderImageLocalFileCtimeQueryString_2>
-
-  birthtime?: Maybe<PrismicContactPageDataHeaderImageLocalFileBirthtimeQueryString_2>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileIdQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileChildrenQueryList_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileParentQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileInternalInputObject_2 {
-  contentDigest?: Maybe<PrismicContactPageDataHeaderImageLocalFileInternalContentDigestQueryString_2>
-
-  type?: Maybe<PrismicContactPageDataHeaderImageLocalFileInternalTypeQueryString_2>
-
-  mediaType?: Maybe<PrismicContactPageDataHeaderImageLocalFileInternalMediaTypeQueryString_2>
-
-  description?: Maybe<PrismicContactPageDataHeaderImageLocalFileInternalDescriptionQueryString_2>
-
-  owner?: Maybe<PrismicContactPageDataHeaderImageLocalFileInternalOwnerQueryString_2>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileInternalContentDigestQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileInternalTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileInternalMediaTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileInternalDescriptionQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileInternalOwnerQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileSourceInstanceNameQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileAbsolutePathQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileRelativePathQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileExtensionQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileSizeQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFilePrettySizeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileModifiedTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileAccessTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileChangeTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileBirthTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileRootQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileDirQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileBaseQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileExtQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileNameQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileRelativeDirectoryQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileDevQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileModeQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileNlinkQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileUidQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileGidQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileRdevQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileBlksizeQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileInoQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileBlocksQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileAtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileMtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileCtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileBirthtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileAtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileMtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileCtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataHeaderImageLocalFileBirthtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataTextQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageInputObject_2 {
-  dimensions?: Maybe<PrismicContactPageDataImageDimensionsInputObject_2>
-
-  alt?: Maybe<PrismicContactPageDataImageAltQueryString_2>
-
-  copyright?: Maybe<PrismicContactPageDataImageCopyrightQueryString_2>
-
-  url?: Maybe<PrismicContactPageDataImageUrlQueryString_2>
-
-  localFile?: Maybe<PrismicContactPageDataImageLocalFileInputObject_2>
-}
-
-export interface PrismicContactPageDataImageDimensionsInputObject_2 {
-  width?: Maybe<PrismicContactPageDataImageDimensionsWidthQueryInteger_2>
-
-  height?: Maybe<PrismicContactPageDataImageDimensionsHeightQueryInteger_2>
-}
-
-export interface PrismicContactPageDataImageDimensionsWidthQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataImageDimensionsHeightQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataImageAltQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageCopyrightQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageUrlQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileInputObject_2 {
-  id?: Maybe<PrismicContactPageDataImageLocalFileIdQueryString_2>
-
-  children?: Maybe<PrismicContactPageDataImageLocalFileChildrenQueryList_2>
-
-  parent?: Maybe<PrismicContactPageDataImageLocalFileParentQueryString_2>
-
-  internal?: Maybe<PrismicContactPageDataImageLocalFileInternalInputObject_2>
-
-  sourceInstanceName?: Maybe<PrismicContactPageDataImageLocalFileSourceInstanceNameQueryString_2>
-
-  absolutePath?: Maybe<PrismicContactPageDataImageLocalFileAbsolutePathQueryString_2>
-
-  relativePath?: Maybe<PrismicContactPageDataImageLocalFileRelativePathQueryString_2>
-
-  extension?: Maybe<PrismicContactPageDataImageLocalFileExtensionQueryString_2>
-
-  size?: Maybe<PrismicContactPageDataImageLocalFileSizeQueryInteger_2>
-
-  prettySize?: Maybe<PrismicContactPageDataImageLocalFilePrettySizeQueryString_2>
-
-  modifiedTime?: Maybe<PrismicContactPageDataImageLocalFileModifiedTimeQueryString_2>
-
-  accessTime?: Maybe<PrismicContactPageDataImageLocalFileAccessTimeQueryString_2>
-
-  changeTime?: Maybe<PrismicContactPageDataImageLocalFileChangeTimeQueryString_2>
-
-  birthTime?: Maybe<PrismicContactPageDataImageLocalFileBirthTimeQueryString_2>
-
-  root?: Maybe<PrismicContactPageDataImageLocalFileRootQueryString_2>
-
-  dir?: Maybe<PrismicContactPageDataImageLocalFileDirQueryString_2>
-
-  base?: Maybe<PrismicContactPageDataImageLocalFileBaseQueryString_2>
-
-  ext?: Maybe<PrismicContactPageDataImageLocalFileExtQueryString_2>
-
-  name?: Maybe<PrismicContactPageDataImageLocalFileNameQueryString_2>
-
-  relativeDirectory?: Maybe<PrismicContactPageDataImageLocalFileRelativeDirectoryQueryString_2>
-
-  dev?: Maybe<PrismicContactPageDataImageLocalFileDevQueryInteger_2>
-
-  mode?: Maybe<PrismicContactPageDataImageLocalFileModeQueryInteger_2>
-
-  nlink?: Maybe<PrismicContactPageDataImageLocalFileNlinkQueryInteger_2>
-
-  uid?: Maybe<PrismicContactPageDataImageLocalFileUidQueryInteger_2>
-
-  gid?: Maybe<PrismicContactPageDataImageLocalFileGidQueryInteger_2>
-
-  rdev?: Maybe<PrismicContactPageDataImageLocalFileRdevQueryInteger_2>
-
-  blksize?: Maybe<PrismicContactPageDataImageLocalFileBlksizeQueryInteger_2>
-
-  ino?: Maybe<PrismicContactPageDataImageLocalFileInoQueryInteger_2>
-
-  blocks?: Maybe<PrismicContactPageDataImageLocalFileBlocksQueryInteger_2>
-
-  atimeMs?: Maybe<PrismicContactPageDataImageLocalFileAtimeMsQueryFloat_2>
-
-  mtimeMs?: Maybe<PrismicContactPageDataImageLocalFileMtimeMsQueryFloat_2>
-
-  ctimeMs?: Maybe<PrismicContactPageDataImageLocalFileCtimeMsQueryFloat_2>
-
-  birthtimeMs?: Maybe<PrismicContactPageDataImageLocalFileBirthtimeMsQueryFloat_2>
-
-  atime?: Maybe<PrismicContactPageDataImageLocalFileAtimeQueryString_2>
-
-  mtime?: Maybe<PrismicContactPageDataImageLocalFileMtimeQueryString_2>
-
-  ctime?: Maybe<PrismicContactPageDataImageLocalFileCtimeQueryString_2>
-
-  birthtime?: Maybe<PrismicContactPageDataImageLocalFileBirthtimeQueryString_2>
-}
-
-export interface PrismicContactPageDataImageLocalFileIdQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileChildrenQueryList_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileParentQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileInternalInputObject_2 {
-  contentDigest?: Maybe<PrismicContactPageDataImageLocalFileInternalContentDigestQueryString_2>
-
-  type?: Maybe<PrismicContactPageDataImageLocalFileInternalTypeQueryString_2>
-
-  mediaType?: Maybe<PrismicContactPageDataImageLocalFileInternalMediaTypeQueryString_2>
-
-  description?: Maybe<PrismicContactPageDataImageLocalFileInternalDescriptionQueryString_2>
-
-  owner?: Maybe<PrismicContactPageDataImageLocalFileInternalOwnerQueryString_2>
-}
-
-export interface PrismicContactPageDataImageLocalFileInternalContentDigestQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileInternalTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileInternalMediaTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileInternalDescriptionQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileInternalOwnerQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileSourceInstanceNameQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileAbsolutePathQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileRelativePathQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileExtensionQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileSizeQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFilePrettySizeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileModifiedTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileAccessTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileChangeTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileBirthTimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileRootQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileDirQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileBaseQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileExtQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileNameQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileRelativeDirectoryQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileDevQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileModeQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileNlinkQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileUidQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileGidQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileRdevQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileBlksizeQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileInoQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileBlocksQueryInteger_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileAtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileMtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileCtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileBirthtimeMsQueryFloat_2 {
-  eq?: Maybe<number>
-
-  ne?: Maybe<number>
-
-  gt?: Maybe<number>
-
-  gte?: Maybe<number>
-
-  lt?: Maybe<number>
-
-  lte?: Maybe<number>
-
-  in?: Maybe<(Maybe<number>)[]>
-
-  nin?: Maybe<(Maybe<number>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileAtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileMtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileCtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataImageLocalFileBirthtimeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataEmailButtonTextQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataMessengerButtonTextQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPagePrismicIdQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageIdQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageInternalInputObject_2 {
-  type?: Maybe<PrismicContactPageInternalTypeQueryString_2>
-
-  contentDigest?: Maybe<PrismicContactPageInternalContentDigestQueryString_2>
-
-  owner?: Maybe<PrismicContactPageInternalOwnerQueryString_2>
-}
-
-export interface PrismicContactPageInternalTypeQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageInternalContentDigestQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageInternalOwnerQueryString_2 {
-  eq?: Maybe<string>
-
-  ne?: Maybe<string>
-
-  regex?: Maybe<string>
-
-  glob?: Maybe<string>
-
-  in?: Maybe<(Maybe<string>)[]>
-
-  nin?: Maybe<(Maybe<string>)[]>
-}
-
-export interface PrismicContactPageDataStringQueryString_2 {
   eq?: Maybe<string>
 
   ne?: Maybe<string>
@@ -39258,6 +37384,1910 @@ export interface PrismicHomepageDataStringQueryString_2 {
   nin?: Maybe<(Maybe<string>)[]>
 }
 
+export interface PrismicContactPageTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageHrefQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageFirstPublicationDateQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageLastPublicationDateQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageSlugsQueryList_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageLangQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataInputObject_2 {
+  title?: Maybe<PrismicContactPageDataTitleQueryString_2>
+
+  subtitle?: Maybe<PrismicContactPageDataSubtitleQueryString_2>
+
+  header_image?: Maybe<PrismicContactPageDataHeaderImageInputObject_2>
+
+  text?: Maybe<PrismicContactPageDataTextQueryString_2>
+
+  image?: Maybe<PrismicContactPageDataImageInputObject_2>
+
+  email_button_text?: Maybe<PrismicContactPageDataEmailButtonTextQueryString_2>
+
+  messenger_button_text?: Maybe<PrismicContactPageDataMessengerButtonTextQueryString_2>
+}
+
+export interface PrismicContactPageDataTitleQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataSubtitleQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageInputObject_2 {
+  dimensions?: Maybe<PrismicContactPageDataHeaderImageDimensionsInputObject_2>
+
+  alt?: Maybe<PrismicContactPageDataHeaderImageAltQueryString_2>
+
+  copyright?: Maybe<PrismicContactPageDataHeaderImageCopyrightQueryString_2>
+
+  url?: Maybe<PrismicContactPageDataHeaderImageUrlQueryString_2>
+
+  localFile?: Maybe<PrismicContactPageDataHeaderImageLocalFileInputObject_2>
+}
+
+export interface PrismicContactPageDataHeaderImageDimensionsInputObject_2 {
+  width?: Maybe<PrismicContactPageDataHeaderImageDimensionsWidthQueryInteger_2>
+
+  height?: Maybe<PrismicContactPageDataHeaderImageDimensionsHeightQueryInteger_2>
+}
+
+export interface PrismicContactPageDataHeaderImageDimensionsWidthQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageDimensionsHeightQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageAltQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageCopyrightQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageUrlQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileInputObject_2 {
+  id?: Maybe<PrismicContactPageDataHeaderImageLocalFileIdQueryString_2>
+
+  children?: Maybe<PrismicContactPageDataHeaderImageLocalFileChildrenQueryList_2>
+
+  parent?: Maybe<PrismicContactPageDataHeaderImageLocalFileParentQueryString_2>
+
+  internal?: Maybe<PrismicContactPageDataHeaderImageLocalFileInternalInputObject_2>
+
+  sourceInstanceName?: Maybe<PrismicContactPageDataHeaderImageLocalFileSourceInstanceNameQueryString_2>
+
+  absolutePath?: Maybe<PrismicContactPageDataHeaderImageLocalFileAbsolutePathQueryString_2>
+
+  relativePath?: Maybe<PrismicContactPageDataHeaderImageLocalFileRelativePathQueryString_2>
+
+  extension?: Maybe<PrismicContactPageDataHeaderImageLocalFileExtensionQueryString_2>
+
+  size?: Maybe<PrismicContactPageDataHeaderImageLocalFileSizeQueryInteger_2>
+
+  prettySize?: Maybe<PrismicContactPageDataHeaderImageLocalFilePrettySizeQueryString_2>
+
+  modifiedTime?: Maybe<PrismicContactPageDataHeaderImageLocalFileModifiedTimeQueryString_2>
+
+  accessTime?: Maybe<PrismicContactPageDataHeaderImageLocalFileAccessTimeQueryString_2>
+
+  changeTime?: Maybe<PrismicContactPageDataHeaderImageLocalFileChangeTimeQueryString_2>
+
+  birthTime?: Maybe<PrismicContactPageDataHeaderImageLocalFileBirthTimeQueryString_2>
+
+  root?: Maybe<PrismicContactPageDataHeaderImageLocalFileRootQueryString_2>
+
+  dir?: Maybe<PrismicContactPageDataHeaderImageLocalFileDirQueryString_2>
+
+  base?: Maybe<PrismicContactPageDataHeaderImageLocalFileBaseQueryString_2>
+
+  ext?: Maybe<PrismicContactPageDataHeaderImageLocalFileExtQueryString_2>
+
+  name?: Maybe<PrismicContactPageDataHeaderImageLocalFileNameQueryString_2>
+
+  relativeDirectory?: Maybe<PrismicContactPageDataHeaderImageLocalFileRelativeDirectoryQueryString_2>
+
+  dev?: Maybe<PrismicContactPageDataHeaderImageLocalFileDevQueryInteger_2>
+
+  mode?: Maybe<PrismicContactPageDataHeaderImageLocalFileModeQueryInteger_2>
+
+  nlink?: Maybe<PrismicContactPageDataHeaderImageLocalFileNlinkQueryInteger_2>
+
+  uid?: Maybe<PrismicContactPageDataHeaderImageLocalFileUidQueryInteger_2>
+
+  gid?: Maybe<PrismicContactPageDataHeaderImageLocalFileGidQueryInteger_2>
+
+  rdev?: Maybe<PrismicContactPageDataHeaderImageLocalFileRdevQueryInteger_2>
+
+  blksize?: Maybe<PrismicContactPageDataHeaderImageLocalFileBlksizeQueryInteger_2>
+
+  ino?: Maybe<PrismicContactPageDataHeaderImageLocalFileInoQueryInteger_2>
+
+  blocks?: Maybe<PrismicContactPageDataHeaderImageLocalFileBlocksQueryInteger_2>
+
+  atimeMs?: Maybe<PrismicContactPageDataHeaderImageLocalFileAtimeMsQueryFloat_2>
+
+  mtimeMs?: Maybe<PrismicContactPageDataHeaderImageLocalFileMtimeMsQueryFloat_2>
+
+  ctimeMs?: Maybe<PrismicContactPageDataHeaderImageLocalFileCtimeMsQueryFloat_2>
+
+  birthtimeMs?: Maybe<PrismicContactPageDataHeaderImageLocalFileBirthtimeMsQueryFloat_2>
+
+  atime?: Maybe<PrismicContactPageDataHeaderImageLocalFileAtimeQueryString_2>
+
+  mtime?: Maybe<PrismicContactPageDataHeaderImageLocalFileMtimeQueryString_2>
+
+  ctime?: Maybe<PrismicContactPageDataHeaderImageLocalFileCtimeQueryString_2>
+
+  birthtime?: Maybe<PrismicContactPageDataHeaderImageLocalFileBirthtimeQueryString_2>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileIdQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileChildrenQueryList_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileParentQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileInternalInputObject_2 {
+  contentDigest?: Maybe<PrismicContactPageDataHeaderImageLocalFileInternalContentDigestQueryString_2>
+
+  type?: Maybe<PrismicContactPageDataHeaderImageLocalFileInternalTypeQueryString_2>
+
+  mediaType?: Maybe<PrismicContactPageDataHeaderImageLocalFileInternalMediaTypeQueryString_2>
+
+  description?: Maybe<PrismicContactPageDataHeaderImageLocalFileInternalDescriptionQueryString_2>
+
+  owner?: Maybe<PrismicContactPageDataHeaderImageLocalFileInternalOwnerQueryString_2>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileInternalContentDigestQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileInternalTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileInternalMediaTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileInternalDescriptionQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileInternalOwnerQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileSourceInstanceNameQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileAbsolutePathQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileRelativePathQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileExtensionQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileSizeQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFilePrettySizeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileModifiedTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileAccessTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileChangeTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileBirthTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileRootQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileDirQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileBaseQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileExtQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileNameQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileRelativeDirectoryQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileDevQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileModeQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileNlinkQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileUidQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileGidQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileRdevQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileBlksizeQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileInoQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileBlocksQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileAtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileMtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileCtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileBirthtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileAtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileMtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileCtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataHeaderImageLocalFileBirthtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataTextQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageInputObject_2 {
+  dimensions?: Maybe<PrismicContactPageDataImageDimensionsInputObject_2>
+
+  alt?: Maybe<PrismicContactPageDataImageAltQueryString_2>
+
+  copyright?: Maybe<PrismicContactPageDataImageCopyrightQueryString_2>
+
+  url?: Maybe<PrismicContactPageDataImageUrlQueryString_2>
+
+  localFile?: Maybe<PrismicContactPageDataImageLocalFileInputObject_2>
+}
+
+export interface PrismicContactPageDataImageDimensionsInputObject_2 {
+  width?: Maybe<PrismicContactPageDataImageDimensionsWidthQueryInteger_2>
+
+  height?: Maybe<PrismicContactPageDataImageDimensionsHeightQueryInteger_2>
+}
+
+export interface PrismicContactPageDataImageDimensionsWidthQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataImageDimensionsHeightQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataImageAltQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageCopyrightQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageUrlQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileInputObject_2 {
+  id?: Maybe<PrismicContactPageDataImageLocalFileIdQueryString_2>
+
+  children?: Maybe<PrismicContactPageDataImageLocalFileChildrenQueryList_2>
+
+  parent?: Maybe<PrismicContactPageDataImageLocalFileParentQueryString_2>
+
+  internal?: Maybe<PrismicContactPageDataImageLocalFileInternalInputObject_2>
+
+  sourceInstanceName?: Maybe<PrismicContactPageDataImageLocalFileSourceInstanceNameQueryString_2>
+
+  absolutePath?: Maybe<PrismicContactPageDataImageLocalFileAbsolutePathQueryString_2>
+
+  relativePath?: Maybe<PrismicContactPageDataImageLocalFileRelativePathQueryString_2>
+
+  extension?: Maybe<PrismicContactPageDataImageLocalFileExtensionQueryString_2>
+
+  size?: Maybe<PrismicContactPageDataImageLocalFileSizeQueryInteger_2>
+
+  prettySize?: Maybe<PrismicContactPageDataImageLocalFilePrettySizeQueryString_2>
+
+  modifiedTime?: Maybe<PrismicContactPageDataImageLocalFileModifiedTimeQueryString_2>
+
+  accessTime?: Maybe<PrismicContactPageDataImageLocalFileAccessTimeQueryString_2>
+
+  changeTime?: Maybe<PrismicContactPageDataImageLocalFileChangeTimeQueryString_2>
+
+  birthTime?: Maybe<PrismicContactPageDataImageLocalFileBirthTimeQueryString_2>
+
+  root?: Maybe<PrismicContactPageDataImageLocalFileRootQueryString_2>
+
+  dir?: Maybe<PrismicContactPageDataImageLocalFileDirQueryString_2>
+
+  base?: Maybe<PrismicContactPageDataImageLocalFileBaseQueryString_2>
+
+  ext?: Maybe<PrismicContactPageDataImageLocalFileExtQueryString_2>
+
+  name?: Maybe<PrismicContactPageDataImageLocalFileNameQueryString_2>
+
+  relativeDirectory?: Maybe<PrismicContactPageDataImageLocalFileRelativeDirectoryQueryString_2>
+
+  dev?: Maybe<PrismicContactPageDataImageLocalFileDevQueryInteger_2>
+
+  mode?: Maybe<PrismicContactPageDataImageLocalFileModeQueryInteger_2>
+
+  nlink?: Maybe<PrismicContactPageDataImageLocalFileNlinkQueryInteger_2>
+
+  uid?: Maybe<PrismicContactPageDataImageLocalFileUidQueryInteger_2>
+
+  gid?: Maybe<PrismicContactPageDataImageLocalFileGidQueryInteger_2>
+
+  rdev?: Maybe<PrismicContactPageDataImageLocalFileRdevQueryInteger_2>
+
+  blksize?: Maybe<PrismicContactPageDataImageLocalFileBlksizeQueryInteger_2>
+
+  ino?: Maybe<PrismicContactPageDataImageLocalFileInoQueryInteger_2>
+
+  blocks?: Maybe<PrismicContactPageDataImageLocalFileBlocksQueryInteger_2>
+
+  atimeMs?: Maybe<PrismicContactPageDataImageLocalFileAtimeMsQueryFloat_2>
+
+  mtimeMs?: Maybe<PrismicContactPageDataImageLocalFileMtimeMsQueryFloat_2>
+
+  ctimeMs?: Maybe<PrismicContactPageDataImageLocalFileCtimeMsQueryFloat_2>
+
+  birthtimeMs?: Maybe<PrismicContactPageDataImageLocalFileBirthtimeMsQueryFloat_2>
+
+  atime?: Maybe<PrismicContactPageDataImageLocalFileAtimeQueryString_2>
+
+  mtime?: Maybe<PrismicContactPageDataImageLocalFileMtimeQueryString_2>
+
+  ctime?: Maybe<PrismicContactPageDataImageLocalFileCtimeQueryString_2>
+
+  birthtime?: Maybe<PrismicContactPageDataImageLocalFileBirthtimeQueryString_2>
+}
+
+export interface PrismicContactPageDataImageLocalFileIdQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileChildrenQueryList_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileParentQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileInternalInputObject_2 {
+  contentDigest?: Maybe<PrismicContactPageDataImageLocalFileInternalContentDigestQueryString_2>
+
+  type?: Maybe<PrismicContactPageDataImageLocalFileInternalTypeQueryString_2>
+
+  mediaType?: Maybe<PrismicContactPageDataImageLocalFileInternalMediaTypeQueryString_2>
+
+  description?: Maybe<PrismicContactPageDataImageLocalFileInternalDescriptionQueryString_2>
+
+  owner?: Maybe<PrismicContactPageDataImageLocalFileInternalOwnerQueryString_2>
+}
+
+export interface PrismicContactPageDataImageLocalFileInternalContentDigestQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileInternalTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileInternalMediaTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileInternalDescriptionQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileInternalOwnerQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileSourceInstanceNameQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileAbsolutePathQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileRelativePathQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileExtensionQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileSizeQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFilePrettySizeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileModifiedTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileAccessTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileChangeTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileBirthTimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileRootQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileDirQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileBaseQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileExtQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileNameQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileRelativeDirectoryQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileDevQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileModeQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileNlinkQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileUidQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileGidQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileRdevQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileBlksizeQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileInoQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileBlocksQueryInteger_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileAtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileMtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileCtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileBirthtimeMsQueryFloat_2 {
+  eq?: Maybe<number>
+
+  ne?: Maybe<number>
+
+  gt?: Maybe<number>
+
+  gte?: Maybe<number>
+
+  lt?: Maybe<number>
+
+  lte?: Maybe<number>
+
+  in?: Maybe<(Maybe<number>)[]>
+
+  nin?: Maybe<(Maybe<number>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileAtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileMtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileCtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataImageLocalFileBirthtimeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataEmailButtonTextQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataMessengerButtonTextQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPagePrismicIdQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageIdQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageInternalInputObject_2 {
+  type?: Maybe<PrismicContactPageInternalTypeQueryString_2>
+
+  contentDigest?: Maybe<PrismicContactPageInternalContentDigestQueryString_2>
+
+  owner?: Maybe<PrismicContactPageInternalOwnerQueryString_2>
+}
+
+export interface PrismicContactPageInternalTypeQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageInternalContentDigestQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageInternalOwnerQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface PrismicContactPageDataStringQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
+export interface InstaNodeUsernameQueryString_2 {
+  eq?: Maybe<string>
+
+  ne?: Maybe<string>
+
+  regex?: Maybe<string>
+
+  glob?: Maybe<string>
+
+  in?: Maybe<(Maybe<string>)[]>
+
+  nin?: Maybe<(Maybe<string>)[]>
+}
+
 export interface InstaNodeIdQueryString_2 {
   eq?: Maybe<string>
 
@@ -41378,101 +41408,6 @@ export enum PrismicPartnerGroupEnum {
   DataString = 'dataString',
 }
 
-export enum PrismicEventConnectionSortByFieldsEnum {
-  Type = 'type',
-  Href = 'href',
-  FirstPublicationDate = 'first_publication_date',
-  LastPublicationDate = 'last_publication_date',
-  Slugs = 'slugs',
-  Lang = 'lang',
-  DataTitle = 'data___title',
-  DataOrganizer = 'data___organizer',
-  DataImageDimensions = 'data___image___dimensions',
-  DataImageAlt = 'data___image___alt',
-  DataImageCopyright = 'data___image___copyright',
-  DataImageUrl = 'data___image___url',
-  DataImageLocalFileNode = 'data___image___localFile___NODE',
-  DataDate = 'data___date',
-  DataShortDescription = 'data___short_description',
-  DataTags = 'data___tags',
-  DataFacebookLinkLinkType = 'data___facebook_link___link_type',
-  DataFacebookLinkUrl = 'data___facebook_link___url',
-  DataFacebookLinkTarget = 'data___facebook_link___target',
-  DataFacebookLinkRaw = 'data___facebook_link___raw',
-  PrismicId = 'prismicId',
-  Id = 'id',
-  Parent = 'parent',
-  InternalType = 'internal___type',
-  InternalContentDigest = 'internal___contentDigest',
-  InternalOwner = 'internal___owner',
-  DataString = 'dataString',
-}
-
-export enum PrismicEventConnectionSortOrderValues {
-  Asc = 'ASC',
-  Desc = 'DESC',
-}
-
-export enum PrismicEventDistinctEnum {
-  Type = 'type',
-  Href = 'href',
-  FirstPublicationDate = 'first_publication_date',
-  LastPublicationDate = 'last_publication_date',
-  Slugs = 'slugs',
-  Lang = 'lang',
-  DataTitle = 'data___title',
-  DataOrganizer = 'data___organizer',
-  DataImageDimensions = 'data___image___dimensions',
-  DataImageAlt = 'data___image___alt',
-  DataImageCopyright = 'data___image___copyright',
-  DataImageUrl = 'data___image___url',
-  DataImageLocalFileNode = 'data___image___localFile___NODE',
-  DataDate = 'data___date',
-  DataShortDescription = 'data___short_description',
-  DataTags = 'data___tags',
-  DataFacebookLinkLinkType = 'data___facebook_link___link_type',
-  DataFacebookLinkUrl = 'data___facebook_link___url',
-  DataFacebookLinkTarget = 'data___facebook_link___target',
-  DataFacebookLinkRaw = 'data___facebook_link___raw',
-  PrismicId = 'prismicId',
-  Id = 'id',
-  Parent = 'parent',
-  InternalType = 'internal___type',
-  InternalContentDigest = 'internal___contentDigest',
-  InternalOwner = 'internal___owner',
-  DataString = 'dataString',
-}
-
-export enum PrismicEventGroupEnum {
-  Type = 'type',
-  Href = 'href',
-  FirstPublicationDate = 'first_publication_date',
-  LastPublicationDate = 'last_publication_date',
-  Slugs = 'slugs',
-  Lang = 'lang',
-  DataTitle = 'data___title',
-  DataOrganizer = 'data___organizer',
-  DataImageDimensions = 'data___image___dimensions',
-  DataImageAlt = 'data___image___alt',
-  DataImageCopyright = 'data___image___copyright',
-  DataImageUrl = 'data___image___url',
-  DataImageLocalFileNode = 'data___image___localFile___NODE',
-  DataDate = 'data___date',
-  DataShortDescription = 'data___short_description',
-  DataTags = 'data___tags',
-  DataFacebookLinkLinkType = 'data___facebook_link___link_type',
-  DataFacebookLinkUrl = 'data___facebook_link___url',
-  DataFacebookLinkTarget = 'data___facebook_link___target',
-  DataFacebookLinkRaw = 'data___facebook_link___raw',
-  PrismicId = 'prismicId',
-  Id = 'id',
-  Parent = 'parent',
-  InternalType = 'internal___type',
-  InternalContentDigest = 'internal___contentDigest',
-  InternalOwner = 'internal___owner',
-  DataString = 'dataString',
-}
-
 export enum PrismicProgramPageConnectionSortByFieldsEnum {
   Type = 'type',
   Href = 'href',
@@ -41699,89 +41634,6 @@ export enum PrismicGeneralGroupEnum {
   DataString = 'dataString',
 }
 
-export enum PrismicInfoPageConnectionSortByFieldsEnum {
-  Type = 'type',
-  Href = 'href',
-  FirstPublicationDate = 'first_publication_date',
-  LastPublicationDate = 'last_publication_date',
-  Slugs = 'slugs',
-  Lang = 'lang',
-  DataTitle = 'data___title',
-  DataSubtitle = 'data___subtitle',
-  DataHeaderImageDimensions = 'data___header_image___dimensions',
-  DataHeaderImageAlt = 'data___header_image___alt',
-  DataHeaderImageCopyright = 'data___header_image___copyright',
-  DataHeaderImageUrl = 'data___header_image___url',
-  DataHeaderImageLocalFileNode = 'data___header_image___localFile___NODE',
-  DataInfoHtml = 'data___info___html',
-  DataInfoText = 'data___info___text',
-  DataInfoRaw = 'data___info___raw',
-  PrismicId = 'prismicId',
-  Id = 'id',
-  Parent = 'parent',
-  InternalType = 'internal___type',
-  InternalContentDigest = 'internal___contentDigest',
-  InternalOwner = 'internal___owner',
-  DataString = 'dataString',
-}
-
-export enum PrismicInfoPageConnectionSortOrderValues {
-  Asc = 'ASC',
-  Desc = 'DESC',
-}
-
-export enum PrismicInfoPageDistinctEnum {
-  Type = 'type',
-  Href = 'href',
-  FirstPublicationDate = 'first_publication_date',
-  LastPublicationDate = 'last_publication_date',
-  Slugs = 'slugs',
-  Lang = 'lang',
-  DataTitle = 'data___title',
-  DataSubtitle = 'data___subtitle',
-  DataHeaderImageDimensions = 'data___header_image___dimensions',
-  DataHeaderImageAlt = 'data___header_image___alt',
-  DataHeaderImageCopyright = 'data___header_image___copyright',
-  DataHeaderImageUrl = 'data___header_image___url',
-  DataHeaderImageLocalFileNode = 'data___header_image___localFile___NODE',
-  DataInfoHtml = 'data___info___html',
-  DataInfoText = 'data___info___text',
-  DataInfoRaw = 'data___info___raw',
-  PrismicId = 'prismicId',
-  Id = 'id',
-  Parent = 'parent',
-  InternalType = 'internal___type',
-  InternalContentDigest = 'internal___contentDigest',
-  InternalOwner = 'internal___owner',
-  DataString = 'dataString',
-}
-
-export enum PrismicInfoPageGroupEnum {
-  Type = 'type',
-  Href = 'href',
-  FirstPublicationDate = 'first_publication_date',
-  LastPublicationDate = 'last_publication_date',
-  Slugs = 'slugs',
-  Lang = 'lang',
-  DataTitle = 'data___title',
-  DataSubtitle = 'data___subtitle',
-  DataHeaderImageDimensions = 'data___header_image___dimensions',
-  DataHeaderImageAlt = 'data___header_image___alt',
-  DataHeaderImageCopyright = 'data___header_image___copyright',
-  DataHeaderImageUrl = 'data___header_image___url',
-  DataHeaderImageLocalFileNode = 'data___header_image___localFile___NODE',
-  DataInfoHtml = 'data___info___html',
-  DataInfoText = 'data___info___text',
-  DataInfoRaw = 'data___info___raw',
-  PrismicId = 'prismicId',
-  Id = 'id',
-  Parent = 'parent',
-  InternalType = 'internal___type',
-  InternalContentDigest = 'internal___contentDigest',
-  InternalOwner = 'internal___owner',
-  DataString = 'dataString',
-}
-
 export enum PrismicPartnersPageConnectionSortByFieldsEnum {
   Type = 'type',
   Href = 'href',
@@ -41868,7 +41720,7 @@ export enum PrismicPartnersPageGroupEnum {
   DataString = 'dataString',
 }
 
-export enum PrismicContactPageConnectionSortByFieldsEnum {
+export enum PrismicEventConnectionSortByFieldsEnum {
   Type = 'type',
   Href = 'href',
   FirstPublicationDate = 'first_publication_date',
@@ -41876,20 +41728,19 @@ export enum PrismicContactPageConnectionSortByFieldsEnum {
   Slugs = 'slugs',
   Lang = 'lang',
   DataTitle = 'data___title',
-  DataSubtitle = 'data___subtitle',
-  DataHeaderImageDimensions = 'data___header_image___dimensions',
-  DataHeaderImageAlt = 'data___header_image___alt',
-  DataHeaderImageCopyright = 'data___header_image___copyright',
-  DataHeaderImageUrl = 'data___header_image___url',
-  DataHeaderImageLocalFileNode = 'data___header_image___localFile___NODE',
-  DataText = 'data___text',
+  DataOrganizer = 'data___organizer',
   DataImageDimensions = 'data___image___dimensions',
   DataImageAlt = 'data___image___alt',
   DataImageCopyright = 'data___image___copyright',
   DataImageUrl = 'data___image___url',
   DataImageLocalFileNode = 'data___image___localFile___NODE',
-  DataEmailButtonText = 'data___email_button_text',
-  DataMessengerButtonText = 'data___messenger_button_text',
+  DataDate = 'data___date',
+  DataShortDescription = 'data___short_description',
+  DataTags = 'data___tags',
+  DataFacebookLinkLinkType = 'data___facebook_link___link_type',
+  DataFacebookLinkUrl = 'data___facebook_link___url',
+  DataFacebookLinkTarget = 'data___facebook_link___target',
+  DataFacebookLinkRaw = 'data___facebook_link___raw',
   PrismicId = 'prismicId',
   Id = 'id',
   Parent = 'parent',
@@ -41899,12 +41750,12 @@ export enum PrismicContactPageConnectionSortByFieldsEnum {
   DataString = 'dataString',
 }
 
-export enum PrismicContactPageConnectionSortOrderValues {
+export enum PrismicEventConnectionSortOrderValues {
   Asc = 'ASC',
   Desc = 'DESC',
 }
 
-export enum PrismicContactPageDistinctEnum {
+export enum PrismicEventDistinctEnum {
   Type = 'type',
   Href = 'href',
   FirstPublicationDate = 'first_publication_date',
@@ -41912,20 +41763,19 @@ export enum PrismicContactPageDistinctEnum {
   Slugs = 'slugs',
   Lang = 'lang',
   DataTitle = 'data___title',
-  DataSubtitle = 'data___subtitle',
-  DataHeaderImageDimensions = 'data___header_image___dimensions',
-  DataHeaderImageAlt = 'data___header_image___alt',
-  DataHeaderImageCopyright = 'data___header_image___copyright',
-  DataHeaderImageUrl = 'data___header_image___url',
-  DataHeaderImageLocalFileNode = 'data___header_image___localFile___NODE',
-  DataText = 'data___text',
+  DataOrganizer = 'data___organizer',
   DataImageDimensions = 'data___image___dimensions',
   DataImageAlt = 'data___image___alt',
   DataImageCopyright = 'data___image___copyright',
   DataImageUrl = 'data___image___url',
   DataImageLocalFileNode = 'data___image___localFile___NODE',
-  DataEmailButtonText = 'data___email_button_text',
-  DataMessengerButtonText = 'data___messenger_button_text',
+  DataDate = 'data___date',
+  DataShortDescription = 'data___short_description',
+  DataTags = 'data___tags',
+  DataFacebookLinkLinkType = 'data___facebook_link___link_type',
+  DataFacebookLinkUrl = 'data___facebook_link___url',
+  DataFacebookLinkTarget = 'data___facebook_link___target',
+  DataFacebookLinkRaw = 'data___facebook_link___raw',
   PrismicId = 'prismicId',
   Id = 'id',
   Parent = 'parent',
@@ -41935,7 +41785,37 @@ export enum PrismicContactPageDistinctEnum {
   DataString = 'dataString',
 }
 
-export enum PrismicContactPageGroupEnum {
+export enum PrismicEventGroupEnum {
+  Type = 'type',
+  Href = 'href',
+  FirstPublicationDate = 'first_publication_date',
+  LastPublicationDate = 'last_publication_date',
+  Slugs = 'slugs',
+  Lang = 'lang',
+  DataTitle = 'data___title',
+  DataOrganizer = 'data___organizer',
+  DataImageDimensions = 'data___image___dimensions',
+  DataImageAlt = 'data___image___alt',
+  DataImageCopyright = 'data___image___copyright',
+  DataImageUrl = 'data___image___url',
+  DataImageLocalFileNode = 'data___image___localFile___NODE',
+  DataDate = 'data___date',
+  DataShortDescription = 'data___short_description',
+  DataTags = 'data___tags',
+  DataFacebookLinkLinkType = 'data___facebook_link___link_type',
+  DataFacebookLinkUrl = 'data___facebook_link___url',
+  DataFacebookLinkTarget = 'data___facebook_link___target',
+  DataFacebookLinkRaw = 'data___facebook_link___raw',
+  PrismicId = 'prismicId',
+  Id = 'id',
+  Parent = 'parent',
+  InternalType = 'internal___type',
+  InternalContentDigest = 'internal___contentDigest',
+  InternalOwner = 'internal___owner',
+  DataString = 'dataString',
+}
+
+export enum PrismicInfoPageConnectionSortByFieldsEnum {
   Type = 'type',
   Href = 'href',
   FirstPublicationDate = 'first_publication_date',
@@ -41949,14 +41829,66 @@ export enum PrismicContactPageGroupEnum {
   DataHeaderImageCopyright = 'data___header_image___copyright',
   DataHeaderImageUrl = 'data___header_image___url',
   DataHeaderImageLocalFileNode = 'data___header_image___localFile___NODE',
-  DataText = 'data___text',
-  DataImageDimensions = 'data___image___dimensions',
-  DataImageAlt = 'data___image___alt',
-  DataImageCopyright = 'data___image___copyright',
-  DataImageUrl = 'data___image___url',
-  DataImageLocalFileNode = 'data___image___localFile___NODE',
-  DataEmailButtonText = 'data___email_button_text',
-  DataMessengerButtonText = 'data___messenger_button_text',
+  DataInfoHtml = 'data___info___html',
+  DataInfoText = 'data___info___text',
+  DataInfoRaw = 'data___info___raw',
+  PrismicId = 'prismicId',
+  Id = 'id',
+  Parent = 'parent',
+  InternalType = 'internal___type',
+  InternalContentDigest = 'internal___contentDigest',
+  InternalOwner = 'internal___owner',
+  DataString = 'dataString',
+}
+
+export enum PrismicInfoPageConnectionSortOrderValues {
+  Asc = 'ASC',
+  Desc = 'DESC',
+}
+
+export enum PrismicInfoPageDistinctEnum {
+  Type = 'type',
+  Href = 'href',
+  FirstPublicationDate = 'first_publication_date',
+  LastPublicationDate = 'last_publication_date',
+  Slugs = 'slugs',
+  Lang = 'lang',
+  DataTitle = 'data___title',
+  DataSubtitle = 'data___subtitle',
+  DataHeaderImageDimensions = 'data___header_image___dimensions',
+  DataHeaderImageAlt = 'data___header_image___alt',
+  DataHeaderImageCopyright = 'data___header_image___copyright',
+  DataHeaderImageUrl = 'data___header_image___url',
+  DataHeaderImageLocalFileNode = 'data___header_image___localFile___NODE',
+  DataInfoHtml = 'data___info___html',
+  DataInfoText = 'data___info___text',
+  DataInfoRaw = 'data___info___raw',
+  PrismicId = 'prismicId',
+  Id = 'id',
+  Parent = 'parent',
+  InternalType = 'internal___type',
+  InternalContentDigest = 'internal___contentDigest',
+  InternalOwner = 'internal___owner',
+  DataString = 'dataString',
+}
+
+export enum PrismicInfoPageGroupEnum {
+  Type = 'type',
+  Href = 'href',
+  FirstPublicationDate = 'first_publication_date',
+  LastPublicationDate = 'last_publication_date',
+  Slugs = 'slugs',
+  Lang = 'lang',
+  DataTitle = 'data___title',
+  DataSubtitle = 'data___subtitle',
+  DataHeaderImageDimensions = 'data___header_image___dimensions',
+  DataHeaderImageAlt = 'data___header_image___alt',
+  DataHeaderImageCopyright = 'data___header_image___copyright',
+  DataHeaderImageUrl = 'data___header_image___url',
+  DataHeaderImageLocalFileNode = 'data___header_image___localFile___NODE',
+  DataInfoHtml = 'data___info___html',
+  DataInfoText = 'data___info___text',
+  DataInfoRaw = 'data___info___raw',
   PrismicId = 'prismicId',
   Id = 'id',
   Parent = 'parent',
@@ -42157,7 +42089,106 @@ export enum PrismicHomepageGroupEnum {
   DataString = 'dataString',
 }
 
+export enum PrismicContactPageConnectionSortByFieldsEnum {
+  Type = 'type',
+  Href = 'href',
+  FirstPublicationDate = 'first_publication_date',
+  LastPublicationDate = 'last_publication_date',
+  Slugs = 'slugs',
+  Lang = 'lang',
+  DataTitle = 'data___title',
+  DataSubtitle = 'data___subtitle',
+  DataHeaderImageDimensions = 'data___header_image___dimensions',
+  DataHeaderImageAlt = 'data___header_image___alt',
+  DataHeaderImageCopyright = 'data___header_image___copyright',
+  DataHeaderImageUrl = 'data___header_image___url',
+  DataHeaderImageLocalFileNode = 'data___header_image___localFile___NODE',
+  DataText = 'data___text',
+  DataImageDimensions = 'data___image___dimensions',
+  DataImageAlt = 'data___image___alt',
+  DataImageCopyright = 'data___image___copyright',
+  DataImageUrl = 'data___image___url',
+  DataImageLocalFileNode = 'data___image___localFile___NODE',
+  DataEmailButtonText = 'data___email_button_text',
+  DataMessengerButtonText = 'data___messenger_button_text',
+  PrismicId = 'prismicId',
+  Id = 'id',
+  Parent = 'parent',
+  InternalType = 'internal___type',
+  InternalContentDigest = 'internal___contentDigest',
+  InternalOwner = 'internal___owner',
+  DataString = 'dataString',
+}
+
+export enum PrismicContactPageConnectionSortOrderValues {
+  Asc = 'ASC',
+  Desc = 'DESC',
+}
+
+export enum PrismicContactPageDistinctEnum {
+  Type = 'type',
+  Href = 'href',
+  FirstPublicationDate = 'first_publication_date',
+  LastPublicationDate = 'last_publication_date',
+  Slugs = 'slugs',
+  Lang = 'lang',
+  DataTitle = 'data___title',
+  DataSubtitle = 'data___subtitle',
+  DataHeaderImageDimensions = 'data___header_image___dimensions',
+  DataHeaderImageAlt = 'data___header_image___alt',
+  DataHeaderImageCopyright = 'data___header_image___copyright',
+  DataHeaderImageUrl = 'data___header_image___url',
+  DataHeaderImageLocalFileNode = 'data___header_image___localFile___NODE',
+  DataText = 'data___text',
+  DataImageDimensions = 'data___image___dimensions',
+  DataImageAlt = 'data___image___alt',
+  DataImageCopyright = 'data___image___copyright',
+  DataImageUrl = 'data___image___url',
+  DataImageLocalFileNode = 'data___image___localFile___NODE',
+  DataEmailButtonText = 'data___email_button_text',
+  DataMessengerButtonText = 'data___messenger_button_text',
+  PrismicId = 'prismicId',
+  Id = 'id',
+  Parent = 'parent',
+  InternalType = 'internal___type',
+  InternalContentDigest = 'internal___contentDigest',
+  InternalOwner = 'internal___owner',
+  DataString = 'dataString',
+}
+
+export enum PrismicContactPageGroupEnum {
+  Type = 'type',
+  Href = 'href',
+  FirstPublicationDate = 'first_publication_date',
+  LastPublicationDate = 'last_publication_date',
+  Slugs = 'slugs',
+  Lang = 'lang',
+  DataTitle = 'data___title',
+  DataSubtitle = 'data___subtitle',
+  DataHeaderImageDimensions = 'data___header_image___dimensions',
+  DataHeaderImageAlt = 'data___header_image___alt',
+  DataHeaderImageCopyright = 'data___header_image___copyright',
+  DataHeaderImageUrl = 'data___header_image___url',
+  DataHeaderImageLocalFileNode = 'data___header_image___localFile___NODE',
+  DataText = 'data___text',
+  DataImageDimensions = 'data___image___dimensions',
+  DataImageAlt = 'data___image___alt',
+  DataImageCopyright = 'data___image___copyright',
+  DataImageUrl = 'data___image___url',
+  DataImageLocalFileNode = 'data___image___localFile___NODE',
+  DataEmailButtonText = 'data___email_button_text',
+  DataMessengerButtonText = 'data___messenger_button_text',
+  PrismicId = 'prismicId',
+  Id = 'id',
+  Parent = 'parent',
+  InternalType = 'internal___type',
+  InternalContentDigest = 'internal___contentDigest',
+  InternalOwner = 'internal___owner',
+  DataString = 'dataString',
+}
+
 export enum InstaNodeConnectionSortByFieldsEnum {
+  Username = 'username',
   Id = 'id',
   Parent = 'parent',
   InternalType = 'internal___type',
@@ -42182,6 +42213,7 @@ export enum InstaNodeConnectionSortOrderValues {
 }
 
 export enum InstaNodeDistinctEnum {
+  Username = 'username',
   Id = 'id',
   Parent = 'parent',
   InternalType = 'internal___type',
@@ -42201,6 +42233,7 @@ export enum InstaNodeDistinctEnum {
 }
 
 export enum InstaNodeGroupEnum {
+  Username = 'username',
   Id = 'id',
   Parent = 'parent',
   InternalType = 'internal___type',
@@ -42383,20 +42416,20 @@ export interface Query {
   allImageSharp?: Maybe<ImageSharpConnection>
   /** Connection to all PrismicPartner nodes */
   allPrismicPartner?: Maybe<PrismicPartnerConnection>
-  /** Connection to all PrismicEvent nodes */
-  allPrismicEvent?: Maybe<PrismicEventConnection>
   /** Connection to all PrismicProgramPage nodes */
   allPrismicProgramPage?: Maybe<PrismicProgramPageConnection>
   /** Connection to all PrismicGeneral nodes */
   allPrismicGeneral?: Maybe<PrismicGeneralConnection>
-  /** Connection to all PrismicInfoPage nodes */
-  allPrismicInfoPage?: Maybe<PrismicInfoPageConnection>
   /** Connection to all PrismicPartnersPage nodes */
   allPrismicPartnersPage?: Maybe<PrismicPartnersPageConnection>
-  /** Connection to all PrismicContactPage nodes */
-  allPrismicContactPage?: Maybe<PrismicContactPageConnection>
+  /** Connection to all PrismicEvent nodes */
+  allPrismicEvent?: Maybe<PrismicEventConnection>
+  /** Connection to all PrismicInfoPage nodes */
+  allPrismicInfoPage?: Maybe<PrismicInfoPageConnection>
   /** Connection to all PrismicHomepage nodes */
   allPrismicHomepage?: Maybe<PrismicHomepageConnection>
+  /** Connection to all PrismicContactPage nodes */
+  allPrismicContactPage?: Maybe<PrismicContactPageConnection>
   /** Connection to all InstaNode nodes */
   allInstaNode?: Maybe<InstaNodeConnection>
   /** Connection to all Directory nodes */
@@ -42414,19 +42447,19 @@ export interface Query {
 
   prismicPartner?: Maybe<PrismicPartner>
 
-  prismicEvent?: Maybe<PrismicEvent>
-
   prismicProgramPage?: Maybe<PrismicProgramPage>
 
   prismicGeneral?: Maybe<PrismicGeneral>
 
-  prismicInfoPage?: Maybe<PrismicInfoPage>
-
   prismicPartnersPage?: Maybe<PrismicPartnersPage>
 
-  prismicContactPage?: Maybe<PrismicContactPage>
+  prismicEvent?: Maybe<PrismicEvent>
+
+  prismicInfoPage?: Maybe<PrismicInfoPage>
 
   prismicHomepage?: Maybe<PrismicHomepage>
+
+  prismicContactPage?: Maybe<PrismicContactPage>
 
   instaNode?: Maybe<InstaNode>
 
@@ -43202,144 +43235,6 @@ export interface PrismicPartnerGroupConnectionEdge {
 }
 
 /** A connection to a list of items. */
-export interface PrismicEventConnection {
-  /** Information to aid in pagination. */
-  pageInfo: PageInfo
-  /** A list of edges. */
-  edges?: Maybe<(Maybe<PrismicEventEdge>)[]>
-
-  totalCount?: Maybe<number>
-
-  distinct?: Maybe<(Maybe<string>)[]>
-
-  group?: Maybe<(Maybe<PrismicEventGroupConnectionConnection>)[]>
-}
-
-/** An edge in a connection. */
-export interface PrismicEventEdge {
-  /** The item at the end of the edge */
-  node?: Maybe<PrismicEvent>
-  /** The next edge in the connection */
-  next?: Maybe<PrismicEvent>
-  /** The previous edge in the connection */
-  previous?: Maybe<PrismicEvent>
-}
-
-/** Node of type PrismicEvent */
-export interface PrismicEvent extends Node {
-  /** The id of this node. */
-  id: string
-  /** The parent of this node. */
-  parent?: Maybe<Node>
-  /** The children of this node. */
-  children?: Maybe<(Maybe<Node>)[]>
-
-  type?: Maybe<string>
-
-  href?: Maybe<string>
-
-  first_publication_date?: Maybe<Date>
-
-  last_publication_date?: Maybe<Date>
-
-  slugs?: Maybe<(Maybe<string>)[]>
-
-  lang?: Maybe<string>
-
-  data?: Maybe<Data_10>
-
-  prismicId?: Maybe<string>
-
-  internal?: Maybe<Internal_21>
-
-  dataString?: Maybe<string>
-}
-
-export interface Data_10 {
-  title?: Maybe<string>
-
-  organizer?: Maybe<string>
-
-  image?: Maybe<Image_6>
-
-  date?: Maybe<Date>
-
-  short_description?: Maybe<string>
-
-  tags?: Maybe<string>
-
-  facebook_link?: Maybe<FacebookLink_3>
-}
-
-export interface Image_6 {
-  dimensions?: Maybe<Dimensions_17>
-
-  alt?: Maybe<string>
-
-  copyright?: Maybe<string>
-
-  url?: Maybe<string>
-
-  localFile?: Maybe<File>
-}
-
-export interface Dimensions_17 {
-  width?: Maybe<number>
-
-  height?: Maybe<number>
-}
-
-export interface FacebookLink_3 {
-  link_type?: Maybe<string>
-
-  url?: Maybe<string>
-
-  target?: Maybe<string>
-
-  raw?: Maybe<Raw_13>
-}
-
-export interface Raw_13 {
-  link_type?: Maybe<string>
-
-  url?: Maybe<string>
-
-  target?: Maybe<string>
-}
-
-export interface Internal_21 {
-  type?: Maybe<string>
-
-  contentDigest?: Maybe<string>
-
-  owner?: Maybe<string>
-}
-
-/** A connection to a list of items. */
-export interface PrismicEventGroupConnectionConnection {
-  /** Information to aid in pagination. */
-  pageInfo: PageInfo
-  /** A list of edges. */
-  edges?: Maybe<(Maybe<PrismicEventGroupConnectionEdge>)[]>
-
-  field?: Maybe<string>
-
-  fieldValue?: Maybe<string>
-
-  totalCount?: Maybe<number>
-}
-
-/** An edge in a connection. */
-export interface PrismicEventGroupConnectionEdge {
-  /** The item at the end of the edge */
-  node?: Maybe<PrismicEvent>
-  /** The next edge in the connection */
-  next?: Maybe<PrismicEvent>
-  /** The previous edge in the connection */
-  previous?: Maybe<PrismicEvent>
-}
-
-/** A connection to a list of items. */
 export interface PrismicProgramPageConnection {
   /** Information to aid in pagination. */
   pageInfo: PageInfo
@@ -43384,16 +43279,16 @@ export interface PrismicProgramPage extends Node {
 
   lang?: Maybe<string>
 
-  data?: Maybe<Data_11>
+  data?: Maybe<Data_10>
 
   prismicId?: Maybe<string>
 
-  internal?: Maybe<Internal_22>
+  internal?: Maybe<Internal_21>
 
   dataString?: Maybe<string>
 }
 
-export interface Data_11 {
+export interface Data_10 {
   title?: Maybe<string>
 
   subtitle?: Maybe<string>
@@ -43402,7 +43297,7 @@ export interface Data_11 {
 }
 
 export interface HeaderImage_4 {
-  dimensions?: Maybe<Dimensions_18>
+  dimensions?: Maybe<Dimensions_17>
 
   alt?: Maybe<string>
 
@@ -43413,13 +43308,13 @@ export interface HeaderImage_4 {
   localFile?: Maybe<File>
 }
 
-export interface Dimensions_18 {
+export interface Dimensions_17 {
   width?: Maybe<number>
 
   height?: Maybe<number>
 }
 
-export interface Internal_22 {
+export interface Internal_21 {
   type?: Maybe<string>
 
   contentDigest?: Maybe<string>
@@ -43496,16 +43391,16 @@ export interface PrismicGeneral extends Node {
 
   lang?: Maybe<string>
 
-  data?: Maybe<Data_12>
+  data?: Maybe<Data_11>
 
   prismicId?: Maybe<string>
 
-  internal?: Maybe<Internal_23>
+  internal?: Maybe<Internal_22>
 
   dataString?: Maybe<string>
 }
 
-export interface Data_12 {
+export interface Data_11 {
   site_title?: Maybe<string>
 
   site_subtitle?: Maybe<string>
@@ -43518,7 +43413,7 @@ export interface Data_12 {
 
   location?: Maybe<string>
 
-  facebook_link?: Maybe<FacebookLink_4>
+  facebook_link?: Maybe<FacebookLink_3>
 
   instagram_link?: Maybe<InstagramLink_2>
 
@@ -43541,7 +43436,23 @@ export interface Data_12 {
   website_url?: Maybe<string>
 }
 
-export interface FacebookLink_4 {
+export interface FacebookLink_3 {
+  link_type?: Maybe<string>
+
+  url?: Maybe<string>
+
+  target?: Maybe<string>
+
+  raw?: Maybe<Raw_13>
+}
+
+export interface Raw_13 {
+  link_type?: Maybe<string>
+
+  url?: Maybe<string>
+}
+
+export interface InstagramLink_2 {
   link_type?: Maybe<string>
 
   url?: Maybe<string>
@@ -43557,7 +43468,7 @@ export interface Raw_14 {
   url?: Maybe<string>
 }
 
-export interface InstagramLink_2 {
+export interface Linkedin_2 {
   link_type?: Maybe<string>
 
   url?: Maybe<string>
@@ -43568,22 +43479,6 @@ export interface InstagramLink_2 {
 }
 
 export interface Raw_15 {
-  link_type?: Maybe<string>
-
-  url?: Maybe<string>
-}
-
-export interface Linkedin_2 {
-  link_type?: Maybe<string>
-
-  url?: Maybe<string>
-
-  target?: Maybe<string>
-
-  raw?: Maybe<Raw_16>
-}
-
-export interface Raw_16 {
   link_type?: Maybe<string>
 
   url?: Maybe<string>
@@ -43598,17 +43493,17 @@ export interface UnifacWebsite_2 {
 
   target?: Maybe<string>
 
-  raw?: Maybe<Raw_17>
+  raw?: Maybe<Raw_16>
 }
 
-export interface Raw_17 {
+export interface Raw_16 {
   link_type?: Maybe<string>
 
   url?: Maybe<string>
 }
 
 export interface ShareImage_2 {
-  dimensions?: Maybe<Dimensions_19>
+  dimensions?: Maybe<Dimensions_18>
 
   alt?: Maybe<string>
 
@@ -43619,13 +43514,13 @@ export interface ShareImage_2 {
   localFile?: Maybe<File>
 }
 
-export interface Dimensions_19 {
+export interface Dimensions_18 {
   width?: Maybe<number>
 
   height?: Maybe<number>
 }
 
-export interface Internal_23 {
+export interface Internal_22 {
   type?: Maybe<string>
 
   contentDigest?: Maybe<string>
@@ -43655,6 +43550,264 @@ export interface PrismicGeneralGroupConnectionEdge {
   next?: Maybe<PrismicGeneral>
   /** The previous edge in the connection */
   previous?: Maybe<PrismicGeneral>
+}
+
+/** A connection to a list of items. */
+export interface PrismicPartnersPageConnection {
+  /** Information to aid in pagination. */
+  pageInfo: PageInfo
+  /** A list of edges. */
+  edges?: Maybe<(Maybe<PrismicPartnersPageEdge>)[]>
+
+  totalCount?: Maybe<number>
+
+  distinct?: Maybe<(Maybe<string>)[]>
+
+  group?: Maybe<(Maybe<PrismicPartnersPageGroupConnectionConnection>)[]>
+}
+
+/** An edge in a connection. */
+export interface PrismicPartnersPageEdge {
+  /** The item at the end of the edge */
+  node?: Maybe<PrismicPartnersPage>
+  /** The next edge in the connection */
+  next?: Maybe<PrismicPartnersPage>
+  /** The previous edge in the connection */
+  previous?: Maybe<PrismicPartnersPage>
+}
+
+/** Node of type PrismicPartnersPage */
+export interface PrismicPartnersPage extends Node {
+  /** The id of this node. */
+  id: string
+  /** The parent of this node. */
+  parent?: Maybe<Node>
+  /** The children of this node. */
+  children?: Maybe<(Maybe<Node>)[]>
+
+  type?: Maybe<string>
+
+  href?: Maybe<string>
+
+  first_publication_date?: Maybe<Date>
+
+  last_publication_date?: Maybe<Date>
+
+  slugs?: Maybe<(Maybe<string>)[]>
+
+  lang?: Maybe<string>
+
+  data?: Maybe<Data_12>
+
+  prismicId?: Maybe<string>
+
+  internal?: Maybe<Internal_23>
+
+  dataString?: Maybe<string>
+}
+
+export interface Data_12 {
+  partners_header_image?: Maybe<PartnersHeaderImage_2>
+
+  partners_title?: Maybe<string>
+
+  partners_subtitle?: Maybe<string>
+
+  main_partners_title?: Maybe<string>
+
+  friends_title?: Maybe<string>
+
+  partners_cta_title?: Maybe<string>
+
+  cta_button_text?: Maybe<string>
+}
+
+export interface PartnersHeaderImage_2 {
+  dimensions?: Maybe<Dimensions_19>
+
+  alt?: Maybe<string>
+
+  copyright?: Maybe<string>
+
+  url?: Maybe<string>
+
+  localFile?: Maybe<File>
+}
+
+export interface Dimensions_19 {
+  width?: Maybe<number>
+
+  height?: Maybe<number>
+}
+
+export interface Internal_23 {
+  type?: Maybe<string>
+
+  contentDigest?: Maybe<string>
+
+  owner?: Maybe<string>
+}
+
+/** A connection to a list of items. */
+export interface PrismicPartnersPageGroupConnectionConnection {
+  /** Information to aid in pagination. */
+  pageInfo: PageInfo
+  /** A list of edges. */
+  edges?: Maybe<(Maybe<PrismicPartnersPageGroupConnectionEdge>)[]>
+
+  field?: Maybe<string>
+
+  fieldValue?: Maybe<string>
+
+  totalCount?: Maybe<number>
+}
+
+/** An edge in a connection. */
+export interface PrismicPartnersPageGroupConnectionEdge {
+  /** The item at the end of the edge */
+  node?: Maybe<PrismicPartnersPage>
+  /** The next edge in the connection */
+  next?: Maybe<PrismicPartnersPage>
+  /** The previous edge in the connection */
+  previous?: Maybe<PrismicPartnersPage>
+}
+
+/** A connection to a list of items. */
+export interface PrismicEventConnection {
+  /** Information to aid in pagination. */
+  pageInfo: PageInfo
+  /** A list of edges. */
+  edges?: Maybe<(Maybe<PrismicEventEdge>)[]>
+
+  totalCount?: Maybe<number>
+
+  distinct?: Maybe<(Maybe<string>)[]>
+
+  group?: Maybe<(Maybe<PrismicEventGroupConnectionConnection>)[]>
+}
+
+/** An edge in a connection. */
+export interface PrismicEventEdge {
+  /** The item at the end of the edge */
+  node?: Maybe<PrismicEvent>
+  /** The next edge in the connection */
+  next?: Maybe<PrismicEvent>
+  /** The previous edge in the connection */
+  previous?: Maybe<PrismicEvent>
+}
+
+/** Node of type PrismicEvent */
+export interface PrismicEvent extends Node {
+  /** The id of this node. */
+  id: string
+  /** The parent of this node. */
+  parent?: Maybe<Node>
+  /** The children of this node. */
+  children?: Maybe<(Maybe<Node>)[]>
+
+  type?: Maybe<string>
+
+  href?: Maybe<string>
+
+  first_publication_date?: Maybe<Date>
+
+  last_publication_date?: Maybe<Date>
+
+  slugs?: Maybe<(Maybe<string>)[]>
+
+  lang?: Maybe<string>
+
+  data?: Maybe<Data_13>
+
+  prismicId?: Maybe<string>
+
+  internal?: Maybe<Internal_24>
+
+  dataString?: Maybe<string>
+}
+
+export interface Data_13 {
+  title?: Maybe<string>
+
+  organizer?: Maybe<string>
+
+  image?: Maybe<Image_6>
+
+  date?: Maybe<Date>
+
+  short_description?: Maybe<string>
+
+  tags?: Maybe<string>
+
+  facebook_link?: Maybe<FacebookLink_4>
+}
+
+export interface Image_6 {
+  dimensions?: Maybe<Dimensions_20>
+
+  alt?: Maybe<string>
+
+  copyright?: Maybe<string>
+
+  url?: Maybe<string>
+
+  localFile?: Maybe<File>
+}
+
+export interface Dimensions_20 {
+  width?: Maybe<number>
+
+  height?: Maybe<number>
+}
+
+export interface FacebookLink_4 {
+  link_type?: Maybe<string>
+
+  url?: Maybe<string>
+
+  target?: Maybe<string>
+
+  raw?: Maybe<Raw_17>
+}
+
+export interface Raw_17 {
+  link_type?: Maybe<string>
+
+  url?: Maybe<string>
+
+  target?: Maybe<string>
+}
+
+export interface Internal_24 {
+  type?: Maybe<string>
+
+  contentDigest?: Maybe<string>
+
+  owner?: Maybe<string>
+}
+
+/** A connection to a list of items. */
+export interface PrismicEventGroupConnectionConnection {
+  /** Information to aid in pagination. */
+  pageInfo: PageInfo
+  /** A list of edges. */
+  edges?: Maybe<(Maybe<PrismicEventGroupConnectionEdge>)[]>
+
+  field?: Maybe<string>
+
+  fieldValue?: Maybe<string>
+
+  totalCount?: Maybe<number>
+}
+
+/** An edge in a connection. */
+export interface PrismicEventGroupConnectionEdge {
+  /** The item at the end of the edge */
+  node?: Maybe<PrismicEvent>
+  /** The next edge in the connection */
+  next?: Maybe<PrismicEvent>
+  /** The previous edge in the connection */
+  previous?: Maybe<PrismicEvent>
 }
 
 /** A connection to a list of items. */
@@ -43702,16 +43855,16 @@ export interface PrismicInfoPage extends Node {
 
   lang?: Maybe<string>
 
-  data?: Maybe<Data_13>
+  data?: Maybe<Data_14>
 
   prismicId?: Maybe<string>
 
-  internal?: Maybe<Internal_24>
+  internal?: Maybe<Internal_25>
 
   dataString?: Maybe<string>
 }
 
-export interface Data_13 {
+export interface Data_14 {
   title?: Maybe<string>
 
   subtitle?: Maybe<string>
@@ -43722,7 +43875,7 @@ export interface Data_13 {
 }
 
 export interface HeaderImage_5 {
-  dimensions?: Maybe<Dimensions_20>
+  dimensions?: Maybe<Dimensions_21>
 
   alt?: Maybe<string>
 
@@ -43733,7 +43886,7 @@ export interface HeaderImage_5 {
   localFile?: Maybe<File>
 }
 
-export interface Dimensions_20 {
+export interface Dimensions_21 {
   width?: Maybe<number>
 
   height?: Maybe<number>
@@ -43811,7 +43964,7 @@ export interface Oembed_2 {
   html?: Maybe<string>
 }
 
-export interface Internal_24 {
+export interface Internal_25 {
   type?: Maybe<string>
 
   contentDigest?: Maybe<string>
@@ -43841,264 +43994,6 @@ export interface PrismicInfoPageGroupConnectionEdge {
   next?: Maybe<PrismicInfoPage>
   /** The previous edge in the connection */
   previous?: Maybe<PrismicInfoPage>
-}
-
-/** A connection to a list of items. */
-export interface PrismicPartnersPageConnection {
-  /** Information to aid in pagination. */
-  pageInfo: PageInfo
-  /** A list of edges. */
-  edges?: Maybe<(Maybe<PrismicPartnersPageEdge>)[]>
-
-  totalCount?: Maybe<number>
-
-  distinct?: Maybe<(Maybe<string>)[]>
-
-  group?: Maybe<(Maybe<PrismicPartnersPageGroupConnectionConnection>)[]>
-}
-
-/** An edge in a connection. */
-export interface PrismicPartnersPageEdge {
-  /** The item at the end of the edge */
-  node?: Maybe<PrismicPartnersPage>
-  /** The next edge in the connection */
-  next?: Maybe<PrismicPartnersPage>
-  /** The previous edge in the connection */
-  previous?: Maybe<PrismicPartnersPage>
-}
-
-/** Node of type PrismicPartnersPage */
-export interface PrismicPartnersPage extends Node {
-  /** The id of this node. */
-  id: string
-  /** The parent of this node. */
-  parent?: Maybe<Node>
-  /** The children of this node. */
-  children?: Maybe<(Maybe<Node>)[]>
-
-  type?: Maybe<string>
-
-  href?: Maybe<string>
-
-  first_publication_date?: Maybe<Date>
-
-  last_publication_date?: Maybe<Date>
-
-  slugs?: Maybe<(Maybe<string>)[]>
-
-  lang?: Maybe<string>
-
-  data?: Maybe<Data_14>
-
-  prismicId?: Maybe<string>
-
-  internal?: Maybe<Internal_25>
-
-  dataString?: Maybe<string>
-}
-
-export interface Data_14 {
-  partners_header_image?: Maybe<PartnersHeaderImage_2>
-
-  partners_title?: Maybe<string>
-
-  partners_subtitle?: Maybe<string>
-
-  main_partners_title?: Maybe<string>
-
-  friends_title?: Maybe<string>
-
-  partners_cta_title?: Maybe<string>
-
-  cta_button_text?: Maybe<string>
-}
-
-export interface PartnersHeaderImage_2 {
-  dimensions?: Maybe<Dimensions_21>
-
-  alt?: Maybe<string>
-
-  copyright?: Maybe<string>
-
-  url?: Maybe<string>
-
-  localFile?: Maybe<File>
-}
-
-export interface Dimensions_21 {
-  width?: Maybe<number>
-
-  height?: Maybe<number>
-}
-
-export interface Internal_25 {
-  type?: Maybe<string>
-
-  contentDigest?: Maybe<string>
-
-  owner?: Maybe<string>
-}
-
-/** A connection to a list of items. */
-export interface PrismicPartnersPageGroupConnectionConnection {
-  /** Information to aid in pagination. */
-  pageInfo: PageInfo
-  /** A list of edges. */
-  edges?: Maybe<(Maybe<PrismicPartnersPageGroupConnectionEdge>)[]>
-
-  field?: Maybe<string>
-
-  fieldValue?: Maybe<string>
-
-  totalCount?: Maybe<number>
-}
-
-/** An edge in a connection. */
-export interface PrismicPartnersPageGroupConnectionEdge {
-  /** The item at the end of the edge */
-  node?: Maybe<PrismicPartnersPage>
-  /** The next edge in the connection */
-  next?: Maybe<PrismicPartnersPage>
-  /** The previous edge in the connection */
-  previous?: Maybe<PrismicPartnersPage>
-}
-
-/** A connection to a list of items. */
-export interface PrismicContactPageConnection {
-  /** Information to aid in pagination. */
-  pageInfo: PageInfo
-  /** A list of edges. */
-  edges?: Maybe<(Maybe<PrismicContactPageEdge>)[]>
-
-  totalCount?: Maybe<number>
-
-  distinct?: Maybe<(Maybe<string>)[]>
-
-  group?: Maybe<(Maybe<PrismicContactPageGroupConnectionConnection>)[]>
-}
-
-/** An edge in a connection. */
-export interface PrismicContactPageEdge {
-  /** The item at the end of the edge */
-  node?: Maybe<PrismicContactPage>
-  /** The next edge in the connection */
-  next?: Maybe<PrismicContactPage>
-  /** The previous edge in the connection */
-  previous?: Maybe<PrismicContactPage>
-}
-
-/** Node of type PrismicContactPage */
-export interface PrismicContactPage extends Node {
-  /** The id of this node. */
-  id: string
-  /** The parent of this node. */
-  parent?: Maybe<Node>
-  /** The children of this node. */
-  children?: Maybe<(Maybe<Node>)[]>
-
-  type?: Maybe<string>
-
-  href?: Maybe<string>
-
-  first_publication_date?: Maybe<Date>
-
-  last_publication_date?: Maybe<Date>
-
-  slugs?: Maybe<(Maybe<string>)[]>
-
-  lang?: Maybe<string>
-
-  data?: Maybe<Data_15>
-
-  prismicId?: Maybe<string>
-
-  internal?: Maybe<Internal_26>
-
-  dataString?: Maybe<string>
-}
-
-export interface Data_15 {
-  title?: Maybe<string>
-
-  subtitle?: Maybe<string>
-
-  header_image?: Maybe<HeaderImage_6>
-
-  text?: Maybe<string>
-
-  image?: Maybe<Image_7>
-
-  email_button_text?: Maybe<string>
-
-  messenger_button_text?: Maybe<string>
-}
-
-export interface HeaderImage_6 {
-  dimensions?: Maybe<Dimensions_22>
-
-  alt?: Maybe<string>
-
-  copyright?: Maybe<string>
-
-  url?: Maybe<string>
-
-  localFile?: Maybe<File>
-}
-
-export interface Dimensions_22 {
-  width?: Maybe<number>
-
-  height?: Maybe<number>
-}
-
-export interface Image_7 {
-  dimensions?: Maybe<Dimensions_23>
-
-  alt?: Maybe<string>
-
-  copyright?: Maybe<string>
-
-  url?: Maybe<string>
-
-  localFile?: Maybe<File>
-}
-
-export interface Dimensions_23 {
-  width?: Maybe<number>
-
-  height?: Maybe<number>
-}
-
-export interface Internal_26 {
-  type?: Maybe<string>
-
-  contentDigest?: Maybe<string>
-
-  owner?: Maybe<string>
-}
-
-/** A connection to a list of items. */
-export interface PrismicContactPageGroupConnectionConnection {
-  /** Information to aid in pagination. */
-  pageInfo: PageInfo
-  /** A list of edges. */
-  edges?: Maybe<(Maybe<PrismicContactPageGroupConnectionEdge>)[]>
-
-  field?: Maybe<string>
-
-  fieldValue?: Maybe<string>
-
-  totalCount?: Maybe<number>
-}
-
-/** An edge in a connection. */
-export interface PrismicContactPageGroupConnectionEdge {
-  /** The item at the end of the edge */
-  node?: Maybe<PrismicContactPage>
-  /** The next edge in the connection */
-  next?: Maybe<PrismicContactPage>
-  /** The previous edge in the connection */
-  previous?: Maybe<PrismicContactPage>
 }
 
 /** A connection to a list of items. */
@@ -44146,16 +44041,16 @@ export interface PrismicHomepage extends Node {
 
   lang?: Maybe<string>
 
-  data?: Maybe<Data_16>
+  data?: Maybe<Data_15>
 
   prismicId?: Maybe<string>
 
-  internal?: Maybe<Internal_27>
+  internal?: Maybe<Internal_26>
 
   dataString?: Maybe<string>
 }
 
-export interface Data_16 {
+export interface Data_15 {
   header_movie?: Maybe<HeaderMovie_2>
 
   fallback_image?: Maybe<FallbackImage_2>
@@ -44214,7 +44109,7 @@ export interface Raw_19 {
 }
 
 export interface FallbackImage_2 {
-  dimensions?: Maybe<Dimensions_24>
+  dimensions?: Maybe<Dimensions_22>
 
   alt?: Maybe<string>
 
@@ -44225,7 +44120,7 @@ export interface FallbackImage_2 {
   localFile?: Maybe<File>
 }
 
-export interface Dimensions_24 {
+export interface Dimensions_22 {
   width?: Maybe<number>
 
   height?: Maybe<number>
@@ -44256,6 +44151,46 @@ export interface Spans_4 {
 }
 
 export interface IntroImage_2 {
+  dimensions?: Maybe<Dimensions_23>
+
+  alt?: Maybe<string>
+
+  copyright?: Maybe<string>
+
+  url?: Maybe<string>
+
+  localFile?: Maybe<File>
+}
+
+export interface Dimensions_23 {
+  width?: Maybe<number>
+
+  height?: Maybe<number>
+}
+
+export interface CarouselImages_2 {
+  image?: Maybe<Image_7>
+}
+
+export interface Image_7 {
+  dimensions?: Maybe<Dimensions_24>
+
+  alt?: Maybe<string>
+
+  copyright?: Maybe<string>
+
+  url?: Maybe<string>
+
+  localFile?: Maybe<File>
+}
+
+export interface Dimensions_24 {
+  width?: Maybe<number>
+
+  height?: Maybe<number>
+}
+
+export interface PicturesMainPicture_2 {
   dimensions?: Maybe<Dimensions_25>
 
   alt?: Maybe<string>
@@ -44273,11 +44208,7 @@ export interface Dimensions_25 {
   height?: Maybe<number>
 }
 
-export interface CarouselImages_2 {
-  image?: Maybe<Image_8>
-}
-
-export interface Image_8 {
+export interface PicturesSecondaryPicture_2 {
   dimensions?: Maybe<Dimensions_26>
 
   alt?: Maybe<string>
@@ -44290,42 +44221,6 @@ export interface Image_8 {
 }
 
 export interface Dimensions_26 {
-  width?: Maybe<number>
-
-  height?: Maybe<number>
-}
-
-export interface PicturesMainPicture_2 {
-  dimensions?: Maybe<Dimensions_27>
-
-  alt?: Maybe<string>
-
-  copyright?: Maybe<string>
-
-  url?: Maybe<string>
-
-  localFile?: Maybe<File>
-}
-
-export interface Dimensions_27 {
-  width?: Maybe<number>
-
-  height?: Maybe<number>
-}
-
-export interface PicturesSecondaryPicture_2 {
-  dimensions?: Maybe<Dimensions_28>
-
-  alt?: Maybe<string>
-
-  copyright?: Maybe<string>
-
-  url?: Maybe<string>
-
-  localFile?: Maybe<File>
-}
-
-export interface Dimensions_28 {
   width?: Maybe<number>
 
   height?: Maybe<number>
@@ -44360,7 +44255,7 @@ export interface Raw_22 {
 }
 
 export interface PartnerctaBgimage_2 {
-  dimensions?: Maybe<Dimensions_29>
+  dimensions?: Maybe<Dimensions_27>
 
   alt?: Maybe<string>
 
@@ -44371,13 +44266,13 @@ export interface PartnerctaBgimage_2 {
   localFile?: Maybe<File>
 }
 
-export interface Dimensions_29 {
+export interface Dimensions_27 {
   width?: Maybe<number>
 
   height?: Maybe<number>
 }
 
-export interface Internal_27 {
+export interface Internal_26 {
   type?: Maybe<string>
 
   contentDigest?: Maybe<string>
@@ -44407,6 +44302,144 @@ export interface PrismicHomepageGroupConnectionEdge {
   next?: Maybe<PrismicHomepage>
   /** The previous edge in the connection */
   previous?: Maybe<PrismicHomepage>
+}
+
+/** A connection to a list of items. */
+export interface PrismicContactPageConnection {
+  /** Information to aid in pagination. */
+  pageInfo: PageInfo
+  /** A list of edges. */
+  edges?: Maybe<(Maybe<PrismicContactPageEdge>)[]>
+
+  totalCount?: Maybe<number>
+
+  distinct?: Maybe<(Maybe<string>)[]>
+
+  group?: Maybe<(Maybe<PrismicContactPageGroupConnectionConnection>)[]>
+}
+
+/** An edge in a connection. */
+export interface PrismicContactPageEdge {
+  /** The item at the end of the edge */
+  node?: Maybe<PrismicContactPage>
+  /** The next edge in the connection */
+  next?: Maybe<PrismicContactPage>
+  /** The previous edge in the connection */
+  previous?: Maybe<PrismicContactPage>
+}
+
+/** Node of type PrismicContactPage */
+export interface PrismicContactPage extends Node {
+  /** The id of this node. */
+  id: string
+  /** The parent of this node. */
+  parent?: Maybe<Node>
+  /** The children of this node. */
+  children?: Maybe<(Maybe<Node>)[]>
+
+  type?: Maybe<string>
+
+  href?: Maybe<string>
+
+  first_publication_date?: Maybe<Date>
+
+  last_publication_date?: Maybe<Date>
+
+  slugs?: Maybe<(Maybe<string>)[]>
+
+  lang?: Maybe<string>
+
+  data?: Maybe<Data_16>
+
+  prismicId?: Maybe<string>
+
+  internal?: Maybe<Internal_27>
+
+  dataString?: Maybe<string>
+}
+
+export interface Data_16 {
+  title?: Maybe<string>
+
+  subtitle?: Maybe<string>
+
+  header_image?: Maybe<HeaderImage_6>
+
+  text?: Maybe<string>
+
+  image?: Maybe<Image_8>
+
+  email_button_text?: Maybe<string>
+
+  messenger_button_text?: Maybe<string>
+}
+
+export interface HeaderImage_6 {
+  dimensions?: Maybe<Dimensions_28>
+
+  alt?: Maybe<string>
+
+  copyright?: Maybe<string>
+
+  url?: Maybe<string>
+
+  localFile?: Maybe<File>
+}
+
+export interface Dimensions_28 {
+  width?: Maybe<number>
+
+  height?: Maybe<number>
+}
+
+export interface Image_8 {
+  dimensions?: Maybe<Dimensions_29>
+
+  alt?: Maybe<string>
+
+  copyright?: Maybe<string>
+
+  url?: Maybe<string>
+
+  localFile?: Maybe<File>
+}
+
+export interface Dimensions_29 {
+  width?: Maybe<number>
+
+  height?: Maybe<number>
+}
+
+export interface Internal_27 {
+  type?: Maybe<string>
+
+  contentDigest?: Maybe<string>
+
+  owner?: Maybe<string>
+}
+
+/** A connection to a list of items. */
+export interface PrismicContactPageGroupConnectionConnection {
+  /** Information to aid in pagination. */
+  pageInfo: PageInfo
+  /** A list of edges. */
+  edges?: Maybe<(Maybe<PrismicContactPageGroupConnectionEdge>)[]>
+
+  field?: Maybe<string>
+
+  fieldValue?: Maybe<string>
+
+  totalCount?: Maybe<number>
+}
+
+/** An edge in a connection. */
+export interface PrismicContactPageGroupConnectionEdge {
+  /** The item at the end of the edge */
+  node?: Maybe<PrismicContactPage>
+  /** The next edge in the connection */
+  next?: Maybe<PrismicContactPage>
+  /** The previous edge in the connection */
+  previous?: Maybe<PrismicContactPage>
 }
 
 /** A connection to a list of items. */
@@ -44441,6 +44474,8 @@ export interface InstaNode extends Node {
   parent?: Maybe<Node>
   /** The children of this node. */
   children?: Maybe<(Maybe<Node>)[]>
+
+  username?: Maybe<string>
 
   internal?: Maybe<Internal_28>
 
@@ -44736,15 +44771,6 @@ export interface AllPrismicPartnerQueryArgs {
 
   filter?: Maybe<FilterPrismicPartner>
 }
-export interface AllPrismicEventQueryArgs {
-  skip?: Maybe<number>
-
-  limit?: Maybe<number>
-
-  sort?: Maybe<PrismicEventConnectionSort>
-
-  filter?: Maybe<FilterPrismicEvent>
-}
 export interface AllPrismicProgramPageQueryArgs {
   skip?: Maybe<number>
 
@@ -44763,15 +44789,6 @@ export interface AllPrismicGeneralQueryArgs {
 
   filter?: Maybe<FilterPrismicGeneral>
 }
-export interface AllPrismicInfoPageQueryArgs {
-  skip?: Maybe<number>
-
-  limit?: Maybe<number>
-
-  sort?: Maybe<PrismicInfoPageConnectionSort>
-
-  filter?: Maybe<FilterPrismicInfoPage>
-}
 export interface AllPrismicPartnersPageQueryArgs {
   skip?: Maybe<number>
 
@@ -44781,14 +44798,23 @@ export interface AllPrismicPartnersPageQueryArgs {
 
   filter?: Maybe<FilterPrismicPartnersPage>
 }
-export interface AllPrismicContactPageQueryArgs {
+export interface AllPrismicEventQueryArgs {
   skip?: Maybe<number>
 
   limit?: Maybe<number>
 
-  sort?: Maybe<PrismicContactPageConnectionSort>
+  sort?: Maybe<PrismicEventConnectionSort>
 
-  filter?: Maybe<FilterPrismicContactPage>
+  filter?: Maybe<FilterPrismicEvent>
+}
+export interface AllPrismicInfoPageQueryArgs {
+  skip?: Maybe<number>
+
+  limit?: Maybe<number>
+
+  sort?: Maybe<PrismicInfoPageConnectionSort>
+
+  filter?: Maybe<FilterPrismicInfoPage>
 }
 export interface AllPrismicHomepageQueryArgs {
   skip?: Maybe<number>
@@ -44798,6 +44824,15 @@ export interface AllPrismicHomepageQueryArgs {
   sort?: Maybe<PrismicHomepageConnectionSort>
 
   filter?: Maybe<FilterPrismicHomepage>
+}
+export interface AllPrismicContactPageQueryArgs {
+  skip?: Maybe<number>
+
+  limit?: Maybe<number>
+
+  sort?: Maybe<PrismicContactPageConnectionSort>
+
+  filter?: Maybe<FilterPrismicContactPage>
 }
 export interface AllInstaNodeQueryArgs {
   skip?: Maybe<number>
@@ -44989,29 +45024,6 @@ export interface PrismicPartnerQueryArgs {
 
   dataString?: Maybe<PrismicPartnerDataStringQueryString_2>
 }
-export interface PrismicEventQueryArgs {
-  type?: Maybe<PrismicEventTypeQueryString_2>
-
-  href?: Maybe<PrismicEventHrefQueryString_2>
-
-  first_publication_date?: Maybe<PrismicEventFirstPublicationDateQueryString_2>
-
-  last_publication_date?: Maybe<PrismicEventLastPublicationDateQueryString_2>
-
-  slugs?: Maybe<PrismicEventSlugsQueryList_2>
-
-  lang?: Maybe<PrismicEventLangQueryString_2>
-
-  data?: Maybe<PrismicEventDataInputObject_2>
-
-  prismicId?: Maybe<PrismicEventPrismicIdQueryString_2>
-
-  id?: Maybe<PrismicEventIdQueryString_2>
-
-  internal?: Maybe<PrismicEventInternalInputObject_2>
-
-  dataString?: Maybe<PrismicEventDataStringQueryString_2>
-}
 export interface PrismicProgramPageQueryArgs {
   type?: Maybe<PrismicProgramPageTypeQueryString_2>
 
@@ -45058,29 +45070,6 @@ export interface PrismicGeneralQueryArgs {
 
   dataString?: Maybe<PrismicGeneralDataStringQueryString_2>
 }
-export interface PrismicInfoPageQueryArgs {
-  type?: Maybe<PrismicInfoPageTypeQueryString_2>
-
-  href?: Maybe<PrismicInfoPageHrefQueryString_2>
-
-  first_publication_date?: Maybe<PrismicInfoPageFirstPublicationDateQueryString_2>
-
-  last_publication_date?: Maybe<PrismicInfoPageLastPublicationDateQueryString_2>
-
-  slugs?: Maybe<PrismicInfoPageSlugsQueryList_2>
-
-  lang?: Maybe<PrismicInfoPageLangQueryString_2>
-
-  data?: Maybe<PrismicInfoPageDataInputObject_2>
-
-  prismicId?: Maybe<PrismicInfoPagePrismicIdQueryString_2>
-
-  id?: Maybe<PrismicInfoPageIdQueryString_2>
-
-  internal?: Maybe<PrismicInfoPageInternalInputObject_2>
-
-  dataString?: Maybe<PrismicInfoPageDataStringQueryString_2>
-}
 export interface PrismicPartnersPageQueryArgs {
   type?: Maybe<PrismicPartnersPageTypeQueryString_2>
 
@@ -45104,28 +45093,51 @@ export interface PrismicPartnersPageQueryArgs {
 
   dataString?: Maybe<PrismicPartnersPageDataStringQueryString_2>
 }
-export interface PrismicContactPageQueryArgs {
-  type?: Maybe<PrismicContactPageTypeQueryString_2>
+export interface PrismicEventQueryArgs {
+  type?: Maybe<PrismicEventTypeQueryString_2>
 
-  href?: Maybe<PrismicContactPageHrefQueryString_2>
+  href?: Maybe<PrismicEventHrefQueryString_2>
 
-  first_publication_date?: Maybe<PrismicContactPageFirstPublicationDateQueryString_2>
+  first_publication_date?: Maybe<PrismicEventFirstPublicationDateQueryString_2>
 
-  last_publication_date?: Maybe<PrismicContactPageLastPublicationDateQueryString_2>
+  last_publication_date?: Maybe<PrismicEventLastPublicationDateQueryString_2>
 
-  slugs?: Maybe<PrismicContactPageSlugsQueryList_2>
+  slugs?: Maybe<PrismicEventSlugsQueryList_2>
 
-  lang?: Maybe<PrismicContactPageLangQueryString_2>
+  lang?: Maybe<PrismicEventLangQueryString_2>
 
-  data?: Maybe<PrismicContactPageDataInputObject_2>
+  data?: Maybe<PrismicEventDataInputObject_2>
 
-  prismicId?: Maybe<PrismicContactPagePrismicIdQueryString_2>
+  prismicId?: Maybe<PrismicEventPrismicIdQueryString_2>
 
-  id?: Maybe<PrismicContactPageIdQueryString_2>
+  id?: Maybe<PrismicEventIdQueryString_2>
 
-  internal?: Maybe<PrismicContactPageInternalInputObject_2>
+  internal?: Maybe<PrismicEventInternalInputObject_2>
 
-  dataString?: Maybe<PrismicContactPageDataStringQueryString_2>
+  dataString?: Maybe<PrismicEventDataStringQueryString_2>
+}
+export interface PrismicInfoPageQueryArgs {
+  type?: Maybe<PrismicInfoPageTypeQueryString_2>
+
+  href?: Maybe<PrismicInfoPageHrefQueryString_2>
+
+  first_publication_date?: Maybe<PrismicInfoPageFirstPublicationDateQueryString_2>
+
+  last_publication_date?: Maybe<PrismicInfoPageLastPublicationDateQueryString_2>
+
+  slugs?: Maybe<PrismicInfoPageSlugsQueryList_2>
+
+  lang?: Maybe<PrismicInfoPageLangQueryString_2>
+
+  data?: Maybe<PrismicInfoPageDataInputObject_2>
+
+  prismicId?: Maybe<PrismicInfoPagePrismicIdQueryString_2>
+
+  id?: Maybe<PrismicInfoPageIdQueryString_2>
+
+  internal?: Maybe<PrismicInfoPageInternalInputObject_2>
+
+  dataString?: Maybe<PrismicInfoPageDataStringQueryString_2>
 }
 export interface PrismicHomepageQueryArgs {
   type?: Maybe<PrismicHomepageTypeQueryString_2>
@@ -45150,7 +45162,32 @@ export interface PrismicHomepageQueryArgs {
 
   dataString?: Maybe<PrismicHomepageDataStringQueryString_2>
 }
+export interface PrismicContactPageQueryArgs {
+  type?: Maybe<PrismicContactPageTypeQueryString_2>
+
+  href?: Maybe<PrismicContactPageHrefQueryString_2>
+
+  first_publication_date?: Maybe<PrismicContactPageFirstPublicationDateQueryString_2>
+
+  last_publication_date?: Maybe<PrismicContactPageLastPublicationDateQueryString_2>
+
+  slugs?: Maybe<PrismicContactPageSlugsQueryList_2>
+
+  lang?: Maybe<PrismicContactPageLangQueryString_2>
+
+  data?: Maybe<PrismicContactPageDataInputObject_2>
+
+  prismicId?: Maybe<PrismicContactPagePrismicIdQueryString_2>
+
+  id?: Maybe<PrismicContactPageIdQueryString_2>
+
+  internal?: Maybe<PrismicContactPageInternalInputObject_2>
+
+  dataString?: Maybe<PrismicContactPageDataStringQueryString_2>
+}
 export interface InstaNodeQueryArgs {
+  username?: Maybe<InstaNodeUsernameQueryString_2>
+
   id?: Maybe<InstaNodeIdQueryString_2>
 
   internal?: Maybe<InstaNodeInternalInputObject_2>
@@ -45365,19 +45402,19 @@ export interface FixedImageSharpArgs {
 
   pngCompressionSpeed?: number
 
-  grayscale?: Maybe<boolean>
+  grayscale?: boolean
 
   duotone?: Maybe<DuotoneGradient>
 
   traceSVG?: Maybe<Potrace>
 
-  quality?: number
+  quality?: Maybe<number>
 
   toFormat?: Maybe<ImageFormat>
 
   cropFocus?: Maybe<ImageCropFocus>
 
-  rotate?: Maybe<number>
+  rotate?: number
 }
 export interface ResolutionsImageSharpArgs {
   width?: Maybe<number>
@@ -45388,26 +45425,26 @@ export interface ResolutionsImageSharpArgs {
 
   pngCompressionSpeed?: number
 
-  grayscale?: Maybe<boolean>
+  grayscale?: boolean
 
   duotone?: Maybe<DuotoneGradient>
 
   traceSVG?: Maybe<Potrace>
 
-  quality?: number
+  quality?: Maybe<number>
 
   toFormat?: Maybe<ImageFormat>
 
   cropFocus?: Maybe<ImageCropFocus>
 
-  rotate?: Maybe<number>
+  rotate?: number
 }
 export interface FluidImageSharpArgs {
   maxWidth?: Maybe<number>
 
   maxHeight?: Maybe<number>
 
-  grayscale?: Maybe<boolean>
+  grayscale?: boolean
 
   jpegProgressive?: boolean
 
@@ -45417,15 +45454,15 @@ export interface FluidImageSharpArgs {
 
   traceSVG?: Maybe<Potrace>
 
-  quality?: number
+  quality?: Maybe<number>
 
   toFormat?: Maybe<ImageFormat>
 
   cropFocus?: Maybe<ImageCropFocus>
 
-  rotate?: Maybe<number>
+  rotate?: number
 
-  sizes?: Maybe<string>
+  sizes?: string
   /** A list of image widths to be generated. Example: [ 200, 340, 520, 890 ] */
   srcSetBreakpoints?: (Maybe<number>)[]
 }
@@ -45434,7 +45471,7 @@ export interface SizesImageSharpArgs {
 
   maxHeight?: Maybe<number>
 
-  grayscale?: Maybe<boolean>
+  grayscale?: boolean
 
   jpegProgressive?: boolean
 
@@ -45444,15 +45481,15 @@ export interface SizesImageSharpArgs {
 
   traceSVG?: Maybe<Potrace>
 
-  quality?: number
+  quality?: Maybe<number>
 
   toFormat?: Maybe<ImageFormat>
 
   cropFocus?: Maybe<ImageCropFocus>
 
-  rotate?: Maybe<number>
+  rotate?: number
 
-  sizes?: Maybe<string>
+  sizes?: string
   /** A list of image widths to be generated. Example: [ 200, 340, 520, 890 ] */
   srcSetBreakpoints?: (Maybe<number>)[]
 }
@@ -45461,7 +45498,7 @@ export interface ResizeImageSharpArgs {
 
   height?: Maybe<number>
 
-  quality?: number
+  quality?: Maybe<number>
 
   jpegProgressive?: boolean
 
@@ -45469,11 +45506,11 @@ export interface ResizeImageSharpArgs {
 
   pngCompressionSpeed?: number
 
-  grayscale?: Maybe<boolean>
+  grayscale?: boolean
 
   duotone?: Maybe<DuotoneGradient>
 
-  base64?: Maybe<boolean>
+  base64?: boolean
 
   traceSVG?: Maybe<Potrace>
 
@@ -45481,7 +45518,7 @@ export interface ResizeImageSharpArgs {
 
   cropFocus?: Maybe<ImageCropFocus>
 
-  rotate?: Maybe<number>
+  rotate?: number
 }
 export interface DistinctImageSharpConnectionArgs {
   field?: Maybe<ImageSharpDistinctEnum>
@@ -45514,46 +45551,6 @@ export interface FirstPublicationDatePrismicPartnerArgs {
   locale?: Maybe<string>
 }
 export interface LastPublicationDatePrismicPartnerArgs {
-  /** Format the date using Moment.js' date tokens e.g. "date(formatString: "YYYY MMMM DD)" See https://momentjs.com/docs/#/displaying/format/ for documentation for different tokens */
-  formatString?: Maybe<string>
-  /** Returns a string generated with Moment.js' fromNow function */
-  fromNow?: Maybe<boolean>
-  /** Returns the difference between this date and the current time. Defaults to miliseconds but you can also pass in as the measurement years, months, weeks, days, hours, minutes, and seconds. */
-  difference?: Maybe<string>
-  /** Configures the locale Moment.js will use to format the date. */
-  locale?: Maybe<string>
-}
-export interface DistinctPrismicEventConnectionArgs {
-  field?: Maybe<PrismicEventDistinctEnum>
-}
-export interface GroupPrismicEventConnectionArgs {
-  skip?: Maybe<number>
-
-  limit?: Maybe<number>
-
-  field?: Maybe<PrismicEventGroupEnum>
-}
-export interface FirstPublicationDatePrismicEventArgs {
-  /** Format the date using Moment.js' date tokens e.g. "date(formatString: "YYYY MMMM DD)" See https://momentjs.com/docs/#/displaying/format/ for documentation for different tokens */
-  formatString?: Maybe<string>
-  /** Returns a string generated with Moment.js' fromNow function */
-  fromNow?: Maybe<boolean>
-  /** Returns the difference between this date and the current time. Defaults to miliseconds but you can also pass in as the measurement years, months, weeks, days, hours, minutes, and seconds. */
-  difference?: Maybe<string>
-  /** Configures the locale Moment.js will use to format the date. */
-  locale?: Maybe<string>
-}
-export interface LastPublicationDatePrismicEventArgs {
-  /** Format the date using Moment.js' date tokens e.g. "date(formatString: "YYYY MMMM DD)" See https://momentjs.com/docs/#/displaying/format/ for documentation for different tokens */
-  formatString?: Maybe<string>
-  /** Returns a string generated with Moment.js' fromNow function */
-  fromNow?: Maybe<boolean>
-  /** Returns the difference between this date and the current time. Defaults to miliseconds but you can also pass in as the measurement years, months, weeks, days, hours, minutes, and seconds. */
-  difference?: Maybe<string>
-  /** Configures the locale Moment.js will use to format the date. */
-  locale?: Maybe<string>
-}
-export interface DateData_10Args {
   /** Format the date using Moment.js' date tokens e.g. "date(formatString: "YYYY MMMM DD)" See https://momentjs.com/docs/#/displaying/format/ for documentation for different tokens */
   formatString?: Maybe<string>
   /** Returns a string generated with Moment.js' fromNow function */
@@ -45623,7 +45620,7 @@ export interface LastPublicationDatePrismicGeneralArgs {
   /** Configures the locale Moment.js will use to format the date. */
   locale?: Maybe<string>
 }
-export interface StartDateData_12Args {
+export interface StartDateData_11Args {
   /** Format the date using Moment.js' date tokens e.g. "date(formatString: "YYYY MMMM DD)" See https://momentjs.com/docs/#/displaying/format/ for documentation for different tokens */
   formatString?: Maybe<string>
   /** Returns a string generated with Moment.js' fromNow function */
@@ -45633,37 +45630,7 @@ export interface StartDateData_12Args {
   /** Configures the locale Moment.js will use to format the date. */
   locale?: Maybe<string>
 }
-export interface EndDateData_12Args {
-  /** Format the date using Moment.js' date tokens e.g. "date(formatString: "YYYY MMMM DD)" See https://momentjs.com/docs/#/displaying/format/ for documentation for different tokens */
-  formatString?: Maybe<string>
-  /** Returns a string generated with Moment.js' fromNow function */
-  fromNow?: Maybe<boolean>
-  /** Returns the difference between this date and the current time. Defaults to miliseconds but you can also pass in as the measurement years, months, weeks, days, hours, minutes, and seconds. */
-  difference?: Maybe<string>
-  /** Configures the locale Moment.js will use to format the date. */
-  locale?: Maybe<string>
-}
-export interface DistinctPrismicInfoPageConnectionArgs {
-  field?: Maybe<PrismicInfoPageDistinctEnum>
-}
-export interface GroupPrismicInfoPageConnectionArgs {
-  skip?: Maybe<number>
-
-  limit?: Maybe<number>
-
-  field?: Maybe<PrismicInfoPageGroupEnum>
-}
-export interface FirstPublicationDatePrismicInfoPageArgs {
-  /** Format the date using Moment.js' date tokens e.g. "date(formatString: "YYYY MMMM DD)" See https://momentjs.com/docs/#/displaying/format/ for documentation for different tokens */
-  formatString?: Maybe<string>
-  /** Returns a string generated with Moment.js' fromNow function */
-  fromNow?: Maybe<boolean>
-  /** Returns the difference between this date and the current time. Defaults to miliseconds but you can also pass in as the measurement years, months, weeks, days, hours, minutes, and seconds. */
-  difference?: Maybe<string>
-  /** Configures the locale Moment.js will use to format the date. */
-  locale?: Maybe<string>
-}
-export interface LastPublicationDatePrismicInfoPageArgs {
+export interface EndDateData_11Args {
   /** Format the date using Moment.js' date tokens e.g. "date(formatString: "YYYY MMMM DD)" See https://momentjs.com/docs/#/displaying/format/ for documentation for different tokens */
   formatString?: Maybe<string>
   /** Returns a string generated with Moment.js' fromNow function */
@@ -45703,17 +45670,17 @@ export interface LastPublicationDatePrismicPartnersPageArgs {
   /** Configures the locale Moment.js will use to format the date. */
   locale?: Maybe<string>
 }
-export interface DistinctPrismicContactPageConnectionArgs {
-  field?: Maybe<PrismicContactPageDistinctEnum>
+export interface DistinctPrismicEventConnectionArgs {
+  field?: Maybe<PrismicEventDistinctEnum>
 }
-export interface GroupPrismicContactPageConnectionArgs {
+export interface GroupPrismicEventConnectionArgs {
   skip?: Maybe<number>
 
   limit?: Maybe<number>
 
-  field?: Maybe<PrismicContactPageGroupEnum>
+  field?: Maybe<PrismicEventGroupEnum>
 }
-export interface FirstPublicationDatePrismicContactPageArgs {
+export interface FirstPublicationDatePrismicEventArgs {
   /** Format the date using Moment.js' date tokens e.g. "date(formatString: "YYYY MMMM DD)" See https://momentjs.com/docs/#/displaying/format/ for documentation for different tokens */
   formatString?: Maybe<string>
   /** Returns a string generated with Moment.js' fromNow function */
@@ -45723,7 +45690,47 @@ export interface FirstPublicationDatePrismicContactPageArgs {
   /** Configures the locale Moment.js will use to format the date. */
   locale?: Maybe<string>
 }
-export interface LastPublicationDatePrismicContactPageArgs {
+export interface LastPublicationDatePrismicEventArgs {
+  /** Format the date using Moment.js' date tokens e.g. "date(formatString: "YYYY MMMM DD)" See https://momentjs.com/docs/#/displaying/format/ for documentation for different tokens */
+  formatString?: Maybe<string>
+  /** Returns a string generated with Moment.js' fromNow function */
+  fromNow?: Maybe<boolean>
+  /** Returns the difference between this date and the current time. Defaults to miliseconds but you can also pass in as the measurement years, months, weeks, days, hours, minutes, and seconds. */
+  difference?: Maybe<string>
+  /** Configures the locale Moment.js will use to format the date. */
+  locale?: Maybe<string>
+}
+export interface DateData_13Args {
+  /** Format the date using Moment.js' date tokens e.g. "date(formatString: "YYYY MMMM DD)" See https://momentjs.com/docs/#/displaying/format/ for documentation for different tokens */
+  formatString?: Maybe<string>
+  /** Returns a string generated with Moment.js' fromNow function */
+  fromNow?: Maybe<boolean>
+  /** Returns the difference between this date and the current time. Defaults to miliseconds but you can also pass in as the measurement years, months, weeks, days, hours, minutes, and seconds. */
+  difference?: Maybe<string>
+  /** Configures the locale Moment.js will use to format the date. */
+  locale?: Maybe<string>
+}
+export interface DistinctPrismicInfoPageConnectionArgs {
+  field?: Maybe<PrismicInfoPageDistinctEnum>
+}
+export interface GroupPrismicInfoPageConnectionArgs {
+  skip?: Maybe<number>
+
+  limit?: Maybe<number>
+
+  field?: Maybe<PrismicInfoPageGroupEnum>
+}
+export interface FirstPublicationDatePrismicInfoPageArgs {
+  /** Format the date using Moment.js' date tokens e.g. "date(formatString: "YYYY MMMM DD)" See https://momentjs.com/docs/#/displaying/format/ for documentation for different tokens */
+  formatString?: Maybe<string>
+  /** Returns a string generated with Moment.js' fromNow function */
+  fromNow?: Maybe<boolean>
+  /** Returns the difference between this date and the current time. Defaults to miliseconds but you can also pass in as the measurement years, months, weeks, days, hours, minutes, and seconds. */
+  difference?: Maybe<string>
+  /** Configures the locale Moment.js will use to format the date. */
+  locale?: Maybe<string>
+}
+export interface LastPublicationDatePrismicInfoPageArgs {
   /** Format the date using Moment.js' date tokens e.g. "date(formatString: "YYYY MMMM DD)" See https://momentjs.com/docs/#/displaying/format/ for documentation for different tokens */
   formatString?: Maybe<string>
   /** Returns a string generated with Moment.js' fromNow function */
@@ -45754,6 +45761,36 @@ export interface FirstPublicationDatePrismicHomepageArgs {
   locale?: Maybe<string>
 }
 export interface LastPublicationDatePrismicHomepageArgs {
+  /** Format the date using Moment.js' date tokens e.g. "date(formatString: "YYYY MMMM DD)" See https://momentjs.com/docs/#/displaying/format/ for documentation for different tokens */
+  formatString?: Maybe<string>
+  /** Returns a string generated with Moment.js' fromNow function */
+  fromNow?: Maybe<boolean>
+  /** Returns the difference between this date and the current time. Defaults to miliseconds but you can also pass in as the measurement years, months, weeks, days, hours, minutes, and seconds. */
+  difference?: Maybe<string>
+  /** Configures the locale Moment.js will use to format the date. */
+  locale?: Maybe<string>
+}
+export interface DistinctPrismicContactPageConnectionArgs {
+  field?: Maybe<PrismicContactPageDistinctEnum>
+}
+export interface GroupPrismicContactPageConnectionArgs {
+  skip?: Maybe<number>
+
+  limit?: Maybe<number>
+
+  field?: Maybe<PrismicContactPageGroupEnum>
+}
+export interface FirstPublicationDatePrismicContactPageArgs {
+  /** Format the date using Moment.js' date tokens e.g. "date(formatString: "YYYY MMMM DD)" See https://momentjs.com/docs/#/displaying/format/ for documentation for different tokens */
+  formatString?: Maybe<string>
+  /** Returns a string generated with Moment.js' fromNow function */
+  fromNow?: Maybe<boolean>
+  /** Returns the difference between this date and the current time. Defaults to miliseconds but you can also pass in as the measurement years, months, weeks, days, hours, minutes, and seconds. */
+  difference?: Maybe<string>
+  /** Configures the locale Moment.js will use to format the date. */
+  locale?: Maybe<string>
+}
+export interface LastPublicationDatePrismicContactPageArgs {
   /** Format the date using Moment.js' date tokens e.g. "date(formatString: "YYYY MMMM DD)" See https://momentjs.com/docs/#/displaying/format/ for documentation for different tokens */
   formatString?: Maybe<string>
   /** Returns a string generated with Moment.js' fromNow function */

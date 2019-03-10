@@ -58,11 +58,10 @@ const EventCard = ({ event, index, isTeaser, isOver }: TProps) => {
         <Info className={isTeaser ? 'truncate' : ''}>
           {event.organizer}
           {event.date &&
-            (!isTeaser
-              ? ` - ${format(event.date, 'HH:mm', { locale })}`
-              : ` - ${format(event.date, 'dddd D MMM.', { locale })} om ${format(event.date, 'HH:mm', {
-                  locale,
-                })}`)}
+            ` - ${format(event.date, 'dddd D MMM.', { locale })} om ${format(event.date, 'HH:mm', {
+              locale,
+            })}
+          `}
         </Info>
         {!isTeaser && (
           <TagWrap>

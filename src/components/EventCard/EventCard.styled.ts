@@ -152,7 +152,7 @@ export const Info = styled.span`
   margin-bottom: 8px;
 `
 
-export const Description = styled.span`
+export const Description = styled.p`
   font-size: 15px;
   line-height: 140%;
 `

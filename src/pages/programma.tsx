@@ -19,8 +19,7 @@ const Programma = ({ data: { prismicProgramPage, allPrismicEvent } }: { data: Qu
   const { title = 'Programma', subtitle = '' } = { ...programPageData }
 
   if (events) {
-    // @ts-ignore
-    events.sort((a, b) => new Date(a.data.date) - new Date(b.data.date))
+    events.sort((a, b) => (a.data.date > b.data.date ? 1 : a.data.date < b.data.date ? -1 : 0))
   }
 
   return (

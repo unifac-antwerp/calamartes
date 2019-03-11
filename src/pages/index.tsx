@@ -1,5 +1,6 @@
 import { Carousel, EventsTeaser, Header, Instagram, Intro, Layout, PartnerCTA, Partners, Pictures } from '@components'
 import { sortHomepagePartners } from '@utils/partnerUtils'
+import { isBefore } from 'date-fns'
 import { graphql, StaticQuery } from 'gatsby'
 import idx from 'idx'
 import * as React from 'react'
@@ -33,9 +34,8 @@ const IndexPage = () => (
       const maxEvents = 10
 
       const homepageEvents = events
-        // @ts-ignore
-        .sort((a, b) => new Date(a.date) - new Date(b.date))
-        .filter(e => new Date(e.date) > new Date())
+        .sort((a, b) => (a.date > b.date ? 1 : a.date < b.date ? -1 : 0))
+        .filter(e => !isBefore(e.date, new Date()))
         .slice(0, maxEvents)
 
       return (

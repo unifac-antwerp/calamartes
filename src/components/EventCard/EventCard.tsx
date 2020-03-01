@@ -5,6 +5,7 @@ import locale from 'date-fns/locale/nl'
 import { FluidObject } from 'gatsby-image'
 import * as React from 'react'
 import { Description, Info, InfoWrap, LinkWrap, StyledImage, Tag, TagWrap, Title, Wrap } from './EventCard.styled'
+import idx from 'idx'
 
 export type TEvent = {
   title?: string
@@ -37,9 +38,11 @@ type TProps = {
 const EventCard = ({ event, index, isTeaser, isOver }: TProps) => {
   const tags = event.tags ? event.tags.split(',').map(tag => tag.trim()) : []
 
+  const image = idx(event, x=> x.image.localFile.childImageSharp.fluid)
+
   return (
     <Wrap index={index}>
-      <StyledImage fluid={event.image.localFile.childImageSharp.fluid} />
+      {image ? <StyledImage fluid={image} /> : null}
       <LinkWrap>
         {event.facebook_link && (
           <li className="link">
@@ -65,9 +68,10 @@ const EventCard = ({ event, index, isTeaser, isOver }: TProps) => {
         </Info>
         {!isTeaser && (
           <TagWrap>
-            {tags.map(tag => (
-              <Tag key={tag}>{tag}</Tag>
-            ))}
+            {tags.map(tag =>{
+              if(!tag) return
+              return <Tag key={tag}>{tag}</Tag>
+            })}
           </TagWrap>
         )}
         {event.short_description && !isTeaser && <Description>{event.short_description}</Description>}

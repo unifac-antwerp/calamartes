@@ -34,7 +34,7 @@ const Partners = () => (
             picture={(partnerPageData && partnerPageData.partners_header_image.url) || ''}
           />
           <MainPartners mainPartners={mainPartners} title={main_partners_title} />
-          <Friends friends={friends} title={friends_title} />
+          {friends.length > 0 && <Friends friends={friends} title={friends_title} />}
           <PartnerCTASmall buttonText={cta_button_text} email={email} title={partners_cta_title} />
         </Layout>
       )

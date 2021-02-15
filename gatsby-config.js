@@ -27,14 +27,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: process.env.GATSBY_INSTAGRAM_USERNAME,
-        access_token: process.env.GATSBY_INSTAGRAM_ACCESS_TOKEN,
-        instagram_id: process.env.GATSBY_INSTAGRAM_ID,
-      },
-    },
-    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`poppins:400,500,600,700`, `roboto:400,700`],

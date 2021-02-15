@@ -1,5 +1,4 @@
 import styled, { css } from '@config/styles/styled-components'
-import Img from 'gatsby-image'
 
 const ornamentCSS = css`
   position: absolute;
@@ -19,17 +18,17 @@ const ornamentCSS = css`
 export const Wrap = styled.section`
   margin-bottom: 16vw;
   position: relative;
-  
+
   &:before {
     ${ornamentCSS}
     background-color: ${({ theme }) => theme.colors.global01};
   }
-  
+
   &:after {
     ${ornamentCSS}
     ${({ theme }) => theme.overlays.plusPattern}
   }
-  
+
   @media (min-width: ${({ theme }) => theme.breakpoints.m}) {
     margin-bottom: 180px;
   }
@@ -47,13 +46,13 @@ export const Title = styled.h2`
   padding: 8px 24px;
   margin: 0 auto 32px;
   font-size: 8vw;
-  
+
   ${({ theme }) => theme.overlays.plusPatternFill}
-  
+
   @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
     font-size: 36px;
   }
-  
+
   @media (min-width: ${({ theme }) => theme.breakpoints.m}) {
     font-size: 40px;
     padding: 16px 32px;
@@ -100,6 +99,6 @@ export const ImageWrap = styled.li`
   }
 `
 
-export const StyledImg = styled(Img)`
+export const StyledImg = styled.img`
   width: 100%;
 `

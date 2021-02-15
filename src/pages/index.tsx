@@ -16,7 +16,7 @@ export type TPartnerHomepage = {
 const IndexPage = () => (
   <StaticQuery
     query={pageQuery}
-    render={({ allInstaNode, prismicGeneral, prismicHomepage, allPrismicPartner, allPrismicEvent }: Query) => {
+    render={({ prismicGeneral, prismicHomepage, allPrismicPartner, allPrismicEvent }: Query) => {
       const homepagedata = idx(prismicHomepage, _ => _.data)
       const events = idx(allPrismicEvent, _ => _.edges.map(event => event.node.data)) || []
       const introImage = idx(homepagedata, _ => _.intro_image.localFile.childImageSharp.fluid)
@@ -63,7 +63,6 @@ const IndexPage = () => (
           {!!pictures && <Pictures mainPicture={pictures[0]} secondaryPicture={pictures[1]} />}
 
           <Instagram
-            posts={allInstaNode && allInstaNode.edges}
             title={(homepagedata && homepagedata.social_title) || ''}
             description={(homepagedata && homepagedata.social_description.html) || ''}
           />
@@ -198,20 +197,6 @@ const pageQuery = graphql`
         social_title
         social_description {
           html
-        }
-      }
-    }
-    allInstaNode {
-      edges {
-        node {
-          id
-          localFile {
-            childImageSharp {
-              fluid(maxWidth: 400, maxHeight: 400) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
         }
       }
     }
